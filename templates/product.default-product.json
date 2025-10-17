@@ -327,146 +327,6 @@
         "margin_bottom": 0
       }
     },
-    "video_text_section_4CMqLC": {
-      "type": "video-text-section",
-      "name": "Video + Text（极简·高度优化）",
-      "settings": {
-        "title": "Intelligent Scene Scanning & Auto Area Planning",
-        "description": "<p>BESTMOW lawn mower is equipped with advanced sensors to scan the lawn, identify boundaries, and automatically map out trimming zones. No missed spots, no repeated work – just precise, efficient coverage.</p>",
-        "swap_desktop": true,
-        "swap_mobile": true,
-        "video": "shopify://files/videos/Zones-bestmow.mp4",
-        "video_url": "",
-        "autoplay": true,
-        "looping": true,
-        "show_controls": false,
-        "video_ratio": "4/5",
-        "fixed_height": false,
-        "video_height_desktop": 460,
-        "video_height_mobile": 180,
-        "bg": "#ffffff",
-        "txt": "#121212",
-        "pad_y": 0,
-        "gap": 100,
-        "radius": 20,
-        "full_width": false,
-        "max_width": 1160,
-        "margin_top": 0,
-        "margin_bottom": 32
-      }
-    },
-    "video_text_section_TzJFpk": {
-      "type": "video-text-section",
-      "name": "Video + Text（极简·高度优化）",
-      "settings": {
-        "title": "Powerful Performance for Complex Terrains",
-        "description": "<p>With strong drive power and durable wheels, BESTMOW easily handles uneven surfaces, bumps, and slopes of over 30°. Tough weeds and rough terrain are no challenge.With IPX-rated waterproofing and durable housing, BESTMOW can withstand light rain and varying outdoor conditions.</p>",
-        "swap_desktop": false,
-        "swap_mobile": true,
-        "video": "shopify://files/videos/Slop.mp4",
-        "video_url": "",
-        "autoplay": true,
-        "looping": true,
-        "show_controls": false,
-        "video_ratio": "4/5",
-        "fixed_height": false,
-        "video_height_desktop": 460,
-        "video_height_mobile": 180,
-        "bg": "#ffffff",
-        "txt": "#121212",
-        "pad_y": 0,
-        "gap": 100,
-        "radius": 20,
-        "full_width": false,
-        "max_width": 1160,
-        "margin_top": 0,
-        "margin_bottom": 32
-      }
-    },
-    "video_text_section_9cMEEC": {
-      "type": "video-text-section",
-      "name": "Video + Text（极简·高度优化）",
-      "settings": {
-        "title": "AI-Powered Remote Control & Auto Recharging",
-        "description": "<p>Through the smart app, you can monitor and control BESTMOW anytime. When the battery runs low, it automatically returns to its charging station and resumes work once recharged.</p>",
-        "swap_desktop": true,
-        "swap_mobile": true,
-        "video": "shopify://files/videos/cutting in lines-bestmow.mp4",
-        "video_url": "",
-        "autoplay": true,
-        "looping": true,
-        "show_controls": false,
-        "video_ratio": "4/5",
-        "fixed_height": false,
-        "video_height_desktop": 460,
-        "video_height_mobile": 180,
-        "bg": "#ffffff",
-        "txt": "#121212",
-        "pad_y": 0,
-        "gap": 100,
-        "radius": 20,
-        "full_width": false,
-        "max_width": 1160,
-        "margin_top": 0,
-        "margin_bottom": 32
-      }
-    },
-    "video_text_section_n6JRGy": {
-      "type": "video-text-section",
-      "name": "Video + Text（极简·高度优化）",
-      "settings": {
-        "title": "Self-Optimized Routes for Full Automation",
-        "description": "<p>BESTMOW intelligently calculates the most efficient cutting path, ensuring maximum coverage in minimum time – delivering a truly hands-free lawn care experience.</p>",
-        "swap_desktop": false,
-        "swap_mobile": true,
-        "video": "shopify://files/videos/autocharge bestmow.mp4",
-        "video_url": "",
-        "autoplay": true,
-        "looping": true,
-        "show_controls": false,
-        "video_ratio": "4/5",
-        "fixed_height": false,
-        "video_height_desktop": 460,
-        "video_height_mobile": 180,
-        "bg": "#ffffff",
-        "txt": "#121212",
-        "pad_y": 0,
-        "gap": 100,
-        "radius": 20,
-        "full_width": false,
-        "max_width": 1160,
-        "margin_top": 0,
-        "margin_bottom": 32
-      }
-    },
-    "video_text_section_eypiyM": {
-      "type": "video-text-section",
-      "name": "Video + Text（极简·高度优化）",
-      "settings": {
-        "title": "Smart Obstacle Avoidance with Sensor System",
-        "description": "<p>Built-in obstacle detection sensors allow BESTMOW to slow down, stop, or reroute when encountering pets, children, or objects, ensuring safe operation every time.works at low noise levels, so you can mow early in the morning or late at night without disturbing your family or neighbors.</p>",
-        "swap_desktop": true,
-        "swap_mobile": true,
-        "video": "shopify://files/videos/Obstacle avoidance bestmow.mp4",
-        "video_url": "",
-        "autoplay": true,
-        "looping": true,
-        "show_controls": false,
-        "video_ratio": "4/5",
-        "fixed_height": false,
-        "video_height_desktop": 460,
-        "video_height_mobile": 180,
-        "bg": "#ffffff",
-        "txt": "#121212",
-        "pad_y": 0,
-        "gap": 100,
-        "radius": 20,
-        "full_width": false,
-        "max_width": 1160,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
     "professional_reviews_section_q4CgUf": {
       "type": "professional-reviews-section",
       "blocks": {
@@ -745,84 +605,6 @@
         "margin_bottom": 80
       }
     },
-    "media_wall_aCTwah": {
-      "type": "media-wall",
-      "blocks": {
-        "video_xRWQFj": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/Zones-bestmow.mp4",
-            "product": ""
-          }
-        },
-        "video_GM8WhR": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/14_be735a0a-fc9e-4058-8c65-777f28f29384.mp4",
-            "product": ""
-          }
-        },
-        "video_Yrmfjh": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/Slop.mp4",
-            "product": ""
-          }
-        },
-        "video_xihQw6": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/cutting in lines-bestmow.mp4",
-            "product": ""
-          }
-        },
-        "video_jqDCVx": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/autocharge bestmow.mp4",
-            "product": ""
-          }
-        },
-        "video_VP8nHb": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/Obstacle avoidance bestmow.mp4",
-            "product": ""
-          }
-        },
-        "video_nkTY8K": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/20250321-140844.539-1 (1).mp4",
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "video_xRWQFj",
-        "video_GM8WhR",
-        "video_Yrmfjh",
-        "video_xihQw6",
-        "video_jqDCVx",
-        "video_VP8nHb",
-        "video_nkTY8K"
-      ],
-      "disabled": true,
-      "name": "t:sections.media-wall.presets.name",
-      "settings": {
-        "show_section_header": true,
-        "heading": "Robot Mower in Action",
-        "description": "",
-        "water_text": "",
-        "enable_slider_overlay": true,
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "show_nav_buttons": true,
-        "show_page_dots": false,
-        "margin_top": 0,
-        "margin_bottom": 80
-      }
-    },
     "sticky_image_cards_yMRcyp": {
       "type": "sticky-image-cards",
       "blocks": {
@@ -1096,16 +878,10 @@
     "image_with_text_3pDYKh",
     "image_with_text_KBjEx4",
     "custom_section_header_c6nMaK",
-    "video_text_section_4CMqLC",
-    "video_text_section_TzJFpk",
-    "video_text_section_9cMEEC",
-    "video_text_section_n6JRGy",
-    "video_text_section_eypiyM",
     "professional_reviews_section_q4CgUf",
     "image_banner_YhrFBR",
     "image_with_text_RCxU7L",
     "image_gallery_JyBM7a",
-    "media_wall_aCTwah",
     "sticky_image_cards_yMRcyp",
     "steps_xBYkny",
     "17564620038c49fb00",

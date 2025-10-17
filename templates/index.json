@@ -73,27 +73,6 @@
         "if_as_main_area": false
       }
     },
-    "video_banner_kxPinT": {
-      "type": "video-banner",
-      "name": "t:sections.video-banner.presets.name",
-      "settings": {
-        "enable_full_width": true,
-        "video_url": "",
-        "video": "shopify://files/videos/8087f74650e14831923f73168373eb1a.mp4",
-        "enable_controls": false,
-        "enable_autoload": true,
-        "enable_looping": true,
-        "video_height": "medium",
-        "color_scheme": "",
-        "heading": "",
-        "heading_size": "large",
-        "heading_decorative": false,
-        "description": "",
-        "if_as_main_area": false,
-        "margin_top": 0,
-        "margin_bottom": 40
-      }
-    },
     "rich_text_63VY4w": {
       "type": "rich-text",
       "blocks": {
@@ -464,27 +443,6 @@
         "content_alignment_mobile": "center",
         "if_as_main_area": false,
         "margin_top": 0,
-        "margin_bottom": 80
-      }
-    },
-    "video_banner_K7HnaX": {
-      "type": "video-banner",
-      "name": "t:sections.video-banner.presets.name",
-      "settings": {
-        "enable_full_width": false,
-        "video_url": "",
-        "video": "shopify://files/videos/Why spend your weekends mowing .mp4",
-        "enable_controls": true,
-        "enable_autoload": true,
-        "enable_looping": true,
-        "video_height": "medium",
-        "color_scheme": "",
-        "heading": "",
-        "heading_size": "large",
-        "heading_decorative": false,
-        "description": "<p>Share information about your brand with your customers</p>",
-        "if_as_main_area": true,
-        "margin_top": 80,
         "margin_bottom": 80
       }
     },
@@ -882,7 +840,6 @@
   },
   "order": [
     "carousal_WpGAKi",
-    "video_banner_kxPinT",
     "rich_text_63VY4w",
     "image_banner_qmaqqF",
     "image_gallery_RXTyWT",
@@ -890,7 +847,6 @@
     "rich_text_bqHD8W",
     "image_with_text_gWxdFx",
     "image_with_text_FYgxLa",
-    "video_banner_K7HnaX",
     "image_banner_KQGmWK",
     "image_banner_BBq74G",
     "narrow_image_banner_wpX7D9",
