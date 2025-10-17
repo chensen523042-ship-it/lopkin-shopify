@@ -1,0 +1,165 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "advertisement_AnJk8r": {
+          "type": "advertisement",
+          "settings": {
+            "image": "shopify://shop_images/FREE-Shipping-Over-299_900x_3c00b657-0b22-49a1-9c80-065e9520f72e.jpg",
+            "link": ""
+          }
+        },
+        "subcategory_EmWn3D": {
+          "type": "subcategory",
+          "settings": {
+            "collection": "pulseiras",
+            "heading": "Pulseiras"
+          }
+        },
+        "subcategory_efcMPC": {
+          "type": "subcategory",
+          "settings": {
+            "collection": "aneis",
+            "heading": "Anéis"
+          }
+        },
+        "subcategory_fEDPjP": {
+          "type": "subcategory",
+          "settings": {
+            "collection": "colares",
+            "heading": "Colares"
+          }
+        }
+      },
+      "block_order": [
+        "advertisement_AnJk8r",
+        "subcategory_EmWn3D",
+        "subcategory_efcMPC",
+        "subcategory_fEDPjP"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "banner_height": "small",
+        "alignment": "center",
+        "show_background_image": false,
+        "background_image_alpha": 80,
+        "heading_size": "medium",
+        "heading_uppercase": false,
+        "heading_decorative": false,
+        "show_collection_description": false,
+        "show_countdown": false,
+        "end_time": "2025-01-05 23:59",
+        "end_text": "Timer complete message",
+        "hide_when_end": true,
+        "simple_style": false,
+        "timer_background_color": "#ffffff",
+        "timer_foreground_color": "#000000",
+        "pagination_style": "paginator",
+        "products_per_page": 18,
+        "card_size": "small",
+        "image_ratio": "portrait",
+        "show_content_wrapper": false,
+        "card_color_scheme": "",
+        "text_alignment": "left",
+        "enable_sorting": true,
+        "enable_filtering": true,
+        "filter_type": "drawer",
+        "vertical_side": "left",
+        "default_expand_facets": "all"
+      }
+    },
+    "search_banner_MA6zGB": {
+      "type": "search-banner",
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "background-2",
+        "texture_alpha": 90,
+        "heading": "Não encontrou o que estava procurando?",
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "collection_thumbnails_UAB3TW": {
+      "type": "collection-thumbnails",
+      "blocks": {
+        "collection_xVNfC7": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/MG_0044-Edit.jpg",
+            "collection": "camisetas",
+            "heading": "Camisetas Cristãs"
+          }
+        },
+        "collection_FwJqae": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/375650442_624842076401513_6150809100369978391_n.jpg",
+            "collection": "moletons",
+            "heading": "Moletons"
+          }
+        },
+        "collection_hk4RwT": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/275145524_4947117682002931_4560341787936173746_n_1.jpg",
+            "collection": "joias",
+            "heading": "Anéis & Colares"
+          }
+        },
+        "collection_8Az7eb": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/285001085_5155430561171641_4615516900486526204_n.jpg",
+            "collection": "pulseiras",
+            "heading": "Pulseiras"
+          }
+        },
+        "collection_78qcVc": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/289796917_5221643671216996_5881229615157393307_n.jpg",
+            "collection": "stickers",
+            "heading": "Stickers"
+          }
+        }
+      },
+      "block_order": [
+        "collection_xVNfC7",
+        "collection_FwJqae",
+        "collection_hk4RwT",
+        "collection_8Az7eb",
+        "collection_78qcVc"
+      ],
+      "custom_css": [
+        ".media--square > img {border-radius: 50%;}"
+      ],
+      "settings": {
+        "show_section_header": true,
+        "heading": "Categorias",
+        "description": "",
+        "water_text": "Em Destaque",
+        "button_label": "",
+        "button_link": "",
+        "style": "vertical",
+        "adapt_transparent_image": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main-collection",
+    "search_banner_MA6zGB",
+    "collection_thumbnails_UAB3TW"
+  ]
+}

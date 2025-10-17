@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.drawer.name",
+  "type": "custom.drawer",
+  "sections": {
+    "search-drawer": {
+      "type": "search-drawer",
+      "settings": {
+        "color_scheme": "",
+        "show_recommended_products": true,
+        "recommended_type": "auto",
+        "recommended_product_limit": 5,
+        "product_list": [
+          "t-shirt-unissex-transformed",
+          "t-shirt-unissex-heaven-on-earth",
+          "camiseta-unissex-disciples",
+          "camiseta-unissex-living-in-wonder",
+          "crewneck-unissex-faith-can-move-mountains"
+        ]
+      }
+    },
+    "cart-drawer": {
+      "type": "cart-drawer",
+      "settings": {
+        "color_scheme": "",
+        "show_recommended_products": true,
+        "recommended_type": "auto",
+        "recommended_product_limit": 5,
+        "product_list": [],
+        "show_complementary_products": true,
+        "complementary_product_limit": 5
+      }
+    },
+    "localization-drawer": {
+      "type": "localization-drawer",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_filter": true,
+        "show_regions": true,
+        "show_languages": true
+      }
+    },
+    "quick-add-drawer": {
+      "type": "quick-add-drawer",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "product": ""
+      }
+    }
+  },
+  "order": [
+    "search-drawer",
+    "cart-drawer",
+    "localization-drawer",
+    "quick-add-drawer"
+  ]
+}

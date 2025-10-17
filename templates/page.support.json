@@ -1,0 +1,443 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "heading_size": "medium",
+        "heading_decorative": false,
+        "limit_description_height": false,
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "rich_text_MyMpp9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hLddgW": {
+          "type": "heading",
+          "settings": {
+            "heading": "BESTMOW Community",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_ihzhRP": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Being With Us is A Special Journey</p>",
+            "limit_description_height": false
+          }
+        },
+        "buttons_wHieW9": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "Start setting my BESTMOW",
+            "button_link": "https://www.youtube.com/playlist?list=PL0wzMrMaVbSR0Ig_YcfPvK_u1DNVztGt-",
+            "button_style": "primary",
+            "button_arrow": false,
+            "secondary_button_label": "Start with setting RTK",
+            "secondary_button_link": "https://www.youtube.com/playlist?list=PL0wzMrMaVbSSo7qq3Xo-F3ypqNS9cdMX6",
+            "secondary_button_style": "secondary",
+            "secondary_button_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_hLddgW",
+        "text_ihzhRP",
+        "buttons_wHieW9"
+      ],
+      "settings": {
+        "enable_full_width": true,
+        "color_scheme": "background-1",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "alignment_mobile": "center",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "contact_form_REdxL3": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "Get in Touch",
+        "description": "<p>We're here to help. Fill out the form below to reach us</p>",
+        "show_form_phone": true,
+        "form_first": true,
+        "show_more_contact": true,
+        "color_scheme": "",
+        "more_address": "3401 Grays Ferry Ave. Philadelphia, PA, 19146",
+        "more_phone": "+1 800-882-2131",
+        "more_email": "support@bestmow.com",
+        "more_business_hours": "<p>Monday-Sunday:<br/>9:00 AM- 9:00 PM EST<br/>6:00 AM - 6:00 PM PST<br/><br/>Customer Phone Support:<br/>Mon-Fri,10:00 AM-8:00 PM EST/7:00 AM-5:00 PM PST</p>",
+        "more_description": "",
+        "show_socials": true,
+        "social_icon_style": "wrapper",
+        "margin_top": 92,
+        "margin_bottom": 92
+      }
+    },
+    "milestones_w89rCg": {
+      "type": "milestones",
+      "blocks": {
+        "step_X7tD3p": {
+          "type": "step",
+          "settings": {
+            "year": "2020",
+            "content": "<p>Início dos trâmites legais para o lançamento da <strong>BestSelf</strong>, enfrentando os desafios impostos pela pandemia.</p>"
+          }
+        },
+        "step_GAwckz": {
+          "type": "step",
+          "settings": {
+            "year": "2021",
+            "content": "<p>Lançamento oficial em fevereiro, com uma recepção positiva da comunidade cristã.</p>"
+          }
+        },
+        "step_CKEcUr": {
+          "type": "step",
+          "settings": {
+            "year": "2023",
+            "content": "<p>Apresentação da maior coleção até então, expandindo o portfólio com 7 modelos de camisetas e 2 de moletons, refletindo o crescimento e a aceitação da marca.</p>"
+          }
+        },
+        "step_NE4cCH": {
+          "type": "step",
+          "settings": {
+            "year": "Hoje",
+            "content": "<p>Gratidão pela comunidade construída e compromisso contínuo em inspirar e compartilhar a fé através de produtos significativos.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_X7tD3p",
+        "step_GAwckz",
+        "step_CKEcUr",
+        "step_NE4cCH"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_section_header": false,
+        "heading": "",
+        "description": "",
+        "water_text": "",
+        "spot_color": "#75b7f0",
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "quote_cfmBMc": {
+      "type": "quote",
+      "settings": {
+        "color_scheme": "",
+        "icon_color": "#0cb13d",
+        "content": "We believe in delivering not just products, but meaningful experiences that enrich your life. Every detail matters to us, and your trust inspires us to uphold the highest standards of quality, craftsmanship, and service in everything we do",
+        "author_name": "Yulai Weng",
+        "author_role": "CEO",
+        "margin_top": 92,
+        "margin_bottom": 92
+      }
+    },
+    "rich_text_6fqRh9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_pYYwLM": {
+          "type": "heading",
+          "settings": {
+            "heading": "O SONHO",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_QNRe4d": {
+          "type": "text",
+          "settings": {
+            "description": "<p>A BestSelf surgiu com o propósito de transformar vidas, influenciar positivamente as pessoas e compartilhar a verdade. Com a fé em Deus como valor central, o desejo era levar ao mundo a mensagem do que Ele fez por todos nós. Inicialmente, o caminho para realizar essa missão e o papel específico dentro desse plano maior não estavam claros.</p><p>Foi naquele momento de profunda reflexão, à beira do mar, que nasceu a inspiração para um novo empreendimento. Essa ideia foi moldada com a intenção de direcionar outras pessoas a Deus por meio desse trabalho. Reconhecendo a dificuldade que muitos enfrentam em compartilhar sua fé de forma natural, nasceu o conceito de criar joias e roupas que tornassem essas conversas mais acessíveis e espontâneas. Essa visão não apenas supriu uma necessidade pessoal, mas também apresentou uma solução para aqueles que enfrentavam desafios semelhantes, integrando propósito e impacto em um projeto único e significativo.</p>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_pYYwLM",
+        "text_QNRe4d"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "background-1",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "rich_text_tMFi9X": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HeBWUQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "AS ROUPAS NA BÍBLIA",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_LNPGN8": {
+          "type": "text",
+          "settings": {
+            "description": "<p>A importância das vestes na perspectiva bíblica vai além de sua função prática; elas carregam simbolismo espiritual e cultural. Desde o Gênesis, as vestes são mencionadas como uma expressão do cuidado de Deus, como quando Ele fez túnicas de pele para Adão e Eva após a queda (Gênesis 3:21). Ao longo das Escrituras, as roupas muitas vezes representam identidade, propósito e santidade.</p><p>No Antigo Testamento, as vestes sacerdotais foram ordenadas por Deus com detalhes específicos para refletir a pureza e a dedicação daqueles que serviam no templo (Êxodo 28). Além disso, os profetas frequentemente usavam a imagem das roupas para simbolizar transformação e renovação, como em Isaías 61:10: <em>\"Regozijar-me-ei muito no Senhor, a minha alma se alegra no meu Deus; pois me vestiu com as vestes da salvação, cobriu-me com o manto da justiça.\"</em></p><p>No Novo Testamento, as vestes continuam a carregar significado espiritual, como em Colossenses 3:12, que nos chama a nos \"revestir de compaixão, bondade, humildade, mansidão e paciência\". Assim, as vestes são uma forma de expressão externa de valores internos e de um relacionamento com Deus, simbolizando dignidade, identidade e compromisso com os Seus propósitos.</p><p>Essa perspectiva bíblica reforça a missão da BestSelf: usar roupas como ferramentas para inspirar conversas, expressar fé e levar luz ao mundo.</p>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HeBWUQ",
+        "text_LNPGN8"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "background-1",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "left",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_gallery_jAj9ML": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_PxhGHn": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "1",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "2",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_cbCc6d": {
+          "type": "image",
+          "settings": {
+            "columns": "2",
+            "rows": "2",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "2",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_JiTYBp": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "2",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_RwXHtC": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "2",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_r3UCNM": {
+          "type": "image",
+          "settings": {
+            "columns": "2",
+            "rows": "1",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_gdV3Up": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "1",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        }
+      },
+      "block_order": [
+        "image_PxhGHn",
+        "image_cbCc6d",
+        "image_JiTYBp",
+        "image_RwXHtC",
+        "image_r3UCNM",
+        "image_gdV3Up"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_section_header": true,
+        "heading": "",
+        "description": "<h3>Um simples <strong>\"Ei, gostei da sua pulseira\"</strong> pode ser o início de uma experiência transformadora na vida de alguém.</h3>",
+        "water_text": "",
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "rich_text_7N3XCj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gNFmjx": {
+          "type": "heading",
+          "settings": {
+            "heading": "O IMPACTO",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gNFmjx"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "background-1",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_qibDHk": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_HkDfAm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Porque BestSelf?",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_DqxPPa": {
+          "type": "text",
+          "settings": {
+            "description": "<p>O nome BestSelf representa como nós, como cristãos, nunca paramos de crescer. Nunca seremos perfeitos; todos os dias devemos trabalhar duro para crescer em nosso relacionamento com nosso Criador. As roupas, pulseiras, anéis e muito mais, servem como um lembrete diário para nos esforçarmos constantemente para elevar nossa fé e nos transformar na melhor versão de nós mesmos – levar nosso relacionamento com Deus para o próximo nível e compartilhar nossa fé com os outros.</p>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HkDfAm",
+        "text_DqxPPa"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "image_first": true,
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_alignment_mobile": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_MyMpp9",
+    "contact_form_REdxL3",
+    "milestones_w89rCg",
+    "quote_cfmBMc",
+    "rich_text_6fqRh9",
+    "rich_text_tMFi9X",
+    "image_gallery_jAj9ML",
+    "rich_text_7N3XCj",
+    "image_with_text_qibDHk"
+  ]
+}

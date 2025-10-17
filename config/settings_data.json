@@ -1,0 +1,472 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "page_width": 1600,
+    "small_corner_radius": "medium",
+    "type_header_font": "inter_n7",
+    "header_font_spacing": "standard",
+    "type_body_font": "inter_n4",
+    "type_decorative_font": "pacifico_n4",
+    "decorative_font_spacing": "standard",
+    "enable_breadcrumb": false,
+    "animations_reveal_on_scroll": true,
+    "lazy_loading_animation": "pixel",
+    "section_title_size": "medium",
+    "section_title_uppercase": false,
+    "section_show_title_bottom_line": false,
+    "card_media_padding": 0,
+    "card_media_background_alpha": 10,
+    "card_hover_effect": "fade",
+    "card_enable_color_swatch": false,
+    "card_color_swatch_type": "image",
+    "card_show_rating": true,
+    "card_rating_show_score": false,
+    "new_badge_tag": "novidade",
+    "new_product_days": "30",
+    "limit_edition_badge_tag": "Limit-Edition",
+    "enable_custom_badge": true,
+    "enable_share_facebook": false,
+    "enable_share_twitter": false,
+    "enable_share_pinterest": false,
+    "enable_share_linkedin": false,
+    "social_facebook_link": "",
+    "social_instagram_link": "",
+    "social_youtube_link": "",
+    "social_tiktok_link": "",
+    "social_twitter_link": "",
+    "social_snapchat_link": "",
+    "social_pinterest_link": "",
+    "social_tumblr_link": "",
+    "social_vimeo_link": "",
+    "social_linkedin_link": "",
+    "social_whatsapp_link": "",
+    "social_reddit_link": "",
+    "search_popular_keywords": "CAMISETA, MOLETOM, COLAR, PULSEIRA, ANEL",
+    "currency_code_enabled": false,
+    "cart_bubble_style": "cart",
+    "cart_type": "drawer",
+    "free_shipping_threshold": 299,
+    "no_free_text_color": "#242833",
+    "no_free_bar_color": "#FFD600",
+    "free_text_color": "#242833",
+    "favicon": "shopify://shop_images/fav_icon_BESTMOW.webp",
+    "content_for_index": [],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      }
+    },
+    "color_schemes": {
+      "background-1": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#242833",
+          "sale_price": "#ba2519",
+          "button": "#d7ff00",
+          "button_label": "#094812",
+          "secondary_button_label": "#057a49"
+        }
+      },
+      "background-2": {
+        "settings": {
+          "background": "#f9f9f9",
+          "background_gradient": "",
+          "text": "#121212",
+          "sale_price": "#ba2519",
+          "button": "#d7ff00",
+          "button_label": "#094812",
+          "secondary_button_label": "#121212"
+        }
+      },
+      "inverse": {
+        "settings": {
+          "background": "#242833",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "sale_price": "#ba2519",
+          "button": "#d7ff00",
+          "button_label": "#094812",
+          "secondary_button_label": "#ffffff"
+        }
+      },
+      "accent-1": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "sale_price": "#ba2519",
+          "button": "#d7ff00",
+          "button_label": "#094812",
+          "secondary_button_label": "#242833"
+        }
+      },
+      "accent-2": {
+        "settings": {
+          "background": "#242833",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "sale_price": "#ba2519",
+          "button": "#ffffff",
+          "button_label": "#242833",
+          "secondary_button_label": "#ffffff"
+        }
+      },
+      "scheme-740f0244-680c-4ea8-a5d3-c40549fbbc01": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#242833",
+          "sale_price": "#ba2519",
+          "button": "#d7ff00",
+          "button_label": "#094812",
+          "secondary_button_label": "#ffffff"
+        }
+      },
+      "scheme-340f51ef-2f3e-4945-8529-a9cec3682201": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#242833",
+          "sale_price": "#ba2519",
+          "button": "#d7ff00",
+          "button_label": "#094812",
+          "secondary_button_label": "#057a49"
+        }
+      }
+    }
+  },
+  "presets": {
+    "Ascent": {
+      "page_width": 1600,
+      "small_corner_radius": "small",
+      "type_header_font": "quantico_n7",
+      "header_font_spacing": "standard",
+      "type_body_font": "inter_n4",
+      "body_font_spacing": "standard",
+      "type_decorative_font": "unifraktur_maguntia_n4",
+      "decorative_font_spacing": "wide",
+      "animations_reveal_on_scroll": true,
+      "animations_enable_image_lazy_loading": true,
+      "lazy_loading_animation": "pixel",
+      "section_title_size": "large",
+      "section_title_uppercase": true,
+      "section_show_title_bottom_line": false,
+      "card_truncate_title": true,
+      "card_quick_add_icon": "eye",
+      "card_media_padding": 0,
+      "card_media_background_alpha": 10,
+      "card_hover_effect": "fade",
+      "card_color_swatch_type": "image",
+      "sale_badge_background": "#FF0000",
+      "sale_badge_foreground": "#ffffff",
+      "gift_badge_background": "#b500b5",
+      "gift_badge_foreground": "#ffffff",
+      "new_label_basis": "tag",
+      "limit_edition_badge_tag": "Limit-Edition",
+      "enable_custom_badge": false,
+      "social_facebook_link": "",
+      "social_instagram_link": "",
+      "social_youtube_link": "",
+      "social_tiktok_link": "",
+      "social_twitter_link": "",
+      "social_snapchat_link": "",
+      "social_pinterest_link": "",
+      "social_tumblr_link": "",
+      "social_vimeo_link": "",
+      "social_linkedin_link": "",
+      "social_whatsapp_link": "",
+      "social_reddit_link": "",
+      "search_popular_keywords": "Keyboard, Mouse, Headset, VR, Wireless, Mechanical, RGB, Ergonomic",
+      "cart_bubble_style": "frame",
+      "cart_gift_wrapping_product": "",
+      "free_shipping_threshold": 100,
+      "no_free_text_color": "#ffffff",
+      "no_free_bar_color": "#ffd600",
+      "free_text_color": "#ffffff",
+      "favicon": "",
+      "content_for_index": [],
+      "color_schemes": {
+        "background-1": {
+          "settings": {
+            "background": "#242833",
+            "background_gradient": "",
+            "text": "#ffffff",
+            "sale_price": "#FFFFFF",
+            "button": "#b500b5",
+            "button_label": "#ffffff",
+            "secondary_button_label": "#ffffff"
+          }
+        },
+        "background-2": {
+          "settings": {
+            "background": "#303441",
+            "background_gradient": "",
+            "text": "#fcfcfc",
+            "sale_price": "#FFFFFF",
+            "button": "#b500b5",
+            "button_label": "#fcfcfc",
+            "secondary_button_label": "#ffffff"
+          }
+        },
+        "inverse": {
+          "settings": {
+            "background": "#000000",
+            "background_gradient": "linear-gradient(54deg, rgba(166, 41, 175, 1) 12%, rgba(68, 0, 246, 1) 84%)",
+            "text": "#ffffff",
+            "sale_price": "#FFFFFF",
+            "button": "#ffffff",
+            "button_label": "#000000",
+            "secondary_button_label": "#ffffff"
+          }
+        },
+        "accent-1": {
+          "settings": {
+            "background": "#000000",
+            "background_gradient": "",
+            "text": "#ffffff",
+            "sale_price": "#FFFFFF",
+            "button": "#ffffff",
+            "button_label": "#000000",
+            "secondary_button_label": "#ffffff"
+          }
+        },
+        "accent-2": {
+          "settings": {
+            "background": "#242833",
+            "background_gradient": "",
+            "text": "#ffffff",
+            "sale_price": "#FFFFFF",
+            "button": "#ffffff",
+            "button_label": "#242833",
+            "secondary_button_label": "#ffffff"
+          }
+        }
+      }
+    },
+    "Elevated": {
+      "page_width": 1600,
+      "small_corner_radius": "medium",
+      "main_color_scheme": "background-1",
+      "type_header_font": "inter_n7",
+      "type_body_font": "inter_n4",
+      "type_decorative_font": "pacifico_n4",
+      "decorative_font_spacing": "wide",
+      "animations_enable_image_lazy_loading": true,
+      "lazy_loading_animation": "breathing",
+      "section_title_size": "medium",
+      "section_title_uppercase": false,
+      "section_show_title_bottom_line": false,
+      "card_quick_add_icon": "bag",
+      "card_media_padding": 0,
+      "card_hover_effect": "fade",
+      "card_color_swatch_type": "color",
+      "card_star_size": "small",
+      "card_rating_show_score": true,
+      "enable_rating_preview": false,
+      "sale_badge_background": "#FF0000",
+      "sale_badge_foreground": "#ffffff",
+      "gift_badge_background": "#b500b5",
+      "gift_badge_foreground": "#ffffff",
+      "new_label_basis": "tag",
+      "enable_custom_badge": false,
+      "custom_badge_background": "#FFFFFF",
+      "custom_badge_foreground": "#242833",
+      "social_facebook_link": "",
+      "social_instagram_link": "",
+      "social_youtube_link": "",
+      "social_tiktok_link": "",
+      "social_twitter_link": "",
+      "social_snapchat_link": "",
+      "social_pinterest_link": "",
+      "social_tumblr_link": "",
+      "social_vimeo_link": "",
+      "social_linkedin_link": "",
+      "social_whatsapp_link": "",
+      "social_reddit_link": "",
+      "predictive_search_enabled": true,
+      "search_popular_keywords": "Racquets, Shoes, Balls, Apparel, Tennis Bags, Overgrips, Tennis Strings, Wristbands, Headbands",
+      "cart_bubble_style": "bag",
+      "cart_gift_wrapping_product": "gift-wrapping",
+      "favicon": "",
+      "content_for_index": [],
+      "color_schemes": {
+        "background-1": {
+          "settings": {
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text": "#242833",
+            "sale_price": "#ba2519",
+            "button": "#242833",
+            "button_label": "#ffffff",
+            "secondary_button_label": "#242833"
+          }
+        },
+        "background-2": {
+          "settings": {
+            "background": "#f6f6f6",
+            "background_gradient": "",
+            "text": "#121212",
+            "sale_price": "#FF0000",
+            "button": "#121212",
+            "button_label": "#ffffff",
+            "secondary_button_label": "#121212"
+          }
+        },
+        "inverse": {
+          "settings": {
+            "background": "#242833",
+            "background_gradient": "",
+            "text": "#ffffff",
+            "sale_price": "#FF0000",
+            "button": "#ffd600",
+            "button_label": "#000000",
+            "secondary_button_label": "#ffffff"
+          }
+        },
+        "accent-1": {
+          "settings": {
+            "background": "#eef0fd",
+            "background_gradient": "",
+            "text": "#242833",
+            "sale_price": "#FF0000",
+            "button": "#242833",
+            "button_label": "#ffffff",
+            "secondary_button_label": "#242833"
+          }
+        },
+        "accent-2": {
+          "settings": {
+            "background": "#242833",
+            "background_gradient": "",
+            "text": "#ffffff",
+            "sale_price": "#FF0000",
+            "button": "#ffffff",
+            "button_label": "#242833",
+            "secondary_button_label": "#ffffff"
+          }
+        }
+      }
+    },
+    "Joyfy": {
+      "page_width": 1400,
+      "small_corner_radius": "large",
+      "type_header_font": "nunito_n9",
+      "type_body_font": "fira_sans_n4",
+      "type_decorative_font": "lobster_two_n4",
+      "decorative_font_spacing": "wide",
+      "animations_reveal_on_scroll": true,
+      "animations_enable_image_lazy_loading": false,
+      "section_title_uppercase": false,
+      "section_show_title_bottom_line": false,
+      "card_quick_add_icon": "cart",
+      "card_media_padding": 0,
+      "card_hover_effect": "push",
+      "sale_badge_background": "#FF0000",
+      "sale_badge_foreground": "#ffffff",
+      "new_label_basis": "tag",
+      "new_badge_tag": "New",
+      "limit_edition_badge_tag": "Limit-Edition",
+      "social_facebook_link": "",
+      "social_instagram_link": "",
+      "social_youtube_link": "",
+      "social_tiktok_link": "",
+      "social_twitter_link": "",
+      "social_snapchat_link": "",
+      "social_pinterest_link": "",
+      "social_tumblr_link": "",
+      "social_vimeo_link": "",
+      "social_linkedin_link": "",
+      "social_whatsapp_link": "",
+      "social_reddit_link": "",
+      "predictive_search_enabled": true,
+      "search_popular_keywords": "Blocks, Puzzles, Ride-Ons, Playhouses, Bath Toys",
+      "cart_bubble_style": "cart",
+      "cart_gift_wrapping_product": "gift-wrapping-service",
+      "favicon": "",
+      "content_for_index": [],
+      "color_schemes": {
+        "background-1": {
+          "settings": {
+            "background": "#fffcea",
+            "background_gradient": "",
+            "text": "#121212",
+            "sale_price": "#ff0000",
+            "button": "#ff0000",
+            "button_label": "#ffffff",
+            "secondary_button_label": "#ff0000"
+          }
+        },
+        "background-2": {
+          "settings": {
+            "background": "#ffd600",
+            "background_gradient": "",
+            "text": "#121212",
+            "sale_price": "#BA2519",
+            "button": "#334fb4",
+            "button_label": "#ffffff",
+            "secondary_button_label": "#121212"
+          }
+        },
+        "inverse": {
+          "settings": {
+            "background": "#242833",
+            "background_gradient": "",
+            "text": "#ffffff",
+            "sale_price": "#BA2519",
+            "button": "#e73737",
+            "button_label": "#ffffff",
+            "secondary_button_label": "#ffffff"
+          }
+        },
+        "accent-1": {
+          "settings": {
+            "background": "#effffa",
+            "background_gradient": "",
+            "text": "#242833",
+            "sale_price": "#BA2519",
+            "button": "#242833",
+            "button_label": "#ffffff",
+            "secondary_button_label": "#242833"
+          }
+        },
+        "accent-2": {
+          "settings": {
+            "background": "#fff4b9",
+            "background_gradient": "",
+            "text": "#000000",
+            "sale_price": "#BA2519",
+            "button": "#ff7400",
+            "button_label": "#ffffff",
+            "secondary_button_label": "#000000"
+          }
+        }
+      }
+    }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".title-wrapper {overflow: visible;}",
+      ".card-wrapper .card .card-content .card-heading {font-weight: 500 !important;}",
+      ".ks-powered-by {display: none !important;}",
+      ":root {--main-gift-accent-color: #1990c6 !important;}",
+      ".badge {padding: 0 0.63rem; height: 1.4rem; font-size: 0.656rem; text-transform: uppercase; font-weight: 600;}",
+      " /* Nossa Missão Mobile*/@media screen and (max-width: 749px) {.grid-mobile.columns-mobile--2 {grid-template-columns: repeat(3, 1fr); } h5, .h5 {font-size: 0.8rem; }}"
+    ]
+  }
+}

@@ -1,0 +1,296 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "heading_size": "medium",
+        "heading_decorative": false,
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "rich_text_77TkcQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Gdtt3D": {
+          "type": "heading",
+          "settings": {
+            "heading": "Elementos",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_rXezw6": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Nossas joias são meticulosamente feitas à mão, com metais, pedras naturais e cerâmica cuidadosamente selecionados. Cada elemento é escolhido pela sua qualidade e singularidade, garantindo peças requintadas e duradouras.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Gdtt3D",
+        "text_rXezw6"
+      ],
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "background-1",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "image_with_text_3hKd7E": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_nHHbRt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Pedras Naturais",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_VWrbcT": {
+          "type": "text",
+          "settings": {
+            "description": "<p>PULSEIRAS</p><p>Uma combinação cativante de elegância, artesanato e a beleza inata da natureza. Peças cuidadosamente selecionadas, projetadas para realçar o seu estilo pessoal, enquanto abraça o fascínio orgânico das pedras naturais. Nossas pulseiras premium de pedras naturais combinam sem esforço sofisticação com um toque de autenticidade bruta, tornando-a uma verdadeira peça de destaque.</p><p><em><strong>Perfeito para: </strong></em><em>Iniciar conversas sobre fé, expressar fé, lembrete pessoal da jornada espiritual, encorajamento e força, presentear pessoas queridas.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nHHbRt",
+        "text_VWrbcT"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/354442185_585225673696487_275017_cb8e7884-54a7-4008-8c70-2481da4a94cf.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "image_first": true,
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_alignment_mobile": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "text_with_icons_J4MA4p": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon_text_b4RbfY": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Natural-Stone.svg",
+            "heading": "Pedras Naturais",
+            "description": ""
+          }
+        },
+        "icon_text_iYz3hU": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Ceramic.svg",
+            "heading": "Cerâmica",
+            "description": ""
+          }
+        },
+        "icon_text_Cteppp": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Super-Stretch-String.svg",
+            "heading": "Fio Stretch Resistente",
+            "description": ""
+          }
+        },
+        "icon_text_Gfw6WA": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Handmade_e46f2478-e4cb-48e5-aceb-dae8c91e71e1.svg",
+            "heading": "Feito à Mão",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_text_b4RbfY",
+        "icon_text_iYz3hU",
+        "icon_text_Cteppp",
+        "icon_text_Gfw6WA"
+      ],
+      "settings": {
+        "show_section_header": false,
+        "heading": "Text with icons",
+        "description": "",
+        "color_scheme": "",
+        "columns_on_desktop": 4,
+        "item_alignment": "center",
+        "icon_size": "small",
+        "columns_on_mobile": "2",
+        "hide_description": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "image_with_text_ULDG9c": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BrVGCG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Metais",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_kX4YXA": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Elegância duradoura: Fabricadas em aço inoxidável 316L, nossas joias resistem a manchas e desbotamento, ao contrário dos metais preciosos tradicionais. Nossa elegante coleção de anéis e correntes cristãs tem um significado bíblico por trás de cada uma. Todas as nossas joias cristãs são feitas à mão individualmente por nossos artesãos ao redor do mundo.</p><p><em><strong>Perfeito para: </strong></em><em>Iniciar conversas sobre fé, expressar fé, lembrete pessoal da jornada espiritual, encorajamento e força, presentear pessoas queridas.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BrVGCG",
+        "text_kX4YXA"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/275145524_4947117682002931_4560341787936173746_n_1_5822496d-65f5-4c12-930e-095dd49f8ad3.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "image_first": false,
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_alignment_mobile": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "text_with_icons_Dy99be": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon_text_KqyUdB": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Stainless-Steel.svg",
+            "heading": "Aço Inoxidável 316L",
+            "description": ""
+          }
+        },
+        "icon_text_T8Bmpd": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Tarnish-Free.svg",
+            "heading": "Resistência à Manchas",
+            "description": ""
+          }
+        },
+        "icon_text_xUjM3P": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Hypoallergenic_45bfe90b-2927-4540.svg",
+            "heading": "Hipoalergênico",
+            "description": ""
+          }
+        },
+        "icon_text_CqcYmq": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Durable_67dbc107-a416-4666-96fb.svg",
+            "heading": "Durável",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_text_KqyUdB",
+        "icon_text_T8Bmpd",
+        "icon_text_xUjM3P",
+        "icon_text_CqcYmq"
+      ],
+      "settings": {
+        "show_section_header": false,
+        "heading": "Text with icons",
+        "description": "",
+        "color_scheme": "",
+        "columns_on_desktop": 4,
+        "item_alignment": "center",
+        "icon_size": "small",
+        "columns_on_mobile": "2",
+        "hide_description": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "featured_collection_qWfBJx": {
+      "type": "featured-collection",
+      "settings": {
+        "show_collection_image": true,
+        "collection_image_color_scheme": "accent-2",
+        "collection_image_position": "left",
+        "feature_image": "shopify://shop_images/croissant-ring-christian-ring-31.jpg",
+        "collection_image_opacity": 50,
+        "collection_title": "Descubra Joias Cristãs",
+        "collection_title_size": "medium",
+        "collection_title_decorative": true,
+        "collection": "joias",
+        "products_to_show": 10,
+        "enable_desktop_slider": true,
+        "show_nav_buttons": true,
+        "show_dots": false,
+        "card_size": "small",
+        "image_ratio": "square",
+        "show_content_wrapper": false,
+        "color_scheme": "",
+        "text_alignment": "center",
+        "enable_mobile_slider": true,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_77TkcQ",
+    "image_with_text_3hKd7E",
+    "text_with_icons_J4MA4p",
+    "image_with_text_ULDG9c",
+    "text_with_icons_Dy99be",
+    "featured_collection_qWfBJx"
+  ]
+}

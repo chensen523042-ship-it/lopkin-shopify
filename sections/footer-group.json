@@ -1,0 +1,196 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "newsletter_zby48i": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_CXnUnb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get Deals and Updates",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_CBAjwy": {
+          "type": "text",
+          "settings": {
+            "description": "<h4><strong>Join our email list</strong></h4>"
+          }
+        },
+        "social_list_qRh48y": {
+          "type": "social_list",
+          "disabled": true,
+          "settings": {
+            "style": "wrapper"
+          }
+        },
+        "email_form_bw6Ezz": {
+          "type": "email_form",
+          "settings": {
+            "input_style": "separate"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CXnUnb",
+        "text_CBAjwy",
+        "social_list_qRh48y",
+        "email_form_bw6Ezz"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "enable_full_width": true,
+        "color_scheme": "background-1",
+        "texture_image": "shopify://shop_images/Untitled_1800_x_600_px.webp",
+        "texture_alpha": 19,
+        "texture_fixed": false,
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "brand_8YQLMi": {
+          "type": "brand",
+          "settings": {
+            "heading": "Contact Us",
+            "image_width": "medium",
+            "email": "support@bestmow.com",
+            "phone": "(800) 882-2131",
+            "introduction": "<p>BESTMOW</p>",
+            "apple_download_link": "https://apps.apple.com/us/app/bestmow/id6737789563",
+            "android_download_link": "https://play.google.com/store/apps/details?id=com.bestmow.mower",
+            "show_social": false,
+            "social_style": "border",
+            "padding_left": 0
+          }
+        },
+        "menu_8eUdW9": {
+          "type": "menu",
+          "settings": {
+            "heading": "Quick Links",
+            "menu": "quick-links",
+            "padding_left": 0,
+            "default_expand": false
+          }
+        },
+        "menu_6ThpGR": {
+          "type": "menu",
+          "settings": {
+            "heading": "Quick Links",
+            "menu": "",
+            "padding_left": 0,
+            "default_expand": false
+          }
+        },
+        "menu_V3KHx8": {
+          "type": "menu",
+          "disabled": true,
+          "settings": {
+            "heading": "Ajuda & Suporte",
+            "menu": "footer",
+            "padding_left": 0,
+            "default_expand": false
+          }
+        },
+        "text_rcnCAf": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "heading": "Sobre a BestSelf",
+            "description": "<p>Cada item que vendemos é um iniciador de conversa que tem um significado único para ajudá-lo a crescer em sua fé. Damos uma parte de cada pedido para instituições de caridade cristãs em todo o mundo.</p>",
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "brand_8YQLMi",
+        "menu_8eUdW9",
+        "menu_6ThpGR",
+        "menu_V3KHx8",
+        "text_rcnCAf"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "show_border_top": true,
+        "heading_uppercase": true,
+        "background_alpha": 20,
+        "enable_background_fixed": false,
+        "enable_follow_on_shop": false,
+        "show_trust_badge": false,
+        "enable_localization_selector": false,
+        "show_localization_flag": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0
+      }
+    },
+    "tool-bar": {
+      "type": "tool-bar",
+      "blocks": {
+        "global_bkRRqE": {
+          "type": "global",
+          "settings": {
+            "show_localization_flag": false
+          }
+        },
+        "search_gn7yeC": {
+          "type": "search",
+          "settings": {}
+        },
+        "email_UbLWHL": {
+          "type": "email",
+          "disabled": true,
+          "settings": {
+            "email": "support@example.com"
+          }
+        },
+        "phone_jHmacd": {
+          "type": "phone",
+          "disabled": true,
+          "settings": {
+            "phone": "(415) 555-1234"
+          }
+        },
+        "newsletter_rPQFwh": {
+          "type": "newsletter",
+          "settings": {
+            "icon": "gift"
+          }
+        }
+      },
+      "block_order": [
+        "global_bkRRqE",
+        "search_gn7yeC",
+        "email_UbLWHL",
+        "phone_jHmacd",
+        "newsletter_rPQFwh"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent-1",
+        "position": "left",
+        "hide_mobile": false
+      }
+    }
+  },
+  "order": [
+    "newsletter_zby48i",
+    "footer",
+    "tool-bar"
+  ]
+}

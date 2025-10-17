@@ -1,0 +1,108 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-search",
+      "settings": {
+        "color_scheme": "inverse",
+        "banner_height": "medium",
+        "texture_alpha": 80,
+        "heading_size": "medium",
+        "heading_uppercase": false,
+        "heading_decorative": false,
+        "pagination_style": "paginator",
+        "results_per_page": 15,
+        "image_ratio": "square",
+        "show_content_wrapper": false,
+        "card_color_scheme": "",
+        "article_show_tags": true,
+        "article_show_date": true,
+        "article_show_author": true,
+        "enable_sorting": true,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "vertical_side": "left",
+        "default_expand_facets": "all"
+      }
+    },
+    "collection_thumbnails_D34nAn": {
+      "type": "collection-thumbnails",
+      "blocks": {
+        "collection_RMpDqx": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/MG_0044-Edit.jpg",
+            "collection": "camisetas",
+            "heading": "Camisetas"
+          }
+        },
+        "collection_jH77f3": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/375650442_624842076401513_6150809100369978391_n.jpg",
+            "collection": "moletons",
+            "heading": "Moletons"
+          }
+        },
+        "collection_m6GJbd": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/275145524_4947117682002931_4560341787936173746_n_1_5822496d-65f5-4c12-930e-095dd49f8ad3.jpg",
+            "collection": "joias",
+            "heading": "Anéis & Colares"
+          }
+        },
+        "collection_VzjXqC": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/285001085_5155430561171641_4615516900486526204_n.jpg",
+            "collection": "pulseiras",
+            "heading": "Pulseiras"
+          }
+        },
+        "collection_VrtYBd": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/289796917_5221643671216996_5881229615157393307_n.jpg",
+            "collection": "stickers",
+            "heading": "Stickers"
+          }
+        }
+      },
+      "block_order": [
+        "collection_RMpDqx",
+        "collection_jH77f3",
+        "collection_m6GJbd",
+        "collection_VzjXqC",
+        "collection_VrtYBd"
+      ],
+      "custom_css": [
+        ".media--square > img {border-radius: 50%;}"
+      ],
+      "settings": {
+        "show_section_header": true,
+        "heading": "Categorias",
+        "description": "",
+        "water_text": "Em Destaque",
+        "button_label": "",
+        "button_link": "",
+        "style": "vertical",
+        "adapt_transparent_image": true,
+        "margin_top": 80,
+        "margin_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collection_thumbnails_D34nAn"
+  ]
+}

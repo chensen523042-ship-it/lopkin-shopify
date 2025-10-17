@@ -1,0 +1,289 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "heading_size": "medium",
+        "heading_decorative": false,
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "rich_text_MyMpp9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hLddgW": {
+          "type": "heading",
+          "settings": {
+            "heading": "NOSSO IMPACTO",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_hLddgW"
+      ],
+      "settings": {
+        "enable_full_width": true,
+        "color_scheme": "accent-2",
+        "texture_image": "shopify://shop_images/338155617_248869857496923_8788064421824466085_n.jpg",
+        "texture_alpha": 57,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "alignment_mobile": "center",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "margin_top": 0,
+        "margin_bottom": 20
+      }
+    },
+    "rich_text_pjJgd8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Pzx3Gx": {
+          "type": "heading",
+          "settings": {
+            "heading": "PARCEIROS DE CARIDADE",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_iWa6VB": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Na BestSelf, doamos uma parte de todos os nossos lucros para organizações cristãs em todo o mundo. Selecionamos cuidadosamente organizações e indivíduos que são respeitáveis, generosos e fazem tudo em nome de Jesus, para que você tenha certeza de que seu dinheiro será usado com grande propósito.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Pzx3Gx",
+        "text_iWa6VB"
+      ],
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "background-1",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "multicolumn_CU6aVW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JpGaDC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Semear.jpg",
+            "heading": "ABBA Brasil",
+            "description": "<p>atua em comunidades, ensinando crianças, alimentando famílias, compartilhando esperança e fé.</p>",
+            "button_label": "Saiba Mais",
+            "button_link": "https://abbabrasil.org.br/"
+          }
+        },
+        "column_mEcmXx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/cei-vila-nova-cachoeirinha-2022-scaled_d0dd15f2-e7c6-4e20-b4a7-50cac023bee4.jpg",
+            "heading": "AEB",
+            "description": "<p>promove o desenvolvimento humano integral garantindo os direitos à saúde, ao esporte...</p>",
+            "button_label": "Saiba Mais",
+            "button_link": "https://aeb-brasil.org.br/"
+          }
+        },
+        "column_dkmGHE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Asas-do-Socorro_3-1024x640.jpg",
+            "heading": "Asas do Socorro",
+            "description": "<p>desenvolve programas culturais, educacionais e de saúde, especialmente nas regiões mais...</p>",
+            "button_label": "Saiba Mais",
+            "button_link": "https://www.asasdesocorro.org.br/"
+          }
+        },
+        "column_enCQ7H": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BAIV1887.jpg",
+            "heading": "Visão Mundial",
+            "description": "<p>atua com foco nas crianças e adolescentes em situação de maior vulnerabilidade, buscando...</p>",
+            "button_label": "Saiba mais",
+            "button_link": "https://visaomundial.org.br/"
+          }
+        },
+        "column_f8eFKM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/cadi-home-faca-parte_b6a2cf09-0001-4e93-856a-8dc71ad6ae18.jpg",
+            "heading": "CADI Brasil",
+            "description": "<p>combate as situações de risco e vulnerabilidade social vivenciadas por crianças e adolescentes que...</p>",
+            "button_label": "Learn more",
+            "button_link": "https://cadi.org.br/"
+          }
+        }
+      },
+      "block_order": [
+        "column_JpGaDC",
+        "column_mEcmXx",
+        "column_dkmGHE",
+        "column_enCQ7H",
+        "column_f8eFKM"
+      ],
+      "settings": {
+        "show_section_header": false,
+        "heading": "",
+        "description": "",
+        "water_text": "",
+        "button_label": "",
+        "button_link": "",
+        "image_ratio": "square",
+        "alignment": "center",
+        "show_content_wrapper": true,
+        "color_scheme": "",
+        "columns_in_mobile": "1",
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "logo_list_6UERkW": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_dVWBGG": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/CFI_black-green.png",
+            "link": ""
+          }
+        },
+        "logo_dNzCW4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/0db4f5_03fc5384eda54ffa92fb02ec93145a9a_mv2.png",
+            "link": ""
+          }
+        },
+        "logo_9mMMQa": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/fdbc1a68-5e38-4ea2-b366-00c758a3a2d5-removebg-preview.png",
+            "link": ""
+          }
+        },
+        "logo_t3wbK4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/aeb-marca-2019.png",
+            "link": ""
+          }
+        },
+        "logo_k8NBFG": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/cropped-logo_VMB-01-1.webp",
+            "link": ""
+          }
+        },
+        "logo_XehcxT": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/logo-abba-oficial.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_dVWBGG",
+        "logo_dNzCW4",
+        "logo_9mMMQa",
+        "logo_t3wbK4",
+        "logo_k8NBFG",
+        "logo_XehcxT"
+      ],
+      "settings": {
+        "show_section_header": true,
+        "heading": "OUTROS PARCEIROS DE CARIDADE",
+        "description": "",
+        "water_text": "",
+        "button_label": "",
+        "button_link": "",
+        "enable_gray": true,
+        "enable_chaser_light": true,
+        "interval": 1,
+        "new_tab_open": true,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "quote_h9WNqV": {
+      "type": "quote",
+      "settings": {
+        "color_scheme": "",
+        "icon_color": "#088b5a",
+        "content": "O que se compadece do pobre empresta ao Senhor, que lhe retribuirá o seu benefício.",
+        "author_name": "Provérbios 19:17",
+        "author_role": "BÍBLIA SAGRADA",
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "featured_collection_XJdnDi": {
+      "type": "featured-collection",
+      "settings": {
+        "show_collection_image": true,
+        "collection_image_color_scheme": "accent-2",
+        "collection_image_position": "left",
+        "collection_image_opacity": 50,
+        "collection_title": "Comece a Retribuir",
+        "collection_title_size": "medium",
+        "collection_title_decorative": true,
+        "collection": "best-sellers",
+        "products_to_show": 10,
+        "enable_desktop_slider": true,
+        "show_nav_buttons": true,
+        "show_dots": false,
+        "card_size": "small",
+        "image_ratio": "square",
+        "show_content_wrapper": false,
+        "color_scheme": "",
+        "text_alignment": "center",
+        "enable_mobile_slider": true,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_MyMpp9",
+    "rich_text_pjJgd8",
+    "multicolumn_CU6aVW",
+    "logo_list_6UERkW",
+    "quote_h9WNqV",
+    "featured_collection_XJdnDi"
+  ]
+}

@@ -1,0 +1,407 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "heading_size": "medium",
+        "heading_decorative": false,
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "rich_text_HrwG6a": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GaaFKP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tecidos",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_EJMGEC": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Projetados por nossa equipe com intenção e cuidado, os tecidos da BestSelf são misturas personalizadas ultramacias, destinadas ao uso durante o dia todo e conforto de nível superior.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GaaFKP",
+        "text_EJMGEC"
+      ],
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "background-1",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "image_with_text_3Pbraf": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_azPEyb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tecido 100% Algodão Premium",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_hAB3Te": {
+          "type": "text",
+          "settings": {
+            "description": "<p>CAMISETAS</p><p>Malha de fibras naturais da mais alta qualidade. Nossa camiseta de algodão é macia ao toque, respirável e oferece a quantidade certa de elasticidade natural e conforto o dia todo - com um caimento sem esforço no corpo.</p><p><em><strong>Perfeito para:</strong></em><em> Montar looks facilmente, dias preguiçosos,<br/>atividades de baixo suor, dias passados em casa (Trabalho remoto).</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_azPEyb",
+        "text_hAB3Te"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/343644875_1401917497309128_4279748193463889377_n_7eb3f53a-f03d-440c-a6f0-244ec031c7cc.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "image_first": true,
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_alignment_mobile": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "text_with_icons_PtdiBA": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon_text_fWJqXg": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Moisture-Wicking_f39e8cb8-f677-4.svg",
+            "heading": "Alta Dispersão de Umidade",
+            "description": ""
+          }
+        },
+        "icon_text_CC3YYa": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Natural-Fiber-Based_f3b95746-a44.svg",
+            "heading": "100% Algodão Premium",
+            "description": ""
+          }
+        },
+        "icon_text_E9BhfH": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/4-Way-Stretch_25bfe90b-5034-4540.svg",
+            "heading": "Elasticidade Natural",
+            "description": ""
+          }
+        },
+        "icon_text_XXfjbz": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Durable_67dbc107-a416-4666-96fb.svg",
+            "heading": "Durável",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_text_fWJqXg",
+        "icon_text_CC3YYa",
+        "icon_text_E9BhfH",
+        "icon_text_XXfjbz"
+      ],
+      "settings": {
+        "show_section_header": false,
+        "heading": "Text with icons",
+        "description": "",
+        "color_scheme": "",
+        "columns_on_desktop": 4,
+        "item_alignment": "center",
+        "icon_size": "small",
+        "columns_on_mobile": "2",
+        "hide_description": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_FK4Ywg": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_weYdKj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mistura de Algodão Premium",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_nDiAzM": {
+          "type": "text",
+          "settings": {
+            "description": "<p>MOLETONS | CALÇAS | SHORTS</p><p>Nossa mistura personalizada de lã de algodão é a combinação perfeita de algodão natural e poliéster de alta qualidade. Ambos estão interligados para proporcionar um nível superior de conforto, suavidade e resistência a amassados - com um forro de textura escovada.</p><p><em><strong>Perfeito para: </strong></em><em>Saídas para tomar café, momentos de oração aconchegantes, conforto casual, momentos de relaxamento no sofá.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_weYdKj",
+        "text_nDiAzM"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/355685014_588203523398702_5679657848021837756_n.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "image_first": false,
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_alignment_mobile": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "text_with_icons_pPq9Ep": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon_text_cWntB7": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Breathable_43c4402f-c176-4fe5-a6.svg",
+            "heading": "Respirável",
+            "description": ""
+          }
+        },
+        "icon_text_GAwnKy": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Anti-Pilling_2e58819a-c0d0-44d6.svg",
+            "heading": "Anti-bolinhas",
+            "description": ""
+          }
+        },
+        "icon_text_BFVmFW": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Ultra-Soft_d2ddd0d7-c39f-42f4-94.svg",
+            "heading": "Ultra Macio",
+            "description": ""
+          }
+        },
+        "icon_text_WqAy8E": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "image": "shopify://shop_images/Durable_67dbc107-a416-4666-96fb.svg",
+            "heading": "Durável",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_text_cWntB7",
+        "icon_text_GAwnKy",
+        "icon_text_BFVmFW",
+        "icon_text_WqAy8E"
+      ],
+      "settings": {
+        "show_section_header": false,
+        "heading": "Text with icons",
+        "description": "",
+        "color_scheme": "",
+        "columns_on_desktop": 4,
+        "item_alignment": "center",
+        "icon_size": "small",
+        "columns_on_mobile": "2",
+        "hide_description": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "carousal_PHKmpf": {
+      "type": "carousal",
+      "blocks": {
+        "slide_QNQeQ9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Camiseta.jpg",
+            "image_overlay_opacity": 10,
+            "color_scheme": "",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center",
+            "caption": "",
+            "heading": "",
+            "heading_size": "large",
+            "heading_decorative": false,
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true,
+            "mobile_content_position": "middle-center",
+            "mobile_content_alignment": "center"
+          }
+        },
+        "slide_FTwppV": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Moletom-Gola-Careca-BestSelf.jpg",
+            "image_overlay_opacity": 10,
+            "color_scheme": "",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center",
+            "caption": "",
+            "heading": "",
+            "heading_size": "large",
+            "heading_decorative": false,
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true,
+            "mobile_content_position": "middle-center",
+            "mobile_content_alignment": "center"
+          }
+        },
+        "slide_RFhC8p": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Moletom-BestSelf.jpg",
+            "image_overlay_opacity": 10,
+            "color_scheme": "",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center",
+            "caption": "",
+            "heading": "",
+            "heading_size": "large",
+            "heading_decorative": false,
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true,
+            "mobile_content_position": "middle-center",
+            "mobile_content_alignment": "center"
+          }
+        },
+        "slide_eQeGHX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Calca-de-Moletom.jpg",
+            "image_overlay_opacity": 10,
+            "color_scheme": "",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center",
+            "caption": "",
+            "heading": "",
+            "heading_size": "large",
+            "heading_decorative": false,
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true,
+            "mobile_content_position": "middle-center",
+            "mobile_content_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_QNQeQ9",
+        "slide_FTwppV",
+        "slide_RFhC8p",
+        "slide_eQeGHX"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.carousal {width: 750px; }}"
+      ],
+      "settings": {
+        "enable_full_width": false,
+        "slide_height": "adapt",
+        "enable_adapter_transparent_header": false,
+        "auto_rotate": true,
+        "change_slides_speed": 6,
+        "show_nav_buttons": true,
+        "show_page_dots": true,
+        "controller_color": "#ffffff",
+        "margin_top": 0,
+        "margin_bottom": 80,
+        "if_as_main_area": false
+      }
+    },
+    "featured_collection_WntT4f": {
+      "type": "featured-collection",
+      "settings": {
+        "show_collection_image": true,
+        "collection_image_color_scheme": "accent-2",
+        "collection_image_position": "left",
+        "collection_image_opacity": 50,
+        "collection_title": "Descubra Novos Estilos",
+        "collection_title_size": "medium",
+        "collection_title_decorative": true,
+        "collection": "best-sellers",
+        "products_to_show": 10,
+        "enable_desktop_slider": true,
+        "show_nav_buttons": true,
+        "show_dots": false,
+        "card_size": "small",
+        "image_ratio": "square",
+        "show_content_wrapper": false,
+        "color_scheme": "",
+        "text_alignment": "center",
+        "enable_mobile_slider": true,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_HrwG6a",
+    "image_with_text_3Pbraf",
+    "text_with_icons_PtdiBA",
+    "image_with_text_FK4Ywg",
+    "text_with_icons_pPq9Ep",
+    "carousal_PHKmpf",
+    "featured_collection_WntT4f"
+  ]
+}

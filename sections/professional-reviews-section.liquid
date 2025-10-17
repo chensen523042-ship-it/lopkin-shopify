@@ -1,0 +1,492 @@
+{% comment %}
+  Professional Reviews / 专业评价区块（按钮在进度条下方；内联SVG；MP4优先且稳健播放）
+  - 手机端：Scroll Snap + 惯性滚动，整卡吸附
+  - 桌面端：按钮/滚轮横向滚动也按“整卡”对齐
+{% endcomment %}
+
+<section id="pro-reviews-{{ section.id }}"
+  class="pro-reviews"
+  style="
+    --bg: {{ section.settings.bg | default: '#ffffff' }};
+    --txt: {{ section.settings.txt | default: '#111111' }};
+    --muted: {{ section.settings.muted | default: '#666666' }};
+    --accent: {{ section.settings.accent | default: '#ff4d00' }};
+    --card-bg: {{ section.settings.card_bg | default: '#ffffff' }};
+    --radius: 16px;
+    --gap: 28px;
+    --pad-x: {{ section.settings.pad_x | default: 24 }}px;
+    --pad-y: {{ section.settings.pad_y | default: 24 }}px;
+  "
+>
+  <div class="pr-container">
+    {% if section.settings.heading != blank %}
+      <h2 class="pr-title">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="pr-viewport">
+      <div class="pr-track" role="region" aria-label="{{ section.settings.heading | escape }}">
+        {% for block in section.blocks %}
+          {% assign cover = block.settings.cover %}
+          {% assign avatar = block.settings.avatar %}
+          {% assign title = block.settings.title %}
+          {% assign desc = block.settings.desc %}
+          {% assign nickname = block.settings.nickname %}
+          {% assign channel_url = block.settings.channel_url %}
+
+          {% assign vtype = block.settings.video_type %}
+          {% assign yid = block.settings.youtube_id %}
+          {% assign vid = block.settings.vimeo_id %}
+          {% assign mp4 = block.settings.mp4_url %}
+          {% assign poster = block.settings.mp4_poster %}
+
+          <article class="pr-card" {{ block.shopify_attributes }}>
+            <button class="pr-cover"
+              type="button"
+              aria-label="Play video: {{ title | escape }}"
+              data-video-type="{{ vtype | downcase }}"
+              data-youtube-id="{{ yid | escape }}"
+              data-vimeo-id="{{ vid | escape }}"
+              data-mp4="{{ mp4 | escape }}"
+              data-poster="{% if poster != blank %}{{ poster | image_url: width: 1600 | escape }}{% endif %}"
+              data-has-poster="{% if poster != blank %}true{% else %}false{% endif %}"
+            >
+              {% if cover != blank %}
+                <img
+                  loading="lazy"
+                  src="{{ cover | image_url: width: 960 }}"
+                  srcset="
+                    {{ cover | image_url: width: 480 }} 480w,
+                    {{ cover | image_url: width: 720 }} 720w,
+                    {{ cover | image_url: width: 960 }} 960w,
+                    {{ cover | image_url: width: 1200 }} 1200w
+                  "
+                  sizes="(max-width: 749px) 100vw, (max-width: 1199px) 50vw, 25vw"
+                  alt="{{ title | escape }}"
+                >
+              {% elsif mp4 != blank %}
+                <!-- MP4视频自动生成缩略图 -->
+                <video
+                  class="pr-cover__video"
+                  preload="metadata"
+                  muted
+                  playsinline
+                  data-src="{{ mp4 | escape }}"
+                >
+                  <source src="{{ mp4 | escape }}" type="video/mp4">
+                </video>
+              {% else %}
+                <div class="pr-cover__placeholder" aria-hidden="true"></div>
+              {% endif %}
+              <span class="pr-play" aria-hidden="true"></span>
+            </button>
+
+            {% if title != blank %}
+              <h3 class="pr-card__title">{{ title }}</h3>
+            {% endif %}
+            {% if desc != blank %}
+              <p class="pr-card__desc">{{ desc }}</p>
+            {% endif %}
+
+            <div class="pr-author">
+              {% if avatar != blank %}
+                <img class="pr-author__avatar" src="{{ avatar | image_url: width: 120 }}" alt="" loading="lazy">
+              {% else %}
+                <span class="pr-author__avatar pr-author__avatar--ph" aria-hidden="true"></span>
+              {% endif %}
+
+              {% if nickname != blank %}
+                {% if channel_url != blank %}
+                  <a class="pr-author__name" href="{{ channel_url }}" target="_blank" rel="noopener noreferrer">{{ nickname }}</a>
+                {% else %}
+                  <span class="pr-author__name">{{ nickname }}</span>
+                {% endif %}
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+
+      <!-- 进度条 -->
+      <div class="pr-progress" aria-hidden="true">
+        <span class="pr-progress__bar"></span>
+      </div>
+
+      <!-- 切换按钮：进度条下方（内联SVG） -->
+      <div class="pr-nav">
+        <button class="pr-btn pr-btn--prev" aria-label="Previous">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="pr-btn pr-btn--next" aria-label="Next">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 弹层 -->
+  <div class="pr-modal" hidden>
+    <div class="pr-modal__backdrop" data-close></div>
+    <div class="pr-modal__dialog" role="dialog" aria-modal="true" aria-label="Video player">
+      <button class="pr-modal__close" type="button" aria-label="Close" data-close>✕</button>
+      <div class="pr-modal__inner" data-player></div>
+    </div>
+  </div>
+
+  <style>
+    #pro-reviews-{{ section.id }}{ background: var(--bg); color: var(--txt); padding: var(--pad-y) var(--pad-x); }
+    .pr-container { max-width: {{ section.settings.maxw | default: 1400 }}px; margin: 0 auto; }
+    .pr-title { font-size: clamp(22px, 2.6vw, 40px); font-weight: 800; margin: 10px 0 24px; letter-spacing: .5px; text-align: center; }
+    .pr-viewport { position: relative; }
+
+    /* 轨道：Scroll Snap + 惯性 + 隐藏滚动条 */
+    .pr-track{
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: calc((100% - (var(--gap) * (var(--per-desktop) - 1))) / var(--per-desktop));
+      gap: var(--gap);
+      overflow-x: auto;
+      overflow-y: visible;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 22px;
+      scrollbar-width: none; /* Firefox */
+    }
+    .pr-track::-webkit-scrollbar{ display:none; } /* WebKit */
+
+    #pro-reviews-{{ section.id }} .pr-track{ --per-desktop: {{ section.settings.per_desktop | default: 4 }}; }
+    @media (max-width: 1199px){
+      #pro-reviews-{{ section.id }} .pr-track{
+        grid-auto-columns: calc((100% - (var(--gap) * ({{ section.settings.per_tablet | default: 2 }} - 1))) / {{ section.settings.per_tablet | default: 2 }});
+      }
+    }
+    @media (max-width: 749px){
+      #pro-reviews-{{ section.id }} .pr-track{
+        grid-auto-columns: 100%;
+      }
+    }
+
+    .pr-card{
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      scroll-snap-align: start;
+      scroll-margin-inline: 0;
+    }
+    .pr-cover{
+      position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; border-radius: var(--radius);
+      display: block; padding: 0; border: 0; background: #f4f4f4; cursor: pointer;
+    }
+    .pr-cover img{ width:100%; height:100%; object-fit: cover; display:block; }
+    .pr-cover__video{ width:100%; height:100%; object-fit: cover; display:block; }
+    .pr-cover__placeholder{ width:100%; height:100%; background:#e9e9e9; }
+
+    .pr-play{
+      position: absolute; inset: 0; margin: auto; width: 84px; height: 84px; border-radius: 999px;
+      background:#ea4335; box-shadow: 0 8px 20px rgba(0,0,0,.25); display:grid; place-items:center;
+    }
+    .pr-play::before{ content:""; margin-left:6px; border-style:solid; border-width:16px 0 16px 26px; border-color:transparent transparent transparent #fff; }
+
+    .pr-card__title{ font-size: clamp(16px, 1.4vw, 22px); font-weight:700; margin:14px 8px 8px; line-height:1.25; }
+    .pr-card__desc{
+      color: var(--txt); opacity:.85; margin:0 8px 12px; line-height:1.5;
+      display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+    }
+    .pr-author{ display:flex; align-items:center; gap:10px; padding:0 8px 8px; }
+    .pr-author__avatar{ width:40px; height:40px; border-radius:50%; object-fit:cover; display:block; }
+    .pr-author__avatar--ph{ width:40px; height:40px; border-radius:50%; background:#ddd; display:inline-block; }
+    .pr-author__name{ font-weight:600; color:var(--txt); text-decoration:none; }
+    .pr-author__name:hover{ text-decoration:underline; }
+
+    .pr-progress{ position: relative; height: 6px; background: rgba(0,0,0,.06); border-radius:999px; overflow:hidden; }
+    .pr-progress__bar{ position:absolute; left:0; top:0; bottom:0; width:0%; background: var(--accent); border-radius:999px; }
+
+    .pr-nav{ position: static; margin-top: 14px; display: flex; gap: 12px; justify-content: flex-end; }
+    .pr-btn{
+      width: 46px; height: 46px; border-radius: 999px; border: 1px solid rgba(0,0,0,.1);
+      background: #ffffff; color: #111; display:grid; place-items:center; cursor:pointer;
+      transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease; box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    }
+    .pr-btn:hover{ transform: translateY(-1px); }
+    .pr-btn:disabled{ opacity:.45; cursor:not-allowed; }
+
+    /* 弹层 + 稳定播放器容器（contain：竖屏不裁切）*/
+    .pr-modal[hidden]{ display:none; }
+    .pr-modal{ position: fixed; inset: 0; z-index: 60; }
+    .pr-modal__backdrop{ position:absolute; inset:0; background: rgba(0,0,0,.8); }
+    .pr-modal__dialog{ position:absolute; inset: 10% 8%; background:#000; border-radius: 16px; overflow:hidden; display: flex; flex-direction: column; }
+    .pr-modal__close{
+      position:absolute; right:16px; top:16px; z-index:10; border:0; background: rgba(0,0,0,.7); color: white;
+      width:40px; height:40px; border-radius:999px; cursor:pointer; font-weight:700; font-size: 18px; display:flex; align-items:center; justify-content:center;
+    }
+    .pr-modal__inner{ width:100%; height:100%; display:flex; align-items:center; justify-content:center; }
+
+    .pr-player{ width: min(100%, 1200px); aspect-ratio: 16 / 9; background:#000; border-radius: 12px; overflow:hidden; }
+    .pr-player > *{ width:100%; height:100%; display:block; object-fit: contain; border:0; }
+
+    @media (max-width: 768px){
+      .pr-modal__dialog { inset: 5% 4%; }
+      .pr-modal__close { right: 12px; top: 12px; width: 36px; height: 36px; font-size: 16px; }
+    }
+  </style>
+
+  <script>
+    (function(){
+      const root = document.getElementById('pro-reviews-{{ section.id }}');
+      if(!root) return;
+
+      const track = root.querySelector('.pr-track');
+      const btnPrev = root.querySelector('.pr-btn--prev');
+      const btnNext = root.querySelector('.pr-btn--next');
+      const progress = root.querySelector('.pr-progress__bar');
+
+      // === 计算步进（整卡宽度 + gap）===
+      function getGap(){
+        return parseFloat(getComputedStyle(track).gap) || 0;
+      }
+      function getStep(){
+        const first = track.querySelector('.pr-card');
+        if(!first) return track.clientWidth;
+        return first.getBoundingClientRect().width + getGap();
+      }
+      function getCount(){
+        return track.querySelectorAll('.pr-card').length || 0;
+      }
+      function getVisible(){
+        const first = track.querySelector('.pr-card');
+        if(!first) return 1;
+        const w = first.getBoundingClientRect().width + getGap();
+        return Math.max(1, Math.round((track.clientWidth + getGap()) / w));
+      }
+      function getMaxIndex(){
+        return Math.max(0, getCount() - getVisible());
+      }
+      function getIndex(){
+        const idx = Math.round(track.scrollLeft / getStep());
+        return Math.min(Math.max(0, idx), getMaxIndex());
+      }
+      function scrollToIndex(i){
+        const step = getStep();
+        track.scrollTo({ left: i * step, behavior: 'smooth' });
+      }
+      function scrollByCard(dir){
+        const i = getIndex() + dir;
+        scrollToIndex(Math.min(Math.max(0, i), getMaxIndex()));
+      }
+
+      btnPrev.addEventListener('click', ()=> scrollByCard(-1));
+      btnNext.addEventListener('click', ()=> scrollByCard(1));
+
+      // 横向滚轮（触控板）→ 整卡推进
+      track.addEventListener('wheel', (e)=>{
+        if(Math.abs(e.deltaX) < Math.abs(e.deltaY)) return; // 只处理横向
+        e.preventDefault();
+        scrollByCard(e.deltaX > 0 ? 1 : -1);
+      }, { passive:false });
+
+      // 进度条 & 按钮状态
+      function updateUI(){
+        const maxIndex = getMaxIndex();
+        const idx = getIndex();
+        const ratio = maxIndex ? (idx / maxIndex) : 0;
+        progress.style.width = (ratio * 100) + '%';
+        btnPrev.disabled = idx <= 0;
+        btnNext.disabled = idx >= maxIndex;
+      }
+
+      // 滚动结束对齐（支持 scrollend，降级使用节流定时器）
+      let snapTimer = 0, raf = 0;
+      function onScroll(){
+        if(raf) return;
+        raf = requestAnimationFrame(()=>{ raf = 0; updateUI(); });
+        if(snapTimer) clearTimeout(snapTimer);
+        // 停止 120ms 认为滚动结束，吸附至最近卡片
+        snapTimer = setTimeout(()=>{ scrollToIndex( getIndex() ); }, 120);
+      }
+
+      track.addEventListener('scroll', onScroll, { passive:true });
+      if('onscrollend' in track){
+        track.addEventListener('scrollend', ()=> scrollToIndex( getIndex() ), { passive:true });
+      }
+
+      window.addEventListener('resize', ()=>{
+        // 重新对齐到当前索引，避免断层
+        scrollToIndex(getIndex());
+        updateUI();
+      });
+
+      // 初始化
+      requestAnimationFrame(()=>{ scrollToIndex(0); updateUI(); });
+
+      // 弹层
+      const modal = root.querySelector('.pr-modal');
+      const inner = modal.querySelector('[data-player]');
+      function closeModal(){ modal.hidden = true; inner.innerHTML = ''; document.body.style.overflow = ''; }
+      function openModal(){ modal.hidden = false; document.body.style.overflow = 'hidden'; }
+      modal.addEventListener('click', e => { if(e.target.hasAttribute('data-close')) closeModal(); });
+      document.addEventListener('keydown', e => { if(!modal.hidden && e.key === 'Escape') closeModal(); });
+
+      // 播放（MP4 优先）
+      root.querySelectorAll('.pr-cover').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          const type   = (btn.dataset.videoType || '').toLowerCase();
+          const yid    = btn.dataset.youtubeId;
+          const vid    = btn.dataset.vimeoId;
+          const mp4    = btn.dataset.mp4;
+          const poster = btn.dataset.poster;
+
+          const box = document.createElement('div');
+          box.className = 'pr-player';
+          let node = null;
+
+          if (mp4) {
+            node = document.createElement('video');
+            {% if section.settings.autoplay %} node.setAttribute('autoplay',''); {% endif %}
+            {% if section.settings.video_muted %} node.muted = true; {% endif %}
+            {% if section.settings.loop %} node.setAttribute('loop',''); {% endif %}
+            {% if section.settings.controls %} node.setAttribute('controls',''); {% endif %}
+            node.setAttribute('playsinline','');
+            node.setAttribute('preload','metadata');
+            if(poster) node.setAttribute('poster', poster);
+            const src = document.createElement('source');
+            src.src = mp4; src.type = 'video/mp4';
+            node.appendChild(src);
+          } else if (type === 'youtube' && yid) {
+            node = document.createElement('iframe');
+            node.src = `https://www.youtube.com/embed/${yid}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+            node.allow = 'autoplay; encrypted-media; picture-in-picture';
+            node.allowFullscreen = true;
+          } else if (type === 'vimeo' && vid) {
+            node = document.createElement('iframe');
+            node.src = `https://player.vimeo.com/video/${vid}?autoplay=1&title=0&byline=0&portrait=0`;
+            node.allow = 'autoplay; fullscreen; picture-in-picture';
+            node.allowFullscreen = true;
+          }
+
+          if (node) {
+            inner.innerHTML = '';
+            box.appendChild(node);
+            inner.appendChild(box);
+            openModal();
+          } else {
+            console.warn('[pro-reviews] 无可用视频源', {type, yid, vid, mp4});
+          }
+        });
+      });
+
+      // 为MP4视频生成缩略图（封面）
+      root.querySelectorAll('.pr-cover__video').forEach(video => {
+        const src = video.dataset.src;
+        if (src) {
+          video.src = src;
+          video.addEventListener('loadedmetadata', function() { this.currentTime = 0.1; }, { once:true });
+          video.addEventListener('seeked', function(){ /* thumb ok */ }, { once:true });
+        }
+      });
+    })();
+  </script>
+
+  {% schema %}
+  {
+    "name": "Professional Reviews",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      { "type": "text", "id": "heading", "label": "标题", "default": "Professional Reviews" },
+      { "type": "range", "id": "maxw", "label": "最大宽度(px)", "min": 900, "max": 1600, "step": 10, "default": 1400 },
+      { "type": "range", "id": "pad_x", "label": "左右内边距(px)", "min": 0, "max": 60, "step": 2, "default": 24 },
+      { "type": "range", "id": "pad_y", "label": "上下内边距(px)", "min": 0, "max": 80, "step": 2, "default": 24 },
+
+      { "type": "color", "id": "bg", "label": "背景色", "default": "#ffffff" },
+      { "type": "color", "id": "txt", "label": "文字颜色", "default": "#111111" },
+      { "type": "color", "id": "muted", "label": "次级文字", "default": "#666666" },
+      { "type": "color", "id": "accent", "label": "强调色（进度条）", "default": "#ff4d00" },
+      { "type": "color", "id": "card_bg", "label": "卡片背景色", "default": "#ffffff" },
+
+      { "type": "range", "id": "per_desktop", "label": "桌面端每屏显示数量", "min": 2, "max": 6, "step": 1, "default": 4 },
+      { "type": "range", "id": "per_tablet", "label": "平板端每屏显示数量", "min": 1, "max": 3, "step": 1, "default": 2 },
+
+      { "type": "header", "content": "弹层播放选项（仅 MP4 生效或用于 iframe 自动播放参数）" },
+      { "type": "checkbox", "id": "autoplay", "label": "自动播放", "default": true },
+      { "type": "checkbox", "id": "video_muted", "label": "静音（自动播放建议开启）", "default": true },
+      { "type": "checkbox", "id": "loop", "label": "循环播放", "default": false },
+      { "type": "checkbox", "id": "controls", "label": "显示控制条（仅 MP4）", "default": true }
+    ],
+    "blocks": [
+      {
+        "type": "review",
+        "name": "单个评价卡片",
+        "settings": [
+          { "type": "image_picker", "id": "cover", "label": "封面图" },
+
+          { "type": "select", "id": "video_type", "label": "视频类型", "default": "youtube",
+            "options": [
+              { "value": "youtube", "label": "YouTube" },
+              { "value": "vimeo", "label": "Vimeo" },
+              { "value": "mp4", "label": "MP4 直链" }
+            ]
+          },
+          { "type": "text", "id": "youtube_id", "label": "YouTube 视频ID（如 dQw4w9WgXcQ）" },
+          { "type": "text", "id": "vimeo_id", "label": "Vimeo 视频ID（如 123456789）" },
+          { "type": "url", "id": "mp4_url", "label": "MP4 视频地址（优先使用）" },
+          { "type": "image_picker", "id": "mp4_poster", "label": "MP4 封面（可选）" },
+
+          { "type": "text", "id": "title", "label": "标题", "default": "A full carbon eBike..." },
+          { "type": "textarea", "id": "desc", "label": "描述", "default": "It's refreshing to ride an ebike that doesn't feel like you're lugging around a gigantic beast." },
+
+          { "type": "image_picker", "id": "avatar", "label": "作者头像" },
+          { "type": "text", "id": "nickname", "label": "作者昵称", "default": "Electric Revolution" },
+          { "type": "url", "id": "channel_url", "label": "作者/频道链接（可选）" }
+        ]
+      }
+    ],
+    "max_blocks": 20,
+    "presets": [
+      {
+        "name": "Professional Reviews",
+        "blocks": [
+          { "type": "review",
+            "settings": {
+              "title": "Crafted by Carbon Fiber Masters...",
+              "desc": "Discover why the world's best athletes trust Urtopia.",
+              "nickname": "Urtopia Ebike",
+              "video_type": "youtube",
+              "youtube_id": "dQw4w9WgXcQ"
+            }
+          },
+          { "type": "review",
+            "settings": {
+              "title": "SUPER LIGHT! Worth it?",
+              "desc": "It's refreshing to ride an ebike that doesn't feel heavy.",
+              "nickname": "Hello Road",
+              "video_type": "youtube",
+              "youtube_id": "oHg5SJYRHA0"
+            }
+          },
+          { "type": "review",
+            "settings": {
+              "title": "Voice nav + anti-theft + GPS rides",
+              "desc": "A full carbon eBike with voice navigation and GPS-guided rides.",
+              "nickname": "Electric Revolution",
+              "video_type": "vimeo",
+              "vimeo_id": "76979871"
+            }
+          },
+          { "type": "review",
+            "settings": {
+              "title": "Will it…?",
+              "desc": "Comfort seriously—top-class.",
+              "nickname": "Electroheads",
+              "video_type": "mp4",
+              "mp4_url": "https://cdn.shopify.com/s/files/1/0000/0001/files/sample.mp4"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  {% endschema %}
+</section>

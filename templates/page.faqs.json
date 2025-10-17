@@ -1,0 +1,364 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "heading_size": "medium",
+        "heading_decorative": false,
+        "limit_description_height": false,
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "rich_text_h9EnVJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4B3yYU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Perguntas Frequentes",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_WmDyie": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Suas dúvidas respondidas</p>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4B3yYU",
+        "text_WmDyie"
+      ],
+      "settings": {
+        "enable_full_width": true,
+        "color_scheme": "background-2",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "multicolumn_iyH4Rb": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_UxBgHM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/return.svg",
+            "heading": "Política de Devolução",
+            "description": "",
+            "button_label": "Saiba Mais",
+            "button_link": "shopify://policies/shipping-policy"
+          }
+        },
+        "column_HBTnrE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/refund.svg",
+            "heading": "Reembolsos",
+            "description": "",
+            "button_label": "Saiba Mais",
+            "button_link": "shopify://policies/refund-policy"
+          }
+        },
+        "column_GiemAy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/policy.svg",
+            "heading": "Privacidade & Segurança",
+            "description": "",
+            "button_label": "Saiba Mais",
+            "button_link": "shopify://policies/privacy-policy"
+          }
+        },
+        "column_CyLWKp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/size.svg",
+            "heading": "Guia de Tamanhos",
+            "description": "",
+            "button_label": "Saiba Mais",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_UxBgHM",
+        "column_HBTnrE",
+        "column_GiemAy",
+        "column_CyLWKp"
+      ],
+      "custom_css": [
+        ".card-wrapper .card .card-inner {width: 100px;}",
+        ".card-wrapper .card {/* text-align: center; */ align-items: center;}",
+        ".card-wrapper .card.card-content--wrapper .card-content {width: 100%;}"
+      ],
+      "settings": {
+        "show_section_header": false,
+        "heading": "Multicolumn",
+        "description": "",
+        "water_text": "",
+        "button_label": "",
+        "button_link": "",
+        "image_ratio": "adapt",
+        "alignment": "center",
+        "show_content_wrapper": true,
+        "color_scheme": "",
+        "keep_button_aligned": true,
+        "columns_in_mobile": "2",
+        "margin_top": 0,
+        "margin_bottom": 20
+      }
+    },
+    "rich_text_RTPKJy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zT9KRp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Precisa de Ajuda?",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_8KEgNy": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Se não encontrar o que precisa, converse conosco pelo chat ou envie uma email para: oi@bestself.com.br</p>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_zT9KRp",
+        "text_8KEgNy"
+      ],
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "background-1",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 20
+      }
+    },
+    "faq_AYYX6d": {
+      "type": "faq",
+      "blocks": {
+        "category_title_3VzM9t": {
+          "type": "category_title",
+          "settings": {
+            "heading": "Segurança & Pagamento"
+          }
+        },
+        "faq_item_RUr7PV": {
+          "type": "faq_item",
+          "settings": {
+            "question": "É seguro comprar na BestSelf?",
+            "answer": "<p>Sim, é simples constatar a garantia da sua compra:</p><ol><li>possuímos CNPJ ativo e sede comercial.</li><li>temos contrato com o Melhor Envio (uma das maiores empresas de logística do Brasil), para garantir a segurança nos envios;</li><li>somos ativos na rede social Instagram e lá você encontra o feedback de nossos clientes;</li><li>temos diversos canais de atendimento incluindo telefone (WhatsApp), e-mail e redes sociais;</li><li>temos segurança total contra hackers, seus dados estão 100% protegidos;</li><li>não temos acesso aos dados do seu cartão, possuímos checkout integrado com o Appmax que é extremamente confiável;</li></ol><p></p><p>Além disso, nossos servidores utilizam o Secure Socket Layer (SSL), de 256 bits, que é o melhor sistema disponível para transações comerciais seguras na internet. Ele utiliza o procedimento de criptografar (codificar) todas as informações digitadas durante a navegação, de modo que não possam ser lidas ou alteradas por terceiros enquanto estão transitando pela Internet. É o mesmo tipo de segurança usada pela maioria dos bancos brasileiros.</p><p>Começamos nossas atividades em 2020 com o propósito de mudar a forma como expressamos nossa fé no Brasil. Ao comprar em nossa loja garantimos que você receberá produtos de altíssima qualidade, feitos à mão com muito carinho e amor. Garantimos também que se você não gostar dos produtos adquiridos em nossa loja você poderá devolvê-los, desde que não tenham sido usados e estejam em sua embalagem, acompanhados de todos os itens que você recebeu. Consulte nossa política de <a><span style=\"text-decoration:underline\">envios e devoluções</span></a> para saber mais.</p><p>Você também pode adquirir nossos produtos em nossa loja disponível no Mercado Livre acessando o seguinte endereço da web: <a><span style=\"text-decoration:underline\">https://lista.mercadolivre.com.br/_CustId_712727021</span></a>.</p><p>Devido às políticas de venda do Mercado Livre, que cobra tarifas de venda e envio gratuito, você encontrará produtos mais caros que em nosso site, porém, terá todas as garantias de envio, troca e reclamações mediadas pela equipe do Mercado Livre.</p>"
+          }
+        },
+        "faq_item_yhTPXY": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Quais formas de pagamento posso utilizar para realizar minha compra?",
+            "answer": "<p>​Dispomos dos seguintes meios de pagamento: PIX, Visa, Mastercard, American Express, JCB, Discover, Diners Club, Elo, Hypercard. Temos opções de parcelamento em até 12 vezes no cartão de crédito.</p>"
+          }
+        },
+        "category_title_JPj4Tr": {
+          "type": "category_title",
+          "settings": {
+            "heading": "Devolução, Troca & Rastreamento"
+          }
+        },
+        "faq_item_mDiiX3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Como faço para devolver ou trocar algo?",
+            "answer": "<p>Verifique novamente a seção “mais detalhes” na página do produto que você comprou para confirmar se seus itens são ou não elegíveis para troca. Se o seu item tiver uma etiqueta BS, não a remova até ter certeza de que está satisfeito com o ajuste do seu item, ou sua devolução será anulada.</p><p>Se pretender devolver ou trocar um artigo, faça-o aqui: Trocas e Devoluções.</p><p>Existem algumas exceções de devolução: se sua pulseira ou acessório quebrar dentro de 7 dias após a compra, enviaremos um novo com prazer com base na disponibilidade de estoque, sem necessidade de devolvê-lo para nós. Se o seu item estiver danificado na entrega, não há necessidade de devolver o item danificado também. Basta entrar em contato conosco em <a><span style=\"text-decoration:underline\">retorno@bestself.com.br</span></a> com fotos/mais informações.</p><p>Observação: seu retorno geralmente será processado dentro de 1-2 semanas. Aguarde até 10 dias úteis para que os reembolsos sejam recebidos assim que a devolução for processada.</p>"
+          }
+        },
+        "faq_item_LiFCbn": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Como posso rastrear meu pedido?",
+            "answer": "<p>Se o seu pedido contiver apenas adesivos (Assinaturas do Sticker Club, Pacotes de adesivos misteriosos e adesivos individuais), não forneceremos informações de rastreamento, pois eles são enviados por meio de um envelope. Se você não receber seu pedido dentro de 2 semanas após a realização, entre em contato com <a><span style=\"text-decoration:underline\">pedido@bestself.com.br</span></a> e estaremos aqui para ajudar.</p><p>Todos os outros pedidos serão enviados dentro de 48 horas após serem feitos e você receberá uma confirmação de envio em seu e-mail com as informações de rastreamento.</p>"
+          }
+        },
+        "faq_item_RMiTCc": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Se eu esquecer de adicionar um código de cupom ao meu pedido, o que posso fazer?",
+            "answer": "<p>Nada demais! Basta enviar uma solicitação para adicionar um código de cupom <a><span style=\"text-decoration:underline\">aqui</span></a>. Certifique-se de incluir o número do seu pedido, nome de entrega, o endereço de e-mail usado para fazer o pedido e o código do cupom que você deseja aplicar.</p><p>Atenção: se já se passaram mais de 24 horas desde que você fez o pedido, não poderemos adicionar um código de cupom à sua compra.</p>"
+          }
+        },
+        "category_title_TgAEKy": {
+          "type": "category_title",
+          "settings": {
+            "heading": "Checkout, Personalização & Compras Internacionais"
+          }
+        },
+        "faq_item_FAWDCy": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Problemas de checkout",
+            "answer": "<p>Está com problemas técnicos no check-out? De acordo com nossa experiência, os problemas de checkout geralmente estão relacionados ao navegador da Web que está sendo usado. Portanto, se você estiver tendo algumas dificuldades técnicas, o primeiro passo é atualizar para a versão mais recente de um dos seguintes navegadores:</p><p>Google Chrome<br/>Microsoft Edge<br/>Mozilla Firefox<br/>Apple Safari</p><p><br/>Observação: não recomendamos o uso do Internet Explorer neste momento, pois ele tende a entrar em conflito com os comportamentos HTML5 e JavaScript usados por nosso site.</p><p>Se você ainda tiver problemas depois de usar um navegador diferente e atualizar para a versão mais recente, tente algumas destas etapas:</p><p>Acesse nosso site usando o modo anônimo do seu navegador.<br/>Limpe o cache e os cookies do seu navegador.<br/>Desative quaisquer complementos ou extensões que possam estar em execução.<br/>Certifique-se de que o Java foi atualizado para a versão mais recente, que está disponível aqui.</p><p><br/>Se você precisar de ajuda para executar qualquer uma das etapas de solução de problemas acima, entre em contato conosco <a><span style=\"text-decoration:underline\">diretamente aqui</span></a>.</p>"
+          }
+        },
+        "faq_item_KyPWGk": {
+          "type": "faq_item",
+          "settings": {
+            "question": "A BestSelf pode criar roupas personalizadas para minha organização ou evento?",
+            "answer": "<p>No momento, não oferecemos mercadorias personalizadas, mas ficaríamos felizes em discutir uma possível parceria de atacado!</p><p>Sinta-se à vontade para entrar em contato conosco diretamente em <a><span style=\"text-decoration:underline\">atacado@bestself.com.br</span></a> ou clique aqui para saber mais sobre nossos requisitos de atacado.</p>"
+          }
+        },
+        "faq_item_R4EjFR": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Você fornece entrega internacional?",
+            "answer": "<p>A BestSelf oferece opções de envio padrão para destinos domésticos (Brasil) e internacionais. Assim que seu pedido for enviado, você receberá um e-mail de confirmação contendo seu número de rastreamento. Por favor, permita que os números de rastreamento sejam atualizados em pelo menos 24 horas.</p><p>Tenha em mente que não somos responsáveis pelos custos de importação/taxa se você mora fora do Brasil.</p><p>Além disso, permita um tempo de manuseio de 24 a 48 horas, além dos tempos de envio, enquanto preparamos seu pedido para ser enviado.</p><p>Ofertas de frete grátis</p><p>Oferecemos frete grátis para pedidos no Brasil acima de R$299 e frete grátis para pedidos internacionais acima de $100 dólares.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_title_3VzM9t",
+        "faq_item_RUr7PV",
+        "faq_item_yhTPXY",
+        "category_title_JPj4Tr",
+        "faq_item_mDiiX3",
+        "faq_item_LiFCbn",
+        "faq_item_RMiTCc",
+        "category_title_TgAEKy",
+        "faq_item_FAWDCy",
+        "faq_item_KyPWGk",
+        "faq_item_R4EjFR"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "heading": "FAQs",
+        "description": "<p>Perguntas Frequentes</p>",
+        "button_icon": "chat",
+        "button_label": "Chat",
+        "button_link": "mailto:oi@bestself.com.br",
+        "secondary_button_icon": "phone",
+        "secondary_button_label": "Ligue",
+        "secondary_button_link": "tel:(19)99801-6495",
+        "open_first": true,
+        "show_order_number": true,
+        "enable_structured_data": true,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "collection_thumbnails_zVPXVM": {
+      "type": "collection-thumbnails",
+      "blocks": {
+        "collection_MDcWHc": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/MG_0044-Edit.jpg",
+            "collection": "camisetas",
+            "heading": "Camisetas Cristãs"
+          }
+        },
+        "collection_gR6qTP": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/375650442_624842076401513_6150809100369978391_n.jpg",
+            "collection": "moletons",
+            "heading": "Moletons"
+          }
+        },
+        "collection_64UHkk": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/275145524_4947117682002931_4560341787936173746_n_1_5822496d-65f5-4c12-930e-095dd49f8ad3.jpg",
+            "collection": "joias",
+            "heading": "Anéis & Colares"
+          }
+        },
+        "collection_iqU3mY": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/285001085_5155430561171641_4615516900486526204_n.jpg",
+            "collection": "pulseiras",
+            "heading": "Pulseiras"
+          }
+        },
+        "collection_kqEzC8": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/289796917_5221643671216996_5881229615157393307_n.jpg",
+            "collection": "stickers",
+            "heading": "Stickers"
+          }
+        }
+      },
+      "block_order": [
+        "collection_MDcWHc",
+        "collection_gR6qTP",
+        "collection_64UHkk",
+        "collection_iqU3mY",
+        "collection_kqEzC8"
+      ],
+      "custom_css": [
+        ".media--square > img {border-radius: 50%;}"
+      ],
+      "settings": {
+        "show_section_header": true,
+        "heading": "Categorias",
+        "description": "",
+        "water_text": "Em Destaque",
+        "button_label": "",
+        "button_link": "",
+        "style": "vertical",
+        "adapt_transparent_image": true,
+        "show_nav_buttons": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_h9EnVJ",
+    "multicolumn_iyH4Rb",
+    "rich_text_RTPKJy",
+    "faq_AYYX6d",
+    "collection_thumbnails_zVPXVM"
+  ]
+}

@@ -1,0 +1,1114 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "size": "medium",
+            "show_rating": true,
+            "show_total_count": true,
+            "enable_rating_preview": false,
+            "star_size": "small",
+            "star_color": "#ffd600",
+            "rating_target": "",
+            "show_vendor": false,
+            "vendor_background": "#b500b5",
+            "vendor_foreground": "#ffffff"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax": true,
+            "show_sale_badge": true,
+            "sale_badge_type": "percentage"
+          }
+        },
+        "sku_aJTmcp": {
+          "type": "sku",
+          "settings": {}
+        },
+        "custom_liquid_qWnWWq": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!-- 每日24小时循环倒计时组�?-->\n<div class=\"daily-countdown-wrapper\">\n  <div class=\"daily-countdown\">\n    <div class=\"countdown-header\">\n      <h2 class=\"countdown-title\">UP TO $750 OFF</h2>\n    </div>\n    \n    <div class=\"countdown-display\">\n      <div class=\"time-unit\">\n        <span class=\"time-number\" id=\"hours\">00</span>\n        <span class=\"time-label\">Hours</span>\n      </div>\n      <div class=\"time-separator\">:</div>\n      <div class=\"time-unit\">\n        <span class=\"time-number\" id=\"minutes\">00</span>\n        <span class=\"time-label\">Minutes</span>\n      </div>\n      <div class=\"time-separator\">:</div>\n      <div class=\"time-unit\">\n        <span class=\"time-number\" id=\"seconds\">00</span>\n        <span class=\"time-label\">Seconds</span>\n      </div>\n    </div>\n  </div>\n</div>\n\n<style>\n.daily-countdown-wrapper {\n  width: 100%;\n  max-width: 700px;\n  margin: 16px auto;\n  padding: 0 12px;\n  box-sizing: border-box;\n}\n\n.daily-countdown {\n  background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);\n  border-radius: 15px;\n  overflow: hidden;\n  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);\n}\n\n.countdown-header {\n  padding: 12px 30px 12px;\n  text-align: center;\n}\n\n.countdown-title {\n  color: white;\n  font-size: 1.8rem;\n  font-weight: bold;\n  margin: 0;\n  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\n  line-height: 1.2; letter-spacing: 2px; word-spacing: 8px;\n}\n\n.countdown-display {\n  background: #000;\n  padding: 20px 20px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 16px;\n}\n\n.time-unit {\n  text-align: center;\n  min-width: 80px;\n}\n\n.time-number {\n  display: block;\n  color: white;\n  font-size: 2.2rem;\n  font-weight: bold;\n  line-height: 1;\n  margin-bottom: 8px;\n  font-family: Arial, sans-serif;\n}\n\n.time-label {\n  color: #999;\n  font-size: 0.9rem;\n  font-weight: 500;\n  text-transform: capitalize;\n}\n\n.time-separator {\n  color: white;\n  font-size: 1.8rem;\n  font-weight: bold;\n  margin-top: -20px;\n}\n\n/* 手机端适配 */\n@media (max-width: 768px) {\n  .daily-countdown-wrapper {\n    max-width: 100%;\n  }\n  \n  .countdown-title {\n    font-size: 2.5rem;\n  }\n  \n  .countdown-display {\n    padding: 20px 32px;\n    gap: 18px;\n  }\n  \n  .time-unit {\n    min-width: 75px;\n  }\n  \n  .time-number {\n    font-size: 2rem;\n  }\n  \n  .time-label {\n    font-size: 0.8rem;\n  }\n  \n  .time-separator {\n    font-size: 1.4rem;\n  }\n}\n\n@media (max-width: 480px) {\n  .daily-countdown-wrapper {\n    padding: 0 8px;\n    max-width: 100%;\n  }\n  \n  .countdown-title {\n    font-size: 1.6rem;\n  }\n  \n  .countdown-display {\n    padding: 18px 28px;\n    gap: 14px;\n  }\n  \n  .time-unit {\n    min-width: 65px;\n  }\n  \n  .time-number {\n    font-size: 1.8rem;\n  }\n  \n  .time-label {\n    font-size: 0.7rem;\n  }\n  \n  .time-separator {\n    font-size: 1.2rem;\n  }\n}\n</style>\n\n<script>\n// 每日24小时循环倒计�?\nfunction initDailyCountdown() {\n  function updateCountdown() {\n    var now = new Date();\n    \n    // 计算到明天午夜的时间\n    var tomorrow = new Date(now);\n    tomorrow.setDate(tomorrow.getDate() + 1);\n    tomorrow.setHours(0, 0, 0, 0);\n    \n    // 计算剩余时间\n    var timeLeft = tomorrow.getTime() - now.getTime();\n    \n    if (timeLeft > 0) {\n      var hours = Math.floor(timeLeft / (1000 * 60 * 60));\n      var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));\n      var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);\n      \n      // 更新显示\n      var hoursEl = document.getElementById('hours');\n      var minutesEl = document.getElementById('minutes');\n      var secondsEl = document.getElementById('seconds');\n      \n      if (hoursEl) hoursEl.textContent = hours.toString().padStart(2, '0');\n      if (minutesEl) minutesEl.textContent = minutes.toString().padStart(2, '0');\n      if (secondsEl) secondsEl.textContent = seconds.toString().padStart(2, '0');\n    }\n  }\n  \n  // 立即执行一�?\n  updateCountdown();\n  \n  // 每秒更新\n  setInterval(updateCountdown, 1000);\n}\n\n// 页面加载完成后启动倒计�?\nif (document.readyState === 'loading') {\n  document.addEventListener('DOMContentLoaded', initDailyCountdown);\n} else {\n  initDailyCountdown();\n}\n</script>"
+          }
+        },
+        "custom_liquid_mtCXRU": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!-- Sales points (use your 4 SVGs, text not bold, match theme typography) -->\n<style>\n  .pd-sales-points{\n    /* 适配你站点的排印与颜色，不写死 */\n    color: rgb(var(--text-color, 0,0,0));\n    font-family: var(--text-font-family, var(--font-body-family, inherit));\n    line-height: 1.7;\n    /* 尺寸偏小：移动端≈15–16px，桌面不超过18px */\n    --text-size: clamp(15px, 1.5vw, 18px);\n    --icon-size: 22px;      /* 图标偏小一些 */\n    --row-gap: 14px;        /* 行间距稍紧凑 */\n    --col-gap: 12px;        /* 图标与文字间距 */\n  }\n  .pd-sales-points__list{\n    margin:0; padding:0; list-style:none;\n    display:grid; grid-template-columns:1fr; row-gap:var(--row-gap);\n  }\n  .pd-sales-points__item{\n    display:grid; grid-template-columns:var(--icon-size) 1fr;\n    align-items:center; column-gap:var(--col-gap);\n  }\n  .pd-sales-points__icon{ width:var(--icon-size); height:var(--icon-size); line-height:0; }\n  .pd-sales-points__icon svg{\n    width:100%; height:100%;\n    fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round;\n    display:block;\n  }\n  .pd-sales-points__text{\n    font-size: var(--text-size);\n    font-weight: 400;   /* 不加粗 */\n    letter-spacing: .1px;\n  }\n  @media (min-width: 740px){\n    .pd-sales-points{ --icon-size: 24px; }\n    .pd-sales-points__list{ row-gap:16px; }\n  }\n</style>\n\n<div class=\"pd-sales-points\">\n  <ul class=\"pd-sales-points__list\">\n    <li class=\"pd-sales-points__item\">\n      <span class=\"pd-sales-points__icon\" aria-hidden=\"true\">\n        <!-- tag -->\n        <svg viewBox=\"0 0 64 64\" class=\"icon icon-tag\" role=\"presentation\">\n          <path d=\"m46.69 10.34-10.55.07-25.8 25.8 17.45 17.45 25.8-25.8.07-10.55-6.97-6.97z\"></path>\n          <circle cx=\"43.95\" cy=\"20.05\" r=\"3.53\"></circle>\n          <path d=\"M14.4 32.15 31.85 49.6\"></path>\n        </svg>\n      </span>\n      <span class=\"pd-sales-points__text\">Free shipping to the United States & Canada</span>\n    </li>\n\n    <li class=\"pd-sales-points__item\">\n      <span class=\"pd-sales-points__icon\" aria-hidden=\"true\">\n        <!-- shield -->\n        <svg viewBox=\"0 0 64 64\" class=\"icon icon-shield\" role=\"presentation\">\n          <path d=\"M21.18 31.69 28.54 39l15.91-15.88\"></path>\n          <path d=\"M53 12.54v15.24a31.41 31.41 0 0 1-3.7 14.95A25.46 25.46 0 0 1 32 56a25.46 25.46 0 0 1-17.3-13.27A31.41 31.41 0 0 1 11 27.78V12.54C24.88 13.67 32 8 32 8s7.12 5.67 21 4.54Z\"></path>\n        </svg>\n      </span>\n      <span class=\"pd-sales-points__text\">Lifetime Warranty on All Products</span>\n    </li>\n\n    <li class=\"pd-sales-points__item\">\n      <span class=\"pd-sales-points__icon\" aria-hidden=\"true\">\n        <!-- package -->\n        <svg viewBox=\"0 0 64 64\" class=\"icon icon-package\" role=\"presentation\">\n          <path d=\"M32 54.52 10 41.95v-19.9L32 9.48l22 12.57v19.9L32 54.52z\"></path>\n          <path d=\"M32 54.52v-19.9l22-12.57M32 34.62 10 22.05m31.7-7.03L21 28.33v8.38\"></path>\n        </svg>\n      </span>\n      <span class=\"pd-sales-points__text\">60-Day Return and Exchange Policy</span>\n    </li>\n\n    <li class=\"pd-sales-points__item\">\n      <span class=\"pd-sales-points__icon\" aria-hidden=\"true\">\n        <!-- heart -->\n        <svg viewBox=\"0 0 64 64\" class=\"icon icon-heart\" role=\"presentation\">\n          <path d=\"M51.27 15.05a13 13 0 0 0-18.44 0l-.83.83-.83-.83a13 13 0 0 0-18.44 18.44l.83.83L32 52.77l18.44-18.45.83-.83a13 13 0 0 0 0-18.44Z\"></path>\n        </svg>\n      </span>\n      <span class=\"pd-sales-points__text\">24/7 Around-the-clock After-sales Support</span>\n    </li>\n  </ul>\n</div>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "enable_brief": false,
+            "limit": 30,
+            "limit_description_height": false
+          }
+        },
+        "84bcde1d-2766-431d-93f4-1a5d6854eced": {
+          "type": "separator",
+          "settings": {
+            "margin_top": 10,
+            "margin_bottom": 16
+          }
+        },
+        "custom_liquid_8XiJmN": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
+        "f84da6b1-d99e-479c-a024-45d5d36bcb2a": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 0,
+            "low_stock_alert": "Hurry up! Only [stock] left",
+            "full_stock_alert": "Stock Adequate！Ready to ship",
+            "show_percentage_bar": true,
+            "low_stock_bar_color": "#e3ba29",
+            "full_stock_bar_color": "#0cb771"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "auto_dropdown": true,
+            "dropdown_threshold": 10,
+            "enable_first_swatch_image": false,
+            "swatch_size": "medium"
+          }
+        },
+        "0ae0cc1a-6798-498d-8917-c53ab72b7018": {
+          "type": "separator",
+          "settings": {
+            "margin_top": 16,
+            "margin_bottom": 16
+          }
+        },
+        "pickup_availability_zGFmBn": {
+          "type": "pickup-availability",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "is_selector_standalone": true,
+            "show_dynamic_checkout": false,
+            "show_notify_form": false,
+            "show_mini_checkout": false,
+            "mini_checkout_position": "top",
+            "show_gift_card_recipient": true
+          }
+        },
+        "custom_liquid_yKgXAw": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"product-form-buttons checkout-button-wrapper\"><button id=\"Product-Submit-Button-template--24864749814064__main\" class=\"add-cart-button button button--full-width button--primary has-loading checkout-button-custom\" type=\"submit\" name=\"add\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"Cart-Drawer\" data-checkout-button=\"true\">\n                  <span class=\"button-text loading-hidden\">Checkout</span>\n                  \n\n<div class=\"loading-overlay-spinner\">\n  <svg class=\"spinner\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 66 66\" xmlns=\"http://www.w3.org/2000/svg\">\n    <circle fill=\"none\" stroke-width=\"6\" cx=\"33\" cy=\"33\" r=\"30\"></circle>\n  </svg>\n</div>\n\n            </button>\n</div>\n\n{% comment %} Light Blue Gradient Checkout Button Styles {% endcomment %}\n<style>\n/* 基础容器样式 - 仅针对checkout按钮容器 */\n.checkout-button-wrapper {\n  width: 100%;\n  padding: 0;\n  box-sizing: border-box;\n  position: relative;\n}\n\n/* 主按钮样式 - 淡蓝色渐变，仅针对checkout按钮 */\n.checkout-button-wrapper .checkout-button-custom,\nbutton[data-checkout-button=\"true\"] {\n  background: linear-gradient(135deg, #87CEEB 0%, #6BB6FF 50%, #4A90E2 100%) !important;\n  color: #FFFFFF !important;\n  transition: all 0.3s ease;\n  position: relative;\n  overflow: hidden;\n  box-shadow: 0 4px 12px rgba(135, 206, 235, 0.3) !important;\n}\n\n/* 按钮伪元素背景 */\n.checkout-button-wrapper .checkout-button-custom::before,\nbutton[data-checkout-button=\"true\"]::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(135deg, #87CEEB 0%, #6BB6FF 50%, #4A90E2 100%);\n  z-index: -1;\n  transition: all 0.3s ease;\n}\n\n/* Hover 状态 */\n.checkout-button-wrapper .checkout-button-custom:hover:not(:disabled),\nbutton[data-checkout-button=\"true\"]:hover:not(:disabled) {\n  background: linear-gradient(135deg, #ADD8E6 0%, #87CEEB 50%, #6BB6FF 100%) !important;\n  transform: translateY(-2px);\n  box-shadow: 0 6px 20px rgba(135, 206, 235, 0.4) !important;\n}\n\n.checkout-button-wrapper .checkout-button-custom:hover:not(:disabled)::before,\nbutton[data-checkout-button=\"true\"]:hover:not(:disabled)::before {\n  background: linear-gradient(135deg, #ADD8E6 0%, #87CEEB 50%, #6BB6FF 100%);\n}\n\n/* Active 状态 */\n.checkout-button-wrapper .checkout-button-custom:active:not(:disabled),\nbutton[data-checkout-button=\"true\"]:active:not(:disabled) {\n  transform: translateY(0);\n  background: linear-gradient(135deg, #6BB6FF 0%, #4A90E2 50%, #357ABD 100%) !important;\n  box-shadow: 0 2px 8px rgba(135, 206, 235, 0.5) !important;\n}\n\n.checkout-button-wrapper .checkout-button-custom:active:not(:disabled)::before,\nbutton[data-checkout-button=\"true\"]:active:not(:disabled)::before {\n  background: linear-gradient(135deg, #6BB6FF 0%, #4A90E2 50%, #357ABD 100%);\n}\n\n/* 禁用状态 */\n.checkout-button-wrapper .checkout-button-custom:disabled,\nbutton[data-checkout-button=\"true\"]:disabled {\n  background: linear-gradient(135deg, #E5E5E5 0%, #D3D3D3 50%, #C0C0C0 100%) !important;\n  color: #999999 !important;\n  cursor: not-allowed;\n  transform: none;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;\n}\n\n.checkout-button-wrapper .checkout-button-custom:disabled::before,\nbutton[data-checkout-button=\"true\"]:disabled::before {\n  background: linear-gradient(135deg, #E5E5E5 0%, #D3D3D3 50%, #C0C0C0 100%);\n}\n\n/* 按钮文本样式 */\n.checkout-button-wrapper .button-text,\nbutton[data-checkout-button=\"true\"] .button-text {\n  font-weight: 600;\n  transition: all 0.2s ease;\n  position: relative;\n  z-index: 1;\n  color: #FFFFFF !important;\n}\n\n/* Hover时文本效果 */\n.checkout-button-wrapper .checkout-button-custom:hover:not(:disabled) .button-text,\nbutton[data-checkout-button=\"true\"]:hover:not(:disabled) .button-text {\n  color: #FFFFFF !important;\n  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);\n}\n\n/* Loading状态样式 */\n.checkout-button-wrapper .loading-overlay-spinner,\nbutton[data-checkout-button=\"true\"] .loading-overlay-spinner {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  display: none;\n  z-index: 2;\n}\n\n.checkout-button-wrapper .checkout-button-custom.loading .loading-overlay-spinner,\nbutton[data-checkout-button=\"true\"].loading .loading-overlay-spinner {\n  display: block;\n}\n\n.checkout-button-wrapper .checkout-button-custom.loading .button-text,\nbutton[data-checkout-button=\"true\"].loading .button-text {\n  opacity: 0;\n}\n\n/* Spinner动画 */\n.spinner {\n  width: 20px;\n  height: 20px;\n  animation: spinner-rotation 1s linear infinite;\n}\n\n.spinner circle {\n  stroke: #FFFFFF;\n  stroke-dasharray: 90, 150;\n  stroke-dashoffset: 0;\n  stroke-linecap: round;\n  animation: spinner-dash 1.5s ease-in-out infinite;\n}\n\n@keyframes spinner-rotation {\n  0% { transform: rotate(0deg); }\n  100% { transform: rotate(360deg); }\n}\n\n@keyframes spinner-dash {\n  0% {\n    stroke-dasharray: 1, 150;\n    stroke-dashoffset: 0;\n  }\n  50% {\n    stroke-dasharray: 90, 150;\n    stroke-dashoffset: -35;\n  }\n  100% {\n    stroke-dasharray: 90, 150;\n    stroke-dashoffset: -124;\n  }\n}\n\n/* iOS Safari 优化 */\n.checkout-button-wrapper .checkout-button-custom,\nbutton[data-checkout-button=\"true\"] {\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  user-select: none;\n  -webkit-user-select: none;\n}\n\n/* 高DPI屏幕优化 */\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .checkout-button-wrapper .checkout-button-custom,\n  button[data-checkout-button=\"true\"] {\n    border: 0.5px solid rgba(135, 206, 235, 0.2);\n  }\n}\n\n/* Focus状态 */\n.checkout-button-wrapper .checkout-button-custom:focus,\nbutton[data-checkout-button=\"true\"]:focus {\n  outline: none;\n  box-shadow: 0 0 0 3px rgba(135, 206, 235, 0.3) !important;\n}\n\n/* 移动端响应式设计 - 增加按钮高度 */\n@media (max-width: 768px) {\n  .checkout-button-wrapper .checkout-button-custom,\n  button[data-checkout-button=\"true\"] {\n    height: 60px !important;\n    min-height: 60px !important;\n    font-size: 16px !important;\n  }\n}\n\n/* 小屏设备优化 */\n@media (max-width: 480px) {\n  .checkout-button-wrapper .checkout-button-custom,\n  button[data-checkout-button=\"true\"] {\n    height: 56px !important;\n    min-height: 56px !important;\n    font-size: 15px !important;\n  }\n}\n\n/* 超小屏设备 */\n@media (max-width: 360px) {\n  .checkout-button-wrapper .checkout-button-custom,\n  button[data-checkout-button=\"true\"] {\n    height: 52px !important;\n    min-height: 52px !important;\n    font-size: 14px !important;\n  }\n}\n</style>\n\n{% comment %} Checkout Button JavaScript {% endcomment %}\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  const checkoutButtons = document.querySelectorAll('button[data-checkout-button=\"true\"], .checkout-button-custom');\n\n  checkoutButtons.forEach(button => {\n    button.addEventListener('click', function(e) {\n      e.preventDefault(); // 阻止默认表单提交\n\n      const buttonText = this.querySelector('.button-text');\n      const originalText = buttonText.innerHTML;\n\n      // 防止重复点击\n      if (this.classList.contains('loading')) {\n        return;\n      }\n\n      // 显示加载状态\n      this.classList.add('loading');\n      this.disabled = true;\n\n      // 移动端触觉反馈\n      if (window.navigator && window.navigator.vibrate) {\n        window.navigator.vibrate(50);\n      }\n\n      // 获取产品信息\n      const productForm = this.closest('form') || document.querySelector('form[action*=\"/cart/add\"]');\n      let formData = new FormData();\n\n      if (productForm) {\n        formData = new FormData(productForm);\n      } else {\n        // 备用方案 - 从页面获取产品信息\n        const variantId = this.getAttribute('data-variant-id') ||\n                         document.querySelector('input[name=\"id\"]')?.value ||\n                         document.querySelector('[data-product-variant]')?.value ||\n                         document.querySelector('select[name=\"id\"]')?.value;\n\n        if (variantId) {\n          formData.append('id', variantId);\n          formData.append('quantity', '1');\n        } else {\n          console.warn('未找到产品变体ID');\n          this.classList.remove('loading');\n          this.disabled = false;\n          alert('无法获取产品信息，请刷新页面重试');\n          return;\n        }\n      }\n\n      // 添加到购物车并跳转到结账页面\n      fetch('/cart/add.js', {\n        method: 'POST',\n        body: formData\n      })\n      .then(response => {\n        if (!response.ok) {\n          throw new Error(`HTTP error! status: ${response.status}`);\n        }\n        return response.json();\n      })\n      .then(data => {\n        // 成功反馈\n        buttonText.innerHTML = '✓ 跳转到结账页面...';\n\n        // 成功触觉反馈\n        if (window.navigator && window.navigator.vibrate) {\n          window.navigator.vibrate([50, 50, 50]);\n        }\n\n        // 短暂延迟后跳转\n        setTimeout(() => {\n          window.location.href = '/checkout';\n        }, 600);\n      })\n      .catch(error => {\n        console.error('Error:', error);\n\n        // 错误触觉反馈\n        if (window.navigator && window.navigator.vibrate) {\n          window.navigator.vibrate([100, 50, 100]);\n        }\n\n        // 恢复按钮状态\n        buttonText.innerHTML = originalText;\n        this.classList.remove('loading');\n        this.disabled = false;\n\n        alert('添加到购物车失败，请重试');\n      });\n    });\n\n    // 触摸优化\n    button.addEventListener('touchstart', function() {\n      if (!this.disabled) {\n        this.style.transform = 'scale(0.98)';\n      }\n    });\n\n    button.addEventListener('touchend', function() {\n      this.style.transform = '';\n    });\n\n    button.addEventListener('touchcancel', function() {\n      this.style.transform = '';\n    });\n  });\n});\n</script>"
+          }
+        },
+        "payment_security_q6Ay9w": {
+          "type": "payment_security",
+          "settings": {
+            "show_box": true,
+            "color_scheme": "background-2",
+            "show_trust_badge": false,
+            "show_payment_icons": true
+          }
+        },
+        "custom_tab_UabbGq": {
+          "type": "custom_tab",
+          "settings": {
+            "icon": "return",
+            "tab_title": "Shipping & Returns",
+            "content": "<p>Orders are not shipped or delivered on weekends or public holidays.</p><p>If we are experiencing a high volume of orders, shipments may be delayed by a few days. Please allow additional days in transit for delivery. If there is a significant delay in shipping your order, we will contact you via email.</p><p><strong>Shipment Confirmation & Order Tracking</strong></p><p>You will receive a shipment confirmation email once your order has shipped containing your tracking number(s). The tracking information will be updated within 5 days.</p><p>If your tracking information has not been updated within 10 business days, please contact sales@bestmow-ca.com.</p><p><strong>Shipping Information</strong></p><p>Please make sure all the shipping information you provide to us is correct. We are not responsible for any losses, including missing parcels, package damage, losses as a result of delay, and other losses caused by incorrect shipping information that customers have provided.</p><p>We do not ship to a P.O. Box or APO/FPO/DPO addresses.</p><p><strong>Damages</strong></p><p>If you receive your order damaged, please contact BESTMOW Support within 5 business days at support@bestmow-ca.com.</p><p>We are not responsible for any losses, including missing parcels, package damage, losses due to the delay, and other losses caused by the shipping carrier. However, we will help you contact the responsible shipping carrier. Please save all packing and the damaged goods as they may be required for filing a claim against the shipping carrier.</p>",
+            "page": "",
+            "html": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "sku_aJTmcp",
+        "custom_liquid_qWnWWq",
+        "custom_liquid_mtCXRU",
+        "description",
+        "84bcde1d-2766-431d-93f4-1a5d6854eced",
+        "custom_liquid_8XiJmN",
+        "f84da6b1-d99e-479c-a024-45d5d36bcb2a",
+        "variant_picker",
+        "0ae0cc1a-6798-498d-8917-c53ab72b7018",
+        "pickup_availability_zGFmBn",
+        "buy_buttons",
+        "custom_liquid_yKgXAw",
+        "payment_security_q6Ay9w",
+        "custom_tab_UabbGq"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "enable_sticky_media": true,
+        "media_layout": "thumbnail-bottom",
+        "media_size": "medium",
+        "media_ratio": "square",
+        "media_fit": "cover",
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "hide_thumbnail_mobile": false,
+        "show_description_tab": true,
+        "show_description_icon": true,
+        "enable_share": true,
+        "show_category_metafields": true,
+        "padding_top": 0,
+        "padding_bottom": 16,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "show_section_header": true,
+        "heading": "Related Products",
+        "description": "",
+        "water_text": "",
+        "products_to_show": 10,
+        "enable_desktop_slider": true,
+        "show_nav_buttons": true,
+        "show_dots": false,
+        "card_size": "small",
+        "image_ratio": "square",
+        "show_content_wrapper": false,
+        "color_scheme": "background-1",
+        "text_alignment": "center",
+        "enable_mobile_slider": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "custom_section_header_gXYppC": {
+      "type": "custom-section-header",
+      "name": "t:sections.custom-section-header.presets.name",
+      "settings": {
+        "heading": "Precision Edging, Perfect Lawns.",
+        "description": "<p>Cuts right to the edge with stunning accuracy, creating crisp, clean boundaries for a flawless lawn every time.</p>",
+        "water_text": "",
+        "button_label": "",
+        "button_link": "",
+        "show_title_bottom_line": true,
+        "margin_top": 0,
+        "margin_bottom": 48
+      }
+    },
+    "image_comparison_banner_perhFV": {
+      "type": "image-comparison-banner",
+      "name": "t:sections.image-comparison-banner.presets.name",
+      "settings": {
+        "enable_full_width": false,
+        "image_height": "medium",
+        "comparison_direction": "horizontal",
+        "before_image": "shopify://shop_images/10095.png",
+        "before_heading": "Before heading",
+        "before_heading_color": "#ffffff",
+        "after_image": "shopify://shop_images/10089_2.jpg",
+        "after_heading": "After heading",
+        "after_heading_color": "#000000",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_3pDYKh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VgfYee": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Lawn You’ve Always Wanted",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_Pwe3qn": {
+          "type": "text",
+          "settings": {
+            "description": "<p>BESTMOW mows with precision, recharges intelligently, and keeps going until your lawn is perfectly manicured—completely hands-free.</p>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VgfYee",
+        "text_Pwe3qn"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/10094_1.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "image_first": false,
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_alignment_mobile": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_KBjEx4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_TDRHMh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Lawn, Your Rules",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_tMVRmX": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Customize schedules for every lawn zone  in the app. BESTMOW takes care of it all — even when you’re away.</p>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_TDRHMh",
+        "text_tMVRmX"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Untitled_800_x_600_px_4.webp",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "image_first": true,
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_alignment_mobile": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "custom_section_header_c6nMaK": {
+      "type": "custom-section-header",
+      "name": "t:sections.custom-section-header.presets.name",
+      "settings": {
+        "heading": "Product Features",
+        "description": "",
+        "water_text": "",
+        "button_label": "",
+        "button_link": "",
+        "show_title_bottom_line": true,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "video_text_section_4CMqLC": {
+      "type": "video-text-section",
+      "name": "Video + Text（极简·高度优化）",
+      "settings": {
+        "title": "Intelligent Scene Scanning & Auto Area Planning",
+        "description": "<p>BESTMOW lawn mower is equipped with advanced sensors to scan the lawn, identify boundaries, and automatically map out trimming zones. No missed spots, no repeated work – just precise, efficient coverage.</p>",
+        "swap_desktop": true,
+        "swap_mobile": true,
+        "video": "shopify://files/videos/Zones-bestmow.mp4",
+        "video_url": "",
+        "autoplay": true,
+        "looping": true,
+        "show_controls": false,
+        "video_ratio": "4/5",
+        "fixed_height": false,
+        "video_height_desktop": 460,
+        "video_height_mobile": 180,
+        "bg": "#ffffff",
+        "txt": "#121212",
+        "pad_y": 0,
+        "gap": 100,
+        "radius": 20,
+        "full_width": false,
+        "max_width": 1160,
+        "margin_top": 0,
+        "margin_bottom": 32
+      }
+    },
+    "video_text_section_TzJFpk": {
+      "type": "video-text-section",
+      "name": "Video + Text（极简·高度优化）",
+      "settings": {
+        "title": "Powerful Performance for Complex Terrains",
+        "description": "<p>With strong drive power and durable wheels, BESTMOW easily handles uneven surfaces, bumps, and slopes of over 30°. Tough weeds and rough terrain are no challenge.With IPX-rated waterproofing and durable housing, BESTMOW can withstand light rain and varying outdoor conditions.</p>",
+        "swap_desktop": false,
+        "swap_mobile": true,
+        "video": "shopify://files/videos/Slop.mp4",
+        "video_url": "",
+        "autoplay": true,
+        "looping": true,
+        "show_controls": false,
+        "video_ratio": "4/5",
+        "fixed_height": false,
+        "video_height_desktop": 460,
+        "video_height_mobile": 180,
+        "bg": "#ffffff",
+        "txt": "#121212",
+        "pad_y": 0,
+        "gap": 100,
+        "radius": 20,
+        "full_width": false,
+        "max_width": 1160,
+        "margin_top": 0,
+        "margin_bottom": 32
+      }
+    },
+    "video_text_section_9cMEEC": {
+      "type": "video-text-section",
+      "name": "Video + Text（极简·高度优化）",
+      "settings": {
+        "title": "AI-Powered Remote Control & Auto Recharging",
+        "description": "<p>Through the smart app, you can monitor and control BESTMOW anytime. When the battery runs low, it automatically returns to its charging station and resumes work once recharged.</p>",
+        "swap_desktop": true,
+        "swap_mobile": true,
+        "video": "shopify://files/videos/cutting in lines-bestmow.mp4",
+        "video_url": "",
+        "autoplay": true,
+        "looping": true,
+        "show_controls": false,
+        "video_ratio": "4/5",
+        "fixed_height": false,
+        "video_height_desktop": 460,
+        "video_height_mobile": 180,
+        "bg": "#ffffff",
+        "txt": "#121212",
+        "pad_y": 0,
+        "gap": 100,
+        "radius": 20,
+        "full_width": false,
+        "max_width": 1160,
+        "margin_top": 0,
+        "margin_bottom": 32
+      }
+    },
+    "video_text_section_n6JRGy": {
+      "type": "video-text-section",
+      "name": "Video + Text（极简·高度优化）",
+      "settings": {
+        "title": "Self-Optimized Routes for Full Automation",
+        "description": "<p>BESTMOW intelligently calculates the most efficient cutting path, ensuring maximum coverage in minimum time – delivering a truly hands-free lawn care experience.</p>",
+        "swap_desktop": false,
+        "swap_mobile": true,
+        "video": "shopify://files/videos/autocharge bestmow.mp4",
+        "video_url": "",
+        "autoplay": true,
+        "looping": true,
+        "show_controls": false,
+        "video_ratio": "4/5",
+        "fixed_height": false,
+        "video_height_desktop": 460,
+        "video_height_mobile": 180,
+        "bg": "#ffffff",
+        "txt": "#121212",
+        "pad_y": 0,
+        "gap": 100,
+        "radius": 20,
+        "full_width": false,
+        "max_width": 1160,
+        "margin_top": 0,
+        "margin_bottom": 32
+      }
+    },
+    "video_text_section_eypiyM": {
+      "type": "video-text-section",
+      "name": "Video + Text（极简·高度优化）",
+      "settings": {
+        "title": "Smart Obstacle Avoidance with Sensor System",
+        "description": "<p>Built-in obstacle detection sensors allow BESTMOW to slow down, stop, or reroute when encountering pets, children, or objects, ensuring safe operation every time.works at low noise levels, so you can mow early in the morning or late at night without disturbing your family or neighbors.</p>",
+        "swap_desktop": true,
+        "swap_mobile": true,
+        "video": "shopify://files/videos/Obstacle avoidance bestmow.mp4",
+        "video_url": "",
+        "autoplay": true,
+        "looping": true,
+        "show_controls": false,
+        "video_ratio": "4/5",
+        "fixed_height": false,
+        "video_height_desktop": 460,
+        "video_height_mobile": 180,
+        "bg": "#ffffff",
+        "txt": "#121212",
+        "pad_y": 0,
+        "gap": 100,
+        "radius": 20,
+        "full_width": false,
+        "max_width": 1160,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "professional_reviews_section_q4CgUf": {
+      "type": "professional-reviews-section",
+      "blocks": {
+        "review_FYTdzG": {
+          "type": "review",
+          "settings": {
+            "video_type": "youtube",
+            "youtube_id": "",
+            "vimeo_id": "",
+            "mp4_url": "https://cdn.shopify.com/videos/c/o/v/78c20dab435843f5a4c23b87e2a2e725.mp4",
+            "title": "Ultra Quiet Mowing for Medium to Large Lawns",
+            "desc": "It's refreshing to use a lawnmower that doesn't feel like you're operating a noisy beast. The quiet operation is amazing!",
+            "avatar": "shopify://shop_images/7_c4bb3525-8d23-4a5f-b27e-1c2867271303.jpg",
+            "nickname": " TechMaster",
+            "channel_url": ""
+          }
+        },
+        "review_8V4TU4": {
+          "type": "review",
+          "settings": {
+            "video_type": "youtube",
+            "youtube_id": "",
+            "vimeo_id": "",
+            "mp4_url": "https://cdn.shopify.com/videos/c/o/v/6a40af1a984b4995b49633c3de76fecb.mp4",
+            "title": "Smart Robotic Lawn Care Revolution",
+            "desc": "Finally, a mower that works while I sleep! The precision cutting and automatic scheduling changed my lawn game completely.",
+            "avatar": "shopify://shop_images/1.jpg",
+            "nickname": "CodeNinja",
+            "channel_url": ""
+          }
+        },
+        "review_zmYrCr": {
+          "type": "review",
+          "settings": {
+            "video_type": "youtube",
+            "youtube_id": "",
+            "vimeo_id": "",
+            "mp4_url": "https://cdn.shopify.com/videos/c/o/v/e57a37ca58494c4fa2d9835a6e671fc7.mp4",
+            "title": "Cordless Freedom Meets Powerful Performance",
+            "desc": "No more tangled cords or gas fumes! This electric mower delivers professional results with zero emissions and hassle-free operation.",
+            "avatar": "shopify://shop_images/4.jpg",
+            "nickname": "PixelWizard",
+            "channel_url": ""
+          }
+        },
+        "review_nFjekg": {
+          "type": "review",
+          "settings": {
+            "video_type": "youtube",
+            "youtube_id": "",
+            "vimeo_id": "",
+            "mp4_url": "https://cdn.shopify.com/videos/c/o/v/dc8b77637e8347e0baca11220635ba49.mp4",
+            "title": "Effortless Mowing with Self-Propelled Technology",
+            "desc": "My back thanks me every time I use this mower. The self-propelled feature makes mowing hills and large areas a breeze.",
+            "avatar": "shopify://shop_images/2.jpg",
+            "nickname": " DataExplorer",
+            "channel_url": ""
+          }
+        },
+        "review_6zW6pg": {
+          "type": "review",
+          "settings": {
+            "video_type": "youtube",
+            "youtube_id": "",
+            "vimeo_id": "",
+            "mp4_url": "https://cdn.shopify.com/videos/c/o/v/a2d85136d0ee401488527d605625c8ea.mp4",
+            "mp4_poster": "shopify://shop_images/Untitled_1800_x_800_px_1.webp",
+            "title": "3-in-1 Lawn Care Solution That Actually Works",
+            "desc": "Mow, mulch, and bag all in one machine. The versatility is incredible and saves me so much time and storage space.",
+            "avatar": "shopify://shop_images/6.jpg",
+            "nickname": " CloudRunner",
+            "channel_url": ""
+          }
+        },
+        "review_VyznQP": {
+          "type": "review",
+          "settings": {
+            "video_type": "youtube",
+            "youtube_id": "",
+            "vimeo_id": "",
+            "mp4_url": "https://cdn.shopify.com/videos/c/o/v/8702892e461e4cb896dae32597c158dc.mp4",
+            "title": "Lightweight Design Without Compromising Power",
+            "desc": "As a petite person, I finally found a mower I can easily maneuver. Lightweight yet powerful - perfect combination!",
+            "avatar": "shopify://shop_images/31ebc4370166f179d3bfdc3e4fceb5b0.jpg",
+            "nickname": "ByteBuilder",
+            "channel_url": ""
+          }
+        },
+        "review_96eraL": {
+          "type": "review",
+          "settings": {
+            "cover": "shopify://shop_images/Untitled_800_x_600_px_11.webp",
+            "video_type": "youtube",
+            "youtube_id": "",
+            "vimeo_id": "",
+            "mp4_url": "https://cdn.shopify.com/videos/c/o/v/caa669763c1f462890669ae88d067469.mp4",
+            "title": "Precision Edge Cutting for Perfect Lawn Lines",
+            "desc": "The boundary detection is spot-on! My lawn edges have never looked this crisp and professional before.",
+            "avatar": "shopify://shop_images/3.jpg",
+            "nickname": "CyberVoyager",
+            "channel_url": ""
+          }
+        },
+        "review_R3gac7": {
+          "type": "review",
+          "settings": {
+            "cover": "shopify://shop_images/Untitled_800_x_600_px_9.webp",
+            "video_type": "youtube",
+            "youtube_id": "",
+            "vimeo_id": "",
+            "mp4_url": "https://cdn.shopify.com/videos/c/o/v/45fce57665ee47d69b39a6564b9b47a0.mp4",
+            "mp4_poster": "shopify://shop_images/10064.jpg",
+            "title": "Eco-Friendly Mowing That Protects Your Garden",
+            "desc": "Love that I'm helping the environment while maintaining a beautiful lawn. The mulching feature enriches my soil naturally.",
+            "avatar": "shopify://shop_images/5_5e2a247b-c8d3-4e3a-bde3-3f7c8db4d14d.jpg",
+            "nickname": " QuantumCoder",
+            "channel_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_FYTdzG",
+        "review_8V4TU4",
+        "review_zmYrCr",
+        "review_nFjekg",
+        "review_6zW6pg",
+        "review_VyznQP",
+        "review_96eraL",
+        "review_R3gac7"
+      ],
+      "name": "Professional Reviews",
+      "settings": {
+        "heading": "Professional Reviews",
+        "maxw": 1600,
+        "pad_x": 24,
+        "pad_y": 24,
+        "bg": "#ffffff",
+        "txt": "#111111",
+        "muted": "#666666",
+        "accent": "#ff4d00",
+        "card_bg": "#ffffff",
+        "per_desktop": 4,
+        "per_tablet": 2,
+        "autoplay": true,
+        "video_muted": true,
+        "loop": false,
+        "controls": true
+      }
+    },
+    "image_banner_YhrFBR": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_RnzNhi": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Smart Mowing. No Wires.</p>",
+            "heading_size": "small",
+            "heading_decorative": false
+          }
+        },
+        "description_acjqix": {
+          "type": "description",
+          "settings": {
+            "text": "<h4>Powered by AI and GPS<br/>it maps your lawn with precision</h4>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RnzNhi",
+        "description_acjqix"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "enable_full_width": true,
+        "image": "shopify://shop_images/10090.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "enable_adapter_transparent_header": false,
+        "color_scheme": "",
+        "desktop_content_position": "middle-right",
+        "show_text_box": true,
+        "text_box_opacity": 100,
+        "enabled_blur_effect": false,
+        "desktop_content_alignment": "center",
+        "image_behavior": "none",
+        "mobile_content_position": "middle-center",
+        "mobile_content_alignment": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_RCxU7L": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_UkRfAd": {
+          "type": "heading",
+          "settings": {
+            "heading": "APP Control",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_nREzUT": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Download the BESTMOW App and take control of your BESTMOW!<br/>Set up in minutes via app and Wi‑Fi, or Control everything from anywhere.</p>",
+            "limit_description_height": false
+          }
+        },
+        "button_bJmHHk": {
+          "type": "button",
+          "settings": {
+            "button_label": "AppStore",
+            "button_link": "https://apps.apple.com/us/app/bestmow/id6737789563",
+            "button_style": "primary",
+            "button_arrow": false,
+            "secondary_button_label": "Google Play",
+            "secondary_button_link": "https://play.google.com/store/apps/details?id=com.bestmow.mower",
+            "secondary_button_style": "secondary",
+            "secondary_button_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UkRfAd",
+        "text_nREzUT",
+        "button_bJmHHk"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/10117.png",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "image_first": false,
+        "color_scheme": "",
+        "content_alignment": "left",
+        "content_alignment_mobile": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "image_gallery_JyBM7a": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_dAC3Yj": {
+          "type": "image",
+          "settings": {
+            "columns": "4",
+            "rows": "2",
+            "image": "shopify://shop_images/10085.jpg",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "2",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        }
+      },
+      "block_order": [
+        "image_dAC3Yj"
+      ],
+      "name": "t:sections.image-gallery.presets.name",
+      "settings": {
+        "show_section_header": true,
+        "heading": "Power Up Any Slope",
+        "description": "<p>Handles up to 30° climbs with unstoppable grip and control. No hill too steep, no path off-limits.</p>",
+        "water_text": "",
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "media_wall_aCTwah": {
+      "type": "media-wall",
+      "blocks": {
+        "video_xRWQFj": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Zones-bestmow.mp4",
+            "product": ""
+          }
+        },
+        "video_GM8WhR": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/14_be735a0a-fc9e-4058-8c65-777f28f29384.mp4",
+            "product": ""
+          }
+        },
+        "video_Yrmfjh": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Slop.mp4",
+            "product": ""
+          }
+        },
+        "video_xihQw6": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/cutting in lines-bestmow.mp4",
+            "product": ""
+          }
+        },
+        "video_jqDCVx": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/autocharge bestmow.mp4",
+            "product": ""
+          }
+        },
+        "video_VP8nHb": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Obstacle avoidance bestmow.mp4",
+            "product": ""
+          }
+        },
+        "video_nkTY8K": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/20250321-140844.539-1 (1).mp4",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_xRWQFj",
+        "video_GM8WhR",
+        "video_Yrmfjh",
+        "video_xihQw6",
+        "video_jqDCVx",
+        "video_VP8nHb",
+        "video_nkTY8K"
+      ],
+      "disabled": true,
+      "name": "t:sections.media-wall.presets.name",
+      "settings": {
+        "show_section_header": true,
+        "heading": "Robot Mower in Action",
+        "description": "",
+        "water_text": "",
+        "enable_slider_overlay": true,
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "show_nav_buttons": true,
+        "show_page_dots": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "sticky_image_cards_yMRcyp": {
+      "type": "sticky-image-cards",
+      "blocks": {
+        "image_card_f8K3LK": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify://shop_images/10064.jpg",
+            "content_alignment": "left",
+            "caption": "",
+            "heading": "100m² in Just One Hour",
+            "heading_size": "medium",
+            "heading_decorative": false,
+            "description": "<p>Mow up to 26000 sq. feet with ease. Perfect for quick, efficient lawn care — get more done in less time.</p>",
+            "show_socials": false,
+            "social_style": "wrapper",
+            "show_countdown": false,
+            "end_time": "2024-12-01 15:23",
+            "end_text": "Timer complete message",
+            "hide_when_end": false,
+            "timer_background_color": "#000000",
+            "timer_foreground_color": "#ffffff",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": false
+          }
+        },
+        "image_card_KEy4EY": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify://shop_images/10057.jpg",
+            "content_alignment": "left",
+            "caption": "",
+            "heading": "Smart Routes. Zero Guesswork.",
+            "heading_size": "medium",
+            "heading_decorative": false,
+            "description": "<p>Automatic Route Planning — just map it and mow. Smarter mowing, every time.</p>",
+            "show_socials": true,
+            "social_style": "wrapper",
+            "show_countdown": false,
+            "end_time": "2024-12-01 15:23",
+            "end_text": "Timer complete message",
+            "hide_when_end": false,
+            "timer_background_color": "#000000",
+            "timer_foreground_color": "#ffffff",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": false
+          }
+        },
+        "image_card_LnwWFb": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify://shop_images/10063.jpg",
+            "content_alignment": "left",
+            "caption": "",
+            "heading": "Mows the Lawn. Charges Itself.",
+            "heading_size": "medium",
+            "heading_decorative": false,
+            "description": "<p>Four hours of mowing, then a smart recharge cycle — so your yard stays beautiful without lifting a finger.</p>",
+            "show_socials": false,
+            "social_style": "wrapper",
+            "show_countdown": false,
+            "end_time": "2024-12-01 15:23",
+            "end_text": "Timer complete message",
+            "hide_when_end": false,
+            "timer_background_color": "#000000",
+            "timer_foreground_color": "#ffffff",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_card_f8K3LK",
+        "image_card_KEy4EY",
+        "image_card_LnwWFb"
+      ],
+      "disabled": true,
+      "name": "t:sections.sticky-image-cards.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "image_ratio": "landscape",
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "steps_xBYkny": {
+      "type": "steps",
+      "blocks": {
+        "step_dRc7By": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/10110.png",
+            "heading": "Install RTK Antenna",
+            "description": "<p>Mount the RTK  in an open area with an  120° sky view</p>"
+          }
+        },
+        "step_nyzEt8": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/10109.png",
+            "heading": "Connect to Wi-Fi",
+            "description": "<p>Install the app and connect your station to Wi-Fi</p>"
+          }
+        },
+        "step_bcrJGW": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/10108.png",
+            "heading": "Start Mapping & Mow",
+            "description": "<p>Map your yard. Let the Robot do the work.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_dRc7By",
+        "step_nyzEt8",
+        "step_bcrJGW"
+      ],
+      "name": "t:sections.steps.presets.name",
+      "settings": {
+        "show_section_header": true,
+        "heading": "Instant Setup. Zero Hassle.",
+        "description": "",
+        "water_text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_arrow": true,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "17564620038c49fb00": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_neLBQU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_neLBQU"
+      ],
+      "settings": {
+        "include_margins": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "faq_mmJUaU": {
+      "type": "faq",
+      "blocks": {
+        "faq_item_VGGbmr": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Will BESTMOW work on properties with a lot of trees?",
+            "answer": "<p>BESTMOW relies on advanced satellite-based navigation systems (RTK and GPS) for accurate, autonomous mowing. If your yard has significant tree coverage or a dense overhead canopy, these signals may be disrupted, which can affect the mower’s performance and precision.</p><p>While we aim to support a wide range of landscapes, properties with heavy tree cover may not be the best fit for BESTMOW at this time.</p><p>If you’re unsure whether your yard qualifies, we’re happy to help. Simply send your home address and contact details to <a href=\"mailto:support@bestmow.com\">support@bestmow.com</a>, and our team will evaluate your property for compatibility.</p>"
+          }
+        },
+        "faq_item_NwqN7H": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I Resell My BESTMOW?",
+            "answer": "<p>No, <strong>reselling BESTMOW is not permitted under the subscription agreement</strong>. When you subscribe to BESTMOW, you are not purchasing the unit — You <strong>cannot resell your BESTMOW</strong> under the rental, which includes ongoing support, free replacements, software upgrades, and maintenance supplies.</p><p>Because the device remains the property of BESTMOW, reselling, or transferring it to another individual is <strong>not allowed</strong>. If you no longer need the mower, you can simply <strong>cancel your subscription</strong> and return the unit — hassle-free.</p><p>If you’re interested in becoming an official reseller or distribution partner, reach out to us directly at <strong>support@bestmow.com</strong> — we’re open to collaboration through approved channels.</p>"
+          }
+        },
+        "faq_item_BwyDCL": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does BESTMOW Ship to P.O. Boxes?",
+            "answer": "<p>No, <strong>BESTMOW does not ship to P.O. Boxes</strong> at this time. We only ship to <strong>physical street addresses</strong> within the United States and Canada.</p>"
+          }
+        },
+        "faq_item_KjFcCM": {
+          "type": "faq_item",
+          "settings": {
+            "question": "I’m a senior or have limited mobility. Can I install the product myself?",
+            "answer": "<p>While many customers can install it themselves, if you are elderly, disabled, or unable to safely lift 48 pounds, we recommend having someone assist you with the unboxing and setup.</p>"
+          }
+        },
+        "faq_item_QRLBBb": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How much area can BESTMOW cover with a full charge?",
+            "answer": "<p>With a full charge, BESTMOW can typically cover over 40000 sq ft.  4 Hours of Mowing on single Charge. With regular charging cycles, BESTMOW can maintain up to1.5 acres.</p>"
+          }
+        },
+        "faq_item_VmNrQy": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is BESTMOW Quiet Enough for Residential Use?",
+            "answer": "<p>Yes — BESTMOW is extremely quiet. Unlike traditional gas mowers, it has no engine noise or exhaust sounds. You’ll only hear the light hum of the blades cutting grass.</p>"
+          }
+        },
+        "faq_item_Txpncg": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How Long Will It Take to Mow My Property?",
+            "answer": "<p>BESTMOW is designed to be your autonomous lawn partner. On a single full charge, it can cover over 4,000 square feet. But it doesn’t stop there — with regular charging cycles, it can maintain a total area of up to <strong>1.5 acres.</strong></p>"
+          }
+        },
+        "faq_item_wV4NrA": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How long is the shipping?",
+            "answer": "<p>7-10 days maximum depending on your proximity to one of our distribution centers.</p>"
+          }
+        },
+        "faq_item_NgNk4q": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is BESTMOW Suitable for All Lawn Shapes and Sizes?",
+            "answer": "<p>BESTMOW is flexible and powerful enough to handle a wide variety of lawn layouts, including irregular shapes and zones. </p>"
+          }
+        },
+        "faq_item_tiMf9p": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is the Setup Complicated? Does It Require Technical Knowledge?",
+            "answer": "<p>Not at all. When you purchase a subscription, we offer <strong>property mapping support</strong> — our team will help you configure BESTMOW to your unique lawn layout. The device works seamlessly with the <strong>BESTMOW mobile app</strong>, which is available for both <strong>iOS and Android</strong>. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_VGGbmr",
+        "faq_item_NwqN7H",
+        "faq_item_BwyDCL",
+        "faq_item_KjFcCM",
+        "faq_item_QRLBBb",
+        "faq_item_VmNrQy",
+        "faq_item_Txpncg",
+        "faq_item_wV4NrA",
+        "faq_item_NgNk4q",
+        "faq_item_tiMf9p"
+      ],
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "heading": "BESTMOW FAQs",
+        "description": "<p>Got Questions? We’ve Got Your Answer</p>",
+        "button_icon": "chat",
+        "button_label": "Ask question",
+        "button_link": "shopify://pages/contact",
+        "secondary_button_icon": "phone",
+        "secondary_button_label": "Email Us",
+        "secondary_button_link": "mailto:support@bestmow.com",
+        "open_first": true,
+        "show_order_number": true,
+        "enable_structured_data": true,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "custom_section_header_gXYppC",
+    "image_comparison_banner_perhFV",
+    "image_with_text_3pDYKh",
+    "image_with_text_KBjEx4",
+    "custom_section_header_c6nMaK",
+    "video_text_section_4CMqLC",
+    "video_text_section_TzJFpk",
+    "video_text_section_9cMEEC",
+    "video_text_section_n6JRGy",
+    "video_text_section_eypiyM",
+    "professional_reviews_section_q4CgUf",
+    "image_banner_YhrFBR",
+    "image_with_text_RCxU7L",
+    "image_gallery_JyBM7a",
+    "media_wall_aCTwah",
+    "sticky_image_cards_yMRcyp",
+    "steps_xBYkny",
+    "17564620038c49fb00",
+    "faq_mmJUaU"
+  ]
+}

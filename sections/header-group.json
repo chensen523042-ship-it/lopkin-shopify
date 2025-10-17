@@ -1,0 +1,72 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_image_XcEdLV": {
+          "type": "mega_image",
+          "settings": {
+            "target_id": 2,
+            "image": "shopify://shop_images/bestmow_law_mower_slid_11_8ca70966-7b13-4191-9d0a-423e86bdc1a2.jpg",
+            "url": "shopify://products/bestmow-1-5-acre-robotic-lawn-mower-with-ai-vision-rtk-titan-100",
+            "column": "1",
+            "heading": "BEST SELLER",
+            "heading_size": "small",
+            "heading_position": "bottom-center",
+            "heading_effect": "background",
+            "hide_on_mobile": false
+          }
+        },
+        "bubble_7XFqdd": {
+          "type": "bubble",
+          "settings": {
+            "target_id": 2,
+            "icon": "none",
+            "text": "$200 Off",
+            "background_color": "#57aecf",
+            "foreground_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "mega_image_XcEdLV",
+        "bubble_7XFqdd"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "logo_width": 50,
+        "logo_position": "center-bottom",
+        "menu": "main-menu",
+        "enable_first_level_uppercase": true,
+        "menu_type_desktop": "dropdown",
+        "enable_hover_open": true,
+        "enable_transparent_header": false,
+        "transparent_foreground_color": "#ffffff",
+        "hide_transparent_border": false,
+        "phone": "(800) 882-2131",
+        "show_phone_on_desktop": true,
+        "show_phone_on_mobile": true,
+        "sticky_header_type": "always",
+        "enable_localization_selector": true,
+        "show_localization_flag": false,
+        "logo_width_mobile": 50,
+        "logo_position_mobile": "center",
+        "enable_float_search_mobile": false
+      }
+    }
+  },
+  "order": [
+    "header"
+  ]
+}

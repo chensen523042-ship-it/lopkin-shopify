@@ -1,0 +1,272 @@
+{% comment %}
+  Video + Text Simple v2 / 左文右视频（高度优化）
+  - 默认 4:5 更贴近截图（384x480）
+  - 支持自定义比例或固定高度
+{% endcomment %}
+
+{%- style -%}
+  .section-{{ section.id }}-mtb{margin-top:{{ section.settings.margin_top }}px;margin-bottom:{{ section.settings.margin_bottom }}px;}
+  #vts-{{ section.id }}{
+    /* 集成主题变量 */
+    --bg: {{ section.settings.bg | default: 'rgb(var(--root-background))' }};
+    --txt: {{ section.settings.txt | default: 'rgb(var(--root-text-color))' }};
+    --heading-color: {{ section.settings.heading_color | default: 'rgb(var(--root-heading-color))' }};
+    --pad-y: {{ section.settings.pad_y | default: 72 }}px;
+    --gap: {{ section.settings.gap | default: 200 }}px;
+    --radius: {{ section.settings.radius | default: 16 }}px;
+    --maxw: {% if section.settings.full_width %}100%{% else %}{{ section.settings.max_width | default: 1320 }}px{% endif %};
+    /* 比例变量 */
+    --ratio: {{ section.settings.video_ratio }};
+    --h-desk: {{ section.settings.video_height_desktop | default: 560 }}px;
+    --h-mob: {{ section.settings.video_height_mobile | default: 240 }}px;
+    
+    /* 应用主题样式 */
+    color: var(--txt);
+    background: var(--bg);
+    font-family: 'EuclidCircularA', sans-serif;
+    text-size-adjust: 100%;
+    box-sizing: border-box !important;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  #vts-{{ section.id }} .vts__inner{
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: var(--pad-y) 20px;
+  }
+  
+  #vts-{{ section.id }} .vts__grid{
+    display: grid;
+    grid-template-columns: 1.05fr 1.25fr;
+    gap: var(--gap);
+    align-items: center;
+  }
+  
+  #vts-{{ section.id }}.swap-desktop .vts__text{order: 2;}
+  #vts-{{ section.id }}.swap-desktop .vts__media{order: 1;}
+  
+  @media (max-width:749px){
+    #vts-{{ section.id }} .vts__grid{
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    #vts-{{ section.id }}.swap-mobile .vts__text{order: 2;}
+    #vts-{{ section.id }}.swap-mobile .vts__media{order: 1;}
+  }
+  
+  /* 标题样式优化 - 支持split-lines和更好的排版 */
+  #vts-{{ section.id }} .vts__title{
+    margin: 12px 0 24px !important;
+    font-weight: 800;
+    font-style: var(--heading-font-style);
+    font-size: clamp(40px, 4vw, 55px) !important;
+    line-height: 1.1111111111;
+    letter-spacing: -0.8px;
+    color: rgb(var(--heading-color));
+    font-family: 'EuclidCircularA', sans-serif;
+    text-transform: var(--heading-text-transform);
+    text-align: left;
+    box-sizing: border-box !important;
+    -webkit-font-smoothing: antialiased;
+    visibility: visible !important;
+    display: block;
+    opacity: 1 !important;
+  }
+  
+  /* split-lines 动画支持 - 修复隐藏问题 */
+  #vts-{{ section.id }} .vts__title split-lines{
+    display: block;
+    overflow: visible !important;
+  }
+  
+  #vts-{{ section.id }} .vts__title split-lines .line{
+    display: block;
+    transform: translateY(0) !important;
+    animation: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  /* 如果不需要动画，可以注释掉这些 */
+  /*
+  #vts-{{ section.id }} .vts__title split-lines .line{
+    display: block;
+    transform: translateY(100%);
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  #vts-{{ section.id }} .vts__title split-lines .line:nth-child(2){
+    animation-delay: 0.1s;
+  }
+  
+  #vts-{{ section.id }} .vts__title split-lines .line:nth-child(3){
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes slideUp {
+    to {
+      transform: translateY(0);
+    }
+  }
+  */
+  
+  /* 标题响应式优化 */
+  @media (max-width: 749px) {
+    #vts-{{ section.id }} .vts__title{
+      font-size: clamp(20px, 6vw, 25px) !important;
+      margin: 32px 0 20px !important;
+      letter-spacing: -0.5px;
+      font-weight: 800;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    #vts-{{ section.id }} .vts__title{
+      font-size: clamp(30px, 4.5vw, 40px) !important;
+      font-weight: 800;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+  }
+  
+  /* 描述文字样式 - 完全集成主题变量 */
+  #vts-{{ section.id }} .vts__desc{
+    margin: 0 !important;
+    font-weight: var(--text-font-weight);
+    font-style: var(--text-font-style);
+    font-size: clamp(var(--base-font-size), 1.6vw, var(--heading-h6-font-size));
+    line-height: 1.7333333333;
+    color: var(--txt);
+    font-family: 'EuclidCircularA', sans-serif;
+    text-align: left;
+    box-sizing: border-box !important;
+    -webkit-font-smoothing: antialiased;
+    visibility: inherit;
+    opacity: 0.92;
+  }
+
+  /* 媒体盒：和 media-wall 一样用 md-round + cover；默认按比例，自选固定高 */
+  #vts-{{ section.id }} .media-box{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius) !important;
+    background: #000;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    aspect-ratio: var(--ratio);
+  }
+  #vts-{{ section.id }} .media-box.is-fixed{aspect-ratio: auto;}
+  @media (min-width:750px){
+    #vts-{{ section.id }} .media-box.is-fixed{height: var(--h-desk);}
+  }
+  @media (max-width:749px){
+    #vts-{{ section.id }} .media-box.is-fixed{height: var(--h-mob);}
+  }
+  #vts-{{ section.id }} .media-box video,
+  #vts-{{ section.id }} .media-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: inherit;
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-mtb">
+  <section id="vts-{{ section.id }}"
+    class="{% if section.settings.swap_desktop %}swap-desktop{% endif %} {% if section.settings.swap_mobile %}swap-mobile{% endif %}">
+    <div class="vts__inner">
+      <div class="vts__grid">
+        <div class="vts__text">
+          {%- if section.settings.title != blank -%}
+            <h2 class="vts__title heading h3">
+              <split-lines>{{ section.settings.title }}</split-lines>
+            </h2>
+          {%- endif -%}
+          {%- if section.settings.description != blank -%}
+            <div class="vts__desc">{{ section.settings.description }}</div>
+          {%- endif -%}
+        </div>
+
+        <div class="vts__media">
+          <div class="media-box md-round media-fit--cover {% if section.settings.fixed_height %}is-fixed{% endif %}" id="media-{{ section.id }}">
+            {%- if section.settings.video != blank -%}
+              {{ section.settings.video | video_tag:
+                  image_size: '800x',
+                  autoplay: section.settings.autoplay,
+                  loop: section.settings.looping,
+                  controls: section.settings.show_controls,
+                  muted: true,
+                  playsinline: true }}
+            {%- elsif section.settings.video_url != blank -%}
+              <video src="{{ section.settings.video_url | escape }}"
+                {% if section.settings.autoplay %}autoplay{% endif %}
+                {% if section.settings.looping %}loop{% endif %}
+                {% if section.settings.show_controls %}controls{% endif %}
+                muted playsinline preload="metadata"></video>
+            {%- elsif section.settings.poster != blank -%}
+              {{ section.settings.poster | image_url: width: 1600 | image_tag: widths: '800,1200,1600', alt: section.settings.title | escape }}
+            {%- else -%}
+              <div style="display:grid;place-items:center;color:#aaa;height:100%;font-size:14px;">Add a video or poster image</div>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Video + Text（极简·高度优化）",
+  "tag": "section",
+  "class": "video-text-simple",
+  "settings": [
+    { "type": "text", "id": "title", "label": "标题", "default": "Powerful Mowing" },
+    { "type": "richtext", "id": "description", "label": "说明文案", "default": "<p>Driven by 300W rated power, with peak output soaring to 1200W for tackling tough and thick grass.</p>" },
+
+    { "type": "checkbox", "id": "swap_desktop", "label": "桌面端：右文左视频（互换）", "default": false },
+    { "type": "checkbox", "id": "swap_mobile", "label": "手机端：视频在上（互换）", "default": false },
+
+    { "type": "header", "content": "视频" },
+    { "type": "video", "id": "video", "label": "Shopify 视频（优先）" },
+    { "type": "url", "id": "video_url", "label": "外链 MP4（备用）" },
+    { "type": "image_picker", "id": "poster", "label": "占位图（无视频时显示）" },
+    { "type": "checkbox", "id": "autoplay", "label": "自动播放", "default": true },
+    { "type": "checkbox", "id": "looping", "label": "循环播放", "default": true },
+    { "type": "checkbox", "id": "show_controls", "label": "显示浏览器控件", "default": false },
+
+    { "type": "header", "content": "高度/比例" },
+    { "type": "select", "id": "video_ratio", "label": "视频比例（非固定高时生效）", "default": "4/5",
+      "options": [
+        { "value": "4/5", "label": "4:5（竖向，推荐）" },
+        { "value": "3/4", "label": "3:4（更高）" },
+        { "value": "1/1", "label": "1:1（方形）" },
+        { "value": "4/3", "label": "4:3" },
+        { "value": "16/9", "label": "16:9（横向）" },
+        { "value": "21/9", "label": "21:9（超宽）" }
+      ]
+    },
+    { "type": "checkbox", "id": "fixed_height", "label": "固定高度模式（覆盖比例）", "default": false },
+    { "type": "range", "id": "video_height_desktop", "min": 360, "max": 900, "step": 10, "unit": "px", "label": "桌面端固定高度", "default": 560 },
+    { "type": "range", "id": "video_height_mobile", "min": 180, "max": 600, "step": 10, "unit": "px", "label": "手机端固定高度", "default": 260 },
+
+    { "type": "header", "content": "样式" },
+    { "type": "color", "id": "bg", "label": "背景色", "default": "#000000" },
+    { "type": "color", "id": "txt", "label": "文字颜色", "default": "#ffffff" },
+    { "type": "range", "id": "pad_y", "min": 0, "max": 120, "step": 4, "unit": "px", "label": "上下内边距", "default": 72 },
+    { "type": "range", "id": "gap", "min": 12, "max": 400, "step": 4, "unit": "px", "label": "左右间距", "default": 28 },
+    { "type": "range", "id": "radius", "min": 0, "max": 28, "step": 2, "unit": "px", "label": "视频圆角", "default": 16 },
+
+    { "type": "checkbox", "id": "full_width", "label": "全宽", "default": false },
+    { "type": "range", "id": "max_width", "min": 900, "max": 1600, "step": 20, "unit": "px", "label": "最大宽度（非全宽）", "default": 1320 },
+
+    { "type": "header", "content": "外边距" },
+    { "type": "range", "id": "margin_top", "min": 0, "max": 120, "step": 4, "unit": "px", "label": "上外边距", "default": 0 },
+    { "type": "range", "id": "margin_bottom", "min": 0, "max": 120, "step": 4, "unit": "px", "label": "下外边距", "default": 80 }
+  ],
+  "presets": [{ "name": "Video + Text（极简·高度优化）" }]
+}
+{% endschema %}

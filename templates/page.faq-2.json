@@ -1,0 +1,250 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "heading_size": "medium",
+        "heading_decorative": false,
+        "limit_description_height": false,
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "faq_AYYX6d": {
+      "type": "faq",
+      "blocks": {
+        "category_title_3VzM9t": {
+          "type": "category_title",
+          "settings": {
+            "heading": "Getting Started"
+          }
+        },
+        "faq_item_RUr7PV": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can the mower work in areas with a lot of trees or buildings?",
+            "answer": "<p>The mower needs a fairly clear view of the sky—at least 60 degrees open—for it to work properly. If the area is fully covered or surrounded by tall trees or buildings, it might not perform well.</p>"
+          }
+        },
+        "faq_item_HQiQFT": {
+          "type": "faq_item",
+          "settings": {
+            "question": "I’m a senior or have limited mobility. Can I install the product myself?",
+            "answer": "<p>While many customers can install it themselves, if you are elderly, disabled, or unable to safely lift 48 pounds, we recommend having someone assist you with the unboxing and setup.</p>"
+          }
+        },
+        "faq_item_JVEKPt": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does the mower need anything special to navigate?",
+            "answer": "<p>Yes—it uses RTK technology for super-precise positioning, so you’ll need an RTK base antenna set up at home in a good spot. If you already have one nearby or access to a third-party RTK device, that works too! This setup helps the mower stay accurate and efficient while it works.</p>"
+          }
+        },
+        "faq_item_chXyWt": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can the mower handle hills or slopes?",
+            "answer": "<p>Absolutely — BESTMOW is designed to handle slopes up to 23° (that’s about a 45% incline). If your lawn stays within that range, you’re good to go!</p>"
+          }
+        },
+        "faq_item_Hjdjba": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does the mower need a good signal to work properly?",
+            "answer": "<p>Yes, for the best performance, make sure the charging station is set up in a spot with strong RTK and Wi-Fi signals. A solid connection helps the mower stay precise and connected while it’s working and charging.</p>"
+          }
+        },
+        "faq_item_TgRtVL": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How many zones can the mower handle?",
+            "answer": "<p>The mower can manage multiple work areas with ease! For the best performance, we recommend keeping it to 10 zones. This helps ensure smooth operation and reliable mapping across your lawn.</p>"
+          }
+        },
+        "faq_item_rAyjyQ": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What if my yard has a lot of shade from trees?",
+            "answer": "<p>If more than half of your yard is fully shaded during summer, especially by dense tree cover, the mower might not perform at its best. It’s designed to work with a clear view of the sky—so if that’s not the case, we recommend chatting with us first to find the best setup for your lawn!</p>"
+          }
+        },
+        "faq_item_bC4DCh": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What’s the Mowing Capacity of BESTMOW?",
+            "answer": "<p>BESTMOW is designed to be your autonomous lawn partner. On a single full charge, it can cover over 4,000 square feet. But it doesn’t stop there — with regular charging cycles, it can maintain a total area of up to <strong>1.5 acres</strong> (approximately <strong>65,340 square feet</strong>) week after week. Whether you have a modest yard or a sprawling lawn, BESTMOW adjusts its schedule to keep your turf perfectly trimmed.</p>"
+          }
+        },
+        "faq_item_PhVANY": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How Does the Subscription Work?",
+            "answer": "<p>You get either 15 or 30 days of free cancellation, depending on your plan. If you choose to cancel during an active month, charges are only refundable in cases of mechanical failure or product defect. The subscription covers not only the mower, but also <strong>free blade replacements, battery swaps, software upgrades</strong>, and <strong>device replacements</strong> as needed. No hidden fees.</p>"
+          }
+        },
+        "faq_item_6zBtiX": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How Long Will It Take to Mow My Property?",
+            "answer": "<p>Have 1.5 acres? BESTMOW can maintain it within the week with routine daily mowing sessions. If your property is smaller, mowing will take less time. One unique advantage of the BESTMOW subscription is <strong>ongoing hardware upgrades</strong> — when we improve the product, you get the new version automatically, so your mowing time may decrease even more over time.</p>"
+          }
+        },
+        "faq_item_Tt6UXM": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What’s the Shipping Time for BESTMOW?",
+            "answer": "<p>BESTMOW units ship quickly within the U.S. or Canada depending on your proximity to one of our regional distribution centers, your order will arrive in <strong>7 to 10 business days max</strong>. As demand spikes during the mowing season, we recommend ordering early to avoid delays and secure your unit.</p>"
+          }
+        },
+        "faq_item_kTcQUm": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How Long Does BESTMOW Run Per Charge and What’s the Battery Lifespan?",
+            "answer": "<p>On a single charge, BESTMOW can mow four hours depending on terrain and grass height. As part of the subscription, you’ll never worry about battery replacements — they’re included for free. For non-subscribers, replacing a battery typically costs <strong>$100–$200</strong>. With us, it’s “Why mow? Let BESTMOW!”</p>"
+          }
+        },
+        "faq_item_cwypPz": {
+          "type": "faq_item",
+          "settings": {
+            "question": " Can BESTMOW Handle Different Grass Types and Heights?",
+            "answer": "<p>Absolutely. BESTMOW is compatible with both <strong>warm- and cool-season grasses</strong>, and lets you set mowing heights between <strong>1 to 4 inches</strong>. It’s designed to leave a clean, uniform cut without patchiness or missed corners, thanks to its smart navigation and cutting system.</p>"
+          }
+        },
+        "faq_item_yfUCwj": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How Does BESTMOW Navigate Obstacles and Uneven Terrain?",
+            "answer": "<p>With its advanced microprocessor and AI-driven software, BESTMOW navigates complex lawns with trees, pools, slopes, and multi-zone layouts. Like ChatGPT learns as you talk to it, BESTMOW learns your yard’s layout with every mow, improving over time. It’s built to adapt to changing conditions while delivering consistent performance.</p>"
+          }
+        },
+        "category_title_EWyBcf": {
+          "type": "category_title",
+          "settings": {
+            "heading": "Product Features"
+          }
+        },
+        "faq_item_TJGynX": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What kind of lawns does the BestMow T100 work best on?",
+            "answer": "<p>The BestMow T100 uses advanced RTK positioning and 4 built-in cameras, making it perfect for open lawns—ideally with at least 50% of the sky clear from trees or buildings.</p><p>Have a yard with more shade or obstacles? No worries—we’re working on a new visual positioning upgrade designed for those tougher environments, expected to launch around July–August 2025!</p>"
+          }
+        },
+        "faq_item_YmLkpC": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How big of a lawn can BestMow handle?",
+            "answer": "<p>BestMow can mow up to around <strong>800㎡ per day</strong>, making it great for lawns up to <strong>5000㎡</strong> in total. You can set up to <strong>10 different maps</strong> for separate zones or areas, so it’s flexible enough to manage a variety of lawn layouts!</p>"
+          }
+        },
+        "faq_item_Xyi4cd": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can BestMow T100 handle tall or thick grass?",
+            "answer": "<p>BestMow T100 is designed for regular maintenance, so it works best when the grass is kept in check. If the grass is <strong>over 10cm and really dense</strong>, it might struggle a bit. However, for grass <strong>up to 15cm</strong>, you can still mow effectively by temporarily turning off obstacle avoidance. For best results, we recommend keeping your lawn trimmed regularly!</p>"
+          }
+        },
+        "faq_item_AjMax9": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does BestMow need Wi-Fi to work?",
+            "answer": "<p>Yes—BestMow needs a stable internet connection to stay smart and connected. Right now, it works with <strong>2.4G Wi-Fi networks</strong> that have the <strong>repeater function enabled</strong>. Just make sure your home has a steady internet connection and a 2.4G Wi-Fi router, and you’ll be all set!</p>"
+          }
+        },
+        "faq_item_3DVwPE": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What’s the Product’s Lifespan? Is It Prone to Breakdowns?",
+            "answer": "<p>Thanks to its subscription model, BESTMOW is virtually <strong>worry-free</strong> when it comes to product lifespan. Any performance issues, breakdowns, or wear-and-tear scenarios are fully covered. We test every model rigorously before shipping, and we use only high-quality components. Plus, <strong>free replacements and upgrades</strong> are part of your subscription — meaning you’re always using our best version.</p>"
+          }
+        },
+        "category_title_UF6JQC": {
+          "type": "category_title",
+          "settings": {
+            "heading": "Setup & Installation"
+          }
+        },
+        "faq_item_eh6kFk": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is the Setup Complicated? Does It Require Technical Knowledge?",
+            "answer": "<p>Not at all. When you purchase a subscription, we help you with <strong>property mapping support</strong> — our team will help you configure BESTMOW to your unique lawn layout. The device works seamlessly with the <strong>BESTMOW mobile app</strong>, which is available for both <strong>iOS and Android</strong>. No technical expertise is required — just plug it in, sync the app, and let BESTMOW do the rest.</p>"
+          }
+        },
+        "faq_item_gp8NcN": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What comes with BestMow, and where should I set it up?",
+            "answer": "<p>BestMow includes three main parts: the <strong>robotic mower</strong>, a <strong>charging station</strong>, and an <strong>RTK base station</strong>.</p><p></p><ul><li>RTK should be placed in a wide-open spot with a clear view of the sky and a strong Wi-Fi signal.<br/></li><li>charging station also needs good Wi-Fi, and it’s best to avoid installing it under eaves or roof overhangs—give it some open space so it can work smoothly.<br/></li></ul><p></p><p><br/></p><p>With the right setup, BestMow runs like a dream!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_title_3VzM9t",
+        "faq_item_RUr7PV",
+        "faq_item_HQiQFT",
+        "faq_item_JVEKPt",
+        "faq_item_chXyWt",
+        "faq_item_Hjdjba",
+        "faq_item_TgRtVL",
+        "faq_item_rAyjyQ",
+        "faq_item_bC4DCh",
+        "faq_item_PhVANY",
+        "faq_item_6zBtiX",
+        "faq_item_Tt6UXM",
+        "faq_item_kTcQUm",
+        "faq_item_cwypPz",
+        "faq_item_yfUCwj",
+        "category_title_EWyBcf",
+        "faq_item_TJGynX",
+        "faq_item_YmLkpC",
+        "faq_item_Xyi4cd",
+        "faq_item_AjMax9",
+        "faq_item_3DVwPE",
+        "category_title_UF6JQC",
+        "faq_item_eh6kFk",
+        "faq_item_gp8NcN"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "heading": "FAQs",
+        "description": "<p>Monday-Sunday:<br/>9:00 AM- 9:00 PM EST<br/>6:00 AM - 6:00 PM PST<br/><br/>Customer Phone Support:<br/>Mon-Fri,10:00 AM-8:00 PM EST/7:00 AM-5:00 PM PST</p>",
+        "button_icon": "chat",
+        "button_label": "Ask Questions",
+        "button_link": "mailto:support@bestmow.com",
+        "secondary_button_icon": "phone",
+        "secondary_button_label": "Call us",
+        "secondary_button_link": "tel:(800) 882-2131",
+        "open_first": true,
+        "show_order_number": true,
+        "enable_structured_data": true,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq_AYYX6d"
+  ]
+}

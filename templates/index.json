@@ -1,0 +1,901 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "carousal_WpGAKi": {
+      "type": "carousal",
+      "blocks": {
+        "slide_HFpGkg": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/banner_webp.webp",
+            "image_overlay_opacity": 10,
+            "color_scheme": "inverse",
+            "desktop_content_position": "bottom-center",
+            "desktop_content_alignment": "center",
+            "caption": "",
+            "heading": "<p>Why Mow Let BESTMOW</p>",
+            "heading_size": "large",
+            "heading_decorative": false,
+            "text": "<h3>BESTMOW Robot Lawn Mower</h3>",
+            "button_label": "Get Yours Now",
+            "button_link": "shopify://products/bestmow-1-5-acre-robotic-lawn-mower-with-ai-vision-rtk-titan-100",
+            "button_style": "primary",
+            "button_arrow": true,
+            "mobile_content_position": "middle-center",
+            "mobile_content_alignment": "center"
+          }
+        },
+        "slide_K4Gdtj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/banner3_1800_x_800_px.webp",
+            "image_overlay_opacity": 10,
+            "color_scheme": "inverse",
+            "desktop_content_position": "bottom-left",
+            "desktop_content_alignment": "center",
+            "caption": "",
+            "heading": "<h1><strong>Lifelong </strong>Free Sofware Update</h1>",
+            "heading_size": "large",
+            "heading_decorative": false,
+            "text": "<h1><em><strong>No Commitment. Cancel Anytime</strong></em></h1>",
+            "button_label": "Learn More",
+            "button_link": "shopify://products/bestmow-1-5-acre-robotic-lawn-mower-with-ai-vision-rtk-titan-100",
+            "button_style": "primary",
+            "button_arrow": true,
+            "mobile_content_position": "middle-center",
+            "mobile_content_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_HFpGkg",
+        "slide_K4Gdtj"
+      ],
+      "settings": {
+        "enable_full_width": true,
+        "slide_height": "adapt",
+        "enable_adapter_transparent_header": false,
+        "auto_rotate": true,
+        "change_slides_speed": 10,
+        "show_nav_buttons": true,
+        "show_page_dots": true,
+        "controller_color": "#ffffff",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "if_as_main_area": false
+      }
+    },
+    "video_banner_kxPinT": {
+      "type": "video-banner",
+      "name": "t:sections.video-banner.presets.name",
+      "settings": {
+        "enable_full_width": true,
+        "video_url": "",
+        "video": "shopify://files/videos/8087f74650e14831923f73168373eb1a.mp4",
+        "enable_controls": false,
+        "enable_autoload": true,
+        "enable_looping": true,
+        "video_height": "medium",
+        "color_scheme": "",
+        "heading": "",
+        "heading_size": "large",
+        "heading_decorative": false,
+        "description": "",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "rich_text_63VY4w": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fWwem9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Upgrade Your Mowing Experience",
+            "heading_size": "large",
+            "heading_decorative": false
+          }
+        },
+        "text_fKyLBL": {
+          "type": "text",
+          "settings": {
+            "description": "<h2>Smarter way to achieve a perfect lawn</h2>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fWwem9",
+        "text_fKyLBL"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "image_banner_qmaqqF": {
+      "type": "image-banner",
+      "blocks": {
+        "description_ppekhM": {
+          "type": "description",
+          "settings": {
+            "text": "<h1><em><strong>Stop Mowing. Start Living.</strong></em></h1>"
+          }
+        },
+        "heading_betrqF": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>BESTMOW Titan-100</strong></p>",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "description_EfUr3m": {
+          "type": "description",
+          "settings": {
+            "text": "<h1><strong>AI-driven. Self Mowing Robot</strong></h1>"
+          }
+        },
+        "button_r4jEEr": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": false,
+            "secondary_button_label": "Button label",
+            "secondary_button_link": "",
+            "secondary_button_style": "secondary",
+            "secondary_button_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "description_ppekhM",
+        "heading_betrqF",
+        "description_EfUr3m",
+        "button_r4jEEr"
+      ],
+      "custom_css": [
+        ".text-content-heading,.text-content-caption {text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* softer shadow effect */}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "enable_full_width": true,
+        "image": "shopify://shop_images/pic1_1800_x_800_px.webp",
+        "image_overlay_opacity": 10,
+        "image_height": "adapt",
+        "enable_adapter_transparent_header": false,
+        "color_scheme": "accent-1",
+        "desktop_content_position": "top-center",
+        "show_text_box": false,
+        "text_box_opacity": 100,
+        "enabled_blur_effect": true,
+        "desktop_content_alignment": "center",
+        "image_behavior": "none",
+        "mobile_content_position": "top-center",
+        "mobile_content_alignment": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "image_gallery_RXTyWT": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_dNVgyF": {
+          "type": "image",
+          "settings": {
+            "columns": "2",
+            "rows": "2",
+            "image": "shopify://shop_images/Untitled_800_x_600_px_1_7c7ad662-306b-4b74-905e-c44e7eed0bc1.webp",
+            "link": "",
+            "heading": "Recharges. Repeats.",
+            "heading_size": "large",
+            "heading_color": "#ffffff",
+            "heading_position": "bottom-left",
+            "mobile_columns": "2",
+            "mobile_rows": "1",
+            "image_mobile": "shopify://shop_images/Untitled_800_x_600_px_1_54bf1fc1-6a69-47ff-8019-f3a9d9e495a8.jpg",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_ktMqJF": {
+          "type": "image",
+          "settings": {
+            "columns": "2",
+            "rows": "2",
+            "image": "shopify://shop_images/Untitled_800_x_600_px_3.webp",
+            "link": "",
+            "heading": "Boundry Wire Free.",
+            "heading_size": "large",
+            "heading_color": "#ffffff",
+            "heading_position": "bottom-left",
+            "mobile_columns": "1",
+            "mobile_rows": "2",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_BB4tRL": {
+          "type": "image",
+          "settings": {
+            "columns": "2",
+            "rows": "2",
+            "image": "shopify://shop_images/Untitled_800_x_600_px.webp",
+            "link": "",
+            "heading": "Mow 26,000 ft² a day",
+            "heading_size": "large",
+            "heading_color": "#ffffff",
+            "heading_position": "bottom-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_xbzBLN": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "2",
+            "image": "shopify://shop_images/1_800_x_600_px_1.webp",
+            "link": "",
+            "heading": "Conquer Any Terrain.",
+            "heading_size": "large",
+            "heading_color": "#ffffff",
+            "heading_position": "bottom-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_LrAxeg": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "2",
+            "image": "shopify://shop_images/Untitled_800_x_600_px_2.webp",
+            "link": "",
+            "heading": "Smart Obstacle Avoidance.",
+            "heading_size": "large",
+            "heading_color": "#ffffff",
+            "heading_position": "bottom-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        }
+      },
+      "block_order": [
+        "image_dNVgyF",
+        "image_ktMqJF",
+        "image_BB4tRL",
+        "image_xbzBLN",
+        "image_LrAxeg"
+      ],
+      "name": "t:sections.image-gallery.presets.name",
+      "settings": {
+        "show_section_header": true,
+        "heading": "The Future of Lawn Care",
+        "description": "<p>Smarter, greener, and perfect. Upgrade your yard with innovation that works while you relax.</p>",
+        "water_text": "",
+        "margin_top": 40,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_pFcwxF": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_KfQHhj": {
+          "type": "heading",
+          "settings": {
+            "heading": "BESTMOW APP",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_cgeEEw": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Download the BESTMOW App and take control of your BESTMOW!<br/>Activate your robot with ease using Bluetooth, Wi-Fi, or 4G, get step-by-step guidance, and manage everything remotely<br/>—All right at your fingertips.</p>",
+            "limit_description_height": false
+          }
+        },
+        "button_tAn8rc": {
+          "type": "button",
+          "settings": {
+            "button_label": "AppStore",
+            "button_link": "https://apps.apple.com/us/app/bestmow/id6737789563",
+            "button_style": "primary",
+            "button_arrow": false,
+            "secondary_button_label": "Google Play",
+            "secondary_button_link": "https://play.google.com/store/apps/details?id=com.bestmow.mower",
+            "secondary_button_style": "secondary",
+            "secondary_button_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_KfQHhj",
+        "text_cgeEEw",
+        "button_tAn8rc"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Untitled_500_x_500_px_1.webp",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "image_first": false,
+        "color_scheme": "",
+        "content_alignment": "left",
+        "content_alignment_mobile": "center",
+        "if_as_main_area": true,
+        "margin_top": 40,
+        "margin_bottom": 80
+      }
+    },
+    "rich_text_bqHD8W": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ajgVFt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Consistently Perfect. Every Time.",
+            "heading_size": "large",
+            "heading_decorative": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ajgVFt"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 20
+      }
+    },
+    "image_with_text_gWxdFx": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_gmx7cm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Precision. Power. Perfection.",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_p8XMaE": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Zero gap precision cutting. BESTMOW robot mower trims every blade with accuracy—so you can sit back and relax.</p>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gmx7cm",
+        "text_p8XMaE"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Untitled_800_x_600_px_4.webp",
+        "height": "medium",
+        "desktop_image_width": "large",
+        "image_first": true,
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_alignment_mobile": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_FYgxLa": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_kFaFiN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Intelligence Mapping.",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_Wd7nJk": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Quick and easy to setup. The Mapping feature simplifies setup to just a few taps on the BESTMOW app.</p>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kFaFiN",
+        "text_Wd7nJk"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Untitled_800_x_600_px_5.webp",
+        "height": "medium",
+        "desktop_image_width": "large",
+        "image_first": false,
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_alignment_mobile": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "video_banner_K7HnaX": {
+      "type": "video-banner",
+      "name": "t:sections.video-banner.presets.name",
+      "settings": {
+        "enable_full_width": false,
+        "video_url": "",
+        "video": "shopify://files/videos/Why spend your weekends mowing .mp4",
+        "enable_controls": true,
+        "enable_autoload": true,
+        "enable_looping": true,
+        "video_height": "medium",
+        "color_scheme": "",
+        "heading": "",
+        "heading_size": "large",
+        "heading_decorative": false,
+        "description": "<p>Share information about your brand with your customers</p>",
+        "if_as_main_area": true,
+        "margin_top": 80,
+        "margin_bottom": 80
+      }
+    },
+    "image_banner_KQGmWK": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_4ULgHk": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Join the Future</p>",
+            "heading_size": "large",
+            "heading_decorative": false
+          }
+        },
+        "description_jgQ8az": {
+          "type": "description",
+          "settings": {
+            "text": "<h3>Full Experience with Zero Commitment</h3>"
+          }
+        },
+        "button_FkM6q8": {
+          "type": "button",
+          "settings": {
+            "button_label": "Start Now",
+            "button_link": "shopify://products/bestmow-1-5-acre-robotic-lawn-mower-with-ai-vision-rtk-titan-100",
+            "button_style": "primary",
+            "button_arrow": false,
+            "secondary_button_label": "",
+            "secondary_button_link": "",
+            "secondary_button_style": "secondary",
+            "secondary_button_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4ULgHk",
+        "description_jgQ8az",
+        "button_FkM6q8"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "enable_full_width": true,
+        "image": "shopify://shop_images/Untitled_1800_x_800_px.webp",
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "enable_adapter_transparent_header": false,
+        "color_scheme": "accent-1",
+        "desktop_content_position": "middle-right",
+        "show_text_box": true,
+        "text_box_opacity": 0,
+        "enabled_blur_effect": false,
+        "desktop_content_alignment": "center",
+        "image_behavior": "none",
+        "mobile_content_position": "middle-center",
+        "mobile_content_alignment": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "image_banner_BBq74G": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_3d3hN6": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1>Revolution. On Every Rotation</h1>",
+            "heading_size": "small",
+            "heading_decorative": false
+          }
+        },
+        "description_kjnmRR": {
+          "type": "description",
+          "settings": {
+            "text": "<h2>Start from $79.99 Per Month</h2>"
+          }
+        },
+        "button_bixWAD": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get Yours Now.",
+            "button_link": "shopify://products/bestmow-1-5-acre-robotic-lawn-mower-with-ai-vision-rtk-titan-100",
+            "button_style": "primary",
+            "button_arrow": false,
+            "secondary_button_label": "",
+            "secondary_button_link": "",
+            "secondary_button_style": "secondary",
+            "secondary_button_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_3d3hN6",
+        "description_kjnmRR",
+        "button_bixWAD"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "enable_full_width": true,
+        "image": "shopify://shop_images/Untitled_1800_x_800_px_1.webp",
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "enable_adapter_transparent_header": false,
+        "color_scheme": "accent-1",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "text_box_opacity": 0,
+        "enabled_blur_effect": false,
+        "desktop_content_alignment": "center",
+        "image_behavior": "none",
+        "mobile_content_position": "middle-center",
+        "mobile_content_alignment": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "narrow_image_banner_wpX7D9": {
+      "type": "narrow-image-banner",
+      "disabled": true,
+      "name": "t:sections.narrow-banner-image.presets.name",
+      "settings": {
+        "enable_full_width": false,
+        "image": "shopify://shop_images/special_offer.png",
+        "enable_fixed": false,
+        "height": 220,
+        "link": "https://www.bestmow.com/pages/military-discount",
+        "height_mobile": 100,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "image_gallery_qQhU8X": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_7JQKim": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "1",
+            "image": "shopify://shop_images/Untitled_800_x_600_px_9.webp",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "2",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_LnXXKF": {
+          "type": "image",
+          "settings": {
+            "columns": "2",
+            "rows": "2",
+            "image": "shopify://shop_images/Untitled_800_x_600_px_10.webp",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "2",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_xWCUmK": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "2",
+            "image": "shopify://shop_images/Untitled_800_x_600_px_11.webp",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_R3M3dh": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "2",
+            "image": "shopify://shop_images/Untitled_800_x_600_px_7.webp",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_8UWhLe": {
+          "type": "image",
+          "settings": {
+            "columns": "2",
+            "rows": "1",
+            "image": "shopify://shop_images/Untitled_800_x_600_px_7.webp",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_i6Mpkb": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "1",
+            "image": "shopify://shop_images/Untitled_800_x_600_px_6.webp",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        }
+      },
+      "block_order": [
+        "image_7JQKim",
+        "image_LnXXKF",
+        "image_xWCUmK",
+        "image_R3M3dh",
+        "image_8UWhLe",
+        "image_i6Mpkb"
+      ],
+      "name": "t:sections.image-gallery.presets.name",
+      "settings": {
+        "show_section_header": true,
+        "heading": "",
+        "description": "",
+        "water_text": "",
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "multicolumn_QU4VTR": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_epa4Lj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/6921749625734_.pic.jpg",
+            "heading": "Weather Proof",
+            "description": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_zmFagz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_500_x_500_px.webp",
+            "heading": "Seamless IoT Connectivity",
+            "description": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_jpAgNj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_500_x_500_px_1_8292387f-9ef0-467f-83ce-9e435e2b0429.webp",
+            "heading": "App Control",
+            "description": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_whQQUD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_500_x_500_px_2.webp",
+            "heading": "Anti-Theft Protection",
+            "description": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_epa4Lj",
+        "column_zmFagz",
+        "column_jpAgNj",
+        "column_whQQUD"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "show_section_header": true,
+        "heading": "",
+        "description": "",
+        "water_text": "",
+        "button_label": "",
+        "button_link": "",
+        "image_ratio": "square",
+        "alignment": "center",
+        "show_content_wrapper": true,
+        "color_scheme": "",
+        "keep_button_aligned": true,
+        "columns_in_mobile": "1",
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "text_with_icons_39G3TY": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon_text_338HXy": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "truck",
+            "image": "shopify://shop_images/truck.png",
+            "heading": "Free Shipping",
+            "description": "<p>Enjoy the convenience of free shipping on every order</p>"
+          }
+        },
+        "icon_text_wGiQRa": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "card",
+            "image": "shopify://shop_images/cancel_anytime.png",
+            "heading": "Cancel Anytime",
+            "description": "<p>Enjoy the flexibility to cancel whenever you need—no questions</p>"
+          }
+        },
+        "icon_text_6QPYGf": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "return",
+            "image": "shopify://shop_images/customer.png",
+            "heading": "Support You Can Count On",
+            "description": "<p>Experience 24/7 service that puts you first—always</p>"
+          }
+        },
+        "icon_text_BGckpC": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "chat",
+            "image": "shopify://shop_images/warranty3.png",
+            "heading": "Secure Payments",
+            "description": "<p>Pay easily using your debit or credit card, or through secure platforms</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_text_338HXy",
+        "icon_text_wGiQRa",
+        "icon_text_6QPYGf",
+        "icon_text_BGckpC"
+      ],
+      "name": "t:sections.text-with-icons.presets.name",
+      "settings": {
+        "show_section_header": false,
+        "heading": "Text with icons",
+        "description": "",
+        "color_scheme": "",
+        "columns_on_desktop": 4,
+        "item_alignment": "center",
+        "icon_size": "large",
+        "enable_mobile_slider": false,
+        "columns_on_mobile": "2",
+        "hide_description": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "carousal_WpGAKi",
+    "video_banner_kxPinT",
+    "rich_text_63VY4w",
+    "image_banner_qmaqqF",
+    "image_gallery_RXTyWT",
+    "image_with_text_pFcwxF",
+    "rich_text_bqHD8W",
+    "image_with_text_gWxdFx",
+    "image_with_text_FYgxLa",
+    "video_banner_K7HnaX",
+    "image_banner_KQGmWK",
+    "image_banner_BBq74G",
+    "narrow_image_banner_wpX7D9",
+    "image_gallery_qQhU8X",
+    "multicolumn_QU4VTR",
+    "text_with_icons_39G3TY"
+  ]
+}

@@ -1,0 +1,652 @@
+{% comment %}
+  Cart details - coupon APPLY only (no remove)
+  UI shows:
+    - Subtotal: original_total_price (before discounts)
+    - Discount: total discount (auto/manual)
+    - Shipping: display slot ($0.00 by default)
+    - Estimated total: total_price (after discounts) -> matches checkout
+{% endcomment %}
+
+<div class="cart-details{% if cart == empty %} is-empty{% endif %}">
+  <div class="cart-details-inner{% if show_recommended_products %} has-recommended-products{% endif %}">
+  {%- if cart == empty -%}
+    <div class="cart-details-inner--empty">
+      <h2 class="uppercase h4 mb-4">{{ 'sections.cart.empty' | t }}</h2>
+      <a href="{{ routes.all_products_collection_url }}" class="button button--pill button--hover-animate">
+        {{ 'general.continue_shopping' | t }}{% render 'icon-sets', icon: 'arrow-right' %}
+      </a>
+      {%- if shop.customer_accounts_enabled and customer == null -%}
+        <div class="mt-4">{{ 'sections.cart.login.title' | t }}</div>
+        <div class="mb-1">{{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}</div>
+      {%- endif -%}
+    </div>
+
+    {%- if show_recommended_products -%}
+      {% assign title = 'products.recommendation.title' | t %}
+      {%- if recommended_type == 'auto' -%}
+        {% render 'recommendation-by-history', title: title, intent: 'related', show_quick_add: settings.card_enable_quick_add, number: recommended_product_limit %}
+      {%- else -%}
+        {% render 'featured-products-card', products: recommended_products, title: title, show_quick_add: settings.card_enable_quick_add %}
+      {%- endif -%}
+    {%- endif -%}
+
+  {%- else -%}
+    {% liquid
+      if settings.cart_gift_wrapping_product != blank
+        assign gift_wrap_item = cart.items | where: 'product', settings.cart_gift_wrapping_product | first
+      endif
+      assign gift_wrap_item_quantity = gift_wrap_item.quantity | default: 0
+      assign newest_item = blank
+    %}
+
+    <div class="cart-details-main hidden-scrollbar">
+      <cart-items
+        id="Cart-Items-Main-{{ section.id }}"
+        data-section="{{ section.id }}"
+        {% if in_drawer %}data-in-drawer{% endif %}
+        {% if gift_wrap_item != blank %}
+          data-gift-wrap-id="{{ settings.cart_gift_wrapping_product.selected_or_first_available_variant.id }}"
+          data-gift-wrap-index="{{ gift_wrap_item.index | plus: 1 }}"
+          data-gift-wrap-quantity="{{ gift_wrap_item.quantity }}"
+          data-item-quantity="{{ cart.item_count | minus: gift_wrap_item_quantity }}"
+        {% endif %}
+      >
+        <form id="Cart-Form-{{ section.id }}" class="cart-form" action="{{ routes.cart_url }}" method="post">
+          <div id="Cart-Items-{{ section.id }}" class="cart-items-list">
+            <table class="table-collapse">
+              <caption class="visually-hidden">{{ 'sections.cart.title' | t }}</caption>
+              <thead class="visually-hidden-in-cart-drawer visually-hidden-mobile">
+                <tr>
+                  <th class="th-product-image"><span aria-hidden="true">{{ 'sections.cart.headings.product' | t }}</span><span class="visually-hidden">{{ 'sections.cart.headings.image' | t }}</span></th>
+                  <th class="th-product-info"><span class="visually-hidden">{{ 'sections.cart.headings.product' | t }}</span></th>
+                  <th class="th-product-quantity"><span>{{ 'sections.cart.headings.quantity' | t }}</span></th>
+                  <th class="th-product-total"><span>{{ 'sections.cart.headings.total' | t }}</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                {%- for item in cart.items -%}
+                  {%- if item.product == settings.cart_gift_wrapping_product -%}
+                    <tr id="Cart-Item-{{ section.id }}-{{ item.index | plus: 1 }}" class="cart-item gift-wrap-item hover-trigger has-loading">
+                      <td class="cart-item-media">
+                        <div class="item-media-wrapper">
+                          <a class="media media--square" href="{{ item.url }}" tabindex="-1">
+                            {% render 'lazy-image', image_object: item.image, class: 'animate--scale-up', sizes: '300px', widths: '165, 360, 450, 660, 900', placeholder: 'product-1' %}
+                          </a>
+                        </div>
+                      </td>
+                      <td class="cart-item-details">
+                        <h5 class="cart-item-name font-body font-size-s mb-1"><a href="{{ item.url }}" class="link link-underline">{{- item.product.title | escape -}}</a></h5>
+                        <div class="cart-item-price"><div class="original-price"><small>{{ item.original_price | money }}</small></div><div class="gift-wrap-quantity">x {{ item.quantity }}</div></div>
+                      </td>
+                      <td class="cart-item-quantity">{{ item.quantity }}</td>
+                      <td class="cart-item-totals"><b>{{ item.original_line_price | money }}</b></td>
+                    </tr>
+                  {%- else -%}
+                    {% if newest_item == blank %}{% assign newest_item = item %}{% endif %}
+                    <tr id="Cart-Item-{{ section.id }}-{{ item.index | plus: 1 }}" class="cart-item hover-trigger has-loading">
+                      <td class="cart-item-media">
+                        <div class="item-media-wrapper">
+                          <a class="media media--square" href="{{ item.url }}" tabindex="-1">
+                            {% render 'lazy-image', image_object: item.image, class: 'animate--scale-up', sizes: '300px', widths: '165, 360, 450, 660, 900', placeholder: 'product-1' %}
+                          </a>
+                        </div>
+                      </td>
+
+                      <td class="cart-item-details">
+                        <cart-remove id="Cart-Remove-{{ section.id }}-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
+                          <button type="button" class="cart-remove-button button button--icon button--small button--ethereal focus-inset"
+                            aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}" data-variant-id="{{ item.variant.id }}">
+                            {%- render 'icon-sets', icon: 'close' -%}
+                          </button>
+                        </cart-remove>
+
+                        {%- if settings.cart_show_vendor -%}<p class="caption">{{ item.product.vendor }}</p>{%- endif -%}
+                        <h5 class="cart-item-name font-body font-size-s mb-1"><a href="{{ item.url }}" class="link link-underline">{{- item.product.title | escape -}}</a></h5>
+
+                        <div class="cart-item-price mb-1">
+                          {%- if item.original_price != item.final_price -%}
+                            <div class="discounted-prices">
+                              <span class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</span>
+                              <s class="original-price"><small>{{- item.original_price | money -}}</small></s>
+                              <span class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</span>
+                              <b class="final-price"><small>{{ item.final_price | money }}</small></b>
+                            </div>
+                          {%- else -%}
+                            <div class="original-price"><small>{{ item.original_price | money }}</small></div>
+                          {%- endif -%}
+
+                          <quantity-input class="cart-quantity quantity" role="group" aria-label="{{ 'sections.cart.quantity_input' | t }}">
+                            <button class="quantity-button no-js-hidden" name="minus" type="button"><span class="visually-hidden">{{- 'products.product.quantity.decrease' | t: product: item.product.title | escape -}}</span>-</button>
+                            <input class="quantity-input" type="number" data-quantity-variant-id="{{ item.variant.id }}" name="updates[]"
+                              value="{{ item.quantity }}" data-cart-quantity="{{ cart | item_count_for_variant: item.variant.id }}"
+                              min="{{ item.variant.quantity_rule.min }}" {% if item.variant.quantity_rule.max != null %}max="{{ item.variant.quantity_rule.max }}"{% endif %}
+                              step="{{ item.variant.quantity_rule.increment }}" aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}" data-index="{{ item.index | plus: 1 }}">
+                            <button class="quantity-button no-js-hidden" name="plus" type="button"><span class="visually-hidden">{{- 'products.product.quantity.increase' | t: product: item.product.title | escape -}}</span>+</button>
+                          </quantity-input>
+                        </div>
+
+                        {%- unless item.product.has_only_default_variant -%}
+                          <div class="product-options" role="group" aria-label="{{ 'products.product.product_variants' | t }}">
+                            {%- for option in item.options_with_values -%}
+                              <span><span class="visually-hidden">{{ option.name }}</span>{{ option.value }}</span>
+                            {%- endfor -%}
+                          </div>
+                        {%- endunless -%}
+
+                        {%- if item.selling_plan_allocation.selling_plan != blank -%}
+                          <div class="selling-plan"><span class="plan-item">{%- render 'icon-sets', icon: 'recurring' -%}<span>{{- item.selling_plan_allocation.selling_plan.name | truncate: 30 -}}</span></span></div>
+                        {%- endif -%}
+
+                        {%- if item.line_level_discount_allocations.size > 0 -%}
+                          <ul class="line-discounts" aria-label="{{ 'customer.order.discount' | t }}">
+                            {%- for discount in item.line_level_discount_allocations -%}
+                              <li class="discount-item">{%- render 'icon-sets', icon: 'sale' -%}<span>{{- discount.discount_application.title | truncate: 30 }} (-{{- discount.discount_application.total_allocated_amount | money -}})</span></li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- endif -%}
+                      </td>
+
+                      <td class="cart-item-quantity">
+                        <div class="item-quantity-wrapper">
+                          <div class="quantity-container">
+                            <quantity-input class="cart-quantity quantity">
+                              <button class="quantity-button no-js-hidden" name="minus" type="button"><span class="visually-hidden">{{- 'products.product.quantity.decrease' | t: product: item.product.title | escape -}}</span>-</button>
+                              <input class="quantity-input" type="number" data-quantity-variant-id="{{ item.variant.id }}" name="updates[]"
+                                value="{{ item.quantity }}" data-cart-quantity="{{ cart | item_count_for_variant: item.variant.id }}"
+                                min="{{ item.variant.quantity_rule.min }}" {% if item.variant.quantity_rule.max != null %}max="{{ item.variant.quantity_rule.max }}"{% endif %}
+                                step="{{ item.variant.quantity_rule.increment }}" aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}" data-index="{{ item.index | plus: 1 }}">
+                              <button class="quantity-button no-js-hidden" name="plus" type="button"><span class="visually-hidden">{{- 'products.product.quantity.increase' | t: product: item.product.title | escape -}}</span>+</button>
+                            </quantity-input>
+                          </div>
+                          <cart-remove id="Cart-Remove-{{ section.id }}-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
+                            <button type="button" class="cart-remove-button button button--icon button--small button--secondary"
+                              aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}" data-variant-id="{{ item.variant.id }}">
+                              {% render 'icon-sets', icon: 'trash' %}
+                            </button>
+                          </cart-remove>
+                        </div>
+                      </td>
+
+                      <td class="cart-item-totals">
+                        <div class="cart-item-total-price has-loading" role="group" aria-label="Item total price">
+                          {% render 'loading-overlay' %}
+                          <div class="loading-hidden">
+                            {%- if item.original_line_price != item.final_line_price -%}
+                              <div class="discounted-prices">
+                                <span class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</span>
+                                <s class="original-price price">{{ item.original_line_price | money }}</s>
+                                <span class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</span>
+                                <b class="price">{{ item.final_line_price | money }}</b>
+                              </div>
+                            {%- else -%}
+                              <b class="price price--end">{{ item.original_line_price | money }}</b>
+                            {%- endif -%}
+
+                            {%- if item.variant.available and item.unit_price_measurement -%}
+                              <small class="unit-price light">
+                                <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
+                                {{ item.unit_price | money }}<span aria-hidden="true">/</span>
+                                <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
+                                {%- if item.unit_price_measurement.reference_value != 1 -%}{{- item.unit_price_measurement.reference_value -}}{%- endif -%}
+                                {{ item.unit_price_measurement.reference_unit }}
+                              </small>
+                            {%- endif -%}
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  {%- endif -%}
+                {%- endfor -%}
+              </tbody>
+            </table>
+            <p id="Cart-Line-Item-Status-{{ section.id }}" class="visually-hidden" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
+          </div>
+        </form>
+      </cart-items>
+
+      {%- if show_complementary_products -%}
+        {% assign title = 'products.complementary.title' | t %}
+        {% render 'recommendation-by-product', product_id: newest_item.product.id, title: title, show_quick_add: settings.card_enable_quick_add, number: complementary_product_limit %}
+      {%- endif -%}
+    </div>
+
+    <div class="cart-details-footer">
+      {%- if settings.enable_free_shipping_progress_bar and settings.free_shipping_threshold != blank -%}
+        <free-shipping-progress class="free-shipping-wrapper" data-total-amount="{{ cart.total_price }}" data-free-threshold="{{ settings.free_shipping_threshold }}"
+          {% if settings.enable_free_shipping_confetti %}data-confetti{% endif %} aria-live="polite" aria-atomic="true"
+          style="--color-unlocked-text: {{ settings.free_text_color }}; --color-unlocked-bar: {{ settings.free_bar_color.red }}, {{ settings.free_bar_color.green }}, {{ settings.free_bar_color.blue }}; --color-locked-text: {{ settings.no_free_text_color }}; --color-locked-bar: {{ settings.no_free_bar_color.red }}, {{ settings.no_free_bar_color.green }}, {{ settings.no_free_bar_color.blue }};">
+          <h5 class="free-shipping-message font-body font-weight-bold"></h5>
+          <div class="free-shipping-progress"></div>
+        </free-shipping-progress>
+      {%- endif -%}
+
+      {%- if settings.cart_gift_wrapping_product != blank -%}
+        <gift-wrapping id="Cart-Gift-Wrapping-{{ section.id }}" class="cart-gift-wrapping d-block mb-1"
+          data-gift-wrapping-id="{{ settings.cart_gift_wrapping_product.selected_or_first_available_variant.id }}"
+          data-item-quantity="{{ cart.item_count | minus: gift_wrap_item_quantity }}" data-section="{{ section.id }}">
+          <div class="checkbox">
+            <label>
+              <input id="Gift-Wrapping-Checkbox-{{ section.id }}" type="checkbox" name="attributes[gift-wrap]" value="Yes"
+                {% if cart.attributes['gift-wrap'] == 'Yes' and cart.attributes['gift-wrap'] != blank %}checked{% endif %}>
+              <span class="input-face"><span></span></span>{{ 'sections.cart.gift_wrap' | t }}
+            </label>
+          </div>
+        </gift-wrapping>
+      {%- endif -%}
+
+      {%- comment -%} ===== Coupon box ===== {%- endcomment -%}
+
+{% assign coupon_savings = 0 %}
+{% assign has_manual_code = false %}
+{% assign manual_titles = '' %}
+
+{%- for _d in cart.cart_level_discount_applications -%}
+  {% assign coupon_savings = coupon_savings | plus: _d.total_allocated_amount %}
+  {% if _d.type == 'discount_code' %}
+    {% assign has_manual_code = true %}
+    {% if manual_titles != '' %}{% assign manual_titles = manual_titles | append: '||' %}{% endif %}
+    {% assign manual_titles = manual_titles | append: _d.title %}
+  {% endif %}
+{%- endfor -%}
+
+{%- unless has_manual_code -%}
+  {%- for _item in cart.items -%}
+    {%- for _alloc in _item.line_level_discount_allocations -%}
+      {% if _alloc.discount_application and _alloc.discount_application.type == 'discount_code' %}
+        {% assign has_manual_code = true %}
+        {% if manual_titles != '' %}{% assign manual_titles = manual_titles | append: '||' %}{% endif %}
+        {% assign manual_titles = manual_titles | append: _alloc.discount_application.title %}
+      {% endif %}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endunless -%}
+
+      <div id="Cart-Discount-Box-{{ section.id }}" class="cart-coupon-box mb-2">
+        <style>
+          .cart-coupon-box{padding:10px 12px;border:1px solid rgba(0,0,0,.12);border-radius:12px;margin:10px 0;background:#fff}
+          .cart-coupon-row{display:flex;gap:10px;align-items:center}
+          .cart-coupon-row .field{flex:1}
+          .cart-coupon-row input.field-input{height:40px;transition:opacity 0.2s ease}
+          .coupon-tags{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}
+          .coupon-tag{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;background:#f5f5f5;font-weight:600;font-size:12px;line-height:1}
+          .cart-coupon-summary{margin-top:8px}
+          .cart-coupon-summary .sr{display:flex;justify-content:space-between;margin-top:4px}
+          .text--danger{color:#d32f2f}.muted{opacity:.7}
+          
+          /* 优化的状态反馈样式 */
+          .status-success{color:#2e7d32 !important;opacity:1 !important}
+          .status-warning{color:#f57c00 !important;opacity:1 !important}
+          .status-error{color:#d32f2f !important;opacity:1 !important}
+          .status-info{color:#1976d2 !important;opacity:1 !important}
+          
+          /* 按钮加载状态 */
+          .button.loading{opacity:0.7;pointer-events:none;position:relative}
+          .button.loading::after{content:'';position:absolute;width:16px;height:16px;margin:auto;border:2px solid transparent;border-top-color:currentColor;border-radius:50%;animation:spin 1s ease infinite}
+          @keyframes spin{to{transform:rotate(360deg)}}
+        </style>
+
+        <form class="cart-coupon-row" novalidate data-cart-discount-form data-section="{{ section.id }}">
+          <div class="field">
+            <input type="text" class="field-input" name="discount" autocomplete="off" placeholder="Discount code" aria-label="Discount code" data-cart-discount-code>
+            <span class="field-label">Discount code</span>
+          </div>
+          <button type="submit" class="button button--hover-animate" data-apply-btn>APPLY</button>
+        </form>
+
+        {%- if has_manual_code -%}
+          <div class="coupon-tags">
+            {%- if manual_titles != '' -%}
+              {% assign _tags = manual_titles | split: '||' %}
+              {%- for t in _tags -%}
+                <span class="coupon-tag">{% render 'icon-sets', icon: 'tag' %} <span>{{ t | escape }}</span></span>
+              {%- endfor -%}
+            {%- else -%}
+              <span class="coupon-tag">{% render 'icon-sets', icon: 'tag' %} <span>Coupon applied</span></span>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+
+        <small id="Cart-Discount-Status-{{ section.id }}" class="light muted" hidden></small>
+
+        <div class="cart-coupon-summary">
+          <div class="sr"><span>Subtotal:</span><b dir="ltr">{{ cart.original_total_price | money }}</b></div>
+          <div class="sr"><span>Discount:</span><b class="text--danger" dir="ltr">-{% if coupon_savings > 0 %}{{ coupon_savings | money }}{% else %}{{ cart.total_discount | money }}{% endif %}</b></div>
+          <div class="sr"><span>Shipping:</span><b class="text--danger" dir="ltr">{{ 0 | money }}</b></div>
+        </div>
+      </div>
+
+      {%- if cart.cart_level_discount_applications.size > 0 -%}
+        <div class="footer-discount">
+          <h5 class="font-body font-size-s mb-1">
+            {%- if cart.cart_level_discount_applications.size > 1 -%}{{ 'sections.cart.order_discounts' | t }}:{%- else -%}{{ 'sections.cart.order_discount' | t }}:{%- endif -%}
+          </h5>
+          <ul class="discounts" aria-label="{{ 'customer.order.discount' | t }}">
+            {%- for discount in cart.cart_level_discount_applications -%}
+              <li class="discount-item">{%- render 'icon-sets', icon: 'sale' -%}<span>{{ discount.title }} (-{{ discount.total_allocated_amount | money }})</span></li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endif -%}
+
+      <div class="footer-subtotal" data-total-original>
+        <h5 class="font-body font-size-s mb-0">{{ 'sections.cart.estimated_total' | t }}:</h5>
+        <b class="total-price" dir="ltr">{{ cart.total_price | money_with_currency }}</b>
+      </div>
+
+      <div class="footer-ctas">
+        <div class="ctas-button-group">
+          <button class="cart-checkout-button button button--hover-animate focus-inset" type="submit" name="checkout" form="Cart-Form-{{ section.id }}">
+            {% render 'icon-sets', icon: 'lock' %} {{ 'sections.cart.checkout' | t }}
+          </button>
+          <a href="{{ routes.cart_url }}" class="view-cart-button button button--secondary button--hover-animate focus-inset small-hide">
+            {{ 'sections.cart.view' | t }} ({{ cart.item_count | default: 0 }})
+          </a>
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+  </div>
+</div>
+
+{%- if settings.enable_cart_shipping_estimate -%}
+  <script src="{{ 'country-province.js' | asset_url }}" defer></script>
+{%- endif -%}
+
+<script>
+(function(){
+  /* ================= Config & helpers ================= */
+  const SECTION_ID = "{{ section.id }}";
+  const CART_URL = "{{ routes.cart_url }}";
+  const CART_SECTION_URL = CART_URL + "?section_id=" + encodeURIComponent(SECTION_ID) + "&_ts="; // cache buster
+  const PERMANENT_DOMAIN = "{{ shop.permanent_domain }}";
+
+  const $ = (sel, root) => (root||document).querySelector(sel);
+  const statusEl = () => $("#Cart-Discount-Status-{{ section.id }}");
+
+  // 检测移动端设备
+  const isMobile = () => {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+           window.innerWidth <= 768 ||
+           'ontouchstart' in window;
+  };
+
+  // 根据设备类型调整timeout时间
+  const getTimeouts = () => {
+    const mobile = isMobile();
+    return {
+      apply: mobile ? 6000 : 3000,    // 移动端6秒，桌面端3秒
+      reprice: mobile ? 4000 : 2000,  // 移动端4秒，桌面端2秒
+      refresh: mobile ? 4000 : 2000   // 移动端4秒，桌面端2秒
+    };
+  };
+
+  /* ================= 优化状态管理和用户体验 ================= */
+  function setStatus(msg, keep, type = 'info'){
+    const s = statusEl(); 
+    if(!s) return;
+    
+    s.textContent = msg || "";
+    s.hidden = !msg;
+    
+    // 添加状态类型样式
+    s.className = `light muted status-${type}`;
+    
+    if(msg && !keep){ 
+      setTimeout(()=>{ 
+        const x = statusEl(); 
+        if(x && x.textContent === msg) x.hidden = true; 
+      }, type === 'success' ? 5000 : 3000); 
+    }
+  }
+  
+  function setDisabled(dis){
+    const f = document.querySelector('[data-cart-discount-form]'); 
+    if(!f) return;
+    
+    const input = f.querySelector('[data-cart-discount-code]');
+    const btn = f.querySelector('[data-apply-btn]');
+    
+    input?.toggleAttribute('disabled', !!dis);
+    btn?.toggleAttribute('disabled', !!dis);
+    
+    // 添加加载状态视觉反馈
+    if (dis) {
+      btn?.classList.add('loading');
+      if (input) input.style.opacity = '0.6';
+    } else {
+      btn?.classList.remove('loading');
+      if (input) input.style.opacity = '1';
+    }
+  }
+
+  // 优化网络请求函数，添加重试机制
+  async function robustGetCart(retries = 2) {
+    for (let i = 0; i <= retries; i++) {
+      try {
+        const r = await fx('/cart.js?_=' + Date.now());
+        return await r.json();
+      } catch (error) {
+        if (i === retries) return null;
+        await new Promise(resolve => setTimeout(resolve, 200 * (i + 1))); // 指数退避
+      }
+    }
+    return null;
+  }
+
+  const fx = (url,opt)=>fetch(url,Object.assign({credentials:'same-origin',cache:'no-store',headers:{'X-Requested-With':'XMLHttpRequest'}},opt||{}));
+  async function getCart(){ try{ const r=await fx('/cart.js?_=' + Date.now()); return await r.json(); }catch{ return null; } }
+
+  function rmDiscountParam(){
+    try{
+      const u=new URL(location.href);
+      if(u.searchParams.has('discount')){ u.searchParams.delete('discount'); history.replaceState(null,'',u.toString()); }
+    }catch{}
+  }
+
+  /* Partial refresh (no shimmer, minimal DOM replace) */
+  const SWAP_SELECTORS = ['#Cart-Discount-Box-{{ section.id }}','.footer-discount','.footer-subtotal','free-shipping-progress'];
+  async function refreshUI(){
+    try{
+      const res = await fx(CART_SECTION_URL + Date.now());
+      const html = await res.text();
+      const doc = new DOMParser().parseFromString(html,'text/html');
+      requestAnimationFrame(() => {
+        for (const sel of SWAP_SELECTORS){
+          const fresh = doc.querySelector(sel);
+          const curr  = document.querySelector(sel);
+          if (fresh && curr) curr.replaceWith(fresh);
+        }
+        document.dispatchEvent(new CustomEvent('theme:section:load',{detail:{sectionId:SECTION_ID}}));
+      });
+    }catch{}
+  }
+
+  const uniq = arr => Array.from(new Set(arr.filter(Boolean)));
+  const SAME_HOSTS = uniq([location.origin, PERMANENT_DOMAIN ? ('https://'+PERMANENT_DOMAIN) : null]);
+  const APPLY_PATH = code => `/discount/${encodeURIComponent(code)}?redirect=/cart`;
+
+  function isSameHost(u){ try{ return new URL(u, location.origin).host === location.host; }catch{ return true; } }
+  async function hit(u){
+    try{
+      if (isSameHost(u)) { await fx(u,{redirect:'follow'}); }
+      else { await fetch(u,{mode:'no-cors',credentials:'omit',cache:'no-store'}); }
+    }catch{}
+  }
+
+  function hasManual(cart){
+    if(!cart) return false;
+    const a=(cart.cart_level_discount_applications||[]).some(d=>d&&d.type==='discount_code');
+    const b=(cart.items||[]).some(i=>(i.line_level_discount_allocations||[]).some(x=>x.discount_application&&x.discount_application.type==='discount_code'));
+    return a||b;
+  }
+
+  /* Promise timeout helper (prevents stuck "Applying…") */
+  function withTimeout(promise, ms){
+    return Promise.race([
+      promise,
+      new Promise((_,reject)=>setTimeout(()=>reject(new Error('timeout')), ms))
+    ]);
+  }
+
+  /* ================= Apply Code (优化版 - 修复移动端错误) ================= */
+  async function applyCode(code, form){
+    if(!code){
+      setStatus('Please enter a discount code');
+      form?.querySelector('[data-cart-discount-code]')?.focus();
+      return;
+    }
+
+    setDisabled(true);
+    setStatus('Applying discount code...', true);
+
+    const timeouts = getTimeouts();
+    let hasError = false;
+    let errorMessage = '';
+
+    // 并行开始获取初始状态
+    const beforePromise = robustGetCart();
+    
+    try {
+      // 第1阶段：应用折扣码 (使用动态timeout)
+      await withTimeout(
+        Promise.all(SAME_HOSTS.map(h => hit(h + APPLY_PATH(code)))), 
+        timeouts.apply
+      );
+
+      // 第2阶段：强制重新计价
+      const repricePromise = withTimeout(
+        fx('/cart/update.js', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({attributes: {_force_reprice: String(Date.now())}})
+        }),
+        timeouts.reprice
+      );
+
+      // 第3阶段：并行获取状态
+      const [before, _] = await Promise.all([
+        beforePromise,
+        repricePromise.catch((err) => {
+          console.warn('Reprice timeout/error:', err);
+          return null; // 不阻塞主流程
+        })
+      ]);
+
+      rmDiscountParam();
+
+      // 第4阶段：多次尝试获取最新状态 (移动端网络不稳定)
+      let after = null;
+      let attempts = isMobile() ? 3 : 2;
+      
+      for (let i = 0; i < attempts; i++) {
+        try {
+          // 并行执行UI刷新和状态检查
+          const [cartData, _refreshResult] = await Promise.all([
+            robustGetCart(),
+            withTimeout(refreshUI(), timeouts.refresh).catch(() => {})
+          ]);
+          
+          if (cartData) {
+            after = cartData;
+            break;
+          }
+          
+          // 如果不是最后一次尝试，等待一小段时间再重试
+          if (i < attempts - 1) {
+            await new Promise(resolve => setTimeout(resolve, 300 * (i + 1)));
+          }
+        } catch (err) {
+          console.warn(`Attempt ${i + 1} failed:`, err);
+          if (i === attempts - 1) {
+            hasError = true;
+            errorMessage = 'Network timeout, checking discount status...';
+          }
+        }
+      }
+
+      // 验证折扣码是否成功应用
+      const changed = !!after && (
+        (after.total_discount > ((before && before.total_discount) || 0)) ||
+        (after.total_price < ((before && before.total_price) || Number.MAX_SAFE_INTEGER))
+      );
+      const manual = hasManual(after);
+
+      // 智能状态反馈 (防止误报错误)
+      if (changed || manual) {
+        setStatus('✅ Discount code applied successfully!', false, 'success');
+        // 清空输入框
+        const input = form?.querySelector('[data-cart-discount-code]');
+        if (input) input.value = '';
+      } else if (hasError) {
+        // 延迟显示错误信息，给更多时间检查最终状态
+        setTimeout(async () => {
+          const finalCheck = await robustGetCart();
+          const finalManual = hasManual(finalCheck);
+          const finalChanged = !!finalCheck && !!before && (
+            (finalCheck.total_discount > (before.total_discount || 0)) ||
+            (finalCheck.total_price < before.total_price)
+          );
+          
+          if (finalChanged || finalManual) {
+            setStatus('✅ Discount code applied successfully!', false, 'success');
+            refreshUI().catch(() => {});
+          } else {
+            setStatus('❌ Error applying discount code, please try again later', false, 'error');
+          }
+        }, isMobile() ? 1500 : 1000);
+      } else {
+        setStatus('⚠️ Discount code may conflict with automatic discounts or will take effect at checkout', false, 'warning');
+      }
+
+    } catch (error) {
+      console.warn('Discount application error:', error);
+      
+      // 延迟错误显示，先检查是否实际成功
+      setTimeout(async () => {
+        const finalCheck = await robustGetCart();
+        if (hasManual(finalCheck)) {
+          setStatus('✅ Discount code applied successfully!', false, 'success');
+          refreshUI().catch(() => {});
+        } else {
+          setStatus('❌ Error applying discount code, please try again later', false, 'error');
+        }
+      }, isMobile() ? 2000 : 1500);
+      
+    } finally {
+      setDisabled(false);
+      
+      // 确保UI最终一致性
+      setTimeout(() => {
+        refreshUI().catch(() => {});
+      }, isMobile() ? 500 : 100);
+    }
+  }
+
+  /* Submit handler */
+  document.addEventListener('submit', (e)=>{
+    const f=e.target.closest('[data-cart-discount-form]'); if(!f) return;
+    e.preventDefault();
+    const code=f.querySelector('[data-cart-discount-code]')?.value?.trim();
+    applyCode(code,f);
+  });
+
+  /* Carry manual code to checkout (first one found) */
+  async function getManualCodesFromCart(){
+    const c = await robustGetCart(); if(!c) return [];
+    const out=[];
+    (c.cart_level_discount_applications||[]).forEach(d=>{ if(d&&d.type==='discount_code'&&d.title) out.push(String(d.title).trim()); });
+    (c.items||[]).forEach(i=>{ (i.line_level_discount_allocations||[]).forEach(a=>{ const da=a.discount_application; if(da&&da.type==='discount_code'&&da.title) out.push(String(da.title).trim()); }); });
+    return Array.from(new Set(out.filter(Boolean)));
+  }
+  document.addEventListener('click', async (e)=>{
+    const btn = e.target.closest('.cart-checkout-button'); if(!btn) return;
+    const codes = await getManualCodesFromCart(); if(!codes.length) return;
+    e.preventDefault(); btn.disabled = true;
+    try{ location.assign('/checkout?discount='+encodeURIComponent(codes[0])); }
+    finally{ setTimeout(()=>{ btn.disabled=false; }, 900); }
+  }, { capture:true });
+
+  /* Page restore (Safari/Chrome BFCache) */
+  window.addEventListener('pageshow',(ev)=>{ if(ev.persisted){ rmDiscountParam(); } });
+})();
+</script>
