@@ -507,11 +507,11 @@
         "description_jgQ8az",
         "button_FkM6q8"
       ],
-      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "enable_full_width": true,
-        "image_overlay_opacity": 10,
+        "image": "shopify://shop_images/jimeng-2025-10-22-6852.png",
+        "image_overlay_opacity": 30,
         "image_height": "medium",
         "enable_adapter_transparent_header": false,
         "color_scheme": "accent-1",
