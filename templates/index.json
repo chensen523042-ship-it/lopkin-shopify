@@ -276,6 +276,7 @@
         "image_xbzBLN",
         "image_LrAxeg"
       ],
+      "disabled": true,
       "name": "t:sections.image-gallery.presets.name",
       "settings": {
         "show_section_header": true,
