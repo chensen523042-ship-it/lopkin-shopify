@@ -292,7 +292,7 @@
         "heading_KfQHhj": {
           "type": "heading",
           "settings": {
-            "heading": "BESTMOW APP",
+            "heading": "LOPKIN APP",
             "heading_size": "medium",
             "heading_decorative": false
           }
@@ -300,7 +300,7 @@
         "text_cgeEEw": {
           "type": "text",
           "settings": {
-            "description": "<p>Download the BESTMOW App and take control of your BESTMOW!<br/>Activate your robot with ease using Bluetooth, Wi-Fi, or 4G, get step-by-step guidance, and manage everything remotely<br/>—All right at your fingertips.</p>",
+            "description": "<p>Download the LOPKIN App and take control of your LOPKIN !<br/>Activate your robot with ease using Bluetooth, Wi-Fi, or 4G, get step-by-step guidance, and manage everything remotely<br/>—All right at your fingertips.</p>",
             "limit_description_height": false
           }
         },
@@ -325,6 +325,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/jimeng-2025-10-22-8369-_ai.png",
         "height": "medium",
         "desktop_image_width": "medium",
         "image_first": false,
