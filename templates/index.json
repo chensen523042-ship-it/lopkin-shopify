@@ -29,6 +29,7 @@
             "button_link": "shopify://products/lopkin",
             "button_style": "primary",
             "button_arrow": true,
+            "image_mobile": "shopify://shop_images/20251017-120003.jpg",
             "mobile_content_position": "middle-center",
             "mobile_content_alignment": "center"
           }
