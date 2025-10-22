@@ -410,7 +410,7 @@
         "text_p8XMaE": {
           "type": "text",
           "settings": {
-            "description": "<p>Zero gap precision cutting. BESTMOW robot mower trims every blade with accuracy—so you can sit back and relax.</p>",
+            "description": "<p>Zero gap precision cutting. LOPKIN robot mower trims every blade with accuracy—so you can sit back and relax.</p>",
             "limit_description_height": false
           }
         }
@@ -421,6 +421,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/jimeng-2025-10-22-3760.png",
         "height": "medium",
         "desktop_image_width": "large",
         "image_first": true,
@@ -446,7 +447,7 @@
         "text_Wd7nJk": {
           "type": "text",
           "settings": {
-            "description": "<p>Quick and easy to setup. The Mapping feature simplifies setup to just a few taps on the BESTMOW app.</p>",
+            "description": "<p>Quick and easy to setup. The Mapping feature simplifies setup to just a few taps on the LOPKIN app.</p>",
             "limit_description_height": false
           }
         }
