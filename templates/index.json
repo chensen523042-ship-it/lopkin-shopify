@@ -36,8 +36,8 @@
         },
         "slide_K4Gdtj": {
           "type": "slide",
-          "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/jimeng-2025-10-22-2187.png",
             "image_overlay_opacity": 10,
             "color_scheme": "inverse",
             "desktop_content_position": "bottom-left",
