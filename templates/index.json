@@ -115,18 +115,18 @@
     "image_banner_qmaqqF": {
       "type": "image-banner",
       "blocks": {
+        "heading_betrqF": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>LOPKIN</strong></p>",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
         "description_ppekhM": {
           "type": "description",
           "settings": {
             "text": "<h1><em><strong>Stop Mowing. Start Living.</strong></em></h1>"
-          }
-        },
-        "heading_betrqF": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p><strong>BESTMOW Titan-100</strong></p>",
-            "heading_size": "medium",
-            "heading_decorative": false
           }
         },
         "description_EfUr3m": {
@@ -151,8 +151,8 @@
         }
       },
       "block_order": [
-        "description_ppekhM",
         "heading_betrqF",
+        "description_ppekhM",
         "description_EfUr3m",
         "button_r4jEEr"
       ],
@@ -162,6 +162,7 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "enable_full_width": true,
+        "image": "shopify://shop_images/jimeng-2025-10-22-8252.png",
         "image_overlay_opacity": 10,
         "image_height": "adapt",
         "enable_adapter_transparent_header": false,
