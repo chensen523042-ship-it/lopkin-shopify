@@ -208,6 +208,7 @@
     },
     "custom_section_header_gXYppC": {
       "type": "custom-section-header",
+      "disabled": true,
       "name": "t:sections.custom-section-header.presets.name",
       "settings": {
         "heading": "Precision Edging, Perfect Lawns.",
@@ -222,6 +223,7 @@
     },
     "image_comparison_banner_perhFV": {
       "type": "image-comparison-banner",
+      "disabled": true,
       "name": "t:sections.image-comparison-banner.presets.name",
       "settings": {
         "enable_full_width": false,
@@ -312,6 +314,7 @@
     },
     "custom_section_header_c6nMaK": {
       "type": "custom-section-header",
+      "disabled": true,
       "name": "t:sections.custom-section-header.presets.name",
       "settings": {
         "heading": "Product Features",
@@ -483,6 +486,7 @@
         "heading_RnzNhi",
         "description_acjqix"
       ],
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "enable_full_width": true,
@@ -540,6 +544,7 @@
         "text_nREzUT",
         "button_bJmHHk"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "height": "medium",
@@ -577,6 +582,7 @@
       "block_order": [
         "image_dAC3Yj"
       ],
+      "disabled": true,
       "name": "t:sections.image-gallery.presets.name",
       "settings": {
         "show_section_header": true,
