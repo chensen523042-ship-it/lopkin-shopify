@@ -15,7 +15,6 @@
         "slide_HFpGkg": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/banner_webp.webp",
             "image_overlay_opacity": 10,
             "color_scheme": "inverse",
             "desktop_content_position": "bottom-center",
@@ -35,8 +34,8 @@
         },
         "slide_K4Gdtj": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/banner3_1800_x_800_px.webp",
             "image_overlay_opacity": 10,
             "color_scheme": "inverse",
             "desktop_content_position": "bottom-left",
@@ -161,7 +160,6 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "enable_full_width": true,
-        "image": "shopify://shop_images/pic1_1800_x_800_px.webp",
         "image_overlay_opacity": 10,
         "image_height": "adapt",
         "enable_adapter_transparent_header": false,
@@ -187,7 +185,6 @@
           "settings": {
             "columns": "2",
             "rows": "2",
-            "image": "shopify://shop_images/Untitled_800_x_600_px_1_7c7ad662-306b-4b74-905e-c44e7eed0bc1.webp",
             "link": "",
             "heading": "Recharges. Repeats.",
             "heading_size": "large",
@@ -195,7 +192,6 @@
             "heading_position": "bottom-left",
             "mobile_columns": "2",
             "mobile_rows": "1",
-            "image_mobile": "shopify://shop_images/Untitled_800_x_600_px_1_54bf1fc1-6a69-47ff-8019-f3a9d9e495a8.jpg",
             "heading_size_mobile": "medium",
             "heading_color_mobile": "#ffffff",
             "heading_position_mobile": "middle-center"
@@ -206,7 +202,6 @@
           "settings": {
             "columns": "2",
             "rows": "2",
-            "image": "shopify://shop_images/Untitled_800_x_600_px_3.webp",
             "link": "",
             "heading": "Boundry Wire Free.",
             "heading_size": "large",
@@ -224,7 +219,6 @@
           "settings": {
             "columns": "2",
             "rows": "2",
-            "image": "shopify://shop_images/Untitled_800_x_600_px.webp",
             "link": "",
             "heading": "Mow 26,000 ft² a day",
             "heading_size": "large",
@@ -242,7 +236,6 @@
           "settings": {
             "columns": "1",
             "rows": "2",
-            "image": "shopify://shop_images/1_800_x_600_px_1.webp",
             "link": "",
             "heading": "Conquer Any Terrain.",
             "heading_size": "large",
@@ -260,7 +253,6 @@
           "settings": {
             "columns": "1",
             "rows": "2",
-            "image": "shopify://shop_images/Untitled_800_x_600_px_2.webp",
             "link": "",
             "heading": "Smart Obstacle Avoidance.",
             "heading_size": "large",
@@ -330,7 +322,6 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Untitled_500_x_500_px_1.webp",
         "height": "medium",
         "desktop_image_width": "medium",
         "image_first": false,
@@ -397,7 +388,6 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Untitled_800_x_600_px_4.webp",
         "height": "medium",
         "desktop_image_width": "large",
         "image_first": true,
@@ -434,7 +424,6 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Untitled_800_x_600_px_5.webp",
         "height": "medium",
         "desktop_image_width": "large",
         "image_first": false,
@@ -485,7 +474,6 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "enable_full_width": true,
-        "image": "shopify://shop_images/Untitled_1800_x_800_px.webp",
         "image_overlay_opacity": 10,
         "image_height": "medium",
         "enable_adapter_transparent_header": false,
@@ -542,7 +530,6 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "enable_full_width": true,
-        "image": "shopify://shop_images/Untitled_1800_x_800_px_1.webp",
         "image_overlay_opacity": 10,
         "image_height": "medium",
         "enable_adapter_transparent_header": false,
@@ -566,7 +553,6 @@
       "name": "t:sections.narrow-banner-image.presets.name",
       "settings": {
         "enable_full_width": false,
-        "image": "shopify://shop_images/special_offer.png",
         "enable_fixed": false,
         "height": 220,
         "link": "https://www.bestmow.com/pages/military-discount",
@@ -583,7 +569,6 @@
           "settings": {
             "columns": "1",
             "rows": "1",
-            "image": "shopify://shop_images/Untitled_800_x_600_px_9.webp",
             "link": "",
             "heading": "",
             "heading_size": "medium",
@@ -601,7 +586,6 @@
           "settings": {
             "columns": "2",
             "rows": "2",
-            "image": "shopify://shop_images/Untitled_800_x_600_px_10.webp",
             "link": "",
             "heading": "",
             "heading_size": "medium",
@@ -619,7 +603,6 @@
           "settings": {
             "columns": "1",
             "rows": "2",
-            "image": "shopify://shop_images/Untitled_800_x_600_px_11.webp",
             "link": "",
             "heading": "",
             "heading_size": "medium",
@@ -637,7 +620,6 @@
           "settings": {
             "columns": "1",
             "rows": "2",
-            "image": "shopify://shop_images/Untitled_800_x_600_px_7.webp",
             "link": "",
             "heading": "",
             "heading_size": "medium",
@@ -655,7 +637,6 @@
           "settings": {
             "columns": "2",
             "rows": "1",
-            "image": "shopify://shop_images/Untitled_800_x_600_px_7.webp",
             "link": "",
             "heading": "",
             "heading_size": "medium",
@@ -673,7 +654,6 @@
           "settings": {
             "columns": "1",
             "rows": "1",
-            "image": "shopify://shop_images/Untitled_800_x_600_px_6.webp",
             "link": "",
             "heading": "",
             "heading_size": "medium",
@@ -711,7 +691,6 @@
         "column_epa4Lj": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/6921749625734_.pic.jpg",
             "heading": "Weather Proof",
             "description": "",
             "button_label": "",
@@ -721,7 +700,6 @@
         "column_zmFagz": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Untitled_500_x_500_px.webp",
             "heading": "Seamless IoT Connectivity",
             "description": "",
             "button_label": "",
@@ -731,7 +709,6 @@
         "column_jpAgNj": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Untitled_500_x_500_px_1_8292387f-9ef0-467f-83ce-9e435e2b0429.webp",
             "heading": "App Control",
             "description": "",
             "button_label": "",
@@ -741,7 +718,6 @@
         "column_whQQUD": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Untitled_500_x_500_px_2.webp",
             "heading": "Anti-Theft Protection",
             "description": "",
             "button_label": "",
@@ -780,7 +756,6 @@
           "type": "icon_text",
           "settings": {
             "icon": "truck",
-            "image": "shopify://shop_images/truck.png",
             "heading": "Free Shipping",
             "description": "<p>Enjoy the convenience of free shipping on every order</p>"
           }
@@ -789,7 +764,6 @@
           "type": "icon_text",
           "settings": {
             "icon": "card",
-            "image": "shopify://shop_images/cancel_anytime.png",
             "heading": "Cancel Anytime",
             "description": "<p>Enjoy the flexibility to cancel whenever you need—no questions</p>"
           }
@@ -798,7 +772,6 @@
           "type": "icon_text",
           "settings": {
             "icon": "return",
-            "image": "shopify://shop_images/customer.png",
             "heading": "Support You Can Count On",
             "description": "<p>Experience 24/7 service that puts you first—always</p>"
           }
@@ -807,7 +780,6 @@
           "type": "icon_text",
           "settings": {
             "icon": "chat",
-            "image": "shopify://shop_images/warranty3.png",
             "heading": "Secure Payments",
             "description": "<p>Pay easily using your debit or credit card, or through secure platforms</p>"
           }
