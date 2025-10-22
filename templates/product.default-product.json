@@ -41,6 +41,7 @@
         },
         "custom_liquid_qWnWWq": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<!-- 每日24小时循环倒计时组�?-->\n<div class=\"daily-countdown-wrapper\">\n  <div class=\"daily-countdown\">\n    <div class=\"countdown-header\">\n      <h2 class=\"countdown-title\">UP TO $750 OFF</h2>\n    </div>\n    \n    <div class=\"countdown-display\">\n      <div class=\"time-unit\">\n        <span class=\"time-number\" id=\"hours\">00</span>\n        <span class=\"time-label\">Hours</span>\n      </div>\n      <div class=\"time-separator\">:</div>\n      <div class=\"time-unit\">\n        <span class=\"time-number\" id=\"minutes\">00</span>\n        <span class=\"time-label\">Minutes</span>\n      </div>\n      <div class=\"time-separator\">:</div>\n      <div class=\"time-unit\">\n        <span class=\"time-number\" id=\"seconds\">00</span>\n        <span class=\"time-label\">Seconds</span>\n      </div>\n    </div>\n  </div>\n</div>\n\n<style>\n.daily-countdown-wrapper {\n  width: 100%;\n  max-width: 700px;\n  margin: 16px auto;\n  padding: 0 12px;\n  box-sizing: border-box;\n}\n\n.daily-countdown {\n  background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);\n  border-radius: 15px;\n  overflow: hidden;\n  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);\n}\n\n.countdown-header {\n  padding: 12px 30px 12px;\n  text-align: center;\n}\n\n.countdown-title {\n  color: white;\n  font-size: 1.8rem;\n  font-weight: bold;\n  margin: 0;\n  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\n  line-height: 1.2; letter-spacing: 2px; word-spacing: 8px;\n}\n\n.countdown-display {\n  background: #000;\n  padding: 20px 20px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 16px;\n}\n\n.time-unit {\n  text-align: center;\n  min-width: 80px;\n}\n\n.time-number {\n  display: block;\n  color: white;\n  font-size: 2.2rem;\n  font-weight: bold;\n  line-height: 1;\n  margin-bottom: 8px;\n  font-family: Arial, sans-serif;\n}\n\n.time-label {\n  color: #999;\n  font-size: 0.9rem;\n  font-weight: 500;\n  text-transform: capitalize;\n}\n\n.time-separator {\n  color: white;\n  font-size: 1.8rem;\n  font-weight: bold;\n  margin-top: -20px;\n}\n\n/* 手机端适配 */\n@media (max-width: 768px) {\n  .daily-countdown-wrapper {\n    max-width: 100%;\n  }\n  \n  .countdown-title {\n    font-size: 2.5rem;\n  }\n  \n  .countdown-display {\n    padding: 20px 32px;\n    gap: 18px;\n  }\n  \n  .time-unit {\n    min-width: 75px;\n  }\n  \n  .time-number {\n    font-size: 2rem;\n  }\n  \n  .time-label {\n    font-size: 0.8rem;\n  }\n  \n  .time-separator {\n    font-size: 1.4rem;\n  }\n}\n\n@media (max-width: 480px) {\n  .daily-countdown-wrapper {\n    padding: 0 8px;\n    max-width: 100%;\n  }\n  \n  .countdown-title {\n    font-size: 1.6rem;\n  }\n  \n  .countdown-display {\n    padding: 18px 28px;\n    gap: 14px;\n  }\n  \n  .time-unit {\n    min-width: 65px;\n  }\n  \n  .time-number {\n    font-size: 1.8rem;\n  }\n  \n  .time-label {\n    font-size: 0.7rem;\n  }\n  \n  .time-separator {\n    font-size: 1.2rem;\n  }\n}\n</style>\n\n<script>\n// 每日24小时循环倒计�?\nfunction initDailyCountdown() {\n  function updateCountdown() {\n    var now = new Date();\n    \n    // 计算到明天午夜的时间\n    var tomorrow = new Date(now);\n    tomorrow.setDate(tomorrow.getDate() + 1);\n    tomorrow.setHours(0, 0, 0, 0);\n    \n    // 计算剩余时间\n    var timeLeft = tomorrow.getTime() - now.getTime();\n    \n    if (timeLeft > 0) {\n      var hours = Math.floor(timeLeft / (1000 * 60 * 60));\n      var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));\n      var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);\n      \n      // 更新显示\n      var hoursEl = document.getElementById('hours');\n      var minutesEl = document.getElementById('minutes');\n      var secondsEl = document.getElementById('seconds');\n      \n      if (hoursEl) hoursEl.textContent = hours.toString().padStart(2, '0');\n      if (minutesEl) minutesEl.textContent = minutes.toString().padStart(2, '0');\n      if (secondsEl) secondsEl.textContent = seconds.toString().padStart(2, '0');\n    }\n  }\n  \n  // 立即执行一�?\n  updateCountdown();\n  \n  // 每秒更新\n  setInterval(updateCountdown, 1000);\n}\n\n// 页面加载完成后启动倒计�?\nif (document.readyState === 'loading') {\n  document.addEventListener('DOMContentLoaded', initDailyCountdown);\n} else {\n  initDailyCountdown();\n}\n</script>"
           }
@@ -226,10 +227,8 @@
         "enable_full_width": false,
         "image_height": "medium",
         "comparison_direction": "horizontal",
-        "before_image": "shopify://shop_images/10095.png",
         "before_heading": "Before heading",
         "before_heading_color": "#ffffff",
-        "after_image": "shopify://shop_images/10089_2.jpg",
         "after_heading": "After heading",
         "after_heading_color": "#000000",
         "if_as_main_area": false,
@@ -263,7 +262,6 @@
       "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/10094_1.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "image_first": false,
@@ -301,7 +299,6 @@
       "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Untitled_800_x_600_px_4.webp",
         "height": "medium",
         "desktop_image_width": "medium",
         "image_first": true,
@@ -339,7 +336,6 @@
             "mp4_url": "https://cdn.shopify.com/videos/c/o/v/78c20dab435843f5a4c23b87e2a2e725.mp4",
             "title": "Ultra Quiet Mowing for Medium to Large Lawns",
             "desc": "It's refreshing to use a lawnmower that doesn't feel like you're operating a noisy beast. The quiet operation is amazing!",
-            "avatar": "shopify://shop_images/7_c4bb3525-8d23-4a5f-b27e-1c2867271303.jpg",
             "nickname": " TechMaster",
             "channel_url": ""
           }
@@ -353,7 +349,6 @@
             "mp4_url": "https://cdn.shopify.com/videos/c/o/v/6a40af1a984b4995b49633c3de76fecb.mp4",
             "title": "Smart Robotic Lawn Care Revolution",
             "desc": "Finally, a mower that works while I sleep! The precision cutting and automatic scheduling changed my lawn game completely.",
-            "avatar": "shopify://shop_images/1.jpg",
             "nickname": "CodeNinja",
             "channel_url": ""
           }
@@ -367,7 +362,6 @@
             "mp4_url": "https://cdn.shopify.com/videos/c/o/v/e57a37ca58494c4fa2d9835a6e671fc7.mp4",
             "title": "Cordless Freedom Meets Powerful Performance",
             "desc": "No more tangled cords or gas fumes! This electric mower delivers professional results with zero emissions and hassle-free operation.",
-            "avatar": "shopify://shop_images/4.jpg",
             "nickname": "PixelWizard",
             "channel_url": ""
           }
@@ -381,7 +375,6 @@
             "mp4_url": "https://cdn.shopify.com/videos/c/o/v/dc8b77637e8347e0baca11220635ba49.mp4",
             "title": "Effortless Mowing with Self-Propelled Technology",
             "desc": "My back thanks me every time I use this mower. The self-propelled feature makes mowing hills and large areas a breeze.",
-            "avatar": "shopify://shop_images/2.jpg",
             "nickname": " DataExplorer",
             "channel_url": ""
           }
@@ -393,10 +386,8 @@
             "youtube_id": "",
             "vimeo_id": "",
             "mp4_url": "https://cdn.shopify.com/videos/c/o/v/a2d85136d0ee401488527d605625c8ea.mp4",
-            "mp4_poster": "shopify://shop_images/Untitled_1800_x_800_px_1.webp",
             "title": "3-in-1 Lawn Care Solution That Actually Works",
             "desc": "Mow, mulch, and bag all in one machine. The versatility is incredible and saves me so much time and storage space.",
-            "avatar": "shopify://shop_images/6.jpg",
             "nickname": " CloudRunner",
             "channel_url": ""
           }
@@ -410,7 +401,6 @@
             "mp4_url": "https://cdn.shopify.com/videos/c/o/v/8702892e461e4cb896dae32597c158dc.mp4",
             "title": "Lightweight Design Without Compromising Power",
             "desc": "As a petite person, I finally found a mower I can easily maneuver. Lightweight yet powerful - perfect combination!",
-            "avatar": "shopify://shop_images/31ebc4370166f179d3bfdc3e4fceb5b0.jpg",
             "nickname": "ByteBuilder",
             "channel_url": ""
           }
@@ -418,14 +408,12 @@
         "review_96eraL": {
           "type": "review",
           "settings": {
-            "cover": "shopify://shop_images/Untitled_800_x_600_px_11.webp",
             "video_type": "youtube",
             "youtube_id": "",
             "vimeo_id": "",
             "mp4_url": "https://cdn.shopify.com/videos/c/o/v/caa669763c1f462890669ae88d067469.mp4",
             "title": "Precision Edge Cutting for Perfect Lawn Lines",
             "desc": "The boundary detection is spot-on! My lawn edges have never looked this crisp and professional before.",
-            "avatar": "shopify://shop_images/3.jpg",
             "nickname": "CyberVoyager",
             "channel_url": ""
           }
@@ -433,15 +421,12 @@
         "review_R3gac7": {
           "type": "review",
           "settings": {
-            "cover": "shopify://shop_images/Untitled_800_x_600_px_9.webp",
             "video_type": "youtube",
             "youtube_id": "",
             "vimeo_id": "",
             "mp4_url": "https://cdn.shopify.com/videos/c/o/v/45fce57665ee47d69b39a6564b9b47a0.mp4",
-            "mp4_poster": "shopify://shop_images/10064.jpg",
             "title": "Eco-Friendly Mowing That Protects Your Garden",
             "desc": "Love that I'm helping the environment while maintaining a beautiful lawn. The mulching feature enriches my soil naturally.",
-            "avatar": "shopify://shop_images/5_5e2a247b-c8d3-4e3a-bde3-3f7c8db4d14d.jpg",
             "nickname": " QuantumCoder",
             "channel_url": ""
           }
@@ -501,7 +486,6 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "enable_full_width": true,
-        "image": "shopify://shop_images/10090.jpg",
         "image_overlay_opacity": 10,
         "image_height": "medium",
         "enable_adapter_transparent_header": false,
@@ -558,7 +542,6 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/10117.png",
         "height": "medium",
         "desktop_image_width": "medium",
         "image_first": false,
@@ -578,7 +561,6 @@
           "settings": {
             "columns": "4",
             "rows": "2",
-            "image": "shopify://shop_images/10085.jpg",
             "link": "",
             "heading": "",
             "heading_size": "medium",
@@ -611,7 +593,6 @@
         "image_card_f8K3LK": {
           "type": "image_card",
           "settings": {
-            "image": "shopify://shop_images/10064.jpg",
             "content_alignment": "left",
             "caption": "",
             "heading": "100m² in Just One Hour",
@@ -635,7 +616,6 @@
         "image_card_KEy4EY": {
           "type": "image_card",
           "settings": {
-            "image": "shopify://shop_images/10057.jpg",
             "content_alignment": "left",
             "caption": "",
             "heading": "Smart Routes. Zero Guesswork.",
@@ -659,7 +639,6 @@
         "image_card_LnwWFb": {
           "type": "image_card",
           "settings": {
-            "image": "shopify://shop_images/10063.jpg",
             "content_alignment": "left",
             "caption": "",
             "heading": "Mows the Lawn. Charges Itself.",
@@ -701,7 +680,6 @@
         "step_dRc7By": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/10110.png",
             "heading": "Install RTK Antenna",
             "description": "<p>Mount the RTK  in an open area with an  120° sky view</p>"
           }
@@ -709,7 +687,6 @@
         "step_nyzEt8": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/10109.png",
             "heading": "Connect to Wi-Fi",
             "description": "<p>Install the app and connect your station to Wi-Fi</p>"
           }
@@ -717,7 +694,6 @@
         "step_bcrJGW": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/10108.png",
             "heading": "Start Mapping & Mow",
             "description": "<p>Map your yard. Let the Robot do the work.</p>"
           }
