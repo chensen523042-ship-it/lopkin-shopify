@@ -286,6 +286,34 @@
         "margin_bottom": 80
       }
     },
+    "video_text_section_dgwH8m": {
+      "type": "video-text-section",
+      "name": "Video + Text（极简·高度优化）",
+      "settings": {
+        "title": "Powerful Mowing",
+        "description": "<p>Driven by 300W rated power, with peak output soaring to 1200W for tackling tough and thick grass.</p>",
+        "swap_desktop": true,
+        "swap_mobile": false,
+        "video_url": "",
+        "poster": "shopify://shop_images/20251017-120045.jpg",
+        "autoplay": true,
+        "looping": true,
+        "show_controls": false,
+        "video_ratio": "4/5",
+        "fixed_height": false,
+        "video_height_desktop": 560,
+        "video_height_mobile": 260,
+        "bg": "#ffffff",
+        "txt": "#000000",
+        "pad_y": 72,
+        "gap": 28,
+        "radius": 16,
+        "full_width": false,
+        "max_width": 1320,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
     "image_with_text_pFcwxF": {
       "type": "image-with-text",
       "blocks": {
@@ -819,6 +847,7 @@
     "rich_text_63VY4w",
     "image_banner_qmaqqF",
     "image_gallery_RXTyWT",
+    "video_text_section_dgwH8m",
     "image_with_text_pFcwxF",
     "rich_text_bqHD8W",
     "image_with_text_gWxdFx",
