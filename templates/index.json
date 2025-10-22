@@ -504,6 +504,7 @@
         "description_jgQ8az",
         "button_FkM6q8"
       ],
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "enable_full_width": true,
@@ -560,6 +561,7 @@
         "description_kjnmRR",
         "button_bixWAD"
       ],
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "enable_full_width": true,
@@ -708,6 +710,7 @@
         "image_8UWhLe",
         "image_i6Mpkb"
       ],
+      "disabled": true,
       "name": "t:sections.image-gallery.presets.name",
       "settings": {
         "show_section_header": true,
@@ -764,6 +767,7 @@
         "column_jpAgNj",
         "column_whQQUD"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "show_section_header": true,
