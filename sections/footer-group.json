@@ -52,7 +52,6 @@
       "settings": {
         "enable_full_width": true,
         "color_scheme": "background-1",
-        "texture_image": "shopify://shop_images/Untitled_1800_x_600_px.webp",
         "texture_alpha": 19,
         "texture_fixed": false,
         "padding_top": 64,
@@ -69,9 +68,9 @@
           "settings": {
             "heading": "Contact Us",
             "image_width": "medium",
-            "email": "support@bestmow.com",
-            "phone": "(800) 882-2131",
-            "introduction": "<p>BESTMOW</p>",
+            "email": "support@lopkin.com",
+            "phone": "+86 13149900314",
+            "introduction": "<p>LOPKIN</p>",
             "apple_download_link": "https://apps.apple.com/us/app/bestmow/id6737789563",
             "android_download_link": "https://play.google.com/store/apps/details?id=com.bestmow.mower",
             "show_social": false,
@@ -83,7 +82,7 @@
           "type": "menu",
           "settings": {
             "heading": "Quick Links",
-            "menu": "quick-links",
+            "menu": "",
             "padding_left": 0,
             "default_expand": false
           }
