@@ -848,6 +848,136 @@
         "margin_top": 0,
         "margin_bottom": 80
       }
+    },
+    "image_gallery_EMJFH7": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_mtiYmt": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "1",
+            "image": "shopify://shop_images/5-_-704_704.jpg",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#FFFFFF",
+            "heading_position": "top-left",
+            "mobile_columns": "2",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#FFFFFF",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_a4HdmQ": {
+          "type": "image",
+          "settings": {
+            "columns": "3",
+            "rows": "2",
+            "image": "shopify://shop_images/3-_-704_704.jpg",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#FFFFFF",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "2",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#FFFFFF",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_BpgcLG": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "1",
+            "image": "shopify://shop_images/4-_-704_704.jpg",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#FFFFFF",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#FFFFFF",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_Ayby7q": {
+          "type": "image",
+          "settings": {
+            "columns": "3",
+            "rows": "2",
+            "image": "shopify://shop_images/1891_560.webp",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#FFFFFF",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#FFFFFF",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_qkKfEq": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "1",
+            "image": "shopify://shop_images/1-_-704_704.jpg",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#FFFFFF",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#FFFFFF",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_8nrMwj": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "1",
+            "image": "shopify://shop_images/6-APP_-704_704.jpg",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#FFFFFF",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#FFFFFF",
+            "heading_position_mobile": "middle-center"
+          }
+        }
+      },
+      "block_order": [
+        "image_mtiYmt",
+        "image_a4HdmQ",
+        "image_BpgcLG",
+        "image_Ayby7q",
+        "image_qkKfEq",
+        "image_8nrMwj"
+      ],
+      "name": "t:sections.image-gallery.presets.name",
+      "settings": {
+        "show_section_header": true,
+        "heading": "Photo gallery",
+        "description": "",
+        "water_text": "",
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
     }
   },
   "order": [
@@ -865,6 +995,7 @@
     "narrow_image_banner_wpX7D9",
     "image_gallery_qQhU8X",
     "multicolumn_QU4VTR",
+    "image_gallery_EMJFH7",
     "text_with_icons_39G3TY"
   ]
 }
