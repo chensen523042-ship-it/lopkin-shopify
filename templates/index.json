@@ -935,7 +935,7 @@
       "name": "t:sections.image-gallery.presets.name",
       "settings": {
         "show_section_header": true,
-        "heading": "Photo gallery",
+        "heading": "",
         "description": "",
         "water_text": "",
         "margin_top": 0,
