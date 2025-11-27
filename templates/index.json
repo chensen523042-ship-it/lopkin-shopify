@@ -343,6 +343,53 @@
         "margin_bottom": 80
       }
     },
+    "highlight_features_FnpJUW": {
+      "type": "highlight-features",
+      "blocks": {
+        "highlight_DFQDKC": {
+          "type": "highlight",
+          "settings": {
+            "vertical_position": 51,
+            "horizontal_position": 73,
+            "position": "right",
+            "heading": "Precision Edge Cutting",
+            "description": "<p>Specially engineered to navigate tight angles and lawn edges, reducing the need for handheld trimming tools.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "highlight_3rzzAM": {
+          "type": "highlight",
+          "settings": {
+            "vertical_position": 60,
+            "horizontal_position": 33,
+            "position": "left",
+            "heading": "Powerful Main Blade System",
+            "description": "<p><br/>High-torque blade motor delivers clean, consistent cuts across all grass types—even dense or wet conditions.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "highlight_DFQDKC",
+        "highlight_3rzzAM"
+      ],
+      "name": "t:sections.highlight-features.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "show_section_header": true,
+        "heading": "Blade System & Edge Cutting",
+        "description": "",
+        "water_text": "",
+        "image": "shopify://shop_images/20251127-181229.png",
+        "product": "lopkin",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
     "image_with_text_pFcwxF": {
       "type": "image-with-text",
       "blocks": {
@@ -546,53 +593,6 @@
         "content_alignment": "center",
         "content_alignment_mobile": "center",
         "if_as_main_area": false,
-        "margin_top": 0,
-        "margin_bottom": 80
-      }
-    },
-    "highlight_features_FnpJUW": {
-      "type": "highlight-features",
-      "blocks": {
-        "highlight_DFQDKC": {
-          "type": "highlight",
-          "settings": {
-            "vertical_position": 51,
-            "horizontal_position": 73,
-            "position": "right",
-            "heading": "Precision Edge Cutting",
-            "description": "<p>Specially engineered to navigate tight angles and lawn edges, reducing the need for handheld trimming tools.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "highlight_3rzzAM": {
-          "type": "highlight",
-          "settings": {
-            "vertical_position": 60,
-            "horizontal_position": 33,
-            "position": "left",
-            "heading": "Powerful Main Blade System",
-            "description": "<p><br/>High-torque blade motor delivers clean, consistent cuts across all grass types—even dense or wet conditions.<br/><br/></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "highlight_DFQDKC",
-        "highlight_3rzzAM"
-      ],
-      "name": "t:sections.highlight-features.presets.name",
-      "settings": {
-        "color_scheme": "",
-        "show_section_header": true,
-        "heading": "Blade System & Edge Cutting",
-        "description": "",
-        "water_text": "",
-        "image": "shopify://shop_images/20251127-181229.png",
-        "product": "lopkin",
-        "padding_top": 32,
-        "padding_bottom": 32,
         "margin_top": 0,
         "margin_bottom": 80
       }
@@ -1058,11 +1058,11 @@
     "seamless_scroll_8AWXKR",
     "image_gallery_RXTyWT",
     "video_text_section_dgwH8m",
+    "highlight_features_FnpJUW",
     "image_with_text_pFcwxF",
     "rich_text_bqHD8W",
     "sticky_image_cards_QtWRkk",
     "image_with_text_FYgxLa",
-    "highlight_features_FnpJUW",
     "image_banner_KQGmWK",
     "image_banner_BBq74G",
     "narrow_image_banner_wpX7D9",
