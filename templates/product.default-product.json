@@ -446,6 +446,7 @@
         "review_96eraL",
         "review_R3gac7"
       ],
+      "disabled": true,
       "name": "Professional Reviews",
       "settings": {
         "heading": "Professional Reviews",
@@ -739,11 +740,12 @@
           "type": "faq_item",
           "settings": {
             "question": "Will LOPKIN work on properties with a lot of trees?",
-            "answer": "<p>LOPKIN relies on advanced satellite-based navigation systems (RTK and GPS) for accurate, autonomous mowing. If your yard has significant tree coverage or a dense overhead canopy, these signals may be disrupted, which can affect the mower’s performance and precision.</p><p>While we aim to support a wide range of landscapes, properties with heavy tree cover may not be the best fit for BESTMOW at this time.</p><p>If you’re unsure whether your yard qualifies, we’re happy to help. Simply send your home address and contact details to <a href=\"mailto:support@bestmow.com\">support@bestmow.com</a>, and our team will evaluate your property for compatibility.</p>"
+            "answer": "<p>LOPKIN relies on advanced satellite-based navigation systems (RTK and GPS) for accurate, autonomous mowing. If your yard has significant tree coverage or a dense overhead canopy, these signals may be disrupted, which can affect the mower’s performance and precision.</p><p>While we aim to support a wide range of landscapes, properties with heavy tree cover may not be the best fit for LOPKIN at this time.</p><p>If you’re unsure whether your yard qualifies, we’re happy to help. Simply send your home address and contact details to <a href=\"mailto:support@bestmow.com\">support@bestmow.com</a>, and our team will evaluate your property for compatibility.</p>"
           }
         },
         "faq_item_NwqN7H": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "question": "Can I Resell My BESTMOW?",
             "answer": "<p>No, <strong>reselling BESTMOW is not permitted under the subscription agreement</strong>. When you subscribe to BESTMOW, you are not purchasing the unit — You <strong>cannot resell your BESTMOW</strong> under the rental, which includes ongoing support, free replacements, software upgrades, and maintenance supplies.</p><p>Because the device remains the property of BESTMOW, reselling, or transferring it to another individual is <strong>not allowed</strong>. If you no longer need the mower, you can simply <strong>cancel your subscription</strong> and return the unit — hassle-free.</p><p>If you’re interested in becoming an official reseller or distribution partner, reach out to us directly at <strong>support@bestmow.com</strong> — we’re open to collaboration through approved channels.</p>"
@@ -751,6 +753,7 @@
         },
         "faq_item_BwyDCL": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "question": "Does BESTMOW Ship to P.O. Boxes?",
             "answer": "<p>No, <strong>BESTMOW does not ship to P.O. Boxes</strong> at this time. We only ship to <strong>physical street addresses</strong> within the United States and Canada.</p>"
@@ -765,6 +768,7 @@
         },
         "faq_item_QRLBBb": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "question": "How much area can BESTMOW cover with a full charge?",
             "answer": "<p>With a full charge, BESTMOW can typically cover over 40000 sq ft.  4 Hours of Mowing on single Charge. With regular charging cycles, BESTMOW can maintain up to1.5 acres.</p>"
@@ -772,6 +776,7 @@
         },
         "faq_item_VmNrQy": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "question": "Is BESTMOW Quiet Enough for Residential Use?",
             "answer": "<p>Yes — BESTMOW is extremely quiet. Unlike traditional gas mowers, it has no engine noise or exhaust sounds. You’ll only hear the light hum of the blades cutting grass.</p>"
@@ -779,6 +784,7 @@
         },
         "faq_item_Txpncg": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "question": "How Long Will It Take to Mow My Property?",
             "answer": "<p>BESTMOW is designed to be your autonomous lawn partner. On a single full charge, it can cover over 4,000 square feet. But it doesn’t stop there — with regular charging cycles, it can maintain a total area of up to <strong>1.5 acres.</strong></p>"
@@ -793,6 +799,7 @@
         },
         "faq_item_NgNk4q": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "question": "Is BESTMOW Suitable for All Lawn Shapes and Sizes?",
             "answer": "<p>BESTMOW is flexible and powerful enough to handle a wide variety of lawn layouts, including irregular shapes and zones. </p>"
@@ -802,7 +809,7 @@
           "type": "faq_item",
           "settings": {
             "question": "Is the Setup Complicated? Does It Require Technical Knowledge?",
-            "answer": "<p>Not at all. When you purchase a subscription, we offer <strong>property mapping support</strong> — our team will help you configure BESTMOW to your unique lawn layout. The device works seamlessly with the <strong>BESTMOW mobile app</strong>, which is available for both <strong>iOS and Android</strong>. </p>"
+            "answer": "<p>Not at all. When you purchase a subscription, we offer <strong>property mapping support</strong> — our team will help you configure BESTMOW to your unique lawn layout. The device works seamlessly with the <strong>LOPKIN mobile app</strong>, which is available for both <strong>iOS and Android</strong>. </p>"
           }
         }
       },
