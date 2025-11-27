@@ -293,7 +293,7 @@
       "settings": {
         "title": "Powerful Mowing",
         "description": "<p>Driven by 300W rated power, with peak output soaring to 1200W for tackling tough and thick grass.</p>",
-        "swap_desktop": true,
+        "swap_desktop": false,
         "swap_mobile": false,
         "video": "shopify://files/videos/智能割草机生成视频 - Trim.mp4",
         "video_url": "",
