@@ -437,7 +437,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/jimeng-2025-10-22-8369-_ai.png",
+        "image": "shopify://shop_images/20251127-165023_1.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "image_first": false,
@@ -477,6 +477,95 @@
         "padding_bottom": 48,
         "margin_top": 0,
         "margin_bottom": 20
+      }
+    },
+    "sticky_image_cards_QtWRkk": {
+      "type": "sticky-image-cards",
+      "blocks": {
+        "image_card_ajyYTd": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify://shop_images/20251127-165100_1.jpg",
+            "content_alignment": "center",
+            "caption": "",
+            "heading": "APP Control",
+            "heading_size": "medium",
+            "heading_decorative": false,
+            "description": "<p>Set up in minutes via app and Wi‑Fi, or Control everything from anywhere.</p>",
+            "show_socials": true,
+            "social_style": "wrapper",
+            "show_countdown": false,
+            "end_time": "2024-12-01 15:23",
+            "end_text": "Timer complete message",
+            "hide_when_end": false,
+            "timer_background_color": "#000000",
+            "timer_foreground_color": "#FFFFFF",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": false
+          }
+        },
+        "image_card_KCmXAy": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify://shop_images/20251127-165107_1.jpg",
+            "content_alignment": "center",
+            "caption": "",
+            "heading": "Precision. Power. Perfection.",
+            "heading_size": "medium",
+            "heading_decorative": false,
+            "description": "<p><strong>Zero gap precision cutting. BESTMOW robot mower trims every blade with accuracy—so you can sit back and relax.</strong></p>",
+            "show_socials": true,
+            "social_style": "wrapper",
+            "show_countdown": false,
+            "end_time": "2024-12-01 15:23",
+            "end_text": "Timer complete message",
+            "hide_when_end": false,
+            "timer_background_color": "#000000",
+            "timer_foreground_color": "#FFFFFF",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": false
+          }
+        },
+        "image_card_9EKKAy": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify://shop_images/20251127-165033_1.jpg",
+            "content_alignment": "center",
+            "caption": "",
+            "heading": "Powerful Performance for Complex Terrains",
+            "heading_size": "small",
+            "heading_decorative": false,
+            "description": "<p>With strong drive power and durable wheels, LOPKIN easily handles uneven surfaces, bumps, and slopes of over 30°. Tough weeds and rough terrain are no challenge.With IPX-rated waterproofing and durable housing, LOPKIN can withstand light rain and varying outdoor conditions.<br/><br/></p>",
+            "show_socials": true,
+            "social_style": "wrapper",
+            "show_countdown": false,
+            "end_time": "2024-12-01 15:23",
+            "end_text": "Timer complete message",
+            "hide_when_end": false,
+            "timer_background_color": "#000000",
+            "timer_foreground_color": "#FFFFFF",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_card_ajyYTd",
+        "image_card_KCmXAy",
+        "image_card_9EKKAy"
+      ],
+      "name": "t:sections.sticky-image-cards.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "image_ratio": "landscape",
+        "margin_top": 0,
+        "margin_bottom": 80
       }
     },
     "image_with_text_gWxdFx": {
@@ -1085,6 +1174,7 @@
     "video_text_section_dgwH8m",
     "image_with_text_pFcwxF",
     "rich_text_bqHD8W",
+    "sticky_image_cards_QtWRkk",
     "image_with_text_gWxdFx",
     "image_with_text_FYgxLa",
     "text_lens_zoom_TrFEVA",
