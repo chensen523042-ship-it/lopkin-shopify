@@ -740,7 +740,7 @@
           "type": "faq_item",
           "settings": {
             "question": "Will LOPKIN work on properties with a lot of trees?",
-            "answer": "<p>LOPKIN relies on advanced satellite-based navigation systems (RTK and GPS) for accurate, autonomous mowing. If your yard has significant tree coverage or a dense overhead canopy, these signals may be disrupted, which can affect the mower’s performance and precision.</p><p>While we aim to support a wide range of landscapes, properties with heavy tree cover may not be the best fit for LOPKIN at this time.</p><p>If you’re unsure whether your yard qualifies, we’re happy to help. Simply send your home address and contact details to <a href=\"mailto:support@bestmow.com\">support@bestmow.com</a>, and our team will evaluate your property for compatibility.</p>"
+            "answer": "<p>LOPKIN relies on advanced satellite-based navigation systems (RTK and GPS) for accurate, autonomous mowing. If your yard has significant tree coverage or a dense overhead canopy, these signals may be disrupted, which can affect the mower’s performance and precision.</p><p>While we aim to support a wide range of landscapes, properties with heavy tree cover may not be the best fit for LOPKIN at this time.</p><p>If you’re unsure whether your yard qualifies, we’re happy to help. Simply send your home address and contact details to support@lopkin.com<br/><br/>, and our team will evaluate your property for compatibility.</p>"
           }
         },
         "faq_item_NwqN7H": {
