@@ -603,26 +603,26 @@
         "heading_e8GbiE": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "medium",
+            "heading": "See the Lawn Like a Human",
+            "heading_size": "small",
             "heading_decorative": false
           }
         },
         "text_TQahdF": {
           "type": "text",
           "settings": {
-            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post</p>",
+            "description": "<p><br/>Stereo vision technology allows the mower to recognize edges, objects, and terrain changes—delivering safer and more accurate mowing.<br/></p>",
             "limit_description_height": false
           }
         },
         "button_zqtAT7": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "button_style": "primary",
             "button_arrow": false,
-            "secondary_button_label": "Button label",
+            "secondary_button_label": "",
             "secondary_button_link": "",
             "secondary_button_style": "secondary",
             "secondary_button_arrow": false
@@ -636,10 +636,10 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/20251127-182752_1.jpg",
+        "image": "shopify://shop_images/20251127-182752.jpg",
         "height": "medium",
-        "desktop_image_width": "medium",
-        "image_first": true,
+        "desktop_image_width": "large",
+        "image_first": false,
         "color_scheme": "",
         "content_alignment": "center",
         "content_alignment_mobile": "center",
