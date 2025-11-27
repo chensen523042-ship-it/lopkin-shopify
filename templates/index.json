@@ -15,14 +15,14 @@
         "slide_HFpGkg": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/jimeng-2025-10-22-6837-_1_2_2.png",
+            "image": "shopify://shop_images/kling_20251127_____4877_0.png",
             "image_overlay_opacity": 30,
             "color_scheme": "inverse",
-            "desktop_content_position": "bottom-center",
+            "desktop_content_position": "bottom-left",
             "desktop_content_alignment": "center",
             "caption": "",
             "heading": "<p>Why Mow Let LOPKIN</p>",
-            "heading_size": "large",
+            "heading_size": "medium",
             "heading_decorative": false,
             "text": "<h3>LOPKIN Robot Lawn Mower</h3>",
             "button_label": "Get Yours Now",
