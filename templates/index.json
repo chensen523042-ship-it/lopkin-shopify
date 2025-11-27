@@ -83,79 +83,6 @@
         "trigger_once": true
       }
     },
-    "seamless_scroll_8AWXKR": {
-      "type": "seamless-scroll",
-      "blocks": {
-        "text_XmEHQ4": {
-          "type": "text",
-          "settings": {
-            "content": "Smarter Lawns",
-            "font_size": 32,
-            "font_weight": "400",
-            "font_decorative": false,
-            "font_hollow": false,
-            "enable_custom_color": false,
-            "custom_color": "#000000"
-          }
-        },
-        "text_zWEqwM": {
-          "type": "text",
-          "settings": {
-            "content": "More Free Time",
-            "font_size": 16,
-            "font_weight": "700",
-            "font_decorative": false,
-            "font_hollow": false,
-            "enable_custom_color": false,
-            "custom_color": "#000000"
-          }
-        },
-        "text_Hfbixe": {
-          "type": "text",
-          "settings": {
-            "content": "Smarter Lawns",
-            "font_size": 32,
-            "font_weight": "300",
-            "font_decorative": false,
-            "font_hollow": false,
-            "enable_custom_color": false,
-            "custom_color": "#000000"
-          }
-        },
-        "text_9eTEzf": {
-          "type": "text",
-          "settings": {
-            "content": "More Free Time",
-            "font_size": 16,
-            "font_weight": "900",
-            "font_decorative": false,
-            "font_hollow": false,
-            "enable_custom_color": false,
-            "custom_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "text_XmEHQ4",
-        "text_zWEqwM",
-        "text_Hfbixe",
-        "text_9eTEzf"
-      ],
-      "name": "t:sections.seamless-scroll.presets.name",
-      "settings": {
-        "enable_full_width": true,
-        "color_scheme": "",
-        "direction": "left",
-        "gap": 32,
-        "speed": 40,
-        "display_border_blur": true,
-        "enable_scroll_synergy": false,
-        "padding_top": 8,
-        "padding_bottom": 8,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
     "rich_text_63VY4w": {
       "type": "rich-text",
       "blocks": {
@@ -260,6 +187,79 @@
         "if_as_main_area": false,
         "margin_top": 0,
         "margin_bottom": 80
+      }
+    },
+    "seamless_scroll_8AWXKR": {
+      "type": "seamless-scroll",
+      "blocks": {
+        "text_XmEHQ4": {
+          "type": "text",
+          "settings": {
+            "content": "Smarter Lawns",
+            "font_size": 32,
+            "font_weight": "400",
+            "font_decorative": false,
+            "font_hollow": false,
+            "enable_custom_color": false,
+            "custom_color": "#000000"
+          }
+        },
+        "text_zWEqwM": {
+          "type": "text",
+          "settings": {
+            "content": "More Free Time",
+            "font_size": 16,
+            "font_weight": "700",
+            "font_decorative": false,
+            "font_hollow": false,
+            "enable_custom_color": false,
+            "custom_color": "#000000"
+          }
+        },
+        "text_Hfbixe": {
+          "type": "text",
+          "settings": {
+            "content": "Smarter Lawns",
+            "font_size": 32,
+            "font_weight": "300",
+            "font_decorative": false,
+            "font_hollow": false,
+            "enable_custom_color": false,
+            "custom_color": "#000000"
+          }
+        },
+        "text_9eTEzf": {
+          "type": "text",
+          "settings": {
+            "content": "More Free Time",
+            "font_size": 16,
+            "font_weight": "900",
+            "font_decorative": false,
+            "font_hollow": false,
+            "enable_custom_color": false,
+            "custom_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "text_XmEHQ4",
+        "text_zWEqwM",
+        "text_Hfbixe",
+        "text_9eTEzf"
+      ],
+      "name": "t:sections.seamless-scroll.presets.name",
+      "settings": {
+        "enable_full_width": true,
+        "color_scheme": "",
+        "direction": "left",
+        "gap": 32,
+        "speed": 40,
+        "display_border_blur": true,
+        "enable_scroll_synergy": false,
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "margin_top": 0,
+        "margin_bottom": 0
       }
     },
     "image_gallery_RXTyWT": {
@@ -1167,9 +1167,9 @@
   "order": [
     "carousal_WpGAKi",
     "confetti_trigger_yEEKMq",
-    "seamless_scroll_8AWXKR",
     "rich_text_63VY4w",
     "image_banner_qmaqqF",
+    "seamless_scroll_8AWXKR",
     "image_gallery_RXTyWT",
     "video_text_section_dgwH8m",
     "image_with_text_pFcwxF",
