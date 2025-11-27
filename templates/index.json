@@ -121,6 +121,19 @@
         "margin_bottom": 40
       }
     },
+    "text_lens_zoom_TrFEVA": {
+      "type": "text-lens-zoom",
+      "name": "t:sections.text-lens-zoom.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/20251127-165055_1.jpg",
+        "heading": "<p><strong>Join the Future</strong></p>",
+        "heading_decorative": false,
+        "disable_animate_mobile": false,
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
     "seamless_scroll_8AWXKR": {
       "type": "seamless-scroll",
       "blocks": {
@@ -372,7 +385,7 @@
         "image": "shopify://shop_images/20251127-165023_1.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
-        "image_first": false,
+        "image_first": true,
         "color_scheme": "",
         "content_alignment": "left",
         "content_alignment_mobile": "center",
@@ -500,43 +513,6 @@
         "margin_bottom": 80
       }
     },
-    "image_with_text_gWxdFx": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_gmx7cm": {
-          "type": "heading",
-          "settings": {
-            "heading": "Precision. Power. Perfection.",
-            "heading_size": "medium",
-            "heading_decorative": false
-          }
-        },
-        "text_p8XMaE": {
-          "type": "text",
-          "settings": {
-            "description": "<p>Zero gap precision cutting. LOPKIN robot mower trims every blade with accuracy—so you can sit back and relax.</p>",
-            "limit_description_height": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_gmx7cm",
-        "text_p8XMaE"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/jimeng-2025-10-22-3760.png",
-        "height": "medium",
-        "desktop_image_width": "large",
-        "image_first": true,
-        "color_scheme": "",
-        "content_alignment": "center",
-        "content_alignment_mobile": "center",
-        "if_as_main_area": false,
-        "margin_top": 0,
-        "margin_bottom": 80
-      }
-    },
     "image_with_text_FYgxLa": {
       "type": "image-with-text",
       "blocks": {
@@ -565,23 +541,10 @@
         "image": "shopify://shop_images/Untitled_800_x_600_px_5_1.webp",
         "height": "medium",
         "desktop_image_width": "large",
-        "image_first": false,
+        "image_first": true,
         "color_scheme": "",
         "content_alignment": "center",
         "content_alignment_mobile": "center",
-        "if_as_main_area": false,
-        "margin_top": 0,
-        "margin_bottom": 80
-      }
-    },
-    "text_lens_zoom_TrFEVA": {
-      "type": "text-lens-zoom",
-      "name": "t:sections.text-lens-zoom.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/20251127-165055_1.jpg",
-        "heading": "<p><strong>Join the Future</strong></p>",
-        "heading_decorative": false,
-        "disable_animate_mobile": false,
         "if_as_main_area": false,
         "margin_top": 0,
         "margin_bottom": 80
@@ -623,6 +586,7 @@
         "description_jgQ8az",
         "button_FkM6q8"
       ],
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "enable_full_width": true,
@@ -913,7 +877,7 @@
           "settings": {
             "columns": "1",
             "rows": "1",
-            "image": "shopify://shop_images/5-_-704_704.jpg",
+            "image": "shopify://shop_images/20251127-173014_1.jpg",
             "link": "",
             "heading": "",
             "heading_size": "medium",
@@ -931,7 +895,7 @@
           "settings": {
             "columns": "3",
             "rows": "2",
-            "image": "shopify://shop_images/3-_-704_704.jpg",
+            "image": "shopify://shop_images/20251127-173022_1.jpg",
             "link": "",
             "heading": "",
             "heading_size": "medium",
@@ -949,61 +913,7 @@
           "settings": {
             "columns": "1",
             "rows": "1",
-            "image": "shopify://shop_images/4-_-704_704.jpg",
-            "link": "",
-            "heading": "",
-            "heading_size": "medium",
-            "heading_color": "#ffffff",
-            "heading_position": "top-left",
-            "mobile_columns": "1",
-            "mobile_rows": "1",
-            "heading_size_mobile": "medium",
-            "heading_color_mobile": "#ffffff",
-            "heading_position_mobile": "middle-center"
-          }
-        },
-        "image_Ayby7q": {
-          "type": "image",
-          "settings": {
-            "columns": "3",
-            "rows": "2",
-            "image": "shopify://shop_images/1891_560.webp",
-            "link": "",
-            "heading": "",
-            "heading_size": "medium",
-            "heading_color": "#ffffff",
-            "heading_position": "top-left",
-            "mobile_columns": "1",
-            "mobile_rows": "1",
-            "heading_size_mobile": "medium",
-            "heading_color_mobile": "#ffffff",
-            "heading_position_mobile": "middle-center"
-          }
-        },
-        "image_qkKfEq": {
-          "type": "image",
-          "settings": {
-            "columns": "1",
-            "rows": "1",
-            "image": "shopify://shop_images/1-_-704_704.jpg",
-            "link": "",
-            "heading": "",
-            "heading_size": "medium",
-            "heading_color": "#ffffff",
-            "heading_position": "top-left",
-            "mobile_columns": "1",
-            "mobile_rows": "1",
-            "heading_size_mobile": "medium",
-            "heading_color_mobile": "#ffffff",
-            "heading_position_mobile": "middle-center"
-          }
-        },
-        "image_8nrMwj": {
-          "type": "image",
-          "settings": {
-            "columns": "1",
-            "rows": "1",
-            "image": "shopify://shop_images/6-APP_-704_704.jpg",
+            "image": "shopify://shop_images/20251127-173018_1.jpg",
             "link": "",
             "heading": "",
             "heading_size": "medium",
@@ -1020,10 +930,7 @@
       "block_order": [
         "image_mtiYmt",
         "image_a4HdmQ",
-        "image_BpgcLG",
-        "image_Ayby7q",
-        "image_qkKfEq",
-        "image_8nrMwj"
+        "image_BpgcLG"
       ],
       "name": "t:sections.image-gallery.presets.name",
       "settings": {
@@ -1107,7 +1014,6 @@
     "image_with_text_pFcwxF",
     "rich_text_bqHD8W",
     "sticky_image_cards_QtWRkk",
-    "image_with_text_gWxdFx",
     "image_with_text_FYgxLa",
     "image_banner_KQGmWK",
     "image_banner_BBq74G",
