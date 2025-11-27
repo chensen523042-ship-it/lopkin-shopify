@@ -430,13 +430,13 @@
         "image_card_ajyYTd": {
           "type": "image_card",
           "settings": {
-            "image": "shopify://shop_images/20251127-165100_1.jpg",
+            "image": "shopify://shop_images/20251127-173022_1.jpg",
             "content_alignment": "center",
             "caption": "",
-            "heading": "APP Control",
+            "heading": "Smart Control at Your Fingertips",
             "heading_size": "medium",
             "heading_decorative": false,
-            "description": "<p>Set up in minutes via app and Wi‑Fi, or Control everything from anywhere.</p>",
+            "description": "<p>Start, stop, or fine-tune your mower with a single touch. Precision meets simplicity in every detail.<br/></p>",
             "show_socials": true,
             "social_style": "wrapper",
             "show_countdown": false,
@@ -895,7 +895,7 @@
           "settings": {
             "columns": "3",
             "rows": "2",
-            "image": "shopify://shop_images/20251127-173022_1.jpg",
+            "image": "shopify://shop_images/20251127-165100_1.jpg",
             "link": "",
             "heading": "",
             "heading_size": "medium",
