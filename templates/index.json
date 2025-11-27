@@ -553,6 +553,19 @@
         "margin_bottom": 80
       }
     },
+    "text_lens_zoom_TrFEVA": {
+      "type": "text-lens-zoom",
+      "name": "t:sections.text-lens-zoom.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/20251127-165055_1.jpg",
+        "heading": "<p><strong>Join the Future</strong></p>",
+        "heading_decorative": false,
+        "disable_animate_mobile": false,
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
     "image_banner_KQGmWK": {
       "type": "image-banner",
       "blocks": {
@@ -1074,6 +1087,7 @@
     "rich_text_bqHD8W",
     "image_with_text_gWxdFx",
     "image_with_text_FYgxLa",
+    "text_lens_zoom_TrFEVA",
     "image_banner_KQGmWK",
     "image_banner_BBq74G",
     "narrow_image_banner_wpX7D9",
