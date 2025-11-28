@@ -125,7 +125,7 @@
       "type": "text-lens-zoom",
       "name": "t:sections.text-lens-zoom.presets.name",
       "settings": {
-        "image": "shopify://shop_images/20251127-165055_1.jpg",
+        "image": "shopify://shop_images/20251128-112054.jpg",
         "heading": "<p><strong>Join the Future</strong></p>",
         "heading_decorative": false,
         "disable_animate_mobile": false,
@@ -970,24 +970,6 @@
     "image_gallery_EMJFH7": {
       "type": "image-gallery",
       "blocks": {
-        "image_mtiYmt": {
-          "type": "image",
-          "settings": {
-            "columns": "1",
-            "rows": "1",
-            "image": "shopify://shop_images/20251127-173014_1.jpg",
-            "link": "",
-            "heading": "",
-            "heading_size": "medium",
-            "heading_color": "#ffffff",
-            "heading_position": "top-left",
-            "mobile_columns": "2",
-            "mobile_rows": "1",
-            "heading_size_mobile": "medium",
-            "heading_color_mobile": "#ffffff",
-            "heading_position_mobile": "middle-center"
-          }
-        },
         "image_a4HdmQ": {
           "type": "image",
           "settings": {
@@ -1001,6 +983,24 @@
             "heading_position": "top-left",
             "mobile_columns": "1",
             "mobile_rows": "2",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_mtiYmt": {
+          "type": "image",
+          "settings": {
+            "columns": "1",
+            "rows": "1",
+            "image": "shopify://shop_images/20251127-173014_1.jpg",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "2",
+            "mobile_rows": "1",
             "heading_size_mobile": "medium",
             "heading_color_mobile": "#ffffff",
             "heading_position_mobile": "middle-center"
@@ -1023,12 +1023,31 @@
             "heading_color_mobile": "#ffffff",
             "heading_position_mobile": "middle-center"
           }
+        },
+        "image_WcmNxf": {
+          "type": "image",
+          "settings": {
+            "columns": "4",
+            "rows": "2",
+            "image": "shopify://shop_images/20251128-112045.jpg",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
         }
       },
       "block_order": [
-        "image_mtiYmt",
         "image_a4HdmQ",
-        "image_BpgcLG"
+        "image_mtiYmt",
+        "image_BpgcLG",
+        "image_WcmNxf"
       ],
       "name": "t:sections.image-gallery.presets.name",
       "settings": {
