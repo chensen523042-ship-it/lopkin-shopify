@@ -127,6 +127,7 @@
         "image": "shopify://shop_images/20251128-112054.jpg",
         "heading": "<p><strong>Join the Future</strong></p>",
         "heading_decorative": false,
+        "image_mobile": "shopify://shop_images/jimeng-2025-11-28-8524.png",
         "disable_animate_mobile": false,
         "if_as_main_area": false,
         "margin_top": 0,
