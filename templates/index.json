@@ -9,6 +9,15 @@
  */
 {
   "sections": {
+    "confetti_trigger_yEEKMq": {
+      "type": "confetti-trigger",
+      "name": "t:sections.confetti-trigger.presets.name",
+      "settings": {
+        "trigger_position": "top",
+        "effect": "falling-ribbons",
+        "trigger_once": true
+      }
+    },
     "carousal_WpGAKi": {
       "type": "carousal",
       "blocks": {
@@ -72,15 +81,6 @@
         "margin_top": 0,
         "margin_bottom": 0,
         "if_as_main_area": false
-      }
-    },
-    "confetti_trigger_yEEKMq": {
-      "type": "confetti-trigger",
-      "name": "t:sections.confetti-trigger.presets.name",
-      "settings": {
-        "trigger_position": "top",
-        "effect": "falling-ribbons",
-        "trigger_once": true
       }
     },
     "rich_text_63VY4w": {
@@ -1102,8 +1102,8 @@
     }
   },
   "order": [
-    "carousal_WpGAKi",
     "confetti_trigger_yEEKMq",
+    "carousal_WpGAKi",
     "rich_text_63VY4w",
     "text_lens_zoom_TrFEVA",
     "seamless_scroll_8AWXKR",
