@@ -21,6 +21,27 @@
     "carousal_WpGAKi": {
       "type": "carousal",
       "blocks": {
+        "slide_K4Gdtj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/kling_20251127_____4773_0.png",
+            "image_overlay_opacity": 30,
+            "color_scheme": "inverse",
+            "desktop_content_position": "bottom-right",
+            "desktop_content_alignment": "center",
+            "caption": "",
+            "heading": "<h1><strong>Lifelong </strong>Free Sofware Update</h1>",
+            "heading_size": "small",
+            "heading_decorative": false,
+            "text": "<h1><em><strong>No Commitment. Cancel Anytime</strong></em></h1>",
+            "button_label": "Learn More",
+            "button_link": "shopify://products/lopkin",
+            "button_style": "primary",
+            "button_arrow": true,
+            "mobile_content_position": "middle-center",
+            "mobile_content_alignment": "center"
+          }
+        },
         "slide_HFpGkg": {
           "type": "slide",
           "settings": {
@@ -42,32 +63,11 @@
             "mobile_content_position": "middle-center",
             "mobile_content_alignment": "center"
           }
-        },
-        "slide_K4Gdtj": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/kling_20251127_____4773_0.png",
-            "image_overlay_opacity": 30,
-            "color_scheme": "inverse",
-            "desktop_content_position": "bottom-right",
-            "desktop_content_alignment": "center",
-            "caption": "",
-            "heading": "<h1><strong>Lifelong </strong>Free Sofware Update</h1>",
-            "heading_size": "small",
-            "heading_decorative": false,
-            "text": "<h1><em><strong>No Commitment. Cancel Anytime</strong></em></h1>",
-            "button_label": "Learn More",
-            "button_link": "shopify://products/lopkin",
-            "button_style": "primary",
-            "button_arrow": true,
-            "mobile_content_position": "middle-center",
-            "mobile_content_alignment": "center"
-          }
         }
       },
       "block_order": [
-        "slide_HFpGkg",
-        "slide_K4Gdtj"
+        "slide_K4Gdtj",
+        "slide_HFpGkg"
       ],
       "settings": {
         "enable_full_width": true,
