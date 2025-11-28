@@ -502,7 +502,7 @@
         "enabled_blur_effect": false,
         "desktop_content_alignment": "center",
         "image_behavior": "none",
-        "mobile_content_position": "middle-center",
+        "mobile_content_position": "bottom-center",
         "mobile_content_alignment": "center",
         "if_as_main_area": false,
         "margin_top": 0,
