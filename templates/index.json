@@ -47,7 +47,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/kling_20251127_____4773_0.png",
-            "image_overlay_opacity": 10,
+            "image_overlay_opacity": 30,
             "color_scheme": "inverse",
             "desktop_content_position": "bottom-right",
             "desktop_content_alignment": "center",
