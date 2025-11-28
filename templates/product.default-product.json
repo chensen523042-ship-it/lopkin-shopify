@@ -223,6 +223,7 @@
     },
     "image_comparison_banner_perhFV": {
       "type": "image-comparison-banner",
+      "disabled": true,
       "name": "t:sections.image-comparison-banner.presets.name",
       "settings": {
         "enable_full_width": false,
