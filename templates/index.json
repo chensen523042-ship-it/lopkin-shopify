@@ -637,8 +637,8 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/20251127-182752_1.jpg",
-        "height": "medium",
-        "desktop_image_width": "large",
+        "height": "adapt",
+        "desktop_image_width": "medium",
         "image_first": false,
         "color_scheme": "",
         "content_alignment": "center",
