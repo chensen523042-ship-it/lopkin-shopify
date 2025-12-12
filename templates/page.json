@@ -70,7 +70,7 @@
         "enable_full_width": true,
         "image": "shopify://shop_images/kling_20251127_____4877_0.png",
         "image_overlay_opacity": 10,
-        "image_height": "small",
+        "image_height": "adapt",
         "enable_adapter_transparent_header": false,
         "color_scheme": "inverse",
         "desktop_content_position": "middle-center",
