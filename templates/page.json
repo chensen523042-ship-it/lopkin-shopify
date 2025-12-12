@@ -85,10 +85,63 @@
         "margin_top": 0,
         "margin_bottom": 80
       }
+    },
+    "image_with_text_aYRUQk": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_PVAWGc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Company Introduction",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_cp44gz": {
+          "type": "text",
+          "settings": {
+            "description": "<ul><li>Founded in 2024 and headquartered in Shenzhen,China,Shenzhen Yuanjing IntelligentTechnology Co.,Ltd.is an innovation-driven robotics company specializing in smartgarden care.With core strengths in Al,machine vision,and high-precision positioning,we provide high-performance,cost-effective service robots for households,and deliverone-stop ODM/OEM solutions in design,manufacturing,and technical support forglobal partners.</li><li>Backed by 100+engineers and 24+patents across Al vision,satellite navigation,multi-sensor fusion,and obstacle avoidance,Yuanjing ensures reliable performance incomplex environments.Our 4,050m²intelligent production base and 20,000m²multi-scenario testing ground enable large-scale,high-quality manufacturing and<br/>Guided by the vision of “Leading the future of intelligent garden management with acomplete smart garden ecosystem”Yuanjing continues to drive innovation,empower-ing households and global partners to enjoy effortless,delightful outdoor living.</li></ul>",
+            "limit_description_height": false
+          }
+        },
+        "button_qAjbB3": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": false,
+            "secondary_button_label": "Button label",
+            "secondary_button_link": "",
+            "secondary_button_style": "secondary",
+            "secondary_button_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PVAWGc",
+        "text_cp44gz",
+        "button_qAjbB3"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/985.6_740.jpg",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "image_first": true,
+        "color_scheme": "",
+        "content_alignment": "left",
+        "content_alignment_mobile": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
     }
   },
   "order": [
     "main",
-    "image_banner_JkRG4E"
+    "image_banner_JkRG4E",
+    "image_with_text_aYRUQk"
   ]
 }
