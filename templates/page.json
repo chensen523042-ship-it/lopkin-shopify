@@ -137,11 +137,103 @@
         "margin_top": 0,
         "margin_bottom": 80
       }
+    },
+    "team_aPQHx7": {
+      "type": "team",
+      "blocks": {
+        "member_pmXF8c": {
+          "type": "member",
+          "settings": {
+            "member_name": "Member name",
+            "member_role": "Member role",
+            "member_facebook": "",
+            "member_instagram": "",
+            "member_linkedin": ""
+          }
+        },
+        "member_CVw7Vh": {
+          "type": "member",
+          "settings": {
+            "member_name": "Member name",
+            "member_role": "Member role",
+            "member_facebook": "",
+            "member_instagram": "",
+            "member_linkedin": ""
+          }
+        },
+        "member_FeLq6n": {
+          "type": "member",
+          "settings": {
+            "member_name": "Member name",
+            "member_role": "Member role",
+            "member_facebook": "",
+            "member_instagram": "",
+            "member_linkedin": ""
+          }
+        },
+        "member_W6p3Wt": {
+          "type": "member",
+          "settings": {
+            "member_name": "Member name",
+            "member_role": "Member role",
+            "member_facebook": "",
+            "member_instagram": "",
+            "member_linkedin": ""
+          }
+        },
+        "member_YFjfUB": {
+          "type": "member",
+          "disabled": true,
+          "settings": {
+            "member_name": "Member name",
+            "member_role": "Member role",
+            "member_facebook": "",
+            "member_instagram": "",
+            "member_linkedin": ""
+          }
+        }
+      },
+      "block_order": [
+        "member_pmXF8c",
+        "member_CVw7Vh",
+        "member_FeLq6n",
+        "member_W6p3Wt",
+        "member_YFjfUB"
+      ],
+      "name": "t:sections.team.presets.name",
+      "settings": {
+        "show_section_header": true,
+        "heading": "Our team",
+        "description": "",
+        "water_text": "",
+        "enable_desktop_slider": true,
+        "show_nav_buttons": false,
+        "columns_on_desktop": 5,
+        "enable_mobile_slider": true,
+        "columns_on_mobile": "1",
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "quote_CAmaH9": {
+      "type": "quote",
+      "name": "t:sections.quote.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "icon_color": "#088b5a",
+        "content": "We believe in delivering not just products, but meaningful experiences that enrich your life. Every detail matters to us, and your trust inspires us to uphold the highest standards of quality, craftsmanship, and service in everything we do",
+        "author_name": "punt",
+        "author_role": "CEO",
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
     }
   },
   "order": [
     "main",
     "image_banner_JkRG4E",
-    "image_with_text_aYRUQk"
+    "image_with_text_aYRUQk",
+    "team_aPQHx7",
+    "quote_CAmaH9"
   ]
 }
