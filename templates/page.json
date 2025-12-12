@@ -73,7 +73,7 @@
         "image_height": "adapt",
         "enable_adapter_transparent_header": false,
         "color_scheme": "inverse",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "top-center",
         "show_text_box": false,
         "text_box_opacity": 100,
         "enabled_blur_effect": false,
