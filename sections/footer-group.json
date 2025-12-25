@@ -80,6 +80,7 @@
         },
         "menu_8eUdW9": {
           "type": "menu",
+          "disabled": true,
           "settings": {
             "heading": "Quick Links",
             "menu": "",
@@ -89,6 +90,7 @@
         },
         "menu_6ThpGR": {
           "type": "menu",
+          "disabled": true,
           "settings": {
             "heading": "Quick Links",
             "menu": "",
