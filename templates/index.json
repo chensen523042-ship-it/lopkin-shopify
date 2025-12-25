@@ -434,7 +434,7 @@
         "height": "medium",
         "desktop_image_width": "medium",
         "image_first": true,
-        "color_scheme": "",
+        "color_scheme": "background-1",
         "content_alignment": "left",
         "content_alignment_mobile": "center",
         "if_as_main_area": true,
