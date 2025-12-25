@@ -26,7 +26,7 @@
           "settings": {
             "image": "shopify://shop_images/kling_20251127_____4773_0.png",
             "image_overlay_opacity": 30,
-            "color_scheme": "inverse",
+            "color_scheme": "background-1",
             "desktop_content_position": "top-center",
             "desktop_content_alignment": "center",
             "caption": "We design products that evolve over time",
@@ -47,7 +47,7 @@
           "settings": {
             "image": "shopify://shop_images/kling_20251127_____4877_0.png",
             "image_overlay_opacity": 30,
-            "color_scheme": "inverse",
+            "color_scheme": "background-1",
             "desktop_content_position": "top-center",
             "desktop_content_alignment": "center",
             "caption": "",

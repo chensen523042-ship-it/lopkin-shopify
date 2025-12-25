@@ -66,9 +66,9 @@
           "background_gradient": "",
           "text": "#000000",
           "sale_price": "#ba2519",
-          "button": "#ff5722",
+          "button": "#4d3325",
           "button_label": "#ffffff",
-          "secondary_button_label": "#ff5722"
+          "secondary_button_label": "#b47b6b"
         }
       },
       "background-2": {
