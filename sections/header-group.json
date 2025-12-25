@@ -27,27 +27,16 @@
             "heading_effect": "background",
             "hide_on_mobile": false
           }
-        },
-        "bubble_7XFqdd": {
-          "type": "bubble",
-          "settings": {
-            "target_id": 2,
-            "icon": "none",
-            "text": "$200 Off",
-            "background_color": "#57aecf",
-            "foreground_color": "#ffffff"
-          }
         }
       },
       "block_order": [
-        "mega_image_XcEdLV",
-        "bubble_7XFqdd"
+        "mega_image_XcEdLV"
       ],
       "settings": {
         "color_scheme": "background-1",
         "logo": "shopify://shop_images/LOPKIN_logo.jpg",
         "logo_width": 110,
-        "logo_position": "center-bottom",
+        "logo_position": "center-left",
         "menu": "main-menu",
         "enable_first_level_uppercase": true,
         "menu_type_desktop": "dropdown",
