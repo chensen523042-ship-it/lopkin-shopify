@@ -64,10 +64,10 @@
         "settings": {
           "background": "#ffffff",
           "background_gradient": "",
-          "text": "#242833",
+          "text": "#000000",
           "sale_price": "#ba2519",
-          "button": "#d7ff00",
-          "button_label": "#094812",
+          "button": "#ff5722",
+          "button_label": "#ffffff",
           "secondary_button_label": "#057a49"
         }
       },
