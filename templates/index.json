@@ -82,59 +82,6 @@
         "if_as_main_area": false
       }
     },
-    "rich_text_63VY4w": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_fWwem9": {
-          "type": "heading",
-          "settings": {
-            "heading": "Upgrade Your Mowing Experience",
-            "heading_size": "large",
-            "heading_decorative": false
-          }
-        },
-        "text_fKyLBL": {
-          "type": "text",
-          "settings": {
-            "description": "<h2>Smarter way to achieve a perfect lawn</h2>",
-            "limit_description_height": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_fWwem9",
-        "text_fKyLBL"
-      ],
-      "disabled": true,
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "enable_full_width": false,
-        "color_scheme": "",
-        "texture_alpha": 90,
-        "texture_fixed": false,
-        "content_width": "normal",
-        "alignment": "center",
-        "alignment_mobile": "center",
-        "padding_top": 48,
-        "padding_bottom": 48,
-        "margin_top": 0,
-        "margin_bottom": 40
-      }
-    },
-    "text_lens_zoom_TrFEVA": {
-      "type": "text-lens-zoom",
-      "name": "t:sections.text-lens-zoom.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/20251128-112054.jpg",
-        "heading": "<p><strong>Join the Future</strong></p>",
-        "heading_decorative": false,
-        "image_mobile": "shopify://shop_images/jimeng-2025-11-28-8524.png",
-        "disable_animate_mobile": false,
-        "if_as_main_area": false,
-        "margin_top": 0,
-        "margin_bottom": 80
-      }
-    },
     "seamless_scroll_8AWXKR": {
       "type": "seamless-scroll",
       "blocks": {
@@ -206,6 +153,59 @@
         "padding_bottom": 8,
         "margin_top": 0,
         "margin_bottom": 0
+      }
+    },
+    "rich_text_63VY4w": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fWwem9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Upgrade Your Mowing Experience",
+            "heading_size": "large",
+            "heading_decorative": false
+          }
+        },
+        "text_fKyLBL": {
+          "type": "text",
+          "settings": {
+            "description": "<h2>Smarter way to achieve a perfect lawn</h2>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fWwem9",
+        "text_fKyLBL"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "text_lens_zoom_TrFEVA": {
+      "type": "text-lens-zoom",
+      "name": "t:sections.text-lens-zoom.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/20251128-112054.jpg",
+        "heading": "<p><strong>Join the Future</strong></p>",
+        "heading_decorative": false,
+        "image_mobile": "shopify://shop_images/jimeng-2025-11-28-8524.png",
+        "disable_animate_mobile": false,
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
       }
     },
     "image_gallery_RXTyWT": {
@@ -508,7 +508,7 @@
             "heading": "Precision. Power. Perfection.",
             "heading_size": "medium",
             "heading_decorative": false,
-            "description": "<p><strong>Zero gap precision cutting. BESTMOW robot mower trims every blade with accuracy—so you can sit back and relax.</strong></p>",
+            "description": "<p>Zero gap precision cutting. BESTMOW robot mower trims every blade with accuracy—so you can sit back and relax.</p>",
             "show_socials": true,
             "social_style": "wrapper",
             "show_countdown": false,
@@ -532,7 +532,7 @@
             "heading": "Powerful Performance for Complex Terrains",
             "heading_size": "small",
             "heading_decorative": false,
-            "description": "<p>With strong drive power and durable wheels, LOPKIN easily handles uneven surfaces, bumps, and slopes of over 30°. Tough weeds and rough terrain are no challenge.With IPX-rated waterproofing and durable housing, LOPKIN can withstand light rain and varying outdoor conditions.<br/><br/></p>",
+            "description": "<p>With strong drive power and durable wheels, LOPKIN easily handles uneven surfaces, bumps, and slopes of over 30°. Tough weeds and rough terrain are no challenge. With IPX-rated waterproofing and durable housing, LOPKIN can withstand light rain and varying outdoor conditions.<br/><br/></p>",
             "show_socials": true,
             "social_style": "wrapper",
             "show_countdown": false,
