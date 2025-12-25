@@ -131,7 +131,7 @@
         "enable_background_fixed": false,
         "enable_follow_on_shop": false,
         "show_trust_badge": false,
-        "enable_localization_selector": false,
+        "enable_localization_selector": true,
         "show_localization_flag": true,
         "payment_enable": true,
         "show_policy": true,

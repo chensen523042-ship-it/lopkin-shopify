@@ -37,10 +37,9 @@
     },
     "localization-drawer": {
       "type": "localization-drawer",
-      "disabled": true,
       "settings": {
         "color_scheme": "",
-        "show_filter": true,
+        "show_filter": false,
         "show_regions": true,
         "show_languages": true
       }
