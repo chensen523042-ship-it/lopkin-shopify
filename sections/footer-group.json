@@ -135,7 +135,7 @@
         "show_localization_flag": true,
         "payment_enable": true,
         "show_policy": true,
-        "margin_top": 0
+        "margin_top": 60
       }
     },
     "tool-bar": {
