@@ -11,9 +11,9 @@
   "current": {
     "page_width": 1600,
     "small_corner_radius": "medium",
-    "type_header_font": "inter_n7",
-    "header_font_spacing": "standard",
-    "type_body_font": "inter_n4",
+    "type_header_font": "oswald_n4",
+    "header_font_spacing": "loose",
+    "type_body_font": "krub_n4",
     "type_decorative_font": "pacifico_n4",
     "decorative_font_spacing": "standard",
     "enable_breadcrumb": false,
