@@ -15,7 +15,7 @@
       "type": "search-drawer",
       "settings": {
         "color_scheme": "",
-        "show_recommended_products": true,
+        "show_recommended_products": false,
         "recommended_type": "auto",
         "recommended_product_limit": 5,
         "product_list": [
