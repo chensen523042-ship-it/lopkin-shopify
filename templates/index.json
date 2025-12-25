@@ -142,6 +142,59 @@
         "margin_bottom": 80
       }
     },
+    "rich_text_63VY4w": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fWwem9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Upgrade Your Mowing Experience",
+            "heading_size": "large",
+            "heading_decorative": false
+          }
+        },
+        "text_fKyLBL": {
+          "type": "text",
+          "settings": {
+            "description": "<h2>Smarter way to achieve a perfect lawn</h2>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fWwem9",
+        "text_fKyLBL"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "normal",
+        "alignment": "center",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 40
+      }
+    },
+    "text_lens_zoom_TrFEVA": {
+      "type": "text-lens-zoom",
+      "name": "t:sections.text-lens-zoom.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/20251128-112054.jpg",
+        "heading": "<p><strong>Join the Future</strong></p>",
+        "heading_decorative": false,
+        "image_mobile": "shopify://shop_images/jimeng-2025-11-28-8524.png",
+        "disable_animate_mobile": false,
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
     "seamless_scroll_8AWXKR": {
       "type": "seamless-scroll",
       "blocks": {
@@ -213,59 +266,6 @@
         "padding_bottom": 8,
         "margin_top": 0,
         "margin_bottom": 0
-      }
-    },
-    "rich_text_63VY4w": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_fWwem9": {
-          "type": "heading",
-          "settings": {
-            "heading": "Upgrade Your Mowing Experience",
-            "heading_size": "large",
-            "heading_decorative": false
-          }
-        },
-        "text_fKyLBL": {
-          "type": "text",
-          "settings": {
-            "description": "<h2>Smarter way to achieve a perfect lawn</h2>",
-            "limit_description_height": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_fWwem9",
-        "text_fKyLBL"
-      ],
-      "disabled": true,
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "enable_full_width": false,
-        "color_scheme": "",
-        "texture_alpha": 90,
-        "texture_fixed": false,
-        "content_width": "normal",
-        "alignment": "center",
-        "alignment_mobile": "center",
-        "padding_top": 48,
-        "padding_bottom": 48,
-        "margin_top": 0,
-        "margin_bottom": 40
-      }
-    },
-    "text_lens_zoom_TrFEVA": {
-      "type": "text-lens-zoom",
-      "name": "t:sections.text-lens-zoom.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/20251128-112054.jpg",
-        "heading": "<p><strong>Join the Future</strong></p>",
-        "heading_decorative": false,
-        "image_mobile": "shopify://shop_images/jimeng-2025-11-28-8524.png",
-        "disable_animate_mobile": false,
-        "if_as_main_area": false,
-        "margin_top": 0,
-        "margin_bottom": 80
       }
     },
     "image_gallery_RXTyWT": {
@@ -1144,9 +1144,9 @@
     "confetti_trigger_yEEKMq",
     "carousal_WpGAKi",
     "text_with_icons_39G3TY",
-    "seamless_scroll_8AWXKR",
     "rich_text_63VY4w",
     "text_lens_zoom_TrFEVA",
+    "seamless_scroll_8AWXKR",
     "image_gallery_RXTyWT",
     "video_text_section_dgwH8m",
     "highlight_features_FnpJUW",
