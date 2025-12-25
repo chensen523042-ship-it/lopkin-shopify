@@ -82,6 +82,66 @@
         "if_as_main_area": false
       }
     },
+    "text_with_icons_39G3TY": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon_text_338HXy": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "truck",
+            "heading": "Free Shipping",
+            "description": "<p>Enjoy the convenience of free shipping on every order</p>"
+          }
+        },
+        "icon_text_wGiQRa": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "card",
+            "heading": "Cancel Anytime",
+            "description": "<p>Enjoy the flexibility to cancel whenever you need—no questions</p>"
+          }
+        },
+        "icon_text_6QPYGf": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "return",
+            "heading": "Support You Can Count On",
+            "description": "<p>Experience 24/7 service that puts you first—always</p>"
+          }
+        },
+        "icon_text_BGckpC": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "chat",
+            "heading": "Secure Payments",
+            "description": "<p>Pay easily using your debit or credit card, or through secure platforms</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_text_338HXy",
+        "icon_text_wGiQRa",
+        "icon_text_6QPYGf",
+        "icon_text_BGckpC"
+      ],
+      "name": "t:sections.text-with-icons.presets.name",
+      "settings": {
+        "show_section_header": true,
+        "heading": "Why Choose LOPKIN",
+        "description": "<p>Quality and care you can always trust</p>",
+        "color_scheme": "",
+        "columns_on_desktop": 4,
+        "item_alignment": "center",
+        "icon_size": "large",
+        "enable_mobile_slider": false,
+        "columns_on_mobile": "2",
+        "hide_description": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
     "seamless_scroll_8AWXKR": {
       "type": "seamless-scroll",
       "blocks": {
@@ -1078,71 +1138,12 @@
         "margin_top": 0,
         "margin_bottom": 80
       }
-    },
-    "text_with_icons_39G3TY": {
-      "type": "text-with-icons",
-      "blocks": {
-        "icon_text_338HXy": {
-          "type": "icon_text",
-          "settings": {
-            "icon": "truck",
-            "heading": "Free Shipping",
-            "description": "<p>Enjoy the convenience of free shipping on every order</p>"
-          }
-        },
-        "icon_text_wGiQRa": {
-          "type": "icon_text",
-          "settings": {
-            "icon": "card",
-            "heading": "Cancel Anytime",
-            "description": "<p>Enjoy the flexibility to cancel whenever you need—no questions</p>"
-          }
-        },
-        "icon_text_6QPYGf": {
-          "type": "icon_text",
-          "settings": {
-            "icon": "return",
-            "heading": "Support You Can Count On",
-            "description": "<p>Experience 24/7 service that puts you first—always</p>"
-          }
-        },
-        "icon_text_BGckpC": {
-          "type": "icon_text",
-          "settings": {
-            "icon": "chat",
-            "heading": "Secure Payments",
-            "description": "<p>Pay easily using your debit or credit card, or through secure platforms</p>"
-          }
-        }
-      },
-      "block_order": [
-        "icon_text_338HXy",
-        "icon_text_wGiQRa",
-        "icon_text_6QPYGf",
-        "icon_text_BGckpC"
-      ],
-      "name": "t:sections.text-with-icons.presets.name",
-      "settings": {
-        "show_section_header": false,
-        "heading": "Text with icons",
-        "description": "",
-        "color_scheme": "",
-        "columns_on_desktop": 4,
-        "item_alignment": "center",
-        "icon_size": "large",
-        "enable_mobile_slider": false,
-        "columns_on_mobile": "2",
-        "hide_description": true,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "margin_top": 0,
-        "margin_bottom": 80
-      }
     }
   },
   "order": [
     "confetti_trigger_yEEKMq",
     "carousal_WpGAKi",
+    "text_with_icons_39G3TY",
     "seamless_scroll_8AWXKR",
     "rich_text_63VY4w",
     "text_lens_zoom_TrFEVA",
@@ -1159,7 +1160,6 @@
     "narrow_image_banner_wpX7D9",
     "image_gallery_qQhU8X",
     "multicolumn_QU4VTR",
-    "image_gallery_EMJFH7",
-    "text_with_icons_39G3TY"
+    "image_gallery_EMJFH7"
   ]
 }
