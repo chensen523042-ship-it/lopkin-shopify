@@ -38,7 +38,7 @@
           "settings": {
             "show_tax": true,
             "show_sale_badge": true,
-            "sale_badge_type": "percentage"
+            "sale_badge_type": "amount"
           }
         },
         "sku_aJTmcp": {
@@ -75,8 +75,8 @@
             "picker_type": "button",
             "auto_dropdown": true,
             "dropdown_threshold": 10,
-            "enable_first_swatch_image": false,
-            "swatch_size": "medium"
+            "enable_first_swatch_image": true,
+            "swatch_size": "large"
           }
         },
         "0ae0cc1a-6798-498d-8917-c53ab72b7018": {
