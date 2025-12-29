@@ -68,10 +68,10 @@
       "settings": {
         "enable_full_width": true,
         "image": "shopify://shop_images/Gemini_Generated_Image_unzamhunzamhunza.png",
-        "image_overlay_opacity": 10,
+        "image_overlay_opacity": 30,
         "image_height": "adapt",
         "enable_adapter_transparent_header": false,
-        "color_scheme": "inverse",
+        "color_scheme": "accent-1",
         "desktop_content_position": "top-center",
         "show_text_box": false,
         "text_box_opacity": 100,
@@ -98,7 +98,7 @@
           "type": "heading",
           "settings": {
             "heading": "Innovation is a Journey,Not a Starting Line.",
-            "heading_size": "large",
+            "heading_size": "medium",
             "heading_decorative": false
           }
         },
@@ -142,7 +142,7 @@
           "type": "heading",
           "settings": {
             "heading": "A Diamond in the Rough",
-            "heading_size": "large",
+            "heading_size": "medium",
             "heading_decorative": false
           }
         },
@@ -186,7 +186,7 @@
           "type": "heading",
           "settings": {
             "heading": "Reimagining the Experience",
-            "heading_size": "large",
+            "heading_size": "medium",
             "heading_decorative": false
           }
         },
@@ -264,26 +264,45 @@
     "image_gallery_gEPx7r": {
       "type": "image-gallery",
       "blocks": {
-        "image_Vxbnqc": {
+        "image_CrncCw": {
           "type": "image",
           "settings": {
-            "columns": "4",
+            "columns": "2",
             "rows": "2",
-            "image": "shopify://shop_images/Gemini_Generated_Image_h13a2ih13a2ih13a.png",
+            "image": "shopify://shop_images/Gemini_Generated_Image_yxuhtlyxuhtlyxuh.png",
             "link": "",
             "heading": "",
             "heading_size": "medium",
-            "heading_color": "#FFFFFF",
+            "heading_color": "#ffffff",
+            "heading_position": "top-left",
+            "mobile_columns": "1",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#ffffff",
+            "heading_position_mobile": "middle-center"
+          }
+        },
+        "image_Vxbnqc": {
+          "type": "image",
+          "settings": {
+            "columns": "2",
+            "rows": "2",
+            "image": "shopify://shop_images/Gemini_Generated_Image_mp7o4tmp7o4tmp7o.png",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#ffffff",
             "heading_position": "top-left",
             "mobile_columns": "2",
             "mobile_rows": "1",
             "heading_size_mobile": "medium",
-            "heading_color_mobile": "#FFFFFF",
+            "heading_color_mobile": "#ffffff",
             "heading_position_mobile": "middle-center"
           }
         }
       },
       "block_order": [
+        "image_CrncCw",
         "image_Vxbnqc"
       ],
       "name": "t:sections.image-gallery.presets.name",
@@ -333,7 +352,7 @@
         "change_slides_speed": 10,
         "show_nav_buttons": true,
         "show_page_dots": true,
-        "controller_color": "#FFFFFF",
+        "controller_color": "#ffffff",
         "margin_top": 0,
         "margin_bottom": 80,
         "if_as_main_area": false
