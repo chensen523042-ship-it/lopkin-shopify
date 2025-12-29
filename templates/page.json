@@ -33,7 +33,7 @@
         "heading_YMRpqa": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Innovation is a Journey,Not a Starting Line.</p>",
+            "heading": "<p>Reclaiming your weekends</p>",
             "heading_size": "large",
             "heading_decorative": true
           }
@@ -41,7 +41,7 @@
         "description_6d373b": {
           "type": "description",
           "settings": {
-            "text": ""
+            "text": "<p>We believe technology should serve life, not complicate it<br/></p>"
           }
         },
         "button_qeVKYw": {
@@ -97,7 +97,7 @@
         "heading_PVAWGc": {
           "type": "heading",
           "settings": {
-            "heading": "Hiding in Plain Sight",
+            "heading": "Innovation is a Journey,Not a Starting Line.",
             "heading_size": "large",
             "heading_decorative": false
           }
@@ -117,7 +117,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/985.6_740.jpg",
+        "image": "shopify://shop_images/20251127-181207.png",
         "height": "small",
         "desktop_image_width": "medium",
         "image_first": false,
