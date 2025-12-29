@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "page_width": 1350,
+    "page_width": 1280,
     "small_corner_radius": "medium",
     "type_header_font": "oswald_n4",
     "header_font_spacing": "loose",
@@ -84,9 +84,9 @@
       },
       "inverse": {
         "settings": {
-          "background": "#242833",
+          "background": "#ffffff",
           "background_gradient": "",
-          "text": "#ffffff",
+          "text": "#000000",
           "sale_price": "#ba2519",
           "button": "#d7ff00",
           "button_label": "#094812",
