@@ -260,6 +260,84 @@
         "margin_top": 0,
         "margin_bottom": 80
       }
+    },
+    "image_gallery_gEPx7r": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_Vxbnqc": {
+          "type": "image",
+          "settings": {
+            "columns": "4",
+            "rows": "2",
+            "image": "shopify://shop_images/Gemini_Generated_Image_h13a2ih13a2ih13a.png",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#FFFFFF",
+            "heading_position": "top-left",
+            "mobile_columns": "2",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#FFFFFF",
+            "heading_position_mobile": "middle-center"
+          }
+        }
+      },
+      "block_order": [
+        "image_Vxbnqc"
+      ],
+      "name": "t:sections.image-gallery.presets.name",
+      "settings": {
+        "show_section_header": true,
+        "heading": "Real People Behind the Code",
+        "description": "<p><br/>LOPKIN isn't a faceless corporation. We are a group of engineers, designers, and outdoor enthusiasts based in the heart of the world's smart manufacturing hub.<br/><br/></p>",
+        "water_text": "",
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "carousal_wUcYBD": {
+      "type": "carousal",
+      "blocks": {
+        "slide_U3iYWR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/4.jpg",
+            "image_overlay_opacity": 40,
+            "color_scheme": "accent-1",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center",
+            "caption": "",
+            "heading": "<p><br/>Ready to take back your Saturday mornings?<br/></p>",
+            "heading_size": "large",
+            "heading_decorative": false,
+            "text": "",
+            "button_label": "Shop LOPKIN Now",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true,
+            "mobile_content_position": "middle-center",
+            "mobile_content_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_U3iYWR"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "enable_full_width": true,
+        "slide_height": "medium",
+        "enable_adapter_transparent_header": false,
+        "auto_rotate": true,
+        "change_slides_speed": 10,
+        "show_nav_buttons": true,
+        "show_page_dots": true,
+        "controller_color": "#FFFFFF",
+        "margin_top": 0,
+        "margin_bottom": 80,
+        "if_as_main_area": false
+      }
     }
   },
   "order": [
@@ -268,6 +346,8 @@
     "image_with_text_aYRUQk",
     "image_with_text_nWkwB8",
     "image_with_text_QY9QQT",
-    "image_with_text_UMpkDQ"
+    "image_with_text_UMpkDQ",
+    "image_gallery_gEPx7r",
+    "carousal_wUcYBD"
   ]
 }
