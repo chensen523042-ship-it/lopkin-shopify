@@ -67,7 +67,7 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "enable_full_width": true,
-        "image": "shopify://shop_images/Gemini_Generated_Image_unzamhunzamhunza.png",
+        "image": "shopify://shop_images/hero-aboutus.png",
         "image_overlay_opacity": 30,
         "image_height": "adapt",
         "enable_adapter_transparent_header": false,
@@ -117,8 +117,8 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Gemini_Generated_Image_w4gqsuw4gqsuw4gq.png",
-        "height": "adapt",
+        "image": "shopify://shop_images/aboutus-cheel.png",
+        "height": "small",
         "desktop_image_width": "medium",
         "image_first": false,
         "color_scheme": "inverse",
@@ -205,7 +205,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Gemini_Generated_Image_8ao8h38ao8h38ao8.png",
+        "image": "shopify://shop_images/tiaoshi.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "image_first": false,
@@ -269,7 +269,7 @@
           "settings": {
             "columns": "2",
             "rows": "2",
-            "image": "shopify://shop_images/Gemini_Generated_Image_yxuhtlyxuhtlyxuh.png",
+            "image": "shopify://shop_images/teamz.png",
             "link": "",
             "heading": "",
             "heading_size": "medium",
@@ -287,7 +287,7 @@
           "settings": {
             "columns": "2",
             "rows": "2",
-            "image": "shopify://shop_images/Gemini_Generated_Image_mp7o4tmp7o4tmp7o.png",
+            "image": "shopify://shop_images/teamzm.png",
             "link": "",
             "heading": "",
             "heading_size": "medium",
