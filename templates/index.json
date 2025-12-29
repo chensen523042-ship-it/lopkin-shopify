@@ -26,7 +26,7 @@
           "settings": {
             "image": "shopify://shop_images/kling_20251127_____4773_0.png",
             "image_overlay_opacity": 30,
-            "color_scheme": "background-1",
+            "color_scheme": "accent-1",
             "desktop_content_position": "top-center",
             "desktop_content_alignment": "center",
             "caption": "We design products that evolve over time",
@@ -45,9 +45,9 @@
         "slide_HFpGkg": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/kling_20251127_____4877_0.png",
+            "image": "shopify://shop_images/1.jpg",
             "image_overlay_opacity": 30,
-            "color_scheme": "background-1",
+            "color_scheme": "accent-1",
             "desktop_content_position": "top-center",
             "desktop_content_alignment": "center",
             "caption": "",
@@ -468,25 +468,11 @@
             "description": "<p>Download the LOPKIN App and take control of your LOPKIN !<br/>Activate your robot with ease using Bluetooth, Wi-Fi, or 4G, get step-by-step guidance, and manage everything remotely<br/>—All right at your fingertips.</p>",
             "limit_description_height": false
           }
-        },
-        "button_tAn8rc": {
-          "type": "button",
-          "settings": {
-            "button_label": "AppStore",
-            "button_link": "https://apps.apple.com/us/app/bestmow/id6737789563",
-            "button_style": "primary",
-            "button_arrow": false,
-            "secondary_button_label": "Google Play",
-            "secondary_button_link": "https://play.google.com/store/apps/details?id=com.bestmow.mower",
-            "secondary_button_style": "secondary",
-            "secondary_button_arrow": false
-          }
         }
       },
       "block_order": [
         "heading_KfQHhj",
-        "text_cgeEEw",
-        "button_tAn8rc"
+        "text_cgeEEw"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
