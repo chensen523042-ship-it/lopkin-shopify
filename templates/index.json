@@ -24,7 +24,7 @@
         "slide_K4Gdtj": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/kling_20251127_____4773_0.png",
+            "image": "shopify://shop_images/k20251127.png",
             "image_overlay_opacity": 30,
             "color_scheme": "accent-1",
             "desktop_content_position": "top-center",
@@ -632,7 +632,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Gemini_Generated_Image_3vtfkl3vtfkl3vtf.png",
+        "image": "shopify://shop_images/map123.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "image_first": true,
