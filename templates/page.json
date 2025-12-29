@@ -117,120 +117,104 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/20251127-181207.png",
+        "image": "shopify://shop_images/Gemini_Generated_Image_w4gqsuw4gqsuw4gq.png",
         "height": "small",
         "desktop_image_width": "medium",
         "image_first": false,
         "color_scheme": "inverse",
         "content_alignment": "left",
-        "content_alignment_mobile": "center",
-        "if_as_main_area": false,
+        "content_alignment_mobile": "left",
+        "if_as_main_area": true,
         "margin_top": 0,
         "margin_bottom": 80
       }
     },
-    "team_aPQHx7": {
-      "type": "team",
+    "image_with_text_nWkwB8": {
+      "type": "image-with-text",
       "blocks": {
-        "member_pmXF8c": {
-          "type": "member",
+        "caption_mXGGU7": {
+          "type": "caption",
           "settings": {
-            "member_name": "Member name",
-            "member_role": "Member role",
-            "member_facebook": "",
-            "member_instagram": "",
-            "member_linkedin": ""
+            "caption": "02 / The Turning Point"
           }
         },
-        "member_CVw7Vh": {
-          "type": "member",
+        "heading_hn4Upg": {
+          "type": "heading",
           "settings": {
-            "member_name": "Member name",
-            "member_role": "Member role",
-            "member_facebook": "",
-            "member_instagram": "",
-            "member_linkedin": ""
+            "heading": "A Diamond in the Rough",
+            "heading_size": "large",
+            "heading_decorative": false
           }
         },
-        "member_FeLq6n": {
-          "type": "member",
+        "text_nyawBF": {
+          "type": "text",
           "settings": {
-            "member_name": "Member name",
-            "member_role": "Member role",
-            "member_facebook": "",
-            "member_instagram": "",
-            "member_linkedin": ""
-          }
-        },
-        "member_W6p3Wt": {
-          "type": "member",
-          "settings": {
-            "member_name": "Member name",
-            "member_role": "Member role",
-            "member_facebook": "",
-            "member_instagram": "",
-            "member_linkedin": ""
-          }
-        },
-        "member_YFjfUB": {
-          "type": "member",
-          "disabled": true,
-          "settings": {
-            "member_name": "Member name",
-            "member_role": "Member role",
-            "member_facebook": "",
-            "member_instagram": "",
-            "member_linkedin": ""
+            "description": "<p>While others saw a machine with limitations, we saw a diamond in the rough. We realized that with the right engineering focus, this durable hardware could be transformed into the ultimate lawn care assistant.</p><p>So, we took a bold step. We acquired the core technology and gathered a team of obsessive engineers to do one thing:<strong> Perfect it.</strong></p>",
+            "limit_description_height": false
           }
         }
       },
       "block_order": [
-        "member_pmXF8c",
-        "member_CVw7Vh",
-        "member_FeLq6n",
-        "member_W6p3Wt",
-        "member_YFjfUB"
+        "caption_mXGGU7",
+        "heading_hn4Upg",
+        "text_nyawBF"
       ],
-      "name": "t:sections.team.presets.name",
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "show_section_header": true,
-        "heading": "Our team",
-        "description": "",
-        "water_text": "",
-        "enable_desktop_slider": true,
-        "show_nav_buttons": false,
-        "columns_on_desktop": 5,
-        "enable_mobile_slider": true,
-        "columns_on_mobile": "1",
-        "margin_top": 0,
-        "margin_bottom": 80
-      }
-    },
-    "quote_CAmaH9": {
-      "type": "quote",
-      "name": "t:sections.quote.presets.name",
-      "settings": {
+        "image": "shopify://shop_images/20251127-181207.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "image_first": true,
         "color_scheme": "",
-        "icon_color": "#088b5a",
-        "content": "We believe in delivering not just products, but meaningful experiences that enrich your life. Every detail matters to us, and your trust inspires us to uphold the highest standards of quality, craftsmanship, and service in everything we do",
-        "author_name": "punt",
-        "author_role": "CEO",
+        "content_alignment": "left",
+        "content_alignment_mobile": "left",
+        "if_as_main_area": true,
         "margin_top": 0,
         "margin_bottom": 80
       }
     },
-    "custom_section_header_3RCgge": {
-      "type": "custom-section-header",
-      "name": "t:sections.custom-section-header.presets.name",
+    "image_with_text_QY9QQT": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_iqjQYM": {
+          "type": "caption",
+          "settings": {
+            "caption": "03 / The Hard Work"
+          }
+        },
+        "heading_EUGMbQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Reimagining the Experience",
+            "heading_size": "large",
+            "heading_decorative": false
+          }
+        },
+        "text_AhFAnw": {
+          "type": "text",
+          "settings": {
+            "description": "<p>We spent the last 24 months stripping the machine down to its nuts and bolts. We kept the industrial-grade durability but completely rewrote the software, upgraded the navigation sensors, and refined the cutting algorithms. We tested it in mud, rain, and tall grass until we were satisfied.</p><p>We didn't just fix bugs; we reimagined the experience.</p>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_iqjQYM",
+        "heading_EUGMbQ",
+        "text_AhFAnw"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "heading": "Custom section title",
-        "description": "<p>Custom section description</p>",
-        "water_text": "",
-        "button_label": "",
-        "button_link": "",
-        "show_title_bottom_line": true,
+        "image": "shopify://shop_images/Gemini_Generated_Image_8ao8h38ao8h38ao8.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "image_first": false,
+        "color_scheme": "",
+        "content_alignment": "left",
+        "content_alignment_mobile": "left",
+        "if_as_main_area": true,
         "margin_top": 0,
-        "margin_bottom": 48
+        "margin_bottom": 80
       }
     }
   },
@@ -238,8 +222,7 @@
     "main",
     "image_banner_JkRG4E",
     "image_with_text_aYRUQk",
-    "team_aPQHx7",
-    "quote_CAmaH9",
-    "custom_section_header_3RCgge"
+    "image_with_text_nWkwB8",
+    "image_with_text_QY9QQT"
   ]
 }
