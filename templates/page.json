@@ -127,7 +127,7 @@
       "settings": {
         "image": "shopify://shop_images/985.6_740.jpg",
         "height": "adapt",
-        "desktop_image_width": "large",
+        "desktop_image_width": "medium",
         "image_first": true,
         "color_scheme": "",
         "content_alignment": "left",
@@ -226,6 +226,20 @@
         "margin_top": 0,
         "margin_bottom": 80
       }
+    },
+    "custom_section_header_3RCgge": {
+      "type": "custom-section-header",
+      "name": "t:sections.custom-section-header.presets.name",
+      "settings": {
+        "heading": "Custom section title",
+        "description": "<p>Custom section description</p>",
+        "water_text": "",
+        "button_label": "",
+        "button_link": "",
+        "show_title_bottom_line": true,
+        "margin_top": 0,
+        "margin_bottom": 48
+      }
     }
   },
   "order": [
@@ -233,6 +247,7 @@
     "image_banner_JkRG4E",
     "image_with_text_aYRUQk",
     "team_aPQHx7",
-    "quote_CAmaH9"
+    "quote_CAmaH9",
+    "custom_section_header_3RCgge"
   ]
 }
