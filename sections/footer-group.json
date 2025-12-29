@@ -51,7 +51,7 @@
       "name": "t:sections.newsletter.presets.name",
       "settings": {
         "enable_full_width": true,
-        "color_scheme": "background-1",
+        "color_scheme": "inverse",
         "texture_alpha": 19,
         "texture_fixed": false,
         "padding_top": 64,
@@ -126,7 +126,7 @@
         "text_rcnCAf"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "scheme-340f51ef-2f3e-4945-8529-a9cec3682201",
         "show_border_top": true,
         "heading_uppercase": true,
         "background_alpha": 20,

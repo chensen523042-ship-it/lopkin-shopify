@@ -438,7 +438,7 @@
       ],
       "name": "t:sections.highlight-features.presets.name",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "inverse",
         "show_section_header": true,
         "heading": "Blade System & Edge Cutting",
         "description": "",
