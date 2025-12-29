@@ -118,7 +118,7 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/Gemini_Generated_Image_w4gqsuw4gqsuw4gq.png",
-        "height": "small",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "image_first": false,
         "color_scheme": "inverse",
@@ -162,7 +162,7 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/K100_-7-1-10009.png",
-        "height": "small",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "image_first": true,
         "color_scheme": "",
@@ -207,12 +207,56 @@
       "settings": {
         "image": "shopify://shop_images/Gemini_Generated_Image_8ao8h38ao8h38ao8.png",
         "height": "adapt",
-        "desktop_image_width": "small",
+        "desktop_image_width": "medium",
         "image_first": false,
         "color_scheme": "",
         "content_alignment": "left",
         "content_alignment_mobile": "left",
         "if_as_main_area": true,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "image_with_text_UMpkDQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_xKgwqJ": {
+          "type": "caption",
+          "settings": {
+            "caption": "04 / The Promise"
+          }
+        },
+        "heading_TAzJAq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Built on the Shoulders of the Past",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_WwK9gL": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Today's LOPKIN is the result of that evolution. It combines battle-tested mechanical strength with next-generation intelligence. We stood on the shoulders of the past to build the future of your lawn.</p>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_xKgwqJ",
+        "heading_TAzJAq",
+        "text_WwK9gL"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/2.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "image_first": true,
+        "color_scheme": "",
+        "content_alignment": "left",
+        "content_alignment_mobile": "center",
+        "if_as_main_area": false,
         "margin_top": 0,
         "margin_bottom": 80
       }
@@ -223,6 +267,7 @@
     "image_banner_JkRG4E",
     "image_with_text_aYRUQk",
     "image_with_text_nWkwB8",
-    "image_with_text_QY9QQT"
+    "image_with_text_QY9QQT",
+    "image_with_text_UMpkDQ"
   ]
 }
