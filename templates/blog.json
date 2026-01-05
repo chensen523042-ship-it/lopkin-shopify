@@ -25,10 +25,11 @@
       "settings": {
         "color_scheme": "inverse",
         "banner_height": "medium",
+        "texture_image": "shopify://shop_images/long-grass-growing-in-city.jpg",
         "texture_alpha": 67,
-        "image_behavior": "none",
+        "image_behavior": "zoom-in",
         "heading_size": "medium",
-        "heading_uppercase": false,
+        "heading_uppercase": true,
         "heading_decorative": false,
         "show_tags_filter": false,
         "show_tag_count": true,
