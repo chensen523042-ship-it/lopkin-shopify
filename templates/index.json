@@ -551,10 +551,10 @@
             "image": "shopify://shop_images/20251127-165107_1.jpg",
             "content_alignment": "center",
             "caption": "",
-            "heading": "Precision. Power. Perfection.",
+            "heading": "Crafted for Clean, Flawless Results",
             "heading_size": "medium",
             "heading_decorative": false,
-            "description": "<p>Zero gap precision cutting. BESTMOW robot mower trims every blade with accuracy—so you can sit back and relax.</p>",
+            "description": "<p>Designed to deliver an even, edge-to-edge finish, the mower maintains a consistently refined cut—handling the details for you while you enjoy a perfectly kept lawn.<br/></p>",
             "show_socials": true,
             "social_style": "wrapper",
             "show_countdown": false,
@@ -613,7 +613,7 @@
         "heading_kFaFiN": {
           "type": "heading",
           "settings": {
-            "heading": "Intelligence Mapping.",
+            "heading": "Smarter Mapping, Faster Setup",
             "heading_size": "medium",
             "heading_decorative": false
           }
@@ -621,7 +621,7 @@
         "text_Wd7nJk": {
           "type": "text",
           "settings": {
-            "description": "<p>Quick and easy to setup. The Mapping feature simplifies setup to just a few taps on the LOPKIN app.</p>",
+            "description": "<p>Get up and running in minutes. With intelligent mapping built into the LOPKIN App, your lawn is defined through a simple, guided process—no complicated steps, no learning curve.<br/></p>",
             "limit_description_height": false
           }
         }
