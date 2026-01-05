@@ -153,8 +153,8 @@
         "enable_video_autoplay": false,
         "enable_video_looping": false,
         "hide_thumbnail_mobile": false,
-        "show_description_tab": false,
-        "show_description_icon": false,
+        "show_description_tab": true,
+        "show_description_icon": true,
         "enable_share": true,
         "show_category_metafields": true,
         "padding_top": 0,
@@ -717,6 +717,7 @@
       "blocks": {
         "faq_item_VGGbmr": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "question": "Will LOPKIN work on properties with a lot of trees?",
             "answer": "<p>LOPKIN relies on advanced satellite-based navigation systems (RTK and GPS) for accurate, autonomous mowing. If your yard has significant tree coverage or a dense overhead canopy, these signals may be disrupted, which can affect the mower’s performance and precision.</p><p>While we aim to support a wide range of landscapes, properties with heavy tree cover may not be the best fit for LOPKIN at this time.</p><p>If you’re unsure whether your yard qualifies, we’re happy to help. Simply send your home address and contact details to support@lopkin.com<br/><br/>, and our team will evaluate your property for compatibility.</p>"
@@ -740,6 +741,7 @@
         },
         "faq_item_KjFcCM": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "question": "I’m a senior or have limited mobility. Can I install the product myself?",
             "answer": "<p>While many customers can install it themselves, if you are elderly, disabled, or unable to safely lift 48 pounds, we recommend having someone assist you with the unboxing and setup.</p>"
@@ -771,6 +773,7 @@
         },
         "faq_item_wV4NrA": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "question": "How long is the shipping?",
             "answer": "<p>7-10 days maximum depending on your proximity to one of our distribution centers.</p>"
@@ -786,6 +789,7 @@
         },
         "faq_item_tiMf9p": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "question": "Is the Setup Complicated? Does It Require Technical Knowledge?",
             "answer": "<p>Not at all. When you purchase a subscription, we offer <strong>property mapping support</strong> — our team will help you configure BESTMOW to your unique lawn layout. The device works seamlessly with the <strong>LOPKIN mobile app</strong>, which is available for both <strong>iOS and Android</strong>. </p>"
