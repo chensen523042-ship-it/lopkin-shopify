@@ -51,11 +51,11 @@
             "desktop_content_position": "top-center",
             "desktop_content_alignment": "center",
             "caption": "",
-            "heading": "<p><strong>Why Mow Let LOPKIN</strong></p>",
-            "heading_size": "small",
+            "heading": "<p>Effortless Control, Total Confidence</p>",
+            "heading_size": "medium",
             "heading_decorative": false,
-            "text": "<p>LOPKIN Robot Lawn Mower</p>",
-            "button_label": "Get Yours Now",
+            "text": "",
+            "button_label": "",
             "button_link": "shopify://products/lopkin",
             "button_style": "primary",
             "button_arrow": true,
@@ -379,8 +379,8 @@
       "type": "video-text-section",
       "name": "Video + Text（极简·高度优化）",
       "settings": {
-        "title": "Powerful Mowing",
-        "description": "<p>Driven by 300W rated power, with peak output soaring to 1200W for tackling tough and thick grass.</p>",
+        "title": "Effortless Cutting Performance",
+        "description": "<p><br/>Built with a high-efficiency drive system, LOPKIN delivers consistent cutting strength and instantly boosts output when facing dense or overgrown grass—keeping your lawn clean, even, and under control in demanding conditions.<br/><br/></p>",
         "swap_desktop": false,
         "swap_mobile": false,
         "video": "shopify://files/videos/智能割草机生成视频 - Trim.mp4",
@@ -457,7 +457,7 @@
         "heading_KfQHhj": {
           "type": "heading",
           "settings": {
-            "heading": "LOPKIN APP",
+            "heading": "Smart Control, Simplified",
             "heading_size": "medium",
             "heading_decorative": false
           }
@@ -465,7 +465,7 @@
         "text_cgeEEw": {
           "type": "text",
           "settings": {
-            "description": "<p>Download the LOPKIN App and take control of your LOPKIN !<br/>Activate your robot with ease using Bluetooth, Wi-Fi, or 4G, get step-by-step guidance, and manage everything remotely<br/>—All right at your fingertips.</p>",
+            "description": "<p>The LOPKIN App puts full control in your hands. Set up your mower in minutes, stay connected wherever you are, and manage every detail remotely through an intuitive, guided experience—so your lawn care runs smoothly without constant attention.<br/></p>",
             "limit_description_height": false
           }
         }
