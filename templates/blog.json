@@ -14,6 +14,7 @@
       "blocks": {
         "featured_article_atcLgH": {
           "type": "featured_article",
+          "disabled": true,
           "settings": {
             "article": "lawn-mowing-issue/gas-vs-electric-vs-robotic-mowers"
           }
@@ -22,6 +23,7 @@
       "block_order": [
         "featured_article_atcLgH"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "inverse",
         "banner_height": "medium",
@@ -109,10 +111,36 @@
         "margin_top": 80,
         "margin_bottom": 80
       }
+    },
+    "featured_blog_dThFa7": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "show_section_header": true,
+        "heading": "blog",
+        "description": "",
+        "water_text": "",
+        "button_label": "View all",
+        "blog": "lawn-mowing-issue",
+        "articles_to_show": 10,
+        "enable_desktop_slider": false,
+        "show_nav_buttons": true,
+        "show_dots": true,
+        "card_size": "small",
+        "image_ratio": "landscape",
+        "show_tags": true,
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": true,
+        "enable_mobile_slider": true,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
     }
   },
   "order": [
     "main",
-    "collection_thumbnails_W8TcfU"
+    "collection_thumbnails_W8TcfU",
+    "featured_blog_dThFa7"
   ]
 }
