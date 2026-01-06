@@ -14,13 +14,14 @@
       "blocks": {
         "advertisement_AnJk8r": {
           "type": "advertisement",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/FREE-Shipping-Over-299_900x_3c00b657-0b22-49a1-9c80-065e9520f72e.jpg",
             "link": ""
           }
         },
         "subcategory_EmWn3D": {
           "type": "subcategory",
+          "disabled": true,
           "settings": {
             "collection": "pulseiras",
             "heading": "Pulseiras"
@@ -28,6 +29,7 @@
         },
         "subcategory_efcMPC": {
           "type": "subcategory",
+          "disabled": true,
           "settings": {
             "collection": "aneis",
             "heading": "Anéis"
@@ -35,6 +37,7 @@
         },
         "subcategory_fEDPjP": {
           "type": "subcategory",
+          "disabled": true,
           "settings": {
             "collection": "colares",
             "heading": "Colares"
@@ -53,10 +56,12 @@
         "alignment": "center",
         "show_background_image": false,
         "background_image_alpha": 80,
+        "image_behavior": "none",
         "heading_size": "medium",
         "heading_uppercase": false,
         "heading_decorative": false,
         "show_collection_description": false,
+        "limit_description_height": false,
         "show_countdown": false,
         "end_time": "2025-01-05 23:59",
         "end_text": "Timer complete message",
@@ -71,11 +76,13 @@
         "show_content_wrapper": false,
         "card_color_scheme": "",
         "text_alignment": "left",
+        "side_menu": "",
         "enable_sorting": true,
         "enable_filtering": true,
         "filter_type": "drawer",
         "vertical_side": "left",
-        "default_expand_facets": "all"
+        "default_expand_facets": "all",
+        "enable_sticky_filter": false
       }
     },
     "search_banner_MA6zGB": {
@@ -95,7 +102,6 @@
         "collection_xVNfC7": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/MG_0044-Edit.jpg",
             "collection": "camisetas",
             "heading": "Camisetas Cristãs"
           }
@@ -103,7 +109,6 @@
         "collection_FwJqae": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/375650442_624842076401513_6150809100369978391_n.jpg",
             "collection": "moletons",
             "heading": "Moletons"
           }
@@ -111,7 +116,6 @@
         "collection_hk4RwT": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/275145524_4947117682002931_4560341787936173746_n_1.jpg",
             "collection": "joias",
             "heading": "Anéis & Colares"
           }
@@ -119,7 +123,6 @@
         "collection_8Az7eb": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/285001085_5155430561171641_4615516900486526204_n.jpg",
             "collection": "pulseiras",
             "heading": "Pulseiras"
           }
@@ -127,7 +130,6 @@
         "collection_78qcVc": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/289796917_5221643671216996_5881229615157393307_n.jpg",
             "collection": "stickers",
             "heading": "Stickers"
           }
@@ -140,6 +142,7 @@
         "collection_8Az7eb",
         "collection_78qcVc"
       ],
+      "disabled": true,
       "custom_css": [
         ".media--square > img {border-radius: 50%;}"
       ],
@@ -152,6 +155,7 @@
         "button_link": "",
         "style": "vertical",
         "adapt_transparent_image": false,
+        "show_nav_buttons": false,
         "margin_top": 0,
         "margin_bottom": 80
       }
