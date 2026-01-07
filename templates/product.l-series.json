@@ -79,11 +79,6 @@
             "swatch_size": "large"
           }
         },
-        "easify_options_easify_product_options_cjtcy7": {
-          "type": "shopify://apps/easify-options/blocks/easify-product-options/d2288b18-c1ba-42f5-b3b3-26c75c8820bf",
-          "disabled": true,
-          "settings": {}
-        },
         "0ae0cc1a-6798-498d-8917-c53ab72b7018": {
           "type": "separator",
           "settings": {
@@ -140,7 +135,6 @@
         "84bcde1d-2766-431d-93f4-1a5d6854eced",
         "f84da6b1-d99e-479c-a024-45d5d36bcb2a",
         "variant_picker",
-        "easify_options_easify_product_options_cjtcy7",
         "0ae0cc1a-6798-498d-8917-c53ab72b7018",
         "buy_buttons",
         "custom_liquid_yKgXAw",
