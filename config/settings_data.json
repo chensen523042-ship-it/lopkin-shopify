@@ -159,6 +159,17 @@
           "button_label": "#094812",
           "secondary_button_label": "#057a49"
         }
+      },
+      "scheme-348c66f7-db1c-4279-a9fd-456e345bf89c": {
+        "settings": {
+          "background": "#f7f7f7",
+          "background_gradient": "",
+          "text": "#000000",
+          "sale_price": "#ba2519",
+          "button": "#4d3325",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#b47b6b"
+        }
       }
     }
   },
