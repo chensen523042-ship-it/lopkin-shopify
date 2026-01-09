@@ -69,10 +69,10 @@
         "enable_full_width": false,
         "image_height": "medium",
         "comparison_direction": "horizontal",
-        "before_image": "shopify://shop_images/Gemini_Generated_Image_q140f6q140f6q140.png",
+        "before_image": "shopify://shop_images/TRADITIONAL_MOWING.png",
         "before_heading": "",
-        "before_heading_color": "#FFFFFF",
-        "after_image": "shopify://shop_images/Gemini_Generated_Image_ib08nlib08nlib08.png",
+        "before_heading_color": "#ffffff",
+        "after_image": "shopify://shop_images/ROBOTIC_MOWING.png",
         "after_heading": "",
         "after_heading_color": "#000000",
         "if_as_main_area": false,
@@ -102,16 +102,16 @@
           "settings": {
             "columns": "4",
             "rows": "2",
-            "image": "shopify://shop_images/Gemini_Generated_Image_676dty676dty676d.png",
+            "image": "shopify://shop_images/Mulching_2d98fd6a-bd3f-4e00-830a-c4e13cb1a8e9.png",
             "link": "",
             "heading": "",
             "heading_size": "medium",
-            "heading_color": "#FFFFFF",
+            "heading_color": "#ffffff",
             "heading_position": "top-left",
             "mobile_columns": "2",
             "mobile_rows": "1",
             "heading_size_mobile": "medium",
-            "heading_color_mobile": "#FFFFFF",
+            "heading_color_mobile": "#ffffff",
             "heading_position_mobile": "middle-center"
           }
         }
