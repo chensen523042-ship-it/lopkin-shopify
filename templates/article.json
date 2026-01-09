@@ -85,7 +85,7 @@
       "name": "t:sections.custom-section-header.presets.name",
       "settings": {
         "heading": "",
-        "description": "<p>You spend hours mowing, raking, and bagging grass clippings every weekend. But did you know that by throwing those clippings away, you are actually throwing away free fertilizer?</p><p>It turns out, the secret to a golf-course-quality lawn isn’t more chemicals—it’s a technique called Mulching.</p><p>Today, we’re diving into the science of mulching, and explaining why switching to a smart robotic mower is the single best thing you can do for your soil's health.</p>",
+        "description": "<h5>You spend hours mowing, raking, and bagging grass clippings every weekend. But did you know that by throwing those clippings away, you are actually throwing away free fertilizer?</h5><h5>It turns out, the secret to a golf-course-quality lawn isn’t more chemicals—it’s a technique called Mulching.</h5><h5>Today, we’re diving into the science of mulching, and explaining why switching to a smart robotic mower is the single best thing you can do for your soil's health.</h5>",
         "water_text": "",
         "button_label": "",
         "button_link": "",
@@ -108,7 +108,7 @@
         "text_WpLVgG": {
           "type": "text",
           "settings": {
-            "description": "<p>In simple terms, mulching is the process of cutting grass blades into tiny, fine pieces and letting them fall back onto the soil surface, rather than collecting them in a bag.</p><p>But here is the catch: Size matters.</p><p>If the grass clippings are too long (which happens with traditional mowing), they create \"thatch\"—a thick layer of dead grass that blocks water and sunlight, killing your lawn. But if the clippings are microscopic (like the ones cut by a robotic mower), they decompose quickly and become superfood for your grass.</p>",
+            "description": "<h5>In simple terms, mulching is the process of cutting grass blades into tiny, fine pieces and letting them fall back onto the soil surface, rather than collecting them in a bag.</h5><h5>But here is the catch: Size matters.</h5><h5>If the grass clippings are too long (which happens with traditional mowing), they create \"thatch\"—a thick layer of dead grass that blocks water and sunlight, killing your lawn. But if the clippings are microscopic (like the ones cut by a robotic mower), they decompose quickly and become superfood for your grass.</h5>",
             "limit_description_height": false
           }
         }
