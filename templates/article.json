@@ -252,6 +252,176 @@
         "margin_top": 0,
         "margin_bottom": 80
       }
+    },
+    "rich_text_xq9RDC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_nAaGCA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Summary: Stop Bagging, Start Mulching",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_RW3ihm": {
+          "type": "text",
+          "settings": {
+            "description": "<h5>If you want a greener lawn, stop throwing away the nutrients. The \"secret\" isn't a magic chemical bottle; it's consistent, fine cutting.</h5><h5>Investing in a robotic mower isn't just about saving time (although that's a huge plus)—it's about investing in the long-term biological health of your garden.</h5>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_nAaGCA",
+        "text_RW3ihm"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "wide",
+        "alignment": "left",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "reading_text_VDXdXx": {
+      "type": "reading-text",
+      "name": "t:sections.reading-text.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "caption": "",
+        "heading": "Ready to transform your lawn care routine?",
+        "heading_size": "medium",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "button_arrow": false,
+        "animation": "hollow",
+        "color_before": "#B500B5",
+        "color_after": "#FFD600",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
+    "featured_product_EqV4r8": {
+      "type": "featured-product",
+      "blocks": {
+        "title_bJq37T": {
+          "type": "title",
+          "settings": {
+            "size": "medium",
+            "show_rating": true,
+            "show_total_count": true,
+            "enable_rating_preview": false,
+            "star_size": "medium",
+            "star_color": "#FFD600",
+            "rating_target": "",
+            "show_vendor": true,
+            "vendor_background": "#B500B5",
+            "vendor_foreground": "#FFFFFF"
+          }
+        },
+        "price_9c6dUk": {
+          "type": "price",
+          "settings": {
+            "show_tax": true,
+            "show_sale_badge": true,
+            "sale_badge_type": "percentage"
+          }
+        },
+        "separator_UBjqep": {
+          "type": "separator",
+          "settings": {
+            "margin_top": 16,
+            "margin_bottom": 16
+          }
+        },
+        "inventory_Wj97HV": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 10,
+            "low_stock_alert": "💪 Hurry up! Only [stock] left",
+            "full_stock_alert": "🎉 Stock adequate! Ready to ship",
+            "show_percentage_bar": true,
+            "low_stock_bar_color": "#E3BA29",
+            "full_stock_bar_color": "#0CB771"
+          }
+        },
+        "description_rbtXqi": {
+          "type": "description",
+          "settings": {
+            "enable_brief": true,
+            "limit": 30,
+            "limit_description_height": false
+          }
+        },
+        "separator_c7YHxX": {
+          "type": "separator",
+          "settings": {
+            "margin_top": 16,
+            "margin_bottom": 16
+          }
+        },
+        "variant_picker_FKeRjF": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "auto_dropdown": true,
+            "dropdown_threshold": 10,
+            "enable_first_swatch_image": false,
+            "swatch_size": "medium"
+          }
+        },
+        "buy_buttons_xWaYgK": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "is_selector_standalone": false,
+            "show_dynamic_checkout": true,
+            "show_notify_form": false,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "title_bJq37T",
+        "price_9c6dUk",
+        "separator_UBjqep",
+        "inventory_Wj97HV",
+        "description_rbtXqi",
+        "separator_c7YHxX",
+        "variant_picker_FKeRjF",
+        "buy_buttons_xWaYgK"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "product": "lopkin-l-series",
+        "enable_sticky_media": true,
+        "media_layout": "thumbnail-right",
+        "media_size": "medium",
+        "media_ratio": "square",
+        "media_fit": "cover",
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "hide_thumbnail_mobile": false,
+        "enable_share": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
     }
   },
   "order": [
@@ -262,6 +432,9 @@
     "image_gallery_nR9nFV",
     "custom_liquid_UjpWUB",
     "rich_text_BthcwW",
-    "rich_text_ckXi4F"
+    "rich_text_ckXi4F",
+    "rich_text_xq9RDC",
+    "reading_text_VDXdXx",
+    "featured_product_EqV4r8"
   ]
 }
