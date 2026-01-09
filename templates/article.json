@@ -49,12 +49,15 @@
       ],
       "settings": {
         "color_scheme": "background-2",
-        "heading_size": "medium",
+        "heading_size": "small",
         "heading_decorative": false,
         "show_tags": true,
         "show_date": true,
         "show_author": false,
-        "enable_share": false,
+        "enable_share": true,
+        "show_image": false,
+        "show_previous_article": false,
+        "show_next_article": false,
         "comments_per_page": 10,
         "aside_position": "right"
       }
