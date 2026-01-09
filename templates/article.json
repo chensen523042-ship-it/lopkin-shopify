@@ -48,7 +48,7 @@
         "advertisement_m78B8N"
       ],
       "settings": {
-        "color_scheme": "background-2",
+        "color_scheme": "scheme-348c66f7-db1c-4279-a9fd-456e345bf89c",
         "heading_size": "small",
         "heading_decorative": false,
         "show_tags": true,
@@ -58,12 +58,31 @@
         "show_image": false,
         "show_previous_article": false,
         "show_next_article": false,
-        "comments_per_page": 10,
+        "comments_per_page": 5,
         "aside_position": "right"
+      }
+    },
+    "image_comparison_banner_84PxzB": {
+      "type": "image-comparison-banner",
+      "name": "t:sections.image-comparison-banner.presets.name",
+      "settings": {
+        "enable_full_width": false,
+        "image_height": "medium",
+        "comparison_direction": "horizontal",
+        "before_image": "shopify://shop_images/Gemini_Generated_Image_q140f6q140f6q140.png",
+        "before_heading": "Before heading",
+        "before_heading_color": "#FFFFFF",
+        "after_image": "shopify://shop_images/Gemini_Generated_Image_ib08nlib08nlib08.png",
+        "after_heading": "After heading",
+        "after_heading_color": "#000000",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_comparison_banner_84PxzB"
   ]
 }
