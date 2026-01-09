@@ -70,19 +70,85 @@
         "image_height": "medium",
         "comparison_direction": "horizontal",
         "before_image": "shopify://shop_images/Gemini_Generated_Image_q140f6q140f6q140.png",
-        "before_heading": "Before heading",
+        "before_heading": "",
         "before_heading_color": "#FFFFFF",
         "after_image": "shopify://shop_images/Gemini_Generated_Image_ib08nlib08nlib08.png",
-        "after_heading": "After heading",
+        "after_heading": "",
         "after_heading_color": "#000000",
         "if_as_main_area": false,
         "margin_top": 0,
-        "margin_bottom": 80
+        "margin_bottom": 0
+      }
+    },
+    "custom_section_header_WAHPKn": {
+      "type": "custom-section-header",
+      "name": "t:sections.custom-section-header.presets.name",
+      "settings": {
+        "heading": "",
+        "description": "<p>You spend hours mowing, raking, and bagging grass clippings every weekend. But did you know that by throwing those clippings away, you are actually throwing away free fertilizer?</p><p>It turns out, the secret to a golf-course-quality lawn isn’t more chemicals—it’s a technique called Mulching.</p><p>Today, we’re diving into the science of mulching, and explaining why switching to a smart robotic mower is the single best thing you can do for your soil's health.</p>",
+        "water_text": "",
+        "button_label": "",
+        "button_link": "",
+        "show_title_bottom_line": true,
+        "margin_top": 0,
+        "margin_bottom": 48
+      }
+    },
+    "image_gallery_nR9nFV": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_VP3hjz": {
+          "type": "image",
+          "settings": {
+            "columns": "4",
+            "rows": "2",
+            "image": "shopify://shop_images/Gemini_Generated_Image_676dty676dty676d.png",
+            "link": "",
+            "heading": "",
+            "heading_size": "medium",
+            "heading_color": "#FFFFFF",
+            "heading_position": "top-left",
+            "mobile_columns": "2",
+            "mobile_rows": "1",
+            "heading_size_mobile": "medium",
+            "heading_color_mobile": "#FFFFFF",
+            "heading_position_mobile": "middle-center"
+          }
+        }
+      },
+      "block_order": [
+        "image_VP3hjz"
+      ],
+      "name": "t:sections.image-gallery.presets.name",
+      "settings": {
+        "show_section_header": false,
+        "heading": "",
+        "description": "",
+        "water_text": "",
+        "margin_top": 0,
+        "margin_bottom": 36
+      }
+    },
+    "custom_section_header_Ne7dTR": {
+      "type": "custom-section-header",
+      "name": "t:sections.custom-section-header.presets.name",
+      "settings": {
+        "heading": "What is \"Mulching\"",
+        "description": "<p>In simple terms, mulching is the process of cutting grass blades into tiny, fine pieces and letting them fall back onto the soil surface, rather than collecting them in a bag.</p><p>But here is the catch: Size matters.</p><p>If the grass clippings are too long (which happens with traditional mowing), they create \"thatch\"—a thick layer of dead grass that blocks water and sunlight, killing your lawn. But if the clippings are microscopic (like the ones cut by a robotic mower), they decompose quickly and become superfood for your grass.</p>",
+        "water_text": "",
+        "button_label": "",
+        "button_link": "",
+        "show_title_bottom_line": true,
+        "margin_top": 0,
+        "margin_bottom": 48
       }
     }
   },
   "order": [
     "main",
-    "image_comparison_banner_84PxzB"
+    "image_comparison_banner_84PxzB",
+    "custom_section_header_WAHPKn",
+    "image_gallery_nR9nFV",
+    "custom_section_header_Ne7dTR"
   ]
 }
