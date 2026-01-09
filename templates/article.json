@@ -94,6 +94,44 @@
         "margin_bottom": 48
       }
     },
+    "rich_text_8BFWPy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jdgcYA": {
+          "type": "heading",
+          "settings": {
+            "heading": "What is \"Mulching\"",
+            "heading_size": "large",
+            "heading_decorative": false
+          }
+        },
+        "text_WpLVgG": {
+          "type": "text",
+          "settings": {
+            "description": "<p>In simple terms, mulching is the process of cutting grass blades into tiny, fine pieces and letting them fall back onto the soil surface, rather than collecting them in a bag.</p><p>But here is the catch: Size matters.</p><p>If the grass clippings are too long (which happens with traditional mowing), they create \"thatch\"—a thick layer of dead grass that blocks water and sunlight, killing your lawn. But if the clippings are microscopic (like the ones cut by a robotic mower), they decompose quickly and become superfood for your grass.</p>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_jdgcYA",
+        "text_WpLVgG"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "wide",
+        "alignment": "left",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 12
+      }
+    },
     "image_gallery_nR9nFV": {
       "type": "image-gallery",
       "blocks": {
@@ -129,18 +167,90 @@
         "margin_bottom": 36
       }
     },
-    "custom_section_header_Ne7dTR": {
-      "type": "custom-section-header",
-      "name": "t:sections.custom-section-header.presets.name",
+    "custom_liquid_UjpWUB": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "heading": "What is \"Mulching\"",
-        "description": "<p>In simple terms, mulching is the process of cutting grass blades into tiny, fine pieces and letting them fall back onto the soil surface, rather than collecting them in a bag.</p><p>But here is the catch: Size matters.</p><p>If the grass clippings are too long (which happens with traditional mowing), they create \"thatch\"—a thick layer of dead grass that blocks water and sunlight, killing your lawn. But if the clippings are microscopic (like the ones cut by a robotic mower), they decompose quickly and become superfood for your grass.</p>",
-        "water_text": "",
-        "button_label": "",
-        "button_link": "",
-        "show_title_bottom_line": true,
+        "custom_liquid": "<style>\n  /* 容器样式：限制最大宽度，居中显示 */\n  .mulch-container {\n    max-width: 1200px;\n    margin: 40px auto;\n    padding: 20px;\n    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\n    color: #333;\n  }\n\n  /* 标题区域样式 */\n  .mulch-header {\n    text-align: center;\n    margin-bottom: 40px;\n  }\n\n  .mulch-header h2 {\n    font-size: 28px;\n    margin-bottom: 10px;\n    font-weight: 700;\n  }\n\n  .mulch-header p {\n    font-size: 18px;\n    color: #666;\n    font-style: italic;\n  }\n\n  /* 网格布局：桌面端3列，手机端自动折行 */\n  .mulch-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n    gap: 30px;\n  }\n\n  /* 单个卡片样式 */\n  .mulch-card {\n    background: #fff;\n    border-radius: 12px;\n    padding: 30px;\n    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* 轻微阴影 */\n    border: 1px solid #eee;\n    transition: transform 0.3s ease, box-shadow 0.3s ease;\n    text-align: center;\n  }\n\n  /* 鼠标悬停时的浮动效果 */\n  .mulch-card:hover {\n    transform: translateY(-5px);\n    box-shadow: 0 8px 25px rgba(46, 139, 87, 0.15);\n    border-color: #2E8B57;\n  }\n\n  /* 图标圆圈样式 */\n  .icon-circle {\n    width: 70px;\n    height: 70px;\n    background-color: #e8f5e9; /* 浅绿色背景 */\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin: 0 auto 20px auto;\n    font-size: 32px;\n  }\n\n  /* 卡片标题 */\n  .mulch-card h3 {\n    font-size: 20px;\n    margin-bottom: 15px;\n    color: #1a1a1a;\n    font-weight: 600;\n  }\n\n  /* 卡片正文 */\n  .mulch-card p {\n    font-size: 16px;\n    line-height: 1.6;\n    color: #555;\n    margin: 0;\n  }\n\n  /* 强调数字 */\n  .highlight {\n    color: #2E8B57;\n    font-weight: bold;\n  }\n</style>\n\n<div class=\"mulch-container\">\n  \n  <div class=\"mulch-header\">\n    <h2>The 3 Hidden Benefits of Mulching</h2>\n    <p>Why should you care? Because mulching mimics nature’s cycle.</p>\n  </div>\n\n  <div class=\"mulch-grid\">\n    \n    <div class=\"mulch-card\">\n      <div class=\"icon-circle\">🌱</div>\n      <h3>Free Natural Fertilizer</h3>\n      <p>Grass clippings are composed of about 80-85% water and are rich in Nitrogen. As they decompose, they release these nutrients back into the soil. Experts estimate that proper mulching can reduce your fertilizer needs by <span class=\"highlight\">25%</span>.</p>\n    </div>\n\n    <div class=\"mulch-card\">\n      <div class=\"icon-circle\">💧</div>\n      <h3>Moisture Retention</h3>\n      <p>A thin layer of mulch acts as a protective barrier for the soil, reducing water evaporation. This means your lawn stays green longer during hot, dry summers, and you save money on your water bill.</p>\n    </div>\n\n    <div class=\"mulch-card\">\n      <div class=\"icon-circle\">🛡️</div>\n      <h3>Weed Prevention</h3>\n      <p>A healthy, dense lawn is the best defense against weeds. By constantly feeding the soil, mulching helps your grass grow thick enough to choke out potential weeds before they take root.</p>\n    </div>\n\n  </div>\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_BthcwW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dNJdyC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Traditional Mowers Fail at Mulching",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_3adLdd": {
+          "type": "text",
+          "settings": {
+            "description": "<h5>You might be thinking: <em>\"Can't I just take the bag off my gas push mower?\"</em></h5><h5>Technically, yes. But practically, <strong>no</strong>.</h5><h5>Traditional mowers are designed to cut tall grass once a week (or every two weeks). This cuts off 2-3 inches of grass at a time. These long clippings are too heavy to decompose quickly. They sit on top of your grass, turn brown, and look messy. To mulch effectively with a gas mower, you have to buy special \"mulching blades\" and mow very frequently—which means more work for you.</h5>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dNJdyC",
+        "text_3adLdd"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "wide",
+        "alignment": "left",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
         "margin_top": 0,
-        "margin_bottom": 48
+        "margin_bottom": 80
+      }
+    },
+    "rich_text_ckXi4F": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xhzy9z": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Robotic Advantage: \"Micro-Clipping\"",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_HU6gQR": {
+          "type": "text",
+          "settings": {
+            "description": "<h5>This is where robotic mowers like the LOPKIN mower truly shine. They don't just \"mow\"; they maintain.</h5><ul><li><strong>Daily Cutting:</strong> Because the robot goes out every day (or every other day), it only cuts a few millimeters of grass at a time.</li><li><strong>Razor-Sharp Precision:</strong> Unlike the blunt force of a rotary gas mower blade, our robots use razor-like blades that slice the grass cleanly.</li><li><strong>Invisible Fertilization:</strong> These millimeter-sized clippings are so small they are invisible to the naked eye. They fall directly to the soil and start decomposing immediately.<br/><br/><strong>The Result?</strong> You never see clumps of dead grass. You just see a lawn that gets greener and greener, all while you sit back and relax.<br/><br/><br/></li></ul>",
+            "limit_description_height": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xhzy9z",
+        "text_HU6gQR"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "enable_full_width": false,
+        "color_scheme": "",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "content_width": "wide",
+        "alignment": "left",
+        "alignment_mobile": "center",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "margin_top": 0,
+        "margin_bottom": 80
       }
     }
   },
@@ -148,7 +258,10 @@
     "main",
     "image_comparison_banner_84PxzB",
     "custom_section_header_WAHPKn",
+    "rich_text_8BFWPy",
     "image_gallery_nR9nFV",
-    "custom_section_header_Ne7dTR"
+    "custom_liquid_UjpWUB",
+    "rich_text_BthcwW",
+    "rich_text_ckXi4F"
   ]
 }
