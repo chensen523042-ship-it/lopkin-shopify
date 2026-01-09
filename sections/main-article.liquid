@@ -50,7 +50,7 @@
     <div class="article-main page-width{% if section.blocks.size > 0 %} article--has-aside aside-position--{{ section.settings.aside_position }}{% endif %}">
       <div class="article-main-detail">
         <article class="article-template" itemscope itemtype="https://schema.org/BlogPosting">
-          {%- if article.image != blank -%}
+          {%- if article.image != blank and section.settings.show_image -%}
             <div class="article-image media media--panoramic hover-trigger">
               {{
                 article.image
@@ -79,32 +79,38 @@
             {{ article.content }}
           </div>
         </article>
-        <div class="article-template-nav">
-          <a
-            class="nav-button nav-button--prev button button--icon button--ethereal"
-            {% if blog.next_article != blank %}
-              href="{{ blog.next_article }}"
-            {% else %}
-              role="link"
-              aria-disabled="true"
-            {% endif %}
-          >
-            {% render 'icon-sets', icon: 'arrow-left' %}
-            {{ 'blogs.article.previous' | t }}
-          </a>
-          <a
-            class="nav-button nav-button--next button button--icon button--ethereal"
-            {% if blog.previous_article != blank %}
-              href="{{ blog.previous_article }}"
-            {% else %}
-              role="link"
-              aria-disabled="true"
-            {% endif %}
-          >
-            {{ 'blogs.article.next' | t }}
-            {% render 'icon-sets', icon: 'arrow-right' %}
-          </a>
-        </div>
+        {%- if section.settings.show_previous_article or section.settings.show_next_article -%}
+          <div class="article-template-nav">
+            {%- if section.settings.show_previous_article -%}
+              <a
+                class="nav-button nav-button--prev button button--icon button--ethereal"
+                {% if blog.next_article != blank %}
+                  href="{{ blog.next_article }}"
+                {% else %}
+                  role="link"
+                  aria-disabled="true"
+                {% endif %}
+              >
+                {% render 'icon-sets', icon: 'arrow-left' %}
+                {{ 'blogs.article.previous' | t }}
+              </a>
+            {%- endif -%}
+            {%- if section.settings.show_next_article -%}
+              <a
+                class="nav-button nav-button--next button button--icon button--ethereal"
+                {% if blog.previous_article != blank %}
+                  href="{{ blog.previous_article }}"
+                {% else %}
+                  role="link"
+                  aria-disabled="true"
+                {% endif %}
+              >
+                {{ 'blogs.article.next' | t }}
+                {% render 'icon-sets', icon: 'arrow-right' %}
+              </a>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
         {%- if blog.comments_enabled? -%}
           <div class="article-comments">
             <div class="comments-form-wrapper">
@@ -474,6 +480,24 @@
       "type": "checkbox",
       "id": "enable_share",
       "label": "t:sections.main-product.settings.enable_share.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "label": "t:sections.main-article.settings.show_image.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_previous_article",
+      "label": "t:sections.main-article.settings.show_previous_article.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_next_article",
+      "label": "t:sections.main-article.settings.show_next_article.label",
       "default": true
     },
     {

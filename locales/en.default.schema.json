@@ -3949,6 +3949,15 @@
           "options__2": {
             "label": "Right"
           }
+        },
+        "show_image": {
+          "label": "Show article image"
+        },
+        "show_previous_article": {
+          "label": "Show previous article"
+        },
+        "show_next_article": {
+          "label": "Show next article"
         }
       },
       "blocks": {

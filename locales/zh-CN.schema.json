@@ -3949,6 +3949,15 @@
           "options__2": {
             "label": "右侧"
           }
+        },
+        "show_image": {
+          "label": "显示文章图片"
+        },
+        "show_previous_article": {
+          "label": "显示上一篇文章"
+        },
+        "show_next_article": {
+          "label": "显示下一篇文章"
         }
       },
       "blocks": {
