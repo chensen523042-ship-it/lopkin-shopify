@@ -22,7 +22,7 @@
             "star_size": "medium",
             "star_color": "#ffd600",
             "rating_target": "",
-            "show_vendor": false,
+            "show_vendor": true,
             "vendor_background": "#000000",
             "vendor_foreground": "#ffffff"
           }
