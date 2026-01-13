@@ -215,24 +215,6 @@
         "margin_bottom": 48
       }
     },
-    "image_comparison_banner_perhFV": {
-      "type": "image-comparison-banner",
-      "name": "t:sections.image-comparison-banner.presets.name",
-      "settings": {
-        "enable_full_width": false,
-        "image_height": "medium",
-        "comparison_direction": "horizontal",
-        "before_image": "shopify://shop_images/10095.webp",
-        "before_heading": "Before",
-        "before_heading_color": "#ffffff",
-        "after_image": "shopify://shop_images/20251128-112037.jpg",
-        "after_heading": "After",
-        "after_heading_color": "#000000",
-        "if_as_main_area": false,
-        "margin_top": 0,
-        "margin_bottom": 80
-      }
-    },
     "image_with_text_3pDYKh": {
       "type": "image-with-text",
       "blocks": {
@@ -849,7 +831,6 @@
     "variant_specs_comparison_bi6dfR",
     "related-products",
     "custom_section_header_gXYppC",
-    "image_comparison_banner_perhFV",
     "image_with_text_3pDYKh",
     "image_with_text_KBjEx4",
     "custom_section_header_c6nMaK",
