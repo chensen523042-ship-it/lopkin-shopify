@@ -92,7 +92,7 @@
             "show_quantity_selector": true,
             "is_selector_standalone": true,
             "show_dynamic_checkout": true,
-            "show_notify_form": false,
+            "show_notify_form": true,
             "show_mini_checkout": true,
             "mini_checkout_position": "top",
             "show_gift_card_recipient": true
@@ -116,6 +116,12 @@
             "page": "",
             "html": ""
           }
+        },
+        "in_box_product_UCCbB9": {
+          "type": "in_box_product",
+          "settings": {
+            "title": "Product title"
+          }
         }
       },
       "block_order": [
@@ -130,7 +136,8 @@
         "pickup_availability_zGFmBn",
         "buy_buttons",
         "payment_security_q6Ay9w",
-        "custom_tab_UabbGq"
+        "custom_tab_UabbGq",
+        "in_box_product_UCCbB9"
       ],
       "settings": {
         "color_scheme": "",

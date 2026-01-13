@@ -93,7 +93,7 @@
             "is_selector_standalone": true,
             "show_dynamic_checkout": true,
             "show_notify_form": false,
-            "show_mini_checkout": false,
+            "show_mini_checkout": true,
             "mini_checkout_position": "top",
             "show_gift_card_recipient": true
           }
@@ -142,7 +142,7 @@
         "custom_tab_UabbGq"
       ],
       "settings": {
-        "color_scheme": "background-2",
+        "color_scheme": "inverse",
         "enable_sticky_media": true,
         "media_layout": "thumbnail-bottom",
         "media_size": "medium",

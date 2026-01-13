@@ -235,7 +235,10 @@
         "heading": "Compare our products",
         "description": "",
         "water_text": "",
-        "product_list": [],
+        "product_list": [
+          "lopkin",
+          "lopkin-l-series"
+        ],
         "show_variant_options": true,
         "show_weight": true,
         "margin_top": 0,
