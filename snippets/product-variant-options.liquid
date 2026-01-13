@@ -65,8 +65,16 @@
       {% endif %}
       data-option-value-id="{{ value.id }}"
     >
-    <label for="{{ section.id }}-{{ option_with_values.position }}-{{ forloop.index0 }}" role="button">
-      {{- value -}}
+    <label for="{{ section.id }}-{{ option_with_values.position }}-{{ forloop.index0 }}" role="button" class="variant-button-label">
+      <span class="variant-button-name">{{- value -}}</span>
+      {%- if value.variant.price -%}
+        <span class="variant-button-price">
+          <span class="variant-price-current">{{ value.variant.price | money }}</span>
+          {%- if value.variant.compare_at_price > value.variant.price -%}
+            <span class="variant-price-compare">{{ value.variant.compare_at_price | money }}</span>
+          {%- endif -%}
+        </span>
+      {%- endif -%}
     </label>
   {%- elsif type == 'dropdown' -%}
     <option

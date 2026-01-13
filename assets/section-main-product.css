@@ -252,6 +252,8 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+  flex-direction: column;
+  align-items: stretch;
 }
 .variant-selects .product-form-input .form-options-wrapper.button-options label {
   font-size: 0.875rem;
@@ -279,6 +281,47 @@
   outline: 2px solid rgba(var(--color-outline), 0.75) !important;
   box-shadow: 0 0 5px 3px rgb(var(--color-outline), 0.2);
   outline-offset: 3px;
+}
+/* 新增：带价格的变体选择器样式 */
+.variant-selects .product-form-input .form-options-wrapper.button-options label.variant-button-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  gap: 2rem;
+  border: 2px solid rgba(var(--color-foreground), 0.1);
+  background: rgb(var(--color-background));
+  text-align: left;
+  transition: all 0.2s ease;
+}
+.variant-selects .product-form-input .form-options-wrapper.button-options label.variant-button-label .variant-button-name {
+  font-weight: var(--font-body-weight-bold);
+  color: rgb(var(--color-foreground));
+}
+.variant-selects .product-form-input .form-options-wrapper.button-options label.variant-button-label .variant-button-price {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.variant-selects .product-form-input .form-options-wrapper.button-options label.variant-button-label .variant-price-current {
+  font-size: 1.125rem;
+  font-weight: var(--font-body-weight-bold);
+  color: #28a745;
+}
+.variant-selects .product-form-input .form-options-wrapper.button-options label.variant-button-label .variant-price-compare {
+  font-size: 0.875rem;
+  color: rgba(var(--color-foreground), 0.5);
+  text-decoration: line-through;
+}
+.variant-selects .product-form-input .form-options-wrapper.button-options input[type=radio]:checked + label.variant-button-label {
+  border-color: #28a745;
+  background: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+}
+.variant-selects .product-form-input .form-options-wrapper.button-options label.variant-button-label:hover {
+  border-color: rgba(40, 167, 69, 0.5);
+  background: rgb(var(--color-background));
 }
 .variant-selects .product-form-input .form-options-wrapper.color-swatches .color-swatch {
   width: 1.5rem;
