@@ -109,7 +109,7 @@
           "type": "payment_security",
           "settings": {
             "show_box": true,
-            "color_scheme": "background-2",
+            "color_scheme": "accent-2",
             "show_trust_badge": false,
             "show_payment_icons": true
           }
@@ -142,7 +142,7 @@
         "custom_tab_UabbGq"
       ],
       "settings": {
-        "color_scheme": "scheme-340f51ef-2f3e-4945-8529-a9cec3682201",
+        "color_scheme": "accent-2",
         "enable_sticky_media": true,
         "media_layout": "thumbnail-bottom",
         "media_size": "medium",
