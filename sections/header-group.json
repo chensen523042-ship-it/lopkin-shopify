@@ -14,23 +14,36 @@
     "header": {
       "type": "header",
       "blocks": {
-        "mega_image_XcEdLV": {
-          "type": "mega_image",
+        "mega_image_title_below_y3FJRb": {
+          "type": "mega_image_title_below",
           "settings": {
             "target_id": 2,
-            "image": "shopify://shop_images/20251127-115225.jpg",
+            "image": "shopify://shop_images/20251127-115219.jpg",
             "url": "shopify://products/lopkin",
             "column": "1",
-            "heading": "BEST SELLER",
+            "heading": "LOPKIN E-SERIES",
             "heading_size": "small",
-            "heading_position": "bottom-center",
-            "heading_effect": "background",
+            "heading_alignment": "center",
+            "hide_on_mobile": false
+          }
+        },
+        "mega_image_title_below_RFR7Bz": {
+          "type": "mega_image_title_below",
+          "settings": {
+            "target_id": 2,
+            "image": "shopify://shop_images/swatch-17677689356272.png",
+            "url": "shopify://products/lopkin-l-series",
+            "column": "1",
+            "heading": "LOPKIN L-SERIES",
+            "heading_size": "small",
+            "heading_alignment": "center",
             "hide_on_mobile": false
           }
         }
       },
       "block_order": [
-        "mega_image_XcEdLV"
+        "mega_image_title_below_y3FJRb",
+        "mega_image_title_below_RFR7Bz"
       ],
       "settings": {
         "color_scheme": "background-1",
