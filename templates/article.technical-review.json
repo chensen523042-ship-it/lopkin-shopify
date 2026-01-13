@@ -56,6 +56,9 @@
         "show_date": true,
         "show_author": false,
         "enable_share": false,
+        "show_image": true,
+        "show_previous_article": false,
+        "show_next_article": false,
         "comments_per_page": 10,
         "aside_position": "right"
       }
