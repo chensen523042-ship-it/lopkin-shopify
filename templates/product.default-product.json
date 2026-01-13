@@ -163,6 +163,21 @@
         "margin_bottom": 0
       }
     },
+    "variant_specs_comparison_bi6dfR": {
+      "type": "variant-specs-comparison",
+      "name": "Variant Specs Comparison",
+      "settings": {
+        "product": "lopkin",
+        "heading": "Compare Specifications",
+        "spec_label": "Specifications",
+        "spec_keys": "drive_system, navigation_positioning, mowing_capacity_per_hour, max_mowing_capacity_24_hours, max_climbing_ability, max_obstacle_clearance, cutting_width, cutting_height_range, height_adjustment, blade_configuration, edge_cutting_offset, battery_capacity, charging_power, waterproof_rating, night_time_lighting, rain_sensor, connectivity, 4g_anti_theft, 4g_service, network_rtk, operating_temperature",
+        "spec_labels": "Drive System, Navigation & Positioning, Mowing Capacity (per hour), Max Mowing Capacity (24 hours), Max. Climbing Ability, Max Obstacle Clearance, Cutting Width, Cutting Height Range, Height Adjustment, Blade Configuration, Edge Cutting Offset, Battery Capacity, Charging Power, Waterproof Rating, Night-Time Lighting, Rain Sensor , Connectivity, 4G Anti-Theft, 4G Service, Network RTK, Operating Temperature",
+        "show_toggle": true,
+        "toggle_label": "Only show differences",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -831,6 +846,7 @@
   },
   "order": [
     "main",
+    "variant_specs_comparison_bi6dfR",
     "related-products",
     "custom_section_header_gXYppC",
     "image_comparison_banner_perhFV",

@@ -12,6 +12,7 @@
     "page_width": 1390,
     "small_corner_radius": "medium",
     "main_color_scheme": "",
+    "color_success": "#28a745",
     "color_warning": "#cee159",
     "type_header_font": "besley_n4",
     "header_font_spacing": "standard",
