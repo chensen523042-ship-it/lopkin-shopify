@@ -75,7 +75,7 @@
             "picker_type": "button",
             "auto_dropdown": true,
             "dropdown_threshold": 10,
-            "enable_first_swatch_image": true,
+            "enable_first_swatch_image": false,
             "swatch_size": "large"
           }
         },
