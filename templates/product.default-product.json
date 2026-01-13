@@ -824,6 +824,24 @@
         "margin_top": 0,
         "margin_bottom": 80
       }
+    },
+    "product_compare_table_mT9YPR": {
+      "type": "product-compare-table",
+      "name": "t:sections.product-compare-table.presets.name",
+      "settings": {
+        "show_section_header": true,
+        "heading": "Compare our products",
+        "description": "",
+        "water_text": "",
+        "product_list": [
+          "lopkin",
+          "lopkin-l-series"
+        ],
+        "show_variant_options": true,
+        "show_weight": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
     }
   },
   "order": [
@@ -841,6 +859,7 @@
     "sticky_image_cards_yMRcyp",
     "steps_xBYkny",
     "17564620038c49fb00",
+    "product_compare_table_mT9YPR",
     "faq_mmJUaU"
   ]
 }
