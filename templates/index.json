@@ -1124,6 +1124,31 @@
         "margin_top": 0,
         "margin_bottom": 80
       }
+    },
+    "featured_blog_R3NtLz": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "show_section_header": true,
+        "heading": "Guides & Tips",
+        "description": "",
+        "water_text": "Guides & Tips",
+        "button_label": "View all",
+        "blog": "lawn-mowing-issue",
+        "articles_to_show": 10,
+        "enable_desktop_slider": true,
+        "show_nav_buttons": true,
+        "show_dots": false,
+        "card_size": "large",
+        "image_ratio": "landscape",
+        "show_tags": true,
+        "show_date": true,
+        "show_author": false,
+        "show_excerpt": true,
+        "enable_mobile_slider": true,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
     }
   },
   "order": [
@@ -1146,6 +1171,7 @@
     "narrow_image_banner_wpX7D9",
     "image_gallery_qQhU8X",
     "multicolumn_QU4VTR",
-    "image_gallery_EMJFH7"
+    "image_gallery_EMJFH7",
+    "featured_blog_R3NtLz"
   ]
 }
