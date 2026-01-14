@@ -61,7 +61,7 @@
       ],
       "settings": {
         "enable_full_width": true,
-        "slide_height": "adapt",
+        "slide_height": "large",
         "enable_adapter_transparent_header": true,
         "auto_rotate": true,
         "change_slides_speed": 10,
