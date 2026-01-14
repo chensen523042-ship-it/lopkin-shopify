@@ -571,7 +571,7 @@
         "color_scheme": "",
         "content_alignment": "center",
         "content_alignment_mobile": "center",
-        "if_as_main_area": false,
+        "if_as_main_area": true,
         "margin_top": 0,
         "margin_bottom": 80
       }
@@ -622,7 +622,7 @@
         "color_scheme": "",
         "content_alignment": "center",
         "content_alignment_mobile": "center",
-        "if_as_main_area": false,
+        "if_as_main_area": true,
         "margin_top": 0,
         "margin_bottom": 80
       }
