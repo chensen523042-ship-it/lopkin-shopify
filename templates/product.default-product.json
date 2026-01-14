@@ -142,7 +142,7 @@
         "custom_tab_UabbGq"
       ],
       "settings": {
-        "color_scheme": "inverse",
+        "color_scheme": "scheme-340f51ef-2f3e-4945-8529-a9cec3682201",
         "enable_sticky_media": true,
         "media_layout": "thumbnail-bottom",
         "media_size": "medium",
@@ -709,6 +709,24 @@
         "padding_bottom": 36
       }
     },
+    "product_compare_table_mT9YPR": {
+      "type": "product-compare-table",
+      "name": "t:sections.product-compare-table.presets.name",
+      "settings": {
+        "show_section_header": true,
+        "heading": "Compare our products",
+        "description": "",
+        "water_text": "",
+        "product_list": [
+          "lopkin",
+          "lopkin-l-series"
+        ],
+        "show_variant_options": true,
+        "show_weight": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
     "faq_mmJUaU": {
       "type": "faq",
       "blocks": {
@@ -821,24 +839,6 @@
         "enable_structured_data": true,
         "padding_top": 48,
         "padding_bottom": 48,
-        "margin_top": 0,
-        "margin_bottom": 80
-      }
-    },
-    "product_compare_table_mT9YPR": {
-      "type": "product-compare-table",
-      "name": "t:sections.product-compare-table.presets.name",
-      "settings": {
-        "show_section_header": true,
-        "heading": "Compare our products",
-        "description": "",
-        "water_text": "",
-        "product_list": [
-          "lopkin",
-          "lopkin-l-series"
-        ],
-        "show_variant_options": true,
-        "show_weight": false,
         "margin_top": 0,
         "margin_bottom": 80
       }
