@@ -9,15 +9,6 @@
  */
 {
   "sections": {
-    "confetti_trigger_yEEKMq": {
-      "type": "confetti-trigger",
-      "name": "t:sections.confetti-trigger.presets.name",
-      "settings": {
-        "trigger_position": "top",
-        "effect": "falling-ribbons",
-        "trigger_once": true
-      }
-    },
     "carousal_WpGAKi": {
       "type": "carousal",
       "blocks": {
@@ -71,7 +62,7 @@
       "settings": {
         "enable_full_width": true,
         "slide_height": "adapt",
-        "enable_adapter_transparent_header": false,
+        "enable_adapter_transparent_header": true,
         "auto_rotate": true,
         "change_slides_speed": 10,
         "show_nav_buttons": true,
@@ -79,7 +70,7 @@
         "controller_color": "#ffffff",
         "margin_top": 0,
         "margin_bottom": 0,
-        "if_as_main_area": false
+        "if_as_main_area": true
       }
     },
     "text_with_icons_39G3TY": {
@@ -1152,7 +1143,6 @@
     }
   },
   "order": [
-    "confetti_trigger_yEEKMq",
     "carousal_WpGAKi",
     "text_with_icons_39G3TY",
     "rich_text_63VY4w",
