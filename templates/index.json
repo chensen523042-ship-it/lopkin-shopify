@@ -49,71 +49,6 @@
         "controller_color": "#ffffff",
         "margin_top": 0,
         "margin_bottom": 0,
-        "if_as_main_area": false
-      }
-    },
-    "carousal_WpGAKi": {
-      "type": "carousal",
-      "blocks": {
-        "slide_K4Gdtj": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/k20251127.png",
-            "image_overlay_opacity": 30,
-            "color_scheme": "accent-1",
-            "desktop_content_position": "top-center",
-            "desktop_content_alignment": "center",
-            "caption": "We design products that evolve over time",
-            "heading": "<p>Designed for Everyday Reliability</p>",
-            "heading_size": "medium",
-            "heading_decorative": false,
-            "text": "<p>with ongoing software updates and dedicated customer support.<br/><br/></p>",
-            "button_label": "Learn More",
-            "button_link": "shopify://products/lopkin",
-            "button_style": "primary",
-            "button_arrow": true,
-            "mobile_content_position": "middle-center",
-            "mobile_content_alignment": "center"
-          }
-        },
-        "slide_HFpGkg": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/1.jpg",
-            "image_overlay_opacity": 30,
-            "color_scheme": "accent-1",
-            "desktop_content_position": "top-center",
-            "desktop_content_alignment": "center",
-            "caption": "",
-            "heading": "<p>Effortless Control, Total Confidence</p>",
-            "heading_size": "medium",
-            "heading_decorative": false,
-            "text": "",
-            "button_label": "",
-            "button_link": "shopify://products/lopkin",
-            "button_style": "primary",
-            "button_arrow": true,
-            "mobile_content_position": "middle-center",
-            "mobile_content_alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_K4Gdtj",
-        "slide_HFpGkg"
-      ],
-      "disabled": true,
-      "settings": {
-        "enable_full_width": true,
-        "slide_height": "adapt",
-        "enable_adapter_transparent_header": true,
-        "auto_rotate": true,
-        "change_slides_speed": 10,
-        "show_nav_buttons": true,
-        "show_page_dots": true,
-        "controller_color": "#ffffff",
-        "margin_top": 0,
-        "margin_bottom": 0,
         "if_as_main_area": true
       }
     },
@@ -476,6 +411,70 @@
         "padding_bottom": 32,
         "margin_top": 0,
         "margin_bottom": 80
+      }
+    },
+    "carousal_WpGAKi": {
+      "type": "carousal",
+      "blocks": {
+        "slide_K4Gdtj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hero-aboutus.png",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse",
+            "desktop_content_position": "top-center",
+            "desktop_content_alignment": "center",
+            "caption": "We design products that evolve over time",
+            "heading": "<p><strong>Designed for Everyday Reliability</strong></p>",
+            "heading_size": "medium",
+            "heading_decorative": false,
+            "text": "<p>with ongoing software updates and dedicated customer support.<br/><br/></p>",
+            "button_label": "Learn More",
+            "button_link": "shopify://products/lopkin",
+            "button_style": "primary",
+            "button_arrow": true,
+            "mobile_content_position": "middle-center",
+            "mobile_content_alignment": "center"
+          }
+        },
+        "slide_HFpGkg": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1.jpg",
+            "image_overlay_opacity": 30,
+            "color_scheme": "accent-1",
+            "desktop_content_position": "top-center",
+            "desktop_content_alignment": "center",
+            "caption": "",
+            "heading": "<p><strong>Effortless Control, Total Confidence</strong></p>",
+            "heading_size": "medium",
+            "heading_decorative": false,
+            "text": "",
+            "button_label": "Learn More",
+            "button_link": "shopify://products/lopkin",
+            "button_style": "primary",
+            "button_arrow": true,
+            "mobile_content_position": "middle-center",
+            "mobile_content_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_K4Gdtj",
+        "slide_HFpGkg"
+      ],
+      "settings": {
+        "enable_full_width": true,
+        "slide_height": "adapt",
+        "enable_adapter_transparent_header": false,
+        "auto_rotate": true,
+        "change_slides_speed": 10,
+        "show_nav_buttons": false,
+        "show_page_dots": true,
+        "controller_color": "#ffffff",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "if_as_main_area": true
       }
     },
     "image_with_text_pFcwxF": {
@@ -1152,6 +1151,27 @@
         "margin_bottom": 80
       }
     },
+    "video_banner_QgGAaA": {
+      "type": "video-banner",
+      "name": "t:sections.video-banner.presets.name",
+      "settings": {
+        "enable_full_width": true,
+        "video_url": "https://www.youtube.com/watch?v=ndWbcWFHKdI",
+        "video": "shopify://files/videos/K200 - logo2.mp4",
+        "enable_controls": false,
+        "enable_autoload": false,
+        "enable_looping": true,
+        "video_height": "adapt",
+        "color_scheme": "",
+        "heading": "",
+        "heading_size": "large",
+        "heading_decorative": false,
+        "description": "",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
     "featured_blog_R3NtLz": {
       "type": "featured-blog",
       "name": "t:sections.featured-blog.presets.name",
@@ -1240,7 +1260,6 @@
   },
   "order": [
     "carousal_Nkcafe",
-    "carousal_WpGAKi",
     "image_text_list_XQwFqU",
     "rich_text_63VY4w",
     "text_lens_zoom_TrFEVA",
@@ -1248,6 +1267,7 @@
     "image_gallery_RXTyWT",
     "video_text_section_dgwH8m",
     "highlight_features_FnpJUW",
+    "carousal_WpGAKi",
     "image_with_text_pFcwxF",
     "rich_text_bqHD8W",
     "sticky_image_cards_QtWRkk",
@@ -1259,6 +1279,7 @@
     "image_gallery_qQhU8X",
     "multicolumn_QU4VTR",
     "image_gallery_EMJFH7",
+    "video_banner_QgGAaA",
     "featured_blog_R3NtLz",
     "text_with_icons_39G3TY"
   ]
