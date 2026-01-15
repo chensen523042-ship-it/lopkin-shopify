@@ -68,7 +68,7 @@
         "image_text_m8TMPL": {
           "type": "image_text",
           "settings": {
-            "image": "shopify://shop_images/20251127-115219_1b132877-d908-49be-b85a-55dd088fab58.jpg",
+            "image": "shopify://shop_images/E_louk.png",
             "heading": "For 16,000-43,000 ft2 complex lawns",
             "description": "<h1><strong>E-Series Robotic Mower</strong></h1>",
             "button_label": "Learn more",
@@ -163,28 +163,45 @@
           "type": "text",
           "settings": {
             "content": "Smarter Lawns",
-            "font_size": 32,
-            "font_weight": "400",
+            "font_size": 66,
+            "font_weight": "900",
             "font_decorative": false,
-            "font_hollow": false,
+            "font_hollow": true,
             "enable_custom_color": false,
             "custom_color": "#000000"
+          }
+        },
+        "image_aCJC9W": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/E_louk.png",
+            "image_size": 100,
+            "image_rotate": 0
           }
         },
         "text_zWEqwM": {
           "type": "text",
           "settings": {
-            "content": "More Free Time",
-            "font_size": 16,
+            "content": "LOPKIN",
+            "font_size": 80,
             "font_weight": "700",
             "font_decorative": false,
-            "font_hollow": false,
+            "font_hollow": true,
             "enable_custom_color": false,
             "custom_color": "#000000"
           }
         },
+        "image_RxNmD4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/K100_-10000.png",
+            "image_size": 100,
+            "image_rotate": 0
+          }
+        },
         "text_Hfbixe": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "content": "Smarter Lawns",
             "font_size": 32,
@@ -197,6 +214,7 @@
         },
         "text_9eTEzf": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "content": "More Free Time",
             "font_size": 16,
@@ -210,17 +228,18 @@
       },
       "block_order": [
         "text_XmEHQ4",
+        "image_aCJC9W",
         "text_zWEqwM",
+        "image_RxNmD4",
         "text_Hfbixe",
         "text_9eTEzf"
       ],
-      "disabled": true,
       "name": "t:sections.seamless-scroll.presets.name",
       "settings": {
         "enable_full_width": true,
-        "color_scheme": "accent-2",
+        "color_scheme": "inverse",
         "direction": "left",
-        "gap": 32,
+        "gap": 36,
         "speed": 40,
         "display_border_blur": true,
         "enable_scroll_synergy": false,
