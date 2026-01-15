@@ -94,11 +94,11 @@
         "columns_on_desktop": 2,
         "image_ratio": "square",
         "alignment": "center",
-        "show_content_wrapper": false,
-        "color_scheme": "",
+        "show_content_wrapper": true,
+        "color_scheme": "inverse",
         "enable_mobile_slider": true,
         "columns_on_mobile": "2",
-        "margin_top": 36,
+        "margin_top": 0,
         "margin_bottom": 80
       }
     },
@@ -175,7 +175,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/E_louk.png",
-            "image_size": 100,
+            "image_size": 90,
             "image_rotate": 0
           }
         },
