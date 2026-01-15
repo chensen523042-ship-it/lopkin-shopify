@@ -40,7 +40,7 @@
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "enable_full_width": true,
-        "slide_height": "medium",
+        "slide_height": "large",
         "enable_adapter_transparent_header": false,
         "auto_rotate": true,
         "change_slides_speed": 10,
