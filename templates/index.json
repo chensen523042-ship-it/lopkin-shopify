@@ -46,9 +46,9 @@
         "change_slides_speed": 10,
         "show_nav_buttons": true,
         "show_page_dots": true,
-        "controller_color": "#FFFFFF",
+        "controller_color": "#ffffff",
         "margin_top": 0,
-        "margin_bottom": 80,
+        "margin_bottom": 0,
         "if_as_main_area": false
       }
     },
@@ -102,6 +102,7 @@
         "slide_K4Gdtj",
         "slide_HFpGkg"
       ],
+      "disabled": true,
       "settings": {
         "enable_full_width": true,
         "slide_height": "adapt",
@@ -114,6 +115,56 @@
         "margin_top": 0,
         "margin_bottom": 0,
         "if_as_main_area": true
+      }
+    },
+    "image_text_list_XQwFqU": {
+      "type": "image-text-list",
+      "blocks": {
+        "image_text_LhBbEx": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify://shop_images/K100_-3-Rew1220-10000.png",
+            "heading": "For small to medium yards",
+            "description": "<h1><strong>L-Series Robotic Mower</strong></h1>",
+            "button_label": "Learn more",
+            "button_link": ""
+          }
+        },
+        "image_text_m8TMPL": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify://shop_images/20251127-115219_1b132877-d908-49be-b85a-55dd088fab58.jpg",
+            "heading": "For 16,000-43,000 ft2 complex lawns",
+            "description": "<h1><strong>E-Series Robotic Mower</strong></h1>",
+            "button_label": "Learn more",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_text_LhBbEx",
+        "image_text_m8TMPL"
+      ],
+      "name": "t:sections.image-text-list.presets.name",
+      "settings": {
+        "show_section_header": false,
+        "heading": "Image-text list",
+        "description": "",
+        "water_text": "",
+        "button_label": "",
+        "button_link": "",
+        "enable_desktop_slider": false,
+        "show_nav_buttons": true,
+        "show_page_dots": false,
+        "columns_on_desktop": 2,
+        "image_ratio": "square",
+        "alignment": "center",
+        "show_content_wrapper": false,
+        "color_scheme": "",
+        "enable_mobile_slider": true,
+        "columns_on_mobile": "2",
+        "margin_top": 36,
+        "margin_bottom": 80
       }
     },
     "rich_text_63VY4w": {
@@ -228,6 +279,7 @@
         "text_Hfbixe",
         "text_9eTEzf"
       ],
+      "disabled": true,
       "name": "t:sections.seamless-scroll.presets.name",
       "settings": {
         "enable_full_width": true,
@@ -1051,7 +1103,7 @@
           "settings": {
             "columns": "2",
             "rows": "2",
-            "image": "shopify://shop_images/K100_-8-Rev1220-10000.png",
+            "image": "shopify://shop_images/4.jpg",
             "link": "",
             "heading": "",
             "heading_size": "medium",
@@ -1189,6 +1241,7 @@
   "order": [
     "carousal_Nkcafe",
     "carousal_WpGAKi",
+    "image_text_list_XQwFqU",
     "rich_text_63VY4w",
     "text_lens_zoom_TrFEVA",
     "seamless_scroll_8AWXKR",
