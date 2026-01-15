@@ -62,7 +62,7 @@
             "heading": "For small to medium yards",
             "description": "<h1><strong>L-Series Robotic Mower</strong></h1>",
             "button_label": "Learn more",
-            "button_link": ""
+            "button_link": "shopify://products/lopkin-l-series"
           }
         },
         "image_text_m8TMPL": {
@@ -72,7 +72,7 @@
             "heading": "For 16,000-43,000 ft2 complex lawns",
             "description": "<h1><strong>E-Series Robotic Mower</strong></h1>",
             "button_label": "Learn more",
-            "button_link": ""
+            "button_link": "shopify://products/lopkin"
           }
         }
       },
