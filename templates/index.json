@@ -470,7 +470,7 @@
             "heading_decorative": false,
             "text": "",
             "button_label": "Learn More",
-            "button_link": "shopify://products/lopkin",
+            "button_link": "shopify://products/lopkin-l-series",
             "button_style": "primary",
             "button_arrow": true,
             "mobile_content_position": "middle-center",
@@ -1162,7 +1162,7 @@
       ],
       "name": "t:sections.image-gallery.presets.name",
       "settings": {
-        "show_section_header": true,
+        "show_section_header": false,
         "heading": "",
         "description": "",
         "water_text": "",
