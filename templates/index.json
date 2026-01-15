@@ -1151,25 +1151,17 @@
         "margin_bottom": 80
       }
     },
-    "video_banner_QgGAaA": {
-      "type": "video-banner",
-      "name": "t:sections.video-banner.presets.name",
+    "text_lens_zoom_bjw6De": {
+      "type": "text-lens-zoom",
+      "name": "t:sections.text-lens-zoom.presets.name",
       "settings": {
-        "enable_full_width": true,
-        "video_url": "https://www.youtube.com/watch?v=ndWbcWFHKdI",
         "video": "shopify://files/videos/K200 - logo2.mp4",
-        "enable_controls": false,
-        "enable_autoload": false,
-        "enable_looping": true,
-        "video_height": "adapt",
-        "color_scheme": "",
-        "heading": "",
-        "heading_size": "large",
+        "heading": "<p>LOPKIN</p>",
         "heading_decorative": false,
-        "description": "",
-        "if_as_main_area": false,
+        "disable_animate_mobile": false,
+        "if_as_main_area": true,
         "margin_top": 0,
-        "margin_bottom": 80
+        "margin_bottom": 52
       }
     },
     "featured_blog_R3NtLz": {
@@ -1279,7 +1271,7 @@
     "image_gallery_qQhU8X",
     "multicolumn_QU4VTR",
     "image_gallery_EMJFH7",
-    "video_banner_QgGAaA",
+    "text_lens_zoom_bjw6De",
     "featured_blog_R3NtLz",
     "text_with_icons_39G3TY"
   ]
