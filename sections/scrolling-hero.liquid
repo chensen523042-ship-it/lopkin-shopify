@@ -1,0 +1,573 @@
+{% liquid
+  assign section_id = 'scrolling-hero-' | append: section.id
+  assign block_count = section.blocks.size
+  assign enable_blur = section.settings.enable_blur
+%}
+
+<section
+  id="{{ section_id }}"
+  class="scrolling-hero color-{{ section.settings.color_scheme }}"
+  data-section-id="{{ section.id }}"
+  data-block-count="{{ block_count }}"
+  data-enable-blur="{{ enable_blur }}"
+>
+  <div class="scrolling-hero-track" style="height: calc(100vh * {{ block_count | default: 1 }});">
+    <div class="scrolling-hero-sticky">
+      {% for block in section.blocks %}
+        {% liquid
+          assign overlay_opacity = block.settings.overlay | default: 0 | times: 0.01
+        %}
+        <article
+          class="scrolling-slide {% if forloop.first %}is-active-initial{% endif %}"
+          data-slide-index="{{ forloop.index0 }}"
+          {{ block.shopify_attributes }}
+        >
+          <div class="scrolling-slide-media">
+            {% if block.type == 'video' %}
+              {% if block.settings.video != blank %}
+                {{ block.settings.video | video_tag: autoplay: true, muted: true, loop: true, playsinline: true, class: 'scrolling-slide-video' }}
+              {% else %}
+                <div class="scrolling-slide-placeholder"></div>
+              {% endif %}
+            {% else %}
+              {% if block.settings.image != blank %}
+                <picture>
+                  {% if block.settings.image_mobile != blank %}
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="{{ block.settings.image_mobile | image_url: width: 1200 }}"
+                    >
+                  {% endif %}
+                  <img
+                    class="scrolling-slide-image"
+                    src="{{ block.settings.image | image_url: width: 2400 }}"
+                    alt="{{ block.settings.image.alt | escape }}"
+                    width="{{ block.settings.image.width }}"
+                    height="{{ block.settings.image.height }}"
+                    loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                  >
+                </picture>
+              {% else %}
+                <div class="scrolling-slide-placeholder"></div>
+              {% endif %}
+            {% endif %}
+            <div class="scrolling-slide-overlay" style="opacity: {{ overlay_opacity }};"></div>
+          </div>
+
+          <div class="scrolling-slide-content content-{{ block.settings.content_position }} text-{{ block.settings.text_alignment }}">
+            <div class="content-wrapper">
+              
+              {% if block.settings.heading != blank %}
+                <div class="heading-anim-wrapper">
+                  <h2 class="scrolling-slide-heading">{{ block.settings.heading }}</h2>
+                </div>
+              {% endif %}
+
+              <div class="other-content-wrapper">
+                {% if block.settings.subheading != blank %}
+                  <p class="scrolling-slide-subheading">{{ block.settings.subheading }}</p>
+                {% endif %}
+                {% if block.settings.text != blank %}
+                  <div class="scrolling-slide-text rte">{{ block.settings.text }}</div>
+                {% endif %}
+                {% if block.settings.button_label != blank and block.settings.link != blank %}
+                  <a
+                    class="scrolling-slide-button button-{{ block.settings.button_style }}"
+                    href="{{ block.settings.link }}"
+                  >
+                    {{ block.settings.button_label }}
+                  </a>
+                {% endif %}
+              </div>
+
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% style %}
+  #{{ section_id }} {
+    position: relative;
+    width: 100%;
+    background: #000;
+  }
+
+  #{{ section_id }} .scrolling-hero-track {
+    position: relative;
+    width: 100%;
+  }
+
+  #{{ section_id }} .scrolling-hero-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #{{ section_id }} .scrolling-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  #{{ section_id }} .scrolling-slide.is-active,
+  #{{ section_id }} .scrolling-slide.is-active-initial {
+    pointer-events: auto;
+    z-index: 2;
+  }
+
+  /* --- 媒体层 (背景) --- */
+  #{{ section_id }} .scrolling-slide-media {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    filter: blur(20px);
+    will-change: opacity, filter; 
+  }
+
+  #{{ section_id }} .scrolling-slide.is-active-initial .scrolling-slide-media {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  #{{ section_id }} .scrolling-slide-image,
+  #{{ section_id }} .scrolling-slide-video,
+  #{{ section_id }} .scrolling-slide-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  #{{ section_id }} .scrolling-slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    pointer-events: none;
+  }
+
+  /* --- 内容层 (文字) --- */
+  #{{ section_id }} .scrolling-slide-content {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    padding: 10vh 0vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    color: rgb(226, 226, 226);
+  }
+
+  .content-wrapper {
+      max-width: 900px;
+      /* 这里不加 transform，由 JS 控制整个 wrapper 的垂直位移 */
+      will-change: transform, opacity;
+  }
+
+  /* 位置适配 */
+  #{{ section_id }} .scrolling-slide-content.content-left { align-items: flex-start; }
+  #{{ section_id }} .scrolling-slide-content.content-center { align-items: center; }
+  #{{ section_id }} .scrolling-slide-content.content-right { align-items: flex-end; }
+  #{{ section_id }} .scrolling-slide-content.content-center .content-wrapper { text-align: center; }
+  #{{ section_id }} .scrolling-slide-content.content-right .content-wrapper { text-align: right; }
+  #{{ section_id }} .text-left { text-align: left; }
+  #{{ section_id }} .text-center { text-align: center; }
+  #{{ section_id }} .text-right { text-align: right; }
+
+  /* --- 标题特效 --- */
+  #{{ section_id }} .heading-anim-wrapper {
+    /* 这一层专门处理缩放 scale */
+    will-change: transform;
+    display: inline-block; /* 防止宽度撑满导致 transform origin 偏移 */
+  }
+
+  #{{ section_id }} .scrolling-slide-heading {
+    margin: 0 0 20px;
+    font-size: clamp(3rem, 8vw, 7rem);
+    line-height: 1;
+    font-weight: 800;
+    
+    /* 默认状态 (实心) */
+    color: rgb(226, 226, 226); 
+    
+    /* 描边 (镂空状态需要) */
+    -webkit-text-stroke: 1px rgb(226, 226, 226);
+    
+    will-change: color;
+  }
+
+  /* 其他元素 */
+  #{{ section_id }} .scrolling-slide-subheading {
+    margin: 0 0 12px;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  #{{ section_id }} .scrolling-slide-text {
+    margin: 0 0 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  #{{ section_id }} .scrolling-slide-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 36px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background: #fff;
+    color: #000;
+  }
+
+  @media screen and (max-width: 767px) {
+    #{{ section_id }} .scrolling-hero-track { height: auto !important; }
+    #{{ section_id }} .scrolling-hero-sticky { position: relative; height: auto; top: auto; }
+    #{{ section_id }} .scrolling-slide {
+      position: relative;
+      height: 80vh;
+      opacity: 1;
+      overflow: visible;
+    }
+    #{{ section_id }} .scrolling-slide-media { opacity: 1 !important; filter: none !important; }
+    #{{ section_id }} .content-wrapper,
+    #{{ section_id }} .heading-anim-wrapper { transform: none !important; opacity: 1 !important; }
+    #{{ section_id }} .scrolling-slide-heading { color: rgb(226, 226, 226) !important; transform: none !important; }
+  }
+{% endstyle %}
+
+<script>
+  (function() {
+    const section = document.getElementById('{{ section_id }}');
+    if (!section) return;
+
+    const track = section.querySelector('.scrolling-hero-track');
+    const slides = Array.from(section.querySelectorAll('.scrolling-slide'));
+    const enableBlur = section.dataset.enableBlur === 'true';
+    
+    if (!track || slides.length === 0) return;
+    if (window.innerWidth < 768) return; 
+
+    const blurMax = enableBlur ? 30 : 0;
+    let ticking = false;
+
+    const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
+    const update = () => {
+      ticking = false;
+      const rect = track.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+      const scrolledDistance = -rect.top; 
+      
+      const totalProgress = clamp(scrolledDistance / viewportHeight, 0, slides.length - 1);
+      const currentIndex = Math.floor(totalProgress);
+      const fraction = totalProgress - currentIndex;
+
+      slides.forEach((slide, index) => {
+        const media = slide.querySelector('.scrolling-slide-media');
+        // 获取三个主要操作对象
+        const wrapper = slide.querySelector('.content-wrapper'); // 控制整体上下位移 (TranslateY)
+        const headingWrapper = slide.querySelector('.heading-anim-wrapper'); // 控制标题缩放 (Scale)
+        const heading = slide.querySelector('.scrolling-slide-heading'); // 控制标题颜色 (Color)
+        const otherContent = slide.querySelector('.other-content-wrapper'); // 其他内容
+
+        slide.classList.remove('is-active-initial');
+
+        // ======================================================
+        // 场景 1: 当前幻灯片 (Exiting - 正在向上滚出屏幕)
+        // 目标：文字不要停在中间，要随滚轮向上滑走
+        // ======================================================
+        if (index === currentIndex) {
+          slide.classList.add('is-active');
+          slide.style.zIndex = 2;
+          // 1. 背景：原地变模糊
+          media.style.opacity = 1 - fraction; 
+          media.style.filter = `blur(${fraction * blurMax}px)`;
+          
+          // 2. 整体内容：大幅度向上位移 (模拟自然滚动)
+          // Fraction 0 -> 1 时，TranslateY 0 -> -100vh
+          // 这样文字就会完全滑出屏幕顶部
+          if(wrapper) {
+            wrapper.style.transform = `translateY(${-fraction * 100}vh)`;
+            wrapper.style.opacity = 1 - (fraction * 1.2); // 加速淡出
+          }
+
+          // 3. 标题状态：保持实心和 Scale 1 (因为已经进入状态了)
+          if(headingWrapper) headingWrapper.style.transform = `scale(1)`;
+          if(heading) heading.style.color = `rgba(226, 226, 226, 1)`;
+
+        // ======================================================
+        // 场景 2: 下一张幻灯片 (Entering - 正在进入并定格)
+        // 目标：执行你的 CSS 特效 (镂空->实体, 大->小)
+        // ======================================================
+        } else if (index === currentIndex + 1) {
+          slide.classList.add('is-active');
+          slide.style.zIndex = 2;
+
+          // 1. 背景：变清晰
+          media.style.opacity = fraction;
+          media.style.filter = `blur(${(1 - fraction) * blurMax}px)`;
+
+          // 2. 整体内容位移：从下方稍微上来一点 (配合标题的 -50px)
+          // 这里的位移是为了让它从“视口下方”浮现出来
+          // 0 -> 1 时，Y: 30vh -> 0
+          if(wrapper) {
+            wrapper.style.transform = `translateY(${(1 - fraction) * 30}vh)`;
+            wrapper.style.opacity = fraction; 
+          }
+
+          // 3. 标题特效 (你的 CSS 逻辑)
+          // Fraction 0 -> 1
+          // Scale: 1.5 -> 1.0
+          // Y (Local): -50px -> 0px
+          // Color: 0 -> 1
+          if(headingWrapper) {
+            const scale = 1.5 - (0.5 * fraction);
+            const y = -50 + (50 * fraction);
+            // 组合 Scale 和局部 Y 微调
+            headingWrapper.style.transform = `scale(${scale}) translateY(${y}px)`;
+          }
+
+          if(heading) {
+            heading.style.color = `rgba(226, 226, 226, ${fraction})`;
+          }
+
+          // 4. 其他内容：稍微延迟显示
+          if(otherContent) {
+             const contentDelay = Math.max(0, (fraction - 0.2) * 1.25);
+             otherContent.style.opacity = contentDelay;
+          }
+
+        } else {
+          // 其他闲置幻灯片
+          slide.classList.remove('is-active');
+          slide.style.zIndex = 0;
+          media.style.opacity = 0;
+          if(wrapper) {
+             wrapper.style.opacity = 0;
+             wrapper.style.transform = 'translateY(50vh)'; // 复位到下方
+          }
+        }
+      });
+    };
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    }, { passive: true });
+
+    update();
+    window.addEventListener('resize', update);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Scrolling Hero (Flow)",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "配色方案",
+      "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_blur",
+      "label": "启用模糊过渡",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "图片幻灯片",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "桌面端图片"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "移动端图片"
+        },
+        {
+          "type": "range",
+          "id": "overlay",
+          "label": "遮罩浓度",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 30
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "主标题",
+          "default": "Sky is the limit"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "副标题",
+          "default": "Welcome"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "正文"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "按钮文字"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "按钮链接"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "按钮样式",
+          "default": "solid",
+          "options": [
+            { "value": "solid", "label": "实心" },
+            { "value": "outline", "label": "描边" },
+            { "value": "link", "label": "链接" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "content_position",
+          "label": "内容位置",
+          "default": "center",
+          "options": [
+            { "value": "left", "label": "左侧" },
+            { "value": "center", "label": "居中" },
+            { "value": "right", "label": "右侧" }
+          ]
+        },
+        {
+           "type": "text_alignment",
+           "id": "text_alignment",
+           "label": "文字对齐",
+           "default": "center"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "视频幻灯片",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "上传视频 (MP4)"
+        },
+        {
+          "type": "range",
+          "id": "overlay",
+          "label": "遮罩浓度",
+          "default": 30,
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%"
+        },
+        {
+          "type": "header",
+          "content": "文字内容"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "主标题",
+          "default": "Visual Experience"
+        },
+        {
+           "type": "text",
+           "id": "subheading",
+           "label": "副标题"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "正文"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "按钮文字"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "按钮链接"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "按钮样式",
+          "default": "solid",
+          "options": [
+            { "value": "solid", "label": "实心" },
+            { "value": "outline", "label": "描边" },
+            { "value": "link", "label": "链接" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "content_position",
+          "label": "内容位置",
+          "default": "center",
+          "options": [
+            { "value": "left", "label": "左侧" },
+            { "value": "center", "label": "居中" },
+            { "value": "right", "label": "右侧" }
+          ]
+        },
+        {
+           "type": "text_alignment",
+           "id": "text_alignment",
+           "label": "文字对齐",
+           "default": "center"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scrolling Hero (Flow)",
+      "blocks": [
+        { "type": "image" },
+        { "type": "image" }
+      ]
+    }
+  ]
+}
+{% endschema %}
