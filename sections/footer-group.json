@@ -25,7 +25,7 @@
         "text_CBAjwy": {
           "type": "text",
           "settings": {
-            "description": "<h4><strong>Join our email list</strong></h4>"
+            "description": "<h4><strong>• Points giveaway</strong></h4><h4><strong>• New Product Updates</strong></h4><h4><strong>• Limited-time benefits</strong></h4>"
           }
         },
         "social_list_qRh48y": {
@@ -51,14 +51,13 @@
       "name": "t:sections.newsletter.presets.name",
       "settings": {
         "enable_full_width": true,
-        "color_scheme": "inverse",
-        "texture_image": "shopify://shop_images/hero-aboutus.png",
+        "color_scheme": "accent-2",
         "texture_alpha": 19,
         "texture_fixed": false,
-        "padding_top": 64,
-        "padding_bottom": 64,
+        "padding_top": 100,
+        "padding_bottom": 100,
         "margin_top": 0,
-        "margin_bottom": 80
+        "margin_bottom": 0
       }
     },
     "footer": {
@@ -127,7 +126,7 @@
         "text_rcnCAf"
       ],
       "settings": {
-        "color_scheme": "scheme-340f51ef-2f3e-4945-8529-a9cec3682201",
+        "color_scheme": "accent-2",
         "show_border_top": true,
         "heading_uppercase": true,
         "background_alpha": 20,
@@ -138,7 +137,7 @@
         "show_localization_flag": true,
         "payment_enable": true,
         "show_policy": true,
-        "margin_top": 60
+        "margin_top": 0
       }
     },
     "tool-bar": {

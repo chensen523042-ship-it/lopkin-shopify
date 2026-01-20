@@ -34,16 +34,16 @@
         "slide_U3iYWR": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/20260120-145822.jpg",
+            "image": "shopify://shop_images/20260120-161957.jpg",
             "image_overlay_opacity": 0,
-            "color_scheme": "accent-1",
-            "desktop_content_position": "middle-left",
-            "desktop_content_alignment": "left",
+            "color_scheme": "inverse",
+            "desktop_content_position": "top-right",
+            "desktop_content_alignment": "center",
             "caption": "COMING SOON",
             "heading": "<p><strong>LOPKIN E-Series</strong><br/></p>",
-            "heading_size": "medium",
+            "heading_size": "large",
             "heading_decorative": false,
-            "text": "<h4>Pioneering robotic arm lawn mowing robot</h4>",
+            "text": "<h2>Pioneering robotic arm lawn mowing robot</h2>",
             "button_label": "",
             "button_link": "",
             "button_style": "primary",
@@ -60,7 +60,7 @@
       "settings": {
         "enable_full_width": true,
         "slide_height": "adapt",
-        "enable_adapter_transparent_header": false,
+        "enable_adapter_transparent_header": true,
         "auto_rotate": true,
         "change_slides_speed": 10,
         "show_nav_buttons": true,
@@ -68,7 +68,7 @@
         "controller_color": "#ffffff",
         "margin_top": 0,
         "margin_bottom": 0,
-        "if_as_main_area": false
+        "if_as_main_area": true
       }
     },
     "newsletter_WC6AJm": {
@@ -116,7 +116,7 @@
         "padding_top": 64,
         "padding_bottom": 64,
         "margin_top": 0,
-        "margin_bottom": 80
+        "margin_bottom": 0
       }
     },
     "scrolling_hero_4J4zXw": {
@@ -126,9 +126,9 @@
           "type": "image",
           "settings": {
             "overlay": 30,
-            "heading": "Sky is the limit",
-            "subheading": "Welcome",
-            "text": "",
+            "heading": "E-Series",
+            "subheading": "",
+            "text": "<h1><strong>COMING SOON</strong></h1>",
             "button_label": "",
             "link": "",
             "button_style": "solid",
@@ -139,10 +139,10 @@
         "image_mJXCTn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Gemini_Generated_Image_ib08nlib08nlib08_60fa0659-99ae-4c53-beff-34ddc604fa57.png",
+            "image": "shopify://shop_images/20251127-181229.png",
             "overlay": 30,
-            "heading": "Sky is the limit",
-            "subheading": "Welcome",
+            "heading": "",
+            "subheading": "",
             "text": "",
             "button_label": "",
             "link": "",
@@ -154,7 +154,7 @@
         "image_LztNtV": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/long-grass-growing-in-city.jpg",
+            "image": "shopify://shop_images/E-series_1.jpg",
             "overlay": 30,
             "heading": "Sky is the limit",
             "subheading": "Welcome",
@@ -177,12 +177,194 @@
         "color_scheme": "",
         "enable_blur": true
       }
+    },
+    "newsletter_4zTBVx": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_XRAfkj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our newsletter",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_epyCKL": {
+          "type": "text",
+          "settings": {
+            "description": "<h4><strong>• Points giveaway</strong></h4><h4><strong>• New Product Updates</strong></h4><h4><strong>• Limited-time benefits</strong></h4>"
+          }
+        },
+        "social_list_jBLyd7": {
+          "type": "social_list",
+          "settings": {
+            "style": "wrapper"
+          }
+        },
+        "email_form_dJGYtx": {
+          "type": "email_form",
+          "settings": {
+            "input_style": "separate"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XRAfkj",
+        "text_epyCKL",
+        "social_list_jBLyd7",
+        "email_form_dJGYtx"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "enable_full_width": true,
+        "color_scheme": "accent-2",
+        "texture_alpha": 90,
+        "texture_fixed": false,
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_banner_HPzrdH": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_LhtV83": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1><strong>Eliminate Weekend Mowing</strong></h1><h1><strong>1 Acres Per Day</strong></h1>",
+            "heading_size": "small",
+            "heading_decorative": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LhtV83"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "enable_full_width": true,
+        "image": "shopify://shop_images/20251128-112346.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
+        "enable_adapter_transparent_header": false,
+        "color_scheme": "accent-1",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "text_box_opacity": 100,
+        "enabled_blur_effect": false,
+        "desktop_content_alignment": "center",
+        "image_behavior": "none",
+        "mobile_content_position": "middle-center",
+        "mobile_content_alignment": "center",
+        "if_as_main_area": true,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_fn7bqC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_TFV9n3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "text_VkgMFD": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post</p>",
+            "limit_description_height": false
+          }
+        },
+        "button_8emV4q": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": false,
+            "secondary_button_label": "",
+            "secondary_button_link": "",
+            "secondary_button_style": "secondary",
+            "secondary_button_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_TFV9n3",
+        "text_VkgMFD",
+        "button_8emV4q"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/2.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "image_first": true,
+        "color_scheme": "accent-2",
+        "content_alignment": "center",
+        "content_alignment_mobile": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_banner_npRe9t": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_qc3AQ3": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Trained on Thousands of </p><p>Real-World Challenges</p>",
+            "heading_size": "small",
+            "heading_decorative": false
+          }
+        },
+        "description_FALmtX": {
+          "type": "description",
+          "settings": {
+            "text": "<h6>Built on industry-leading hardware, the E-Series robotic mower evolves </h6><h6>through real-world use, delivering consistent performance across complex </h6><h6>and unpredictable lawn environments.</h6>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qc3AQ3",
+        "description_FALmtX"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "enable_full_width": true,
+        "image": "shopify://shop_images/20260120-145822.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "enable_adapter_transparent_header": false,
+        "color_scheme": "accent-1",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "text_box_opacity": 100,
+        "enabled_blur_effect": false,
+        "desktop_content_alignment": "center",
+        "image_behavior": "none",
+        "mobile_content_position": "middle-center",
+        "mobile_content_alignment": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "carousal_wUcYBD",
     "newsletter_WC6AJm",
-    "scrolling_hero_4J4zXw"
+    "scrolling_hero_4J4zXw",
+    "newsletter_4zTBVx",
+    "image_banner_HPzrdH",
+    "image_with_text_fn7bqC",
+    "image_banner_npRe9t"
   ]
 }
