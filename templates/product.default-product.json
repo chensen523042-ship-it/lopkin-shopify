@@ -9,6 +9,49 @@
  */
 {
   "sections": {
+    "carousal_gwNTY8": {
+      "type": "carousal",
+      "blocks": {
+        "slide_8pecqe": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/20260120-145822.jpg",
+            "image_overlay_opacity": 10,
+            "color_scheme": "",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center",
+            "caption": "",
+            "heading": "<p>Image slide</p>",
+            "heading_size": "large",
+            "heading_decorative": false,
+            "text": "<p>Placeholder description for image slide</p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true,
+            "mobile_content_position": "middle-center",
+            "mobile_content_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_8pecqe"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "enable_full_width": true,
+        "slide_height": "adapt",
+        "enable_adapter_transparent_header": true,
+        "auto_rotate": true,
+        "change_slides_speed": 10,
+        "show_nav_buttons": true,
+        "show_page_dots": true,
+        "controller_color": "#FFFFFF",
+        "margin_top": 0,
+        "margin_bottom": 80,
+        "if_as_main_area": true
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -166,6 +209,7 @@
     },
     "variant_specs_comparison_bi6dfR": {
       "type": "variant-specs-comparison",
+      "disabled": true,
       "name": "Variant Specs Comparison",
       "settings": {
         "product": "lopkin",
@@ -689,6 +733,7 @@
         "step_nyzEt8",
         "step_bcrJGW"
       ],
+      "disabled": true,
       "name": "t:sections.steps.presets.name",
       "settings": {
         "show_section_header": true,
@@ -702,16 +747,9 @@
         "margin_bottom": 80
       }
     },
-    "17564620038c49fb00": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "product_compare_table_mT9YPR": {
       "type": "product-compare-table",
+      "disabled": true,
       "name": "t:sections.product-compare-table.presets.name",
       "settings": {
         "show_section_header": true,
@@ -846,6 +884,7 @@
     }
   },
   "order": [
+    "carousal_gwNTY8",
     "main",
     "variant_specs_comparison_bi6dfR",
     "related-products",
@@ -859,7 +898,6 @@
     "image_gallery_JyBM7a",
     "sticky_image_cards_yMRcyp",
     "steps_xBYkny",
-    "17564620038c49fb00",
     "product_compare_table_mT9YPR",
     "faq_mmJUaU"
   ]

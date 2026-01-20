@@ -52,6 +52,7 @@
       "settings": {
         "enable_full_width": true,
         "color_scheme": "inverse",
+        "texture_image": "shopify://shop_images/hero-aboutus.png",
         "texture_alpha": 19,
         "texture_fixed": false,
         "padding_top": 64,
