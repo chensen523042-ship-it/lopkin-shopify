@@ -147,7 +147,7 @@
             "button_label": "",
             "link": "",
             "button_style": "solid",
-            "content_position": "center",
+            "content_position": "right",
             "text_alignment": "center"
           }
         },
@@ -162,7 +162,7 @@
             "button_label": "",
             "link": "",
             "button_style": "solid",
-            "content_position": "center",
+            "content_position": "left",
             "text_alignment": "center"
           }
         },
@@ -177,7 +177,7 @@
             "button_label": "",
             "link": "",
             "button_style": "solid",
-            "content_position": "center",
+            "content_position": "right",
             "text_alignment": "center"
           }
         },
@@ -186,13 +186,13 @@
           "settings": {
             "video": "shopify://files/videos/31 - Trim.mp4",
             "overlay": 30,
-            "heading": "",
+            "heading": "Max. Climbing Ability : 60% (31°)",
             "subheading": "",
             "text": "",
             "button_label": "",
             "link": "",
             "button_style": "solid",
-            "content_position": "center",
+            "content_position": "left",
             "text_alignment": "center"
           }
         },
@@ -207,7 +207,7 @@
             "button_label": "",
             "link": "",
             "button_style": "solid",
-            "content_position": "center",
+            "content_position": "right",
             "text_alignment": "center"
           }
         }
