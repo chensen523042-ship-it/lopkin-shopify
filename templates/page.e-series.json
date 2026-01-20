@@ -136,10 +136,55 @@
             "text_alignment": "center"
           }
         },
-        "image_mJXCTn": {
-          "type": "image",
+        "video_d9hRCU": {
+          "type": "video",
           "settings": {
-            "image": "shopify://shop_images/20251127-181229.png",
+            "video": "shopify://files/videos/up - Trim.mp4",
+            "overlay": 30,
+            "heading": "Max. Climbing Ability : 60% (31°)",
+            "subheading": "Max. Climbing Ability : 60% (31°)",
+            "text": "",
+            "button_label": "",
+            "link": "",
+            "button_style": "solid",
+            "content_position": "center",
+            "text_alignment": "center"
+          }
+        },
+        "video_DzH3nR": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/0.6in - Trim.mp4",
+            "overlay": 30,
+            "heading": "Visual Experience",
+            "subheading": "",
+            "text": "",
+            "button_label": "",
+            "link": "",
+            "button_style": "solid",
+            "content_position": "center",
+            "text_alignment": "center"
+          }
+        },
+        "video_HXjwTU": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/daopian - Trim.mp4",
+            "overlay": 30,
+            "heading": "Visual Experience",
+            "subheading": "",
+            "text": "",
+            "button_label": "",
+            "link": "",
+            "button_style": "solid",
+            "content_position": "center",
+            "text_alignment": "center"
+          }
+        },
+        "video_YjMUY6": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/31 - Trim.mp4",
             "overlay": 30,
             "heading": "",
             "subheading": "",
@@ -151,13 +196,13 @@
             "text_alignment": "center"
           }
         },
-        "image_LztNtV": {
-          "type": "image",
+        "video_BChMG8": {
+          "type": "video",
           "settings": {
-            "image": "shopify://shop_images/E-series_1.jpg",
+            "video": "shopify://files/videos/eyes - Trim.mp4",
             "overlay": 30,
-            "heading": "Sky is the limit",
-            "subheading": "Welcome",
+            "heading": "Visual Experience",
+            "subheading": "",
             "text": "",
             "button_label": "",
             "link": "",
@@ -169,8 +214,11 @@
       },
       "block_order": [
         "image_QUEQkD",
-        "image_mJXCTn",
-        "image_LztNtV"
+        "video_d9hRCU",
+        "video_DzH3nR",
+        "video_HXjwTU",
+        "video_YjMUY6",
+        "video_BChMG8"
       ],
       "name": "Scrolling Hero (Flow)",
       "settings": {
