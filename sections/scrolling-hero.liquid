@@ -193,6 +193,7 @@
     /* 这一层专门处理缩放 scale */
     will-change: transform;
     display: inline-block; /* 防止宽度撑满导致 transform origin 偏移 */
+    max-width: 100%; /* 限制最大宽度不超过父容器 */
   }
 
   #{{ section_id }} .scrolling-slide-heading {
@@ -200,6 +201,9 @@
     font-size: clamp(3rem, 4vw, 3rem);
     line-height: 1;
     font-weight: 600;
+    max-width: 100%; /* 限制最大宽度 */
+    word-wrap: break-word; /* 允许长单词换行 */
+    overflow-wrap: break-word; /* 现代浏览器换行 */
     
     /* 默认状态 (实心) */
     color: rgb(226, 226, 226); 
