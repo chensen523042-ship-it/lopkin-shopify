@@ -14,6 +14,16 @@
     "header": {
       "type": "header",
       "blocks": {
+        "bubble_hJhXVq": {
+          "type": "bubble",
+          "settings": {
+            "target_id": 2,
+            "icon": "none",
+            "text": "Coming Soon",
+            "background_color": "#0CB771",
+            "foreground_color": "#ffffff"
+          }
+        },
         "mega_image_title_below_y3FJRb": {
           "type": "mega_image_title_below",
           "settings": {
@@ -42,6 +52,7 @@
         }
       },
       "block_order": [
+        "bubble_hJhXVq",
         "mega_image_title_below_y3FJRb",
         "mega_image_title_below_RFR7Bz"
       ],
