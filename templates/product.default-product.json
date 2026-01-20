@@ -141,6 +141,7 @@
         "payment_security_q6Ay9w",
         "custom_tab_UabbGq"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-340f51ef-2f3e-4945-8529-a9cec3682201",
         "enable_sticky_media": true,
