@@ -17,7 +17,12 @@
 
 <sticky-header
   data-sticky-type="{{ section.settings.sticky_header_type }}"
-  class="header-wrapper{% if section.settings.enable_transparent_header %} header--background-transparent{% if section.settings.hide_transparent_border %} header--transparent-border-hide{% endif %}{% endif %}{% if section.settings.enable_first_level_uppercase %} header--first-level-uppercase{% endif %}"
+  class="header-wrapper{% if section.settings.enable_transparent_header %}
+  {% if request.page_type == 'index' %}
+    header--background-transparent
+  {% elsif request.page_type == 'page' and page.handle == 'about-us' %}
+    header--background-transparent
+  {% endif %}{% if section.settings.hide_transparent_border %} header--transparent-border-hide{% endif %}{% endif %}{% if section.settings.enable_first_level_uppercase %} header--first-level-uppercase{% endif %}"
 >
   <header
     id="Page-Header"
