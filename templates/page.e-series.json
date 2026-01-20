@@ -141,14 +141,14 @@
           "settings": {
             "video": "shopify://files/videos/up - Trim.mp4",
             "overlay": 30,
-            "heading": "Max. Climbing Ability : 60% (31°)",
-            "subheading": "Max. Climbing Ability : 60% (31°)",
+            "heading": "TerraXcapeSelf-Recovery System",
+            "subheading": "",
             "text": "",
             "button_label": "",
             "link": "",
             "button_style": "solid",
             "content_position": "right",
-            "text_alignment": "center"
+            "text_alignment": "right"
           }
         },
         "video_DzH3nR": {
@@ -156,14 +156,14 @@
           "settings": {
             "video": "shopify://files/videos/0.6in - Trim.mp4",
             "overlay": 30,
-            "heading": "Visual Experience",
+            "heading": "Ultra-Close Wall-Edge Trimming",
             "subheading": "",
             "text": "",
             "button_label": "",
             "link": "",
             "button_style": "solid",
             "content_position": "left",
-            "text_alignment": "center"
+            "text_alignment": "left"
           }
         },
         "video_YjMUY6": {
@@ -178,7 +178,7 @@
             "link": "",
             "button_style": "solid",
             "content_position": "right",
-            "text_alignment": "center"
+            "text_alignment": "right"
           }
         },
         "video_HXjwTU": {
@@ -186,14 +186,14 @@
           "settings": {
             "video": "shopify://files/videos/daopian - Trim.mp4",
             "overlay": 30,
-            "heading": "Visual Experience",
+            "heading": "Floating Cutting Deck",
             "subheading": "",
             "text": "",
             "button_label": "",
             "link": "",
             "button_style": "solid",
             "content_position": "left",
-            "text_alignment": "center"
+            "text_alignment": "left"
           }
         },
         "video_BChMG8": {
@@ -201,14 +201,14 @@
           "settings": {
             "video": "shopify://files/videos/eyes - Trim.mp4",
             "overlay": 30,
-            "heading": "Visual Experience",
+            "heading": "Al Omni-Yard Vision",
             "subheading": "",
             "text": "",
             "button_label": "",
             "link": "",
             "button_style": "solid",
             "content_position": "right",
-            "text_alignment": "center"
+            "text_alignment": "right"
           }
         }
       },
