@@ -17,17 +17,17 @@
         "bubble_fXwLV3": {
           "type": "bubble",
           "settings": {
-            "target_id": 3,
+            "target_id": 2,
             "icon": "none",
             "text": "hot",
-            "background_color": "#FF0000",
+            "background_color": "#ff0000",
             "foreground_color": "#ffffff"
           }
         },
         "bubble_hJhXVq": {
           "type": "bubble",
           "settings": {
-            "target_id": 2,
+            "target_id": 3,
             "icon": "none",
             "text": "Coming Soon",
             "background_color": "#0cb771",
