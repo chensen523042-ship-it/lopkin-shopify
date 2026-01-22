@@ -1,0 +1,225 @@
+<script src="{{ 'gsap.min.js' | asset_url }}" defer></script>
+<script src="{{ 'ScrollTrigger.min.js' | asset_url }}" defer></script>
+<script src="{{ 'scroll-sequence.js' | asset_url }}" defer></script>
+<style>
+  scroll-trigger-images-sequence {
+    display: block;
+    /* 这里的 height 决定了用户需要滚多远才能播完动画。
+       400vh 意味着滚动距离是屏幕高度的4倍，数值越大动画越慢/越细腻 */
+    height: {{ section.settings.scroll_height }}vh; 
+    position: relative;
+    background-color: {{ section.settings.bg_color }};
+  }
+  
+  /* 画布样式 */
+  scroll-trigger-images-sequence canvas {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  /* 浮动文字容器 */
+  .image-sequence-content-item {
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none; /* 让鼠标穿透文字 */
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    max-width: 400px;
+    color: #fff;
+    z-index: 10;
+  }
+
+  /* 激活状态 */
+  .image-sequence-content-item.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  /* 文字内部样式 */
+  .progress-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .guide-line {
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 10px;
+  }
+  .progress-desc {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+</style>
+
+<scroll-trigger-images-sequence 
+  imagecount="{{ section.settings.image_count }}" 
+  imagestarturl="{{ section.settings.image_start_url }}" 
+  imagestartid="{{ section.settings.image_start_id }}">
+  
+  <canvas width="1920" height="1080"></canvas>
+  
+  <div class="content-wrapper">
+    {%- for block in section.blocks -%}
+      <div class="image-sequence-content-item" 
+           data-progress-start="{{ block.settings.progress_start }}" 
+           data-progress-end="{{ block.settings.progress_end }}" 
+           style="top: {{ block.settings.pos_top }}%; left: {{ block.settings.pos_left }}%; {{ block.settings.custom_css }}">
+        
+        {% if block.settings.title != blank %}
+          <div class="progress-title">{{ block.settings.title }}</div>
+        {% endif %}
+        
+        <div class="guide-line"></div>
+        
+        {% if block.settings.description != blank %}
+          <div class="progress-desc">{{ block.settings.description }}</div>
+        {% endif %}
+      </div>
+    {%- endfor -%}
+  </div>
+
+</scroll-trigger-images-sequence>
+
+{% schema %}
+{
+  "name": "3D Scroll Sequence",
+  "tag": "section",
+  "class": "section-scroll-sequence",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image Sequence Settings"
+    },
+    {
+      "type": "text",
+      "id": "image_start_url",
+      "label": "First Image URL",
+      "info": "Paste the CDN URL of the first image (e.g., .../seq_00001.webp). Remove ?v=... suffix.",
+      "default": "https://cdn.shopify.com/s/files/1/0556/8682/3980/files/luba3-seq_00001.webp"
+    },
+    {
+      "type": "text",
+      "id": "image_start_id",
+      "label": "Start ID String",
+      "default": "00001",
+      "info": "The part of the filename that changes (e.g., 00001)"
+    },
+    {
+      "type": "number",
+      "id": "image_count",
+      "label": "Total Frames",
+      "default": 315
+    },
+    {
+      "type": "range",
+      "id": "scroll_height",
+      "min": 100,
+      "max": 1000,
+      "step": 50,
+      "unit": "vh",
+      "label": "Scroll Height",
+      "default": 400,
+      "info": "Higher value = Slower animation, longer scroll."
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#000000"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "overlay_text",
+      "name": "Floating Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Feature Name"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Description of the feature goes here."
+        },
+        {
+          "type": "header",
+          "content": "Timing (0-100%)"
+        },
+        {
+          "type": "range",
+          "id": "progress_start",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "label": "Start Showing at %",
+          "default": 10
+        },
+        {
+          "type": "range",
+          "id": "progress_end",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "label": "Hide at %",
+          "default": 30
+        },
+        {
+          "type": "header",
+          "content": "Position"
+        },
+        {
+          "type": "range",
+          "id": "pos_top",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "label": "Top Position",
+          "default": 20
+        },
+        {
+          "type": "range",
+          "id": "pos_left",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "label": "Left Position",
+          "default": 10
+        },
+        {
+            "type": "textarea",
+            "id": "custom_css",
+            "label": "Custom CSS Override",
+            "info": "e.g. 'right: 10%; left: auto;'"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "3D Scroll Sequence",
+      "blocks": [
+        {
+          "type": "overlay_text",
+          "settings": {
+            "title": "360° LiDAR",
+            "progress_start": 10,
+            "progress_end": 30
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
