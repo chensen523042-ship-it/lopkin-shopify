@@ -23,7 +23,7 @@
 {%- endstyle -%}
 
 <div class="section-newsletter{% unless section.settings.enable_full_width %} page-width{% endunless %} section-{{ section.id }}-margin">
-  <div class="section__wrapper newsletter__wrapper color-{{ section.settings.color_scheme }} gradient isolate{% unless section.settings.enable_full_width %} lg-round{% endunless %} text-align--center text-align-mobile--center section-{{ section.id }}-padding">
+  <div class="section__wrapper newsletter__wrapper color-{{ section.settings.color_scheme }} gradient isolate{% unless section.settings.enable_full_width %} lg-round{% endunless %} section-{{ section.id }}-padding">
     {%- if section.settings.texture_image != blank -%}
       <div
         class="texture-background-image media{% if section.settings.texture_fixed %} background--fixed{% endif %}"
@@ -32,7 +32,8 @@
         {% render 'lazy-image', image_object: section.settings.texture_image %}
       </div>
     {%- endif -%}
-    <div class="newsletter-main text-content{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    <div class="position-container position--{{ section.settings.desktop_content_position }} position-mobile--{{ section.settings.mobile_content_position }}">
+      <div class="newsletter-main text-content text-align--{{ section.settings.desktop_content_alignment }} text-align-mobile--{{ section.settings.mobile_content_alignment }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when '@app' -%}
@@ -81,6 +82,7 @@
             </div>
         {%- endcase -%}
       {%- endfor -%}
+      </div>
     </div>
   </div>
 </div>
@@ -104,6 +106,94 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.scheme.label",
       "default": "inverse"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.content.header_content"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "top-left",
+          "label": "t:sections.all.position.options__1.label"
+        },
+        {
+          "value": "top-center",
+          "label": "t:sections.all.position.options__2.label"
+        },
+        {
+          "value": "top-right",
+          "label": "t:sections.all.position.options__3.label"
+        },
+        {
+          "value": "middle-left",
+          "label": "t:sections.all.position.options__4.label"
+        },
+        {
+          "value": "middle-center",
+          "label": "t:sections.all.position.options__5.label"
+        },
+        {
+          "value": "middle-right",
+          "label": "t:sections.all.position.options__6.label"
+        },
+        {
+          "value": "bottom-left",
+          "label": "t:sections.all.position.options__7.label"
+        },
+        {
+          "value": "bottom-center",
+          "label": "t:sections.all.position.options__8.label"
+        },
+        {
+          "value": "bottom-right",
+          "label": "t:sections.all.position.options__9.label"
+        }
+      ],
+      "default": "middle-center",
+      "label": "t:sections.all.position.label"
+    },
+    {
+      "type": "text_alignment",
+      "id": "desktop_content_alignment",
+      "default": "center",
+      "label": "t:sections.all.text-alignment.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.mobile.header_content"
+    },
+    {
+      "type": "select",
+      "id": "mobile_content_position",
+      "label": "t:sections.all.position.label",
+      "default": "middle-center",
+      "options": [
+        {
+          "value": "top-center",
+          "label": "t:sections.all.position.options__2.label"
+        },
+        {
+          "value": "middle-center",
+          "label": "t:sections.all.position.options__5.label"
+        },
+        {
+          "value": "bottom-center",
+          "label": "t:sections.all.position.options__8.label"
+        }
+      ]
+    },
+    {
+      "type": "text_alignment",
+      "id": "mobile_content_alignment",
+      "default": "center",
+      "label": "t:sections.all.text-alignment.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.image.header_background"
     },
     {
       "type": "image_picker",
@@ -135,7 +225,7 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
+      "max": 360,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top.label",
@@ -145,7 +235,7 @@
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
+      "max": 360,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom.label",

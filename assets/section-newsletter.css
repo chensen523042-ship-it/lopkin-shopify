@@ -2,6 +2,9 @@
   padding-inline-start: 2rem;
   padding-inline-end: 2rem;
 }
+.section-newsletter .newsletter__wrapper .position-container.position--middle-left .newsletter-main {
+  margin-inline-start: 8rem;
+}
 .section-newsletter .newsletter__wrapper .newsletter-main {
   display: inline-block;
 }
