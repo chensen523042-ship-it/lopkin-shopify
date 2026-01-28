@@ -10,7 +10,7 @@
 }
 @media screen and (min-width: 750px) {
   .section-newsletter .newsletter__wrapper .newsletter-main {
-    max-width: 35rem;
+    max-width: 52rem;
   }
 }
 .section-newsletter .newsletter__wrapper .newsletter-main .social-list .social-item {

@@ -1,0 +1,431 @@
+{% comment %}
+  LOPKIN Dealer Application Form Section
+  - Uses local assets only (no CDN)
+  - Two-column responsive layout
+  - International phone input with flags
+  - Country select with search (Tom Select)
+{% endcomment %}
+
+{% comment %} Load CSS Assets {% endcomment %}
+{{ 'intlTelInput.css' | asset_url | stylesheet_tag }}
+{{ 'tom-select.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .lopkin-dealer-form-section {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    min-height: 100vh;
+  }
+
+  .lopkin-dealer-form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .lopkin-dealer-form-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+  }
+
+  .lopkin-dealer-form-description {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  .lopkin-dealer-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .lopkin-form-field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lopkin-form-field.full-width {
+    grid-column: 1 / -1;
+  }
+
+  .lopkin-form-field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .lopkin-form-field label .required-asterisk {
+    color: #ff0000;
+  }
+
+  .lopkin-form-field input[type="text"],
+  .lopkin-form-field input[type="email"],
+  .lopkin-form-field input[type="tel"],
+  .lopkin-form-field select,
+  .lopkin-form-field textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #1a1a1a;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+  }
+
+  .lopkin-form-field input:focus,
+  .lopkin-form-field select:focus,
+  .lopkin-form-field textarea:focus {
+    outline: none;
+    border-color: #596158;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(57, 255, 20, 0.1);
+  }
+
+  .lopkin-form-field textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: inherit;
+  }
+
+  /* International Phone Input Styles */
+  .lopkin-form-field .iti {
+    width: 100%;
+  }
+
+  .lopkin-form-field .iti__flag {
+    background-image: url("{{ 'flags.png' | asset_url }}");
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .lopkin-form-field .iti__flag {
+      background-image: url("{{ 'flags@2x.png' | asset_url }}");
+    }
+  }
+
+  /* Tom Select Customization */
+  .ts-wrapper.single .ts-control {
+    padding: 12px 16px;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-size: 15px;
+  }
+
+  .ts-wrapper.single .ts-control:focus {
+    border-color: #39FF14;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(57, 255, 20, 0.1);
+  }
+
+  .ts-dropdown {
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .ts-dropdown .option.active {
+    background-color: #596158;
+    color: #000;
+  }
+
+  /* Submit Button */
+  .lopkin-submit-button {
+    grid-column: 1 / -1;
+    background-color: #168a02;
+    color: #000;
+    border: none;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+  }
+
+  .lopkin-submit-button:hover {
+    background-color: #2de00f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(57, 255, 20, 0.4);
+  }
+
+  .lopkin-submit-button:active {
+    transform: translateY(0);
+  }
+
+  /* Success/Error Messages */
+  .lopkin-form-message {
+    grid-column: 1 / -1;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .lopkin-form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+
+  .lopkin-form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .lopkin-dealer-form-container {
+      padding: 30px 20px;
+    }
+
+    .lopkin-dealer-form {
+      grid-template-columns: 1fr;
+    }
+
+    .lopkin-dealer-form-title {
+      font-size: 26px;
+    }
+
+    .lopkin-submit-button {
+      padding: 14px 24px;
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .lopkin-dealer-form-section {
+      padding: 40px 15px;
+    }
+
+    .lopkin-dealer-form-container {
+      padding: 25px 15px;
+    }
+
+    .lopkin-dealer-form-title {
+      font-size: 22px;
+    }
+  }
+</style>
+
+<section class="lopkin-dealer-form-section">
+  <div class="lopkin-dealer-form-container">
+    <h1 class="lopkin-dealer-form-title">{{ section.settings.form_title }}</h1>
+    
+    {% if section.settings.form_description != blank %}
+      <p class="lopkin-dealer-form-description">{{ section.settings.form_description }}</p>
+    {% endif %}
+
+    {% form 'contact', id: 'lopkin-dealer-application-form' %}
+      
+      {% if form.posted_successfully? %}
+        <div class="lopkin-form-message success">
+          {{ section.settings.success_message }}
+        </div>
+      {% endif %}
+
+      {% if form.errors %}
+        <div class="lopkin-form-message error">
+          {{ form.errors | default_errors }}
+        </div>
+      {% endif %}
+
+      <div class="lopkin-dealer-form">
+        <input type="hidden" name="contact[subject]" value="Dealer Application Form">
+        
+        <div class="lopkin-form-field">
+          <label for="dealer-first-name">First Name <span class="required-asterisk">*</span></label>
+          <input type="text" id="dealer-first-name" name="contact[first_name]" required>
+        </div>
+
+        <div class="lopkin-form-field">
+          <label for="dealer-last-name">Last Name <span class="required-asterisk">*</span></label>
+          <input type="text" id="dealer-last-name" name="contact[last_name]" required>
+        </div>
+
+        <div class="lopkin-form-field">
+          <label for="dealer-email">Email Address <span class="required-asterisk">*</span></label>
+          <input type="email" id="dealer-email" name="contact[email]" required>
+        </div>
+
+        <div class="lopkin-form-field">
+          <label for="dealer-phone">Phone Number <span class="required-asterisk">*</span></label>
+          <input type="tel" id="dealer-phone" name="contact[phone]" required>
+        </div>
+
+        <div class="lopkin-form-field">
+          <label for="dealer-company">Company Name <span class="required-asterisk">*</span></label>
+          <input type="text" id="dealer-company" name="contact[company]" required>
+        </div>
+
+        <div class="lopkin-form-field">
+          <label for="dealer-website">Company Website</label>
+          <input type="text" id="dealer-website" name="contact[website]" placeholder="https://">
+        </div>
+
+        <div class="lopkin-form-field">
+          <label for="dealer-country">Country <span class="required-asterisk">*</span></label>
+          <select id="dealer-country" name="contact[country]" required>
+            <option value="">Loading countries...</option>
+          </select>
+        </div>
+
+        <div class="lopkin-form-field">
+          <label for="dealer-zipcode">Zip Code / Postal Code <span class="required-asterisk">*</span></label>
+          <input type="text" id="dealer-zipcode" name="contact[zipcode]" required>
+        </div>
+
+        <div class="lopkin-form-field full-width">
+          <label for="dealer-interest">Areas of Interest <span class="required-asterisk">*</span></label>
+          <textarea id="dealer-interest" name="contact[interest]" rows="4" placeholder="Please describe which products or categories you are interested in..." required></textarea>
+        </div>
+
+        <div class="lopkin-form-field full-width">
+          <label for="dealer-notes">Additional Notes</label>
+          <textarea id="dealer-notes" name="contact[notes]" rows="4" placeholder="Any additional information you'd like to share..."></textarea>
+        </div>
+
+        <button type="submit" class="lopkin-submit-button">
+          {{ section.settings.submit_button_text }}
+        </button>
+      </div>
+
+    {% endform %}
+  </div>
+</section>
+
+{% comment %} Load JavaScript Assets {% endcomment %}
+<script src="{{ 'intlTelInput.min.js' | asset_url }}" defer></script>
+<script src="{{ 'tom-select.complete.min.js' | asset_url }}" defer></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    // Initialize International Phone Input
+    const phoneInput = document.querySelector('#dealer-phone');
+    if (phoneInput && typeof intlTelInput !== 'undefined') {
+      const iti = intlTelInput(phoneInput, {
+        utilsScript: "{{ 'utils.js' | asset_url }}",
+        initialCountry: "auto",
+        geoIpLookup: function(callback) {
+          fetch('https://ipapi.co/json/')
+            .then(res => res.json())
+            .then(data => callback(data.country_code))
+            .catch(() => callback('us'));
+        },
+        separateDialCode: true,
+        preferredCountries: ['us', 'gb', 'ca', 'au'],
+        nationalMode: false
+      });
+
+      // Update hidden field with full international number on submit
+      const form = document.querySelector('#lopkin-dealer-application-form');
+      if (form) {
+        form.addEventListener('submit', function() {
+          if (iti.isValidNumber()) {
+            phoneInput.value = iti.getNumber();
+          }
+        });
+      }
+    }
+
+    // Fetch Countries and Initialize Tom Select
+    const countrySelect = document.querySelector('#dealer-country');
+    if (countrySelect) {
+      fetch('https://restcountries.com/v3.1/all?fields=name')
+        .then(response => response.json())
+        .then(data => {
+          // Extract and sort country names
+          const countries = data
+            .map(country => country.name.common)
+            .sort((a, b) => a.localeCompare(b));
+
+          // Clear loading option
+          countrySelect.innerHTML = '<option value="">Select a country...</option>';
+
+          // Populate select with sorted countries
+          countries.forEach(country => {
+            const option = document.createElement('option');
+            option.value = country;
+            option.textContent = country;
+            countrySelect.appendChild(option);
+          });
+
+          // Initialize Tom Select after options are loaded
+          if (typeof TomSelect !== 'undefined') {
+            new TomSelect('#dealer-country', {
+              create: false,
+              sortField: {
+                field: 'text',
+                direction: 'asc'
+              },
+              placeholder: 'Select a country...',
+              maxOptions: 300
+            });
+          }
+        })
+        .catch(error => {
+          console.error('Error loading countries:', error);
+          countrySelect.innerHTML = '<option value="">Error loading countries. Please refresh.</option>';
+        });
+    }
+
+  });
+</script>
+
+{% schema %}
+{
+  "name": "LOPKIN Dealer Form",
+  "tag": "section",
+  "class": "section-lopkin-dealer-form",
+  "settings": [
+    {
+      "type": "text",
+      "id": "form_title",
+      "label": "Form Title",
+      "default": "Become a LOPKIN Dealer"
+    },
+    {
+      "type": "textarea",
+      "id": "form_description",
+      "label": "Form Description",
+      "default": "Join our global network of dealers. Fill out the form below and our team will get back to you shortly."
+    },
+    {
+      "type": "text",
+      "id": "submit_button_text",
+      "label": "Submit Button Text",
+      "default": "Submit Application"
+    },
+    {
+      "type": "text",
+      "id": "success_message",
+      "label": "Success Message",
+      "default": "Thank you for your application! We will contact you within 48 hours."
+    }
+  ],
+  "presets": [
+    {
+      "name": "LOPKIN Dealer Form"
+    }
+  ]
+}
+{% endschema %}
