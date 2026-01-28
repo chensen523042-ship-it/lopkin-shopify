@@ -9,6 +9,49 @@
  */
 {
   "sections": {
+    "image_banner_Ghzb3M": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_EPhecy": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>Partner with LOPKIN</strong></p>",
+            "heading_size": "medium",
+            "heading_decorative": false
+          }
+        },
+        "description_YbNxXY": {
+          "type": "description",
+          "settings": {
+            "text": "<h5>Deliver perfect lawns with zero labor. Unlock high-margin opportunities </h5><h5>in the booming smart robotic mowing market.</h5>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EPhecy",
+        "description_YbNxXY"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "enable_full_width": true,
+        "image": "shopify://shop_images/dealer.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "enable_adapter_transparent_header": false,
+        "color_scheme": "accent-1",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "text_box_opacity": 100,
+        "enabled_blur_effect": false,
+        "desktop_content_alignment": "left",
+        "image_behavior": "none",
+        "mobile_content_position": "middle-center",
+        "mobile_content_alignment": "center",
+        "if_as_main_area": false,
+        "margin_top": 0,
+        "margin_bottom": 80
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -32,14 +75,15 @@
       "type": "lopkin-dealer-form",
       "name": "LOPKIN Dealer Form",
       "settings": {
-        "form_title": "Become a LOPKIN Dealer",
+        "form_title": "Become a LOPKIN Partner",
         "form_description": "Join our global network of dealers. Fill out the form below and our team will get back to you shortly.",
-        "submit_button_text": "Submit Application",
+        "submit_button_text": "Submit",
         "success_message": "Thank you for your application! We will contact you within 48 hours."
       }
     }
   },
   "order": [
+    "image_banner_Ghzb3M",
     "main",
     "lopkin_dealer_form_6XgFxk"
   ]
