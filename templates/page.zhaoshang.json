@@ -82,12 +82,12 @@
             "link": "",
             "heading": "",
             "heading_size": "medium",
-            "heading_color": "#FFFFFF",
+            "heading_color": "#ffffff",
             "heading_position": "top-left",
             "mobile_columns": "2",
             "mobile_rows": "1",
             "heading_size_mobile": "medium",
-            "heading_color_mobile": "#FFFFFF",
+            "heading_color_mobile": "#ffffff",
             "heading_position_mobile": "middle-center"
           }
         },
@@ -99,12 +99,12 @@
             "link": "",
             "heading": "",
             "heading_size": "medium",
-            "heading_color": "#FFFFFF",
+            "heading_color": "#ffffff",
             "heading_position": "top-left",
             "mobile_columns": "1",
             "mobile_rows": "2",
             "heading_size_mobile": "medium",
-            "heading_color_mobile": "#FFFFFF",
+            "heading_color_mobile": "#ffffff",
             "heading_position_mobile": "middle-center"
           }
         },
@@ -116,12 +116,12 @@
             "link": "",
             "heading": "",
             "heading_size": "medium",
-            "heading_color": "#FFFFFF",
+            "heading_color": "#ffffff",
             "heading_position": "top-left",
             "mobile_columns": "1",
             "mobile_rows": "1",
             "heading_size_mobile": "medium",
-            "heading_color_mobile": "#FFFFFF",
+            "heading_color_mobile": "#ffffff",
             "heading_position_mobile": "middle-center"
           }
         },
@@ -133,12 +133,12 @@
             "link": "",
             "heading": "",
             "heading_size": "medium",
-            "heading_color": "#FFFFFF",
+            "heading_color": "#ffffff",
             "heading_position": "top-left",
             "mobile_columns": "1",
             "mobile_rows": "1",
             "heading_size_mobile": "medium",
-            "heading_color_mobile": "#FFFFFF",
+            "heading_color_mobile": "#ffffff",
             "heading_position_mobile": "middle-center"
           }
         },
@@ -150,12 +150,12 @@
             "link": "",
             "heading": "",
             "heading_size": "medium",
-            "heading_color": "#FFFFFF",
+            "heading_color": "#ffffff",
             "heading_position": "top-left",
             "mobile_columns": "1",
             "mobile_rows": "1",
             "heading_size_mobile": "medium",
-            "heading_color_mobile": "#FFFFFF",
+            "heading_color_mobile": "#ffffff",
             "heading_position_mobile": "middle-center"
           }
         },
@@ -167,12 +167,12 @@
             "link": "",
             "heading": "",
             "heading_size": "medium",
-            "heading_color": "#FFFFFF",
+            "heading_color": "#ffffff",
             "heading_position": "top-left",
             "mobile_columns": "1",
             "mobile_rows": "1",
             "heading_size_mobile": "medium",
-            "heading_color_mobile": "#FFFFFF",
+            "heading_color_mobile": "#ffffff",
             "heading_position_mobile": "middle-center"
           }
         }
@@ -213,7 +213,7 @@
         "form_title": "Become a LOPKIN Partner",
         "form_description": "Join our global network of dealers. Fill out the form below and our team will get back to you shortly.",
         "submit_button_text": "Submit",
-        "success_message": "Thank you for your application! We will contact you within 48 hours."
+        "success_message": "Thank you for your application! We will contact you within 72 hours."
       }
     }
   },
