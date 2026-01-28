@@ -621,8 +621,8 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/20251127-182752_1.jpg",
-        "height": "adapt",
+        "image": "shopify://shop_images/K100_-8-Rev1220-10000.png",
+        "height": "medium",
         "desktop_image_width": "medium",
         "image_first": false,
         "color_scheme": "",
