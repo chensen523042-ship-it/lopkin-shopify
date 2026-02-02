@@ -406,11 +406,25 @@
             "description": "<p>The LOPKIN App puts full control in your hands. Set up your mower in minutes, stay connected wherever you are, and manage every detail remotely through an intuitive, guided experience—so your lawn care runs smoothly without constant attention.<br/></p>",
             "limit_description_height": false
           }
+        },
+        "button_GJikDF": {
+          "type": "button",
+          "settings": {
+            "button_label": "AppStore",
+            "button_link": "https://apps.apple.com/us/app/lopkin/id6756285846",
+            "button_style": "primary",
+            "button_arrow": false,
+            "secondary_button_label": "Google Play",
+            "secondary_button_link": "https://play.google.com/store/apps/details?id=com.yjzn.lopkin",
+            "secondary_button_style": "secondary",
+            "secondary_button_arrow": false
+          }
         }
       },
       "block_order": [
         "heading_KfQHhj",
-        "text_cgeEEw"
+        "text_cgeEEw",
+        "button_GJikDF"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -418,7 +432,7 @@
         "height": "medium",
         "desktop_image_width": "medium",
         "image_first": true,
-        "color_scheme": "background-1",
+        "color_scheme": "scheme-340f51ef-2f3e-4945-8529-a9cec3682201",
         "content_alignment": "left",
         "content_alignment_mobile": "center",
         "if_as_main_area": true,
