@@ -106,13 +106,14 @@
     width: 100%;
   }
 
-  .lopkin-form-field .iti__flag {
-    background-image: url("{{ 'flags.png' | asset_url }}");
+  .iti__flag {
+    background-image: url("{{ 'flags.png' | asset_url }}") !important;
+    display: inline-block !important;
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .lopkin-form-field .iti__flag {
-      background-image: url("{{ 'flags@2x.png' | asset_url }}");
+    .iti__flag {
+      background-image: url("{{ 'flags@2x.png' | asset_url }}") !important;
     }
   }
 
