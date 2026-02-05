@@ -12,19 +12,38 @@
     "carousal_Nkcafe": {
       "type": "carousal",
       "blocks": {
-        "video_slide_Dywy9D": {
-          "type": "video_slide",
+        "slide_fr99tK": {
+          "type": "slide",
           "settings": {
-            "video": "shopify://files/videos/K200 - logo.mp4",
-            "video_overlay_opacity": 10,
+            "image_overlay_opacity": 10,
             "color_scheme": "inverse",
             "desktop_content_position": "middle-center",
             "desktop_content_alignment": "center",
             "caption": "",
-            "heading": "",
+            "heading": "<p>Image slide</p>",
             "heading_size": "large",
             "heading_decorative": false,
-            "text": "",
+            "text": "<p>Placeholder description for image slide</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_arrow": true,
+            "mobile_content_position": "middle-center",
+            "mobile_content_alignment": "center"
+          }
+        },
+        "slide_KWEGE9": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 10,
+            "color_scheme": "inverse",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center",
+            "caption": "",
+            "heading": "<p>Image slide</p>",
+            "heading_size": "large",
+            "heading_decorative": false,
+            "text": "<p>Placeholder description for image slide</p>",
             "button_label": "",
             "button_link": "",
             "button_style": "primary",
@@ -35,16 +54,17 @@
         }
       },
       "block_order": [
-        "video_slide_Dywy9D"
+        "slide_fr99tK",
+        "slide_KWEGE9"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "enable_full_width": true,
-        "slide_height": "large",
+        "slide_height": "adapt",
         "enable_adapter_transparent_header": false,
         "auto_rotate": true,
         "change_slides_speed": 10,
-        "show_nav_buttons": true,
+        "show_nav_buttons": false,
         "show_page_dots": true,
         "controller_color": "#ffffff",
         "margin_top": 0,
