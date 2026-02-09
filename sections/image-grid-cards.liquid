@@ -1,0 +1,205 @@
+{{ 'section-image-grid-cards.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  .section-{{ section.id }}-margin {
+    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
+    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-margin {
+      margin-top: {{ section.settings.margin_top }}px;
+      margin-bottom: {{ section.settings.margin_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+{% capture sizes %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | divided_by: 2 }}px, (min-width: 750px) 50vw, 100vw{% endcapture %}
+<div class="image-grid-cards isolate color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-margin">
+  <div class="section__wrapper image-grid-cards__wrapper page-width">
+    {%- for block in section.blocks -%}
+      <div class="image-grid-cards__block" {{ block.shopify_attributes }}>
+        {%- if block.settings.block_heading != blank -%}
+          <div class="image-grid-cards__header text-align--{{ block.settings.heading_alignment }}">
+            <h2 class="section-heading heading-size--{{ block.settings.heading_size }}{% if block.settings.heading_decorative %} font-decorative{% endif %}">
+              {{ block.settings.block_heading | escape }}
+            </h2>
+            {%- if block.settings.block_description != blank -%}
+              <div class="section-description rte">
+                {{ block.settings.block_description }}
+              </div>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+        <div class="image-grid-cards__grid">
+          <div class="image-grid-card">
+            <div class="media media--{{ section.settings.image_ratio }} hover-trigger">
+              {% render 'lazy-image',
+                image_object: block.settings.image_1,
+                class: 'animate--scale-up',
+                sizes: sizes,
+                widths: '450, 660, 900, 1280, 1400',
+                placeholder: 'image'
+              %}
+            </div>
+          </div>
+          <div class="image-grid-card">
+            <div class="media media--{{ section.settings.image_ratio }} hover-trigger">
+              {% render 'lazy-image',
+                image_object: block.settings.image_2,
+                class: 'animate--scale-up',
+                sizes: sizes,
+                widths: '450, 660, 900, 1280, 1400',
+                placeholder: 'image'
+              %}
+            </div>
+          </div>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Image Grid Cards",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.drawer", "custom.popup"]
+  },
+  "max_blocks": 10,
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.scheme.label",
+      "default": "background-2"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "square",
+          "label": "t:sections.all.image.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.all.image.image_ratio.options__2.label"
+        },
+        {
+          "value": "landscape",
+          "label": "t:sections.all.image.image_ratio.options__3.label"
+        },
+        {
+          "value": "panoramic",
+          "label": "t:sections.all.image.image_ratio.options__4.label"
+        }
+      ],
+      "default": "landscape",
+      "label": "t:sections.all.image.image_ratio.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.margin.header_content"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.margin.margin_top.label",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.margin.margin_bottom.label",
+      "default": 80
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Image Grid Block",
+      "type": "image_grid_block",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "block_heading",
+          "label": "t:sections.all.text-content.heading.label",
+          "default": "Block Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "small",
+              "label": "t:sections.all.text-content.heading.size.options__1.label"
+            },
+            {
+              "value": "medium",
+              "label": "t:sections.all.text-content.heading.size.options__2.label"
+            },
+            {
+              "value": "large",
+              "label": "t:sections.all.text-content.heading.size.options__3.label"
+            }
+          ],
+          "default": "large",
+          "label": "t:sections.all.text-content.heading.size.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_decorative",
+          "label": "t:sections.all.text-content.heading.decorative.label",
+          "default": false
+        },
+        {
+          "type": "richtext",
+          "id": "block_description",
+          "label": "t:sections.all.text-content.description.label"
+        },
+        {
+          "type": "text_alignment",
+          "id": "heading_alignment",
+          "label": "t:sections.all.text-alignment.label",
+          "default": "center"
+        },
+        {
+          "type": "header",
+          "content": "Images"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 2"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Grid Cards",
+      "category": "t:sections.all.category.media-layout",
+      "blocks": [
+        {
+          "type": "image_grid_block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
