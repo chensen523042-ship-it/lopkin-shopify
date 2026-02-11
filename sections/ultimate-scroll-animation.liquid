@@ -1,0 +1,516 @@
+{% comment %}
+  Ultimate 3D Scroll Animation Section (Kuma/Mammotion Style)
+  Features: Pinning & Scrubbing, 3D Particle System, Text Sequencing, Mouse Parallax
+  Requires GSAP + ScrollTrigger (loaded from theme assets)
+{% endcomment %}
+
+<style>
+  .qw-ultimate-wrapper {
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .qw-stage-wrap {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .qw-stage {
+    position: absolute;
+    inset: 0;
+    perspective: 4000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .qw-scene {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+
+  .qw-particle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 130px;
+    height: 130px;
+    margin: -65px 0 0 -65px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    opacity: 0;
+    will-change: transform, opacity;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    backface-visibility: hidden;
+  }
+
+  .qw-text-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    text-align: center;
+    padding: 0 20px;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .qw-content-part {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .qw-heading {
+    font-size: clamp(42px, 8vw, 86px);
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+    opacity: 0;
+    transform: translateY(60px);
+    text-transform: uppercase;
+  }
+
+  .qw-subtext {
+    font-size: clamp(15px, 2vw, 22px);
+    line-height: 1.7;
+    opacity: 1; /* 父元素保持可见，由子元素 .char 控制各自的透明度 */
+  }
+
+  /* 逐字显示的char样式 */
+  .qw-subtext .char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  .qw-video-container {
+    position: absolute;
+    width: 70vw;
+    max-width: 1200px;
+    aspect-ratio: 16/9;
+    opacity: 0;
+    filter: blur(20px);
+    z-index: 5;
+    transform: translateZ(-1000px) scale(0.8);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .qw-video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .qw-particle {
+      width: 80px;
+      height: 80px;
+      margin: -40px 0 0 -40px;
+    }
+    .qw-heading {
+      font-size: clamp(32px, 10vw, 56px);
+    }
+  }
+</style>
+
+<div class="qw-ultimate-wrapper" id="qw-section-{{ section.id }}">
+  <div class="qw-stage-wrap">
+    <div class="qw-stage">
+
+      <div class="qw-scene" id="qw-scene-{{ section.id }}">
+        {% for block in section.blocks %}
+          {% if block.type == 'image' %}
+            <div class="qw-particle"
+                 {% if block.settings.image %}
+                 style="background-image: url('{{ block.settings.image | image_url: width: 400 }}');"
+                 {% else %}
+                 style="background: linear-gradient(135deg, #667eea, #764ba2);"
+                 {% endif %}
+                 data-index="{{ forloop.index0 }}"
+                 data-total="{{ forloop.length }}">
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="qw-text-layer" id="qw-text-{{ section.id }}">
+        <div class="qw-content-part" id="qw-part1-{{ section.id }}">
+          <h2 class="qw-heading">{{ section.settings.heading_1 | default: 'VISION' }}</h2>
+          <p class="qw-subtext">{{ section.settings.text_1 | default: 'Your vision description here.' }}</p>
+        </div>
+        <div class="qw-content-part" id="qw-part2-{{ section.id }}" style="opacity: 0; visibility: hidden;">
+          <h2 class="qw-heading">{{ section.settings.heading_2 | default: 'MISSION' }}</h2>
+          <p class="qw-subtext">{{ section.settings.text_2 | default: 'Your mission description here.' }}</p>
+        </div>
+      </div>
+
+      {% if section.settings.video_url != blank %}
+      <div class="qw-video-container" id="qw-video-{{ section.id }}">
+        <video src="{{ section.settings.video_url }}" muted loop playsinline></video>
+      </div>
+      {% endif %}
+
+    </div>
+  </div>
+</div>
+
+<script src="{{ 'gsap.min.js' | asset_url }}" defer></script>
+<script src="{{ 'ScrollTrigger.min.js' | asset_url }}" defer></script>
+
+<script>
+(function() {
+  /* =========================================================
+   * 安全初始化：等待所有 defer 脚本加载完毕
+   * ========================================================= */
+  function initSection() {
+    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+      setTimeout(initSection, 50);
+      return;
+    }
+
+    const sectionId = "{{ section.id }}";
+    const wrapper   = document.getElementById('qw-section-' + sectionId);
+    if (!wrapper) return;
+
+    const scene      = document.getElementById('qw-scene-' + sectionId);
+    const particles  = wrapper.querySelectorAll('.qw-particle');
+    const textLayer  = document.getElementById('qw-text-' + sectionId);
+    const part1      = document.getElementById('qw-part1-' + sectionId);
+    const part2      = document.getElementById('qw-part2-' + sectionId);
+    const videoCont  = document.getElementById('qw-video-' + sectionId);
+    const videoEl    = videoCont ? videoCont.querySelector('video') : null;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    /* =========================================================
+     * 1. splitText — 逐字拆分
+     * ========================================================= */
+    function splitText(el) {
+      var text = el.textContent;
+      el.innerHTML = '';
+      for (var i = 0; i < text.length; i++) {
+        var span = document.createElement('span');
+        span.className = 'char';
+        span.textContent = text[i] === ' ' ? '\u00A0' : text[i];
+        el.appendChild(span);
+      }
+      return el.querySelectorAll('.char');
+    }
+
+    // 拆分两段文字的 subtext
+    var subtextPart1 = part1.querySelector('.qw-subtext');
+    var subtextPart2 = part2.querySelector('.qw-subtext');
+    var chars1 = splitText(subtextPart1);
+    var chars2 = splitText(subtextPart2);
+
+    /* =========================================================
+     * 2. 粒子系统初始化 — 3D 圆周分布
+     * ========================================================= */
+    var particleData = [];
+    var totalParticles = particles.length;
+
+    particles.forEach(function(p, i) {
+      // 均匀分布在圆周上，不使用随机值
+      var angle = (i / totalParticles) * Math.PI * 2;
+      // 使用视口尺寸计算半径，确保图片分布在文字四周较远处
+      var vw = window.innerWidth;
+      var baseRadius = Math.min(vw * 0.25, 600); // 响应式半径，最大600px
+      var radius = baseRadius;
+      var depthInit = -(500 + i * 120); // 均匀深度，而非随机
+
+      var data = {
+        el: p,
+        angle: angle,
+        radius: radius,
+        depthInit: depthInit,
+        depthCurrent: depthInit,
+        x: Math.cos(angle) * radius,
+        y: Math.sin(angle) * radius * 0.75, // 更均匀的椭圆分布
+        opacity: 0,
+        scale: 0.6 + Math.random() * 0.5,
+        rotateY: Math.random() * 30 - 15,
+        rotateX: Math.random() * 20 - 10
+      };
+
+      particleData.push(data);
+
+      // 设置初始状态
+      gsap.set(p, {
+        x: data.x,
+        y: data.y,
+        z: data.depthInit,
+        scale: data.scale * 0.3,
+        rotationY: data.rotateY,
+        rotationX: data.rotateX,
+        opacity: 0
+      });
+    });
+
+    /* =========================================================
+     * 3. 鼠标视差 (Smooth Mouse Parallax)
+     * ========================================================= */
+    var mouse = { targetX: 0, targetY: 0, currentX: 0, currentY: 0 };
+    var maxMouseOffset = 160;
+
+    wrapper.addEventListener('mousemove', function(e) {
+      var rect = wrapper.getBoundingClientRect();
+      mouse.targetX = ((e.clientX - rect.left) / rect.width - 0.5) * 2; // -1 to 1
+      mouse.targetY = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
+    });
+
+    wrapper.addEventListener('mouseleave', function() {
+      mouse.targetX = 0;
+      mouse.targetY = 0;
+    });
+
+    /* =========================================================
+     * 4. requestAnimationFrame 渲染循环
+     * ========================================================= */
+    var scrollProgress = 0; // 0 ~ 1 由 ScrollTrigger 更新（原始值）
+    var smoothProgress = 0; // 平滑插值后的值，用于粒子渲染
+    var isActive = false;
+
+    function lerp(a, b, t) {
+      return a + (b - a) * t;
+    }
+
+    function renderLoop() {
+      // 即使不在活跃状态也要平滑归零
+      smoothProgress = lerp(smoothProgress, scrollProgress, 0.06);
+
+      if (!isActive && Math.abs(smoothProgress - scrollProgress) < 0.0001) {
+        requestAnimationFrame(renderLoop);
+        return;
+      }
+
+      // 平滑鼠标插值
+      mouse.currentX = lerp(mouse.currentX, mouse.targetX, 0.06);
+      mouse.currentY = lerp(mouse.currentY, mouse.targetY, 0.06);
+
+      var mouseOffsetX = mouse.currentX * maxMouseOffset;
+      var mouseOffsetY = mouse.currentY * maxMouseOffset;
+
+      // 给 scene 施加鼠标偏移旋转
+      scene.style.transform =
+        'rotateY(' + (mouseOffsetX * 0.05) + 'deg) ' +
+        'rotateX(' + (-mouseOffsetY * 0.05) + 'deg) ' +
+        'translateX(' + (mouseOffsetX * 0.3) + 'px) ' +
+        'translateY(' + (mouseOffsetY * 0.3) + 'px)';
+
+      // 使用平滑后的进度计算粒子位置
+      var p = smoothProgress;
+
+      for (var i = 0; i < particleData.length; i++) {
+        var d = particleData[i];
+
+        // 阶段 1 (0~0.35): 粒子从深处飞入, 淡入
+        // 阶段 2 (0.35~0.65): 粒子浮动
+        // 阶段 3 (0.65~1.0): 粒子飞向屏幕前方, 淡出
+        var opacity, depth, scale, floatY;
+        var staggerDelay = i * 0.02;
+
+        if (p < 0.35) {
+          // 飞入阶段
+          var enterP = Math.max(0, Math.min(1, (p - staggerDelay) / (0.30 - staggerDelay)));
+          enterP = enterP * enterP * (3 - 2 * enterP); // smoothstep
+          opacity = enterP;
+          depth = lerp(d.depthInit, 0, enterP);
+          scale = lerp(d.scale * 0.3, d.scale, enterP);
+          floatY = 0;
+        } else if (p < 0.65) {
+          // 浮动阶段 - 轻微呼吸动画
+          opacity = 1;
+          depth = 0;
+          scale = d.scale;
+          var breathe = Math.sin((p - 0.35) * Math.PI * 6 + d.angle) * 15;
+          floatY = breathe;
+        } else {
+          // 飞出阶段
+          var exitP = Math.min(1, (p - 0.65) / 0.30);
+          exitP = exitP * exitP; // ease in
+          var staggerExit = i * 0.015;
+          var adjustedExitP = Math.min(1, exitP + staggerExit);
+          opacity = Math.max(0, 1 - adjustedExitP * 1.5);
+          depth = lerp(0, 1800, adjustedExitP);
+          scale = lerp(d.scale, d.scale * 2.5, adjustedExitP);
+          floatY = 0;
+        }
+
+        d.el.style.opacity = opacity;
+        d.el.style.transform =
+          'translate3d(' + d.x + 'px, ' + (d.y + floatY) + 'px, ' + depth + 'px) ' +
+          'scale(' + scale + ') ' +
+          'rotateY(' + (d.rotateY + mouseOffsetX * 0.1) + 'deg) ' +
+          'rotateX(' + (d.rotateX - mouseOffsetY * 0.1) + 'deg)';
+      }
+
+      requestAnimationFrame(renderLoop);
+    }
+
+    requestAnimationFrame(renderLoop);
+
+    /* =========================================================
+     * 5. ScrollTrigger 主时间轴
+     * ========================================================= */
+    var headingPart1 = part1.querySelector('.qw-heading');
+    var headingPart2 = part2.querySelector('.qw-heading');
+
+    var mainTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: wrapper,
+        start: 'top top',
+        end: '+=3500',
+        scrub: 1.5, // 值越大越丝滑，文字动画会柔和地跟随滚动
+        pin: true,
+        anticipatePin: 1,
+        onUpdate: function(self) {
+          scrollProgress = self.progress;
+          isActive = true;
+        },
+        onLeave: function() { isActive = false; },
+        onLeaveBack: function() { isActive = false; },
+        onEnter: function() { isActive = true; },
+        onEnterBack: function() { isActive = true; }
+      }
+    });
+
+    /* --- 第一阶段 (0~0.4): VISION 标题 + 逐字显现 --- */
+
+    // 标题上移显现
+    mainTl.to(headingPart1, {
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+      ease: 'power2.out'
+    }, 0);
+
+    // 逐字交错浮现
+    mainTl.to(chars1, {
+      opacity: 1,
+      y: 0,
+      duration: 0.8,
+      stagger: 0.03,
+      ease: 'power2.out'
+    }, 0.8);
+
+    /* --- 第二阶段 (0.4~0.6): VISION 淡出转场 --- */
+
+    mainTl.to(part1, {
+      opacity: 0,
+      y: -40,
+      duration: 1.2,
+      ease: 'power2.in'
+    }, 3.5);
+
+    /* --- 第三阶段 (0.6~0.85): MISSION 淡入 + 逐字显现 --- */
+
+    // 先让 part2 可见
+    mainTl.set(part2, {
+      visibility: 'visible'
+    }, 4.5);
+
+    mainTl.to(part2, {
+      opacity: 1,
+      duration: 0.5
+    }, 4.5);
+
+    // MISSION 标题上移
+    mainTl.to(headingPart2, {
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+      ease: 'power2.out'
+    }, 4.8);
+
+    // MISSION 逐字显现
+    mainTl.to(chars2, {
+      opacity: 1,
+      y: 0,
+      duration: 0.8,
+      stagger: 0.03,
+      ease: 'power2.out'
+    }, 5.3);
+
+    /* --- 第四阶段 (0.85~1.0): 视频淡入 (可选) --- */
+
+    if (videoCont) {
+      mainTl.to(videoCont, {
+        opacity: 1,
+        filter: 'blur(0px)',
+        z: 0,
+        scale: 1,
+        duration: 2,
+        ease: 'power2.out',
+        onStart: function() {
+          if (videoEl) {
+            videoEl.play().catch(function() {});
+          }
+        }
+      }, 7);
+
+      // 同时淡出 MISSION 文字
+      mainTl.to(part2, {
+        opacity: 0,
+        duration: 1
+      }, 7.5);
+    }
+
+  } // end initSection
+
+  /* 使用多重策略确保初始化 */
+  if (document.readyState === 'complete') {
+    initSection();
+  } else {
+    window.addEventListener('load', initSection);
+  }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Ultimate 3D Scroll",
+  "settings": [
+    { "type": "header", "content": "First Content (VISION)" },
+    { "type": "text", "id": "heading_1", "label": "Heading 1", "default": "VISION" },
+    { "type": "textarea", "id": "text_1", "label": "Text 1", "default": "We envision a world where technology empowers every individual to achieve their fullest potential." },
+    { "type": "header", "content": "Second Content (MISSION)" },
+    { "type": "text", "id": "heading_2", "label": "Heading 2", "default": "MISSION" },
+    { "type": "textarea", "id": "text_2", "label": "Text 2", "default": "Our mission is to build innovative solutions that bridge the gap between imagination and reality." },
+    { "type": "url", "id": "video_url", "label": "Background Video URL (Direct MP4 link)" }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Floating Photo",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Particle Image" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ultimate 3D Scroll Animation",
+      "blocks": [
+        { "type": "image" }, { "type": "image" }, { "type": "image" },
+        { "type": "image" }, { "type": "image" }, { "type": "image" },
+        { "type": "image" }, { "type": "image" }
+      ]
+    }
+  ]
+}
+{% endschema %}
